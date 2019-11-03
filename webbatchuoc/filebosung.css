@@ -1,0 +1,49 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/29/63/c0/2963c03a48034eeac912ccff9ed5ffba.jpg);
+    }
+h1 {
+    text-align: center;
+}
+h2{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: left;
+}
+h3{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: left;
+}
+h4{
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: left;
+}
+p{  font-size: 120%;
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: left;
+}
+.chuthich{
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#anh1{
+    width: 700px;
+} 
+#anh2{
+    width: 500px;
+}
+#anh3{
+    width: 500px;
+}
+#anh5{
+    width: 700px;
+}
+#anh6{
+    width: 500px;
+}
