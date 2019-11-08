@@ -1,0 +1,88 @@
+header{background-color: black;
+   
+}
+header h1 {font-size: 50px;
+    font-family: 1em sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+header ul li{ 
+    display: inline-block;
+    list-style: none;
+    color:white;
+    width: 120px;
+    text-align: center;
+    padding: 16px 12px;   
+    
+}
+.topnavbar{
+    text-align: center;
+    width: 600px;
+    background-color: green;   
+    margin-left: calc(92% - 600px);
+    margin-right:0;
+    padding-left: 0;
+    padding-right: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+header a{
+    text-decoration: none;
+    color:#f2f2f2;
+}
+header a:hover{
+    background-color:#ddd;
+    padding: 16px 12px;
+}
+
+header img {
+    display: block;
+    width: 84%;
+    margin: 0 auto;
+}
+body{
+    background-color:black;
+    width: 100%;
+}
+body div{
+    margin-top: 70px;
+    background-color: white;
+    width:calc((84% - 20px)/3);
+    display: inline-block;
+}
+body div p{
+    text-align: center;
+    vertical-align: middle;
+}
+body div p a{
+    text-decoration: none;
+}
+body div img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.guitar1{
+    margin-left: calc(16%/2);
+}
+.guitar2 {
+    position: relative;
+    left: 10px;
+}
+.guitar3 {
+    position: relative;
+    left:20px;
+}
+footer h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 1em sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+}
