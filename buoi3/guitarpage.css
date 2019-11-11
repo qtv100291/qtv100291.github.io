@@ -6,7 +6,7 @@ header h1 {font-size: 50px;
     font-style: italic;
     color: white;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-bottom: 0;
 }
 header ul li{ 
@@ -15,8 +15,7 @@ header ul li{
     color:white;
     width: 120px;
     text-align: center;
-    padding: 16px 12px;   
-    
+    padding: 16px 12px;       
 }
 .topnavbar{
     text-align: center;
@@ -53,7 +52,7 @@ body div{
     margin-top: 70px;
     background-color: white;
     width:calc((84% - 20px)/3);
-    display: inline-block;
+    display:inline-block;
 }
 body div p{
     text-align: center;

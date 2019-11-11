@@ -1,15 +1,20 @@
+
 header{
+    
     width: 100%;
     background-color: black;
     margin-top: 0;
     padding-top: 0;   
 }
-header h1 {font-size: 50px;
+header h1 {
+    margin-top:0;
+    padding-top: 40px;
+    font-size: 50px;
     font-family: 1em sans-serif;
     font-style: italic;
     color: white;
     text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-bottom: 0;
 }
 header ul li{ 
@@ -25,7 +30,6 @@ header ul li{
     width: 600px;
     background-color: green;   
     margin-left: calc(92% - 600px);
-    margin-left:-webkit-calc(92% - 600px);
     margin-right:0;
     padding-left: 0;
     padding-right: 0;
@@ -55,6 +59,12 @@ header img {
     display: inline-block;
     margin-bottom: 60px;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 body{
     position: relative;
 }
@@ -66,10 +76,8 @@ body img{
     width:52%;
     position: absolute;
     display: inline-block;
-    top:600px;
+    top:55%;
 }
-
-
 footer{
     display: flex;
     justify-content: center;
