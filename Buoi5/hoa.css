@@ -1,0 +1,132 @@
+
+.navbar{
+    margin-left: 5%;
+    background-color: chartreuse;
+    width: 90%;
+    display: flex;    
+}
+.nav{
+    text-align: center;
+    background-color:chartreuse;
+    width: 120px;
+    padding: 16px 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav:hover{
+    background-color: #4CAF50;
+    
+}
+header img{
+    width: 90%;
+    display: block;
+    margin: 0 auto
+}
+body{
+    margin: 0;
+}
+.general{
+    margin-top: 100px;
+    margin-left: 5%;
+    width:90%;
+    display: flex;
+}
+.vernavbar{
+    WIDTH:15%;
+    display: flex;
+    flex-direction: column;
+}
+.navbody{
+    box-sizing: border-box;
+    width: 100%;
+    background-color:chartreuse;    
+    padding: 16px 20px;
+}
+.navbody a{
+    display: block;
+    text-decoration: none;
+    color: black
+}
+.navbody:hover{
+    background-color:#4CAF50;    
+}
+.sectionA{
+    margin-left: 5%;
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+}
+.anh{
+    overflow: hidden;
+    text-align: center;
+    width:30%;
+    
+}
+.anh1{
+    overflow: hidden;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    width:30%;
+}
+.anh img{
+    transition: transform .2s;
+    width: 100%;
+}
+.anh figure{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.anh1 figure{
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.anh1 img{
+    transition: transform .2s;
+    width: 100%;
+    
+}
+.anh img:hover{
+    box-sizing: border-box;
+    transform: scale(1.15); 
+}
+.anh1 img:hover{
+    box-sizing: border-box;
+    transform: scale(1.15); 
+}
+.sectionA1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sectionA2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sectionA3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sectionA4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bototop{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    left: 30px;
+    bottom: 30px;
+}
+.fas{
+    font-size: 65px;
+}
