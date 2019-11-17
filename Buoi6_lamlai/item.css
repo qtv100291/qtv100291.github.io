@@ -1,0 +1,135 @@
+/*HEADER*/
+body{
+    margin: 0;
+}
+.navbar{
+    margin-left: 5%;
+    background-color: chartreuse;
+    width: 90%;
+    display: flex;    
+}
+.nav{
+    text-align: center;
+    background-color:chartreuse;
+    width: 120px;
+    padding: 16px 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav:hover{
+    background-color: #4CAF50;
+    
+}
+header img{
+    width: 90%;
+    display: block;
+    margin: 0 auto
+}
+
+/*CONTENT*/
+.general{
+    margin-top: 100px;
+    margin-left: 5%;
+    width:90%;
+    display: flex;
+}
+.vernavbar{
+    WIDTH:15%;
+    display: flex;
+    flex-direction: column;
+}
+.navbody{
+    box-sizing: border-box;
+    width: 100%;
+    background-color:chartreuse;    
+    padding: 16px 20px;
+}
+.navbody a{
+    display: block;
+    text-decoration: none;
+    color: black
+}
+.navbody:hover{
+    background-color:#4CAF50;    
+}
+.content{
+    margin-left:10%;
+    width: 70%;
+    display:grid;
+    grid-template-rows: 250px 400px ;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.content img{
+    width: 70%;
+    height: 400px;
+}
+
+.content1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.content1 p{
+    font-family:  Verdana, Geneva, sans-serif;
+}
+.content2{
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.content2 p{
+    margin:0.4em;
+}
+.content3{
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.content3 p{
+    margin:0.4em;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color:chartreuse;
+}
+.footgeneral{
+    width: 100%;
+    display: flex;
+}
+.footgeneral hr{
+    width: 85%;
+    margin-left: 0;
+}
+.footgeneral p{
+    width: 85%;
+    margin: 0.6em 0;
+}
+.ten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.truso{
+    width: 25%;
+}
+.showroom{
+    width: 25%;
+}
+.sanpham{
+    width: 25%;
+}
+.navfooter a{
+    margin:0.6em 0;
+    display: block;
+    text-decoration: none;
+    color: black
+}

@@ -1,0 +1,172 @@
+
+.navbar{
+    margin-left: 5%;
+    background-color: chartreuse;
+    width: 90%;
+    display: flex;    
+}
+.nav{
+    text-align: center;
+    background-color:chartreuse;
+    width: 120px;
+    padding: 16px 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+.nav:hover{
+    background-color: #4CAF50;
+    
+}
+header img{
+    width: 90%;
+    display: block;
+    margin: 0 auto
+}
+body{
+    margin: 0;
+}
+.general{
+    margin-top: 100px;
+    margin-left: 5%;
+    width:90%;
+    display: flex;
+}
+.vernavbar{
+    WIDTH:15%;
+    display: flex;
+    flex-direction: column;
+}
+.navbody{
+    box-sizing: border-box;
+    width: 100%;
+    background-color:chartreuse;    
+    padding: 16px 20px;
+}
+.navbody a{
+    display: block;
+    text-decoration: none;
+    color: black
+}
+.navbody:hover{
+    background-color:#4CAF50;    
+}
+.sectionA{
+    margin-left: 5%;
+    width: 80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px 350px;
+}
+
+.itemA1{
+    grid-template-columns: 1/2;
+    grid-template-rows: 1/2;
+    text-align: center;
+}
+.itemA2{
+    grid-template-columns: 2/3;
+    grid-template-rows: 1/2;
+    text-align: center;
+}
+.itemA3{
+    grid-template-columns: 3/4;
+    grid-template-rows: 1/2;
+    text-align: center;
+}
+.itemB1{
+    grid-template-columns: 1/2;
+    grid-template-rows: 2/3;
+    text-align: center;
+}
+.itemB2{
+    grid-template-columns: 2/3;
+    grid-template-rows: 2/3;
+    text-align: center;
+}
+.itemB3{
+    grid-template-columns: 3/4;
+    grid-template-rows: 2/3;
+    text-align: center;
+}
+.itemC1{
+    grid-template-columns: 1/2;
+    grid-template-rows: 3/4;
+    text-align: center;
+}
+.itemC2{
+    grid-template-columns: 2/3;
+    grid-template-rows: 3/4;
+    text-align: center;
+}
+.itemC3{
+    grid-template-columns: 3/4;
+    grid-template-rows: 3/4;
+    text-align: center;
+}
+
+figure{
+    width: 90%;
+    height: 270px;
+    overflow: hidden;
+    margin:0 auto;
+    
+} 
+figure img{
+    width: 100%;
+    transition: transform 0.3s;
+}
+figure img:hover{
+    transform: scale(1.15); 
+}
+.bototop{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    left: 30px;
+    bottom: 30px;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    margin: 0 auto;
+    background-color:chartreuse;
+}
+.footgeneral{
+    width: 100%;
+    display: flex;
+}
+.footgeneral hr{
+    width: 85%;
+    margin-left: 0;
+}
+.footgeneral p{
+    width: 85%;
+    margin: 0.6em 0;
+}
+.ten{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.truso{
+    width: 25%;
+}
+.showroom{
+    width: 25%;
+}
+.sanpham{
+    width: 25%;
+}
+.navfooter a{
+    margin:0.6em 0;
+    display: block;
+    text-decoration: none;
+    color: black
+}
