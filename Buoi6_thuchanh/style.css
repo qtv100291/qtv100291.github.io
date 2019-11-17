@@ -4,20 +4,22 @@
     display: flex;
     align-items: center;
 }
+
+
 #arrow1 {
     font-size: 150%;
-    margin-left: 1%;    
+    margin-left: 2%;    
 }
 #arrow2{
     font-size: 150%;
-    margin-left: 90%;
+    margin-left: 85%;
 }
 .mvlist{
     margin: 0 auto;
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 180px 180px;
     gap: 10px;
 }
 
@@ -36,7 +38,7 @@ p{
 .item1artist{
     position: absolute;
     left: 2%;
-    bottom: 2%;
+    bottom: 30px;
     font-size: 150%;
 }
 .itemartist{
