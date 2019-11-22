@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+/*Header*/
+header{
+    width: 100%;
+}
+.navbar{
+    width: 80%;
+    background-color: chartreuse;
+    margin: 0 auto;
+}
+.navbar {
+    padding: 0;
+    border: 0;
+}
+.navbar li{
+    list-style: none;
+    padding: 12px 0;
+    
+}
+.navbar a{
+    text-decoration: none;
+    padding: 12px 12px;
+    color: white;
+}
+.navbar{
+    display: flex;
+}
+.banner{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+    height: 600px;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*BODY GRID*/
+.general{
+    margin:0 auto;
+    margin-top: 50px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+  
+}
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.item2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.item3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.item6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+/*COMMON PART "ITEM"*/
+.item{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.anh{
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.ten{
+    margin: 0 auto;
+    width: 80%;
+}
+.item img:hover {
+    transform: scale(1.2);
+}

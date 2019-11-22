@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+/*Header*/
+header{
+    width: 100%;
+}
+.navbar{
+    width: 80%;
+    background-color: chartreuse;
+    margin: 0 auto;
+}
+.navbar {
+    padding: 0;
+    border: 0;
+}
+.navbar li{
+    list-style: none;
+    padding: 12px 0;
+    
+}
+.navbar a{
+    text-decoration: none;
+    padding: 12px 12px;
+    color: white;
+}
+.navbar{
+    display: flex;
+}
+.banner{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner img{
+    width: 100%;
+    height: 600px;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+/*Content*/
+.general{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 80%;
+}
+.anh{
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+}
+.anh img{
+    width: 100%;
+    height: 100%;
+}
