@@ -1,0 +1,38 @@
+.styleUl :nth-child(even) p{
+    background-color: whitesmoke;
+    width: 300px;
+    position: absolute;
+    padding: 0px;
+    margin:0;
+    height: 21px;
+}
+.styleUl :nth-child(even){
+    list-style: none;
+    position: relative;
+}
+.styleUl :nth-child(odd) p{
+    background-color: yellowgreen;
+    width: 300px;
+    padding: 0px;
+    margin:0;
+    position: absolute;
+    height: 21px;
+}
+.styleUl :nth-child(odd){
+    list-style: none;
+    position: relative;
+}
+.deletebutton{
+    width: 75px;
+    background-color: none;
+    position: absolute;
+    left: 300px;
+}
+.editbutton{
+    width: 75px;
+    background-color: none;
+    position: absolute;
+    left: 300px;
+}
+
+
