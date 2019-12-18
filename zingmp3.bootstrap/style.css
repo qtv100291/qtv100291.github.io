@@ -1,0 +1,420 @@
+
+/*Nav Bar*/
+.navbar-brand{
+    border-bottom: 2px solid #65509e;
+}
+.nav-link{
+    padding-left:0px !important;
+    padding-right: 0px !important;
+    border-bottom: 2px solid transparent ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-item1{
+    position: relative;
+}
+.nav-item1:hover .sub-menu1{
+    display: block;
+}
+.nav-item1:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu1{
+    width: 610px;
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu1-item{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.sub-menu1-item:hover{
+    background-color: white;
+}
+.sub-menu1-sub-item-sub{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+.sub-menu1-sub-item{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+    text-indent: 20px;
+}
+.sub-menu1-sub-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+
+.nav-item2{
+    position: relative;
+}
+.nav-item2:hover .sub-menu2{
+    display: block;
+}
+.nav-item2:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu2{
+    width: 610px;
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu2-item{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.sub-menu2-item:hover{
+    background-color: white;
+}
+.sub-menu2-sub-item-sub{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+.sub-menu2-sub-item{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+    text-indent: 20px;
+}
+.sub-menu2-sub-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+
+.nav-item3{
+    position: relative;
+}
+.nav-item3:hover .sub-menu3{
+    display: block;
+}
+.nav-item3:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu3{
+    width: 610px;
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu3-item{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.sub-menu3-item:hover{
+    background-color: white;
+}
+.sub-menu3-sub-item-sub{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+.sub-menu3-sub-item{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+    text-indent: 20px;
+}
+.sub-menu3-sub-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+.nav-item4{
+    position: relative;
+}
+.nav-item4:hover .sub-menu4{
+    display: block;
+}
+.nav-item4:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu4{
+    width: 610px;
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu4-item{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.sub-menu4-item:hover{
+    background-color: white;
+}
+.sub-menu4-sub-item-sub{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+.sub-menu4-sub-item{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+    text-indent: 20px;
+}
+.sub-menu4-sub-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+
+.nav-item5{
+    position: relative;
+}
+.nav-item5:hover .sub-menu5{
+    display: block;
+}
+.nav-item5:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu5{
+    width: 610px;
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu5-item{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+}
+.sub-menu5-item:hover{
+    background-color: white;
+}
+.sub-menu5-sub-item-sub{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left:0px ;
+    padding-right: 0px;
+    text-indent: 20px;
+}
+.sub-menu5-sub-item{
+    width: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+    text-indent: 20px;
+}
+.sub-menu5-sub-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+
+.nav-item6{
+    position: relative;
+}
+.nav-item6:hover .sub-menu{
+    display: block;
+}
+.nav-item6:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+.sub-menu{
+    position: absolute ;
+    left: 10px ;
+    top: 95%;
+}
+.sub-menu6-item{
+    text-indent: 20px;
+    margin-left:0px;
+    margin-right: 0px;
+    padding: 5px 0px;
+}
+.sub-menu6-item:hover{
+    background-color:rgb(236, 234, 234);
+}
+.nav-item7:hover .nav-link{
+    border-bottom: 2px solid #65509e;
+}
+
+.buttonnavbar{
+    margin-top: 5px;
+}
+/*Các Item Card chung*/
+.card{
+    border: 0;
+}
+.card-body{
+    padding: 0px;
+    padding-top: 5px;
+}
+.card-son{
+    width: 100%;
+    position: relative;    
+    overflow: hidden;
+}
+.card-son img{
+    transition: 0.5s;
+}
+.overlay-web{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+.play-web{
+    z-index: 2;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+}
+.card-son:hover .play-web{
+    opacity: 1;
+}
+.card-son:hover .overlay-web{
+    opacity: 0.5;
+}
+.card-son:hover img{
+    transform: scale(1.1);
+}
+
+
+
+.card1{
+    display: flex;
+    border: 0;
+    position: relative;
+    justify-content: center;
+}
+.card-body1{
+    position: absolute;
+    bottom: 10%;
+    transition: 0.5s;
+}
+.card-son1{
+    width: 100%;
+    position: relative;    
+    overflow: hidden;
+}
+.card-son1 img{
+    transition: 0.5s;
+}
+.card1:hover img{
+    transform: scale(1.05);
+}
+.card1:hover .card-body1{
+    transform: translateY(-40%);
+}
+
+.fa-play-circle{
+    font-size: 300%;
+}
+
+
+
+/*Section:Bài hát mới*/
+.playall{
+    border-radius: 8px;
+    background-color: rgb(104, 27, 104);
+    padding: 8px 14px;
+    color: white;
+    font-size: 80%;
+}
+.playall:hover{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    color:  rgb(104, 27, 104);
+}
+
+.songtheme{
+    position: relative;
+}
+.songtheme:hover img{
+    transform: scale(1.1);
+}
+.newsong img{
+    transition: 0.4s;
+}
+.icon{
+    z-index: 1;
+    position: absolute;
+    width: 40px;
+    opacity:0;
+    text-align: center;
+    padding: 7px 0;
+}
+.icon a{
+    text-decoration: none;
+    color:black;
+}
+#icon3{
+    right: 40px;
+}
+#icon2{
+    right: 80px;
+}
+#icon1{
+    right: 120px;
+}
+.overlay{
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.play{
+    z-index: 2;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.newsong{
+    padding:10px 0px 10px 10px;
+}
+.newsong:hover {
+    background-color: rgb(236, 234, 234);
+}
+.newsong:hover .overlay{
+    opacity: 0.5;
+}
+.newsong:hover .play{
+    opacity: 1;
+}
+.newsong:hover .icon{
+    background-color:  rgb(236, 234, 234);
+    opacity: 1;
+}
+.newsong:hover .text1 a{
+    color:plum;
+}
