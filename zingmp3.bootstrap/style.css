@@ -330,11 +330,106 @@
     transform: translateY(-40%);
 }
 
-.fa-play-circle{
-    font-size: 300%;
+
+.card2-1{
+    position: relative;
+    border: 0;
+}
+.card-body2-1{
+    position: absolute;
+    padding: 0px;
+    padding-top: 5px;
+    left: 5%;
+    bottom: 5%;
+}
+.card-son2-1{
+    width: 100%;
+    position: relative;    
+    overflow: hidden;
+}
+.card-son2-1 img{
+    transition: 0.5s;
+}
+.overlay-web2-1{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+.play-web2-1{
+    z-index: 2;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+}
+.card2-1:hover .card-body2-1{
+    display: none;
+}
+.card-son2-1:hover .play-web2-1{
+    opacity: 1;
+}
+.card-son2-1:hover .overlay-web2-1{
+    opacity: 0.5;
+}
+.card-son2-1:hover img{
+    transform: scale(1.1);
 }
 
 
+
+.card2-2{
+    border: 0;
+}
+.card-body2-2{
+    padding: 0px;
+    padding-top: 5px;
+}
+.card-son2-2{
+    width: 100%;
+    position: relative;    
+    overflow: hidden;
+}
+.card-son2-2 img{
+    transition: 0.5s;
+}
+.overlay-web2-2{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+.play-web2-2{
+    z-index: 2;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    background-color: transparent;
+}
+.card-son2-2:hover .play-web2-2{
+    opacity: 1;
+}
+.card-son2-2:hover .overlay-web2-2{
+    opacity: 0.5;
+}
+.card-son2-2:hover img{
+    transform: scale(1.1);
+}
+
+
+.fa-play-circle{
+    font-size: 300%;
+}
 
 /*Section:Bài hát mới*/
 .playall{
@@ -417,4 +512,17 @@
 }
 .newsong:hover .text1 a{
     color:plum;
+}
+
+/*Footer*/
+.bannerfooter{
+    position: relative;
+}
+.bannerfooter-2{
+    left:35%;
+    position: absolute;
+}
+.bannerfooter-3{
+    left: 38%;
+    position: absolute;
 }
