@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zing.mp3</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+    <div class="menu-mobile-hidden">
+        <div class="menu-mobile-content">
+            <div class="login-mobile">
+                <div class="login-part-mobile">
+                    <div class="avatar-mobile"><img src="https://avatar.talk.zdn.vn/default.jpg" alt=""></div>
+                    <h5>Đăng nhập</h5>
+                </div>
+                <div class="close-button" onclick="removeHiddenMenu()"><i class="fas fa-times"></i></div>
+                </div>
+                <ul class="menu-list-mobile">
+                    <li><a href="#"><i class="fas fa-home"></i>TRANG CHỦ</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i>#ZINGCHART</a></li>
+                    <li><a href="#"><i class="fas fa-mountain"></i>TOP 100</a></li>
+                    <li><a href="#"><i class="fas fa-music"></i>CHỦ ĐỀ</a></li>
+                    <li><a href="#"><i class="far fa-play-circle"></i>MV</a></li>
+                    <li><a href="#"><i class="fas fa-compact-disc"></i>ALBUM</a></li>
+                    <li><a href="#"><i class="fas fa-suitcase"></i>#ZINGCHART</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <div class="search-page-mobile">
+        <button class="search-button-mobile"><i class="fas fa-search icon-search-mobile"></i><input class="form-control-mobile" type="search" placeholder="Tìm kiếm..." aria-label="Search" ></button>
+    </div>
+    <header>
+        <!-- Mobile -->
+        <div class="container-banner-mobile-hidden">
+            <div class="banner-mobile">
+                <div class="menu-mobile" onclick="addHiddenMenu()">
+                    <i class="fas fa-bars"></i>              
+                </div>
+                <div class="image-banner-mobile" >
+                    <img src="http://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg" alt="">
+                </div>
+                <div class="search-button-mobile-icon" onclick="addSearchButton()">
+                    <i class="fas fa-search"></i>
+                </div>           
+            </div>
+        </div>
+        <!-- Mobile -->
+        <!-- Desktop -->
+        <div class="banner-desktop">
+            <div class="image-banner-desktop">
+                <img src="http://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.svg" alt="">
+            </div>
+            <button class="search-button" ><i class="fas fa-search icon-search"></i><input class="form-control" type="search" placeholder="Nhập tên bài hát, ca sĩ hoặc mv..." aria-label="Search" ></button>
+        </div>
+        
+        <!-- Desktop -->
+        <!-- Mobile -->
+        <nav class="topnavbar-tablet">
+            <ul class="topnavbar-tablet">
+                <li class="navbar-tablet"><a href="#" class="nav-link-tablet" id="navbar1-tablet"><b>TRANG CHỦ</b></a></li>
+                <li class="navbar-tablet"><a href="#" class="nav-link-tablet" ><b>#ZING CHART</b></a></li>
+                <li class="navbar-tablet"><a href="#" class="nav-link-tablet" ><b>NHẠC CÁ NHÂN</b></a></li>
+            </ul>
+        </nav>
+        <!-- Mobile -->
+        <!-- Desktop -->
+        <nav class="topnavbar-desktop">
+            <ul class="topnavbar">
+                <li class="navbar" ><a href="#" class="nav-link" id="navbar1"><b>TRANG CHỦ</b></a></li>
+                <li class="navbar">
+                    <a href="#" class="nav-link"><b>#ZING CHART</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container">
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>#ZING CHART</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">BÀI HÁT</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">MV</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>TUẦN</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">BÀI HÁT</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">MV</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>US-UK CHART</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">BÀI HÁT</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">MV</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>K-POP CHART</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">BÀI HÁT</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">MV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="navbar">
+                    <a href="#" class="nav-link"><b>TOP 100</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container">
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>VIỆT NAM</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trẻ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trữ Tình</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Quê Hương</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Cách Mạng</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip Hop Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Dance Việt</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>ÂU MĨ</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Pop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip hop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Country</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Electronic / Dance</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">R&B / Soul</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Audophile</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>CHÂU Á</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Hàn Quốc</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhật Bản</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hoa Ngữ</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HÒA TẤU</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Classical</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Piano</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Guitar</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Violin</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Cello</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Saxophone</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Cụ Khác</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </li>
+
+                <li class="navbar del-laptop">
+                    <a href="#" class="nav-link"><b>CHỦ ĐỀ</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container">
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>ĐỀ XUẤT</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Hot</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Những Bài Hit</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Việt Bất Hủ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Bất Hủ Âu-Mỹ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">K-Pop HIT</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Thúy Nga</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>THỂ LOẠI</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">EDM</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Acoustic</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Indie</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Không Lời</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Trữ Tình & Bolero</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>TÂM TRẠNG</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Những Ngày Mưa</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Tình Yêu</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Giai Điệu Buồn</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Âm Nhạc Thư Giãn</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Motivation</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HOẠT ĐỘNG</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Tập Trung</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Spa - Yoga</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Cà Phê</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Weekend</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Party</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Du Lịch</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Cụ Khác</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </li>
+
+                <li class="navbar del-laptop">
+                    <a href="#" class="nav-link"><b>MV</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container">
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>VIỆT NAM</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trẻ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trữ Tình</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Dance Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip Hop Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trịnh</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Thiếu Nhi</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>ÂU MĨ</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Pop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip hop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Country</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Electronic / Dance</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">R&B / Soul</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Audophile</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HÀN QUỐC</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Hàn Quốc</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhật Bản</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hoa Ngữ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Thái Lan</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HÒA TẤU</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Classical</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Piano</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Guitar</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Violin</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Cello</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Saxophone</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Cụ Dân Tộc</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </li>
+
+                <li class="navbar del-laptop">
+                    <a href="#" class="nav-link"><b>ALBUM</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container">
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>VIỆT NAM</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trẻ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trữ Tình</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Dance Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip Hop Việt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Trịnh</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Thiếu Nhi</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>ÂU MĨ</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Pop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rock</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Rap / Hip hop</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Country</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Electronic / Dance</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">R&B / Soul</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Audophile</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HÀN QUỐC</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Hàn Quốc</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhật Bản</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hoa Ngữ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Thái Lan</a></li>
+                            </ul>
+                            <ul class="sub-menu-item">
+                                <p class="sub-menu-item-title"><b>HÒA TẤU</b></p>
+                                <li class="sub-menu-item-sub"><a href="#">Classical</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Piano</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Guitar</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Violin</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Cello</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Saxophone</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhạc Cụ Dân Tộc</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </li>
+
+                <li class="navbar">
+                    <a href="#" class="nav-link"><b>NGHỆ SĨ</b></a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-container" id="sub-menu-container-special">
+                            <ul class="sub-menu-item">
+                                <li class="sub-menu-item-sub"><a href="#">Việt Nam</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Âu Mỹ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hàn Quốc</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Nhật Bảnt</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hoa Ngữ</a></li>
+                                <li class="sub-menu-item-sub"><a href="#">Hòa Tấu</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </li>
+                <li class="navbar" ><a href="#" class="nav-link" ><b>NHẠC CÁ NHÂN</b></a></li>
+            </ul>
+        </nav>
+    <!-- Desktop and Mobile-->       
+    </header>
+    <div class="general">
+        <div class="carousel-slide">
+            <ol class="carousel-group-indicator">
+                <li class="carousel-indicator" id="carousel-indicator-1" data-indicator="1" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/d/d/c/1/ddc10a8cd7314adcc134e2f3bee4876a.jpg" alt="">
+                </li>
+                <li class="carousel-indicator" id="carousel-indicator-2" data-indicator="2" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/9/c/b/4/9cb431d1d323aac841044215265ab5b5.jpg" alt="">
+                </li>
+                <li class="carousel-indicator" id="carousel-indicator-3" data-indicator="3" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/2/3/7/4/237496dd19383a8d15b99a76f2d59912.jpg" alt="">
+                </li>
+                <li class="carousel-indicator" id="carousel-indicator-4" data-indicator="4" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/5/4/c/f/54cfb45a7c2bf3b88fda5e5f110915fd.jpg" alt="">
+                </li>
+                <li class="carousel-indicator" id="carousel-indicator-5" data-indicator="5" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/3/e/a/1/3ea1b643a14ddfb9c2f28bb6ec9ff365.jpg" alt="">
+                </li>
+                <li class="carousel-indicator" id="carousel-indicator-6" data-indicator="6" onmouseover="indicatorHover(this)">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/1/9/3/5/19350c2d74bcc2dd9434a0d46c13071b.jpg" alt="">
+                </li>
+            </ol>
+            <ol class="carousel-inner" >
+                <li class="carousel-item" data-item="1" id="carousel-item-1" >
+                    <img src="https://photo-zmp3.zadn.vn/banner/6/4/7/9/6479b841e8ca1fc99697b856c31cca88.jpg" alt="">
+                </li>
+                <li class="carousel-item" data-item="2" id="carousel-item-2">
+                    <img src="https://photo-zmp3.zadn.vn/banner/8/2/2/0/8220c743233e8a692310e63a15990768.jpg" alt="">
+                </li>
+                <li class="carousel-item" data-item="3" id="carousel-item-3">
+                    <img src="https://photo-zmp3.zadn.vn/banner/d/a/4/b/da4b22b098c43938f337bd3f56078301.jpg" alt="">
+                </li>
+                <li class="carousel-item" data-item="4" id="carousel-item-4">
+                    <img src="https://photo-zmp3.zadn.vn/banner/4/a/7/0/4a7007234645e3e764d28a9b1acd2627.jpg" alt="">
+                </li>
+                <li class="carousel-item" data-item="5" id="carousel-item-5">
+                    <img src="https://photo-zmp3.zadn.vn/banner/8/d/e/2/8de2c8856c88f3d4f575aa14bbb9fab1.jpg" alt="">
+                </li>
+                <li class="carousel-item" data-item="6" id="carousel-item-6">
+                    <img src="https://photo-zmp3.zadn.vn/banner/1/f/c/c/1fccb08d0ad778ab3082bbc5630779d0.jpg" alt="">
+                </li>
+            </ol>
+        </div>
+        <div ></div>
+    </div>
+    <!-- Thanh Thoi Phieu Dieu Nhac-->  
+    <div class="title-part-container"><h3 class="title-part">Thảnh Thơi Phiêu Điệu Nhạc</h3></div>
+    <div class="item-part">
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/4/e/6/7/4e67502c1435dba85664359b1aed6ce6.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Nghe Thôi...Đã Thấy Vui</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/a/f/c/7afcaf10ea22eca75c65e6b500e69a10.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Saranghaeyo Christmas!</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/5/9/c/0/59c068dd751f91d4235eb4d2a0204424.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Nhạc Giáng Sinh Bất Hủ</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del4">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/d/8/6/2d86105ddb7b8c80f239570e5a4d2864.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">V-Pop: Những Bản Hit Quốc Dân</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del5">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/c/2/0/7/c2074e59b53ae0e07b46254ed09c15e4.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Giáng Sinh Rộn Ràng</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Thu Gian Cung Acoustic-->  
+    <div class="title-part-container"><h3 class="title-part">Thư Giãn Cùng Acoustic</h3></div>
+    <div class="item-part">
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/3/3/c/b/33cbb372331394b12d7ddd39d345a58e.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Acoustic Love Songs</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/b/2/b/eb2b15240f65f898ce786e9be5b0df4f.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Acoustic Favorites</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/8/3/a/2/83a2cddd0e2c73f65b40c2cd97e34b87.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Guitar Pleasure</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del4">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/d/f/f/7dff1717346b5e0c8949b77c41808b4e.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Mùa Giáng Sinh Ấm Áp</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del5">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/a/7/a/e/a7ae674f3386eec545e3ce9cad0b7bf4.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Nhạc Giáng Sinh Thiếu Nhi</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+    </div>
+
+    <!--ZMA2019-->  
+    <div class="title-part-container del-tablet"><h3 class="title-part">#ZMA2019</h3></div>
+    <div class="item-part del-tablet">
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/f/6/9/8/f698f7a3cb3a2e36656b9620bf9a8754.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 5 Ca Khúc RnB/Soul Được Yêu Thích #ZMA2019</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/1/7/6/2176e2bb664bb9eea1efccf54523d610.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">HIT-MAKER: Dương Khắc Linh #ZMA2019</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/f/6/4/2/f6426127ecf5a7a162c47a2f899f2b5a.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 5 Ca Khúc EDM Được Yêu Thích #ZMA2019</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del4">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/3/a/4/1/3a41ae7f0e7c56bdf4008a59cf6fd181.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">HIT-MAKER: Nguyễn Hồng Thuận #ZMA2019</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del5">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/a/b/e/9/abe9e6928c1b61610e9734d390a75818.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">HIT-MAKER: Đỗ Hiếu #ZMA2019</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+    </div>
+
+    <!--TOP 100-->  
+    <div class="title-part-container del-tablet"><h3 class="title-part">TOP 100</h3></div>
+    <div class="item-part del-tablet">
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/f/9/4/f/f94f0e412688a3d914bc2365b41980da.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 100 Bài Hát Nhạc Trẻ Hay Nhất</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/a/5/d/7/a5d752791c411264e0816883e1e532de.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 100 Pop Âu Mỹ Hay Nhất</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/d/0/2/ed02380325ce8fb49fd40bb9d967c0d1.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 100 Nhạc Electronic/Dance Âu Mỹ Hay Nhất</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del4">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/5/3/a/253a8c97632d637a45713843efe6caee.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 100 Nhạc Trữ Tình Hay Nhất</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+        <div class="item-song del5">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/e/7/0/4/e704391c47726bd7a4d547b88751d48c.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Top 100 Nhạc Hàn Quốc Hay Nhất</h5>
+                <h5 class="song-artist"></h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Bai Hat Moi-->  
+    <div class="title-part-container">
+        <h3 class="title-part">Bài Hát Mới</h3>
+        <div><button class="playall"><i class="fas fa-play"></i>&nbspNghe tất cả</button></div>
+    </div>
+    <div class="row-container">
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/d/2/a/8/d2a8fe2f80b1da9ed5ca4d3fc921446f.jpg" class="img-fluid" alt="Lá Xa Lìa Cành ">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Lá Xa Lìa Cành</b></p>
+            <p class="artist-newsong" >Lê Bảo Bình</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/f/5/a/1f5a41847015a7e8f67efdb3e79b0971.jpg" class="img-fluid" alt="Người Tình Mùa Đông">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Người Tình Mùa Đông (Rapversion)</b></p>
+            <p class="artist-newsong">G5R Squad</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song del-laptop-newsong">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/a/2/6/ea26f468386d5e274adc014a9af97f91.jpg" class="img-fluid" alt="Phải Làm Gì">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Phải Làm Gì</b></p>
+            <p class="artist-newsong">Quang Đăng Trần, Đoàn Minh Vũ</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div> 
+      </div>
+
+      <div class="row-container">
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/9/0/6/2906681d4b764cd4677342b66813f25d.jpg" class="img-fluid" alt="Bánh Mì Không">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Bánh Mì Không</b></p>
+            <p class="artist-newsong" >ĐạtG, Du Uyên</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/6/c/4/7/6c471417c8be613eff792722016e113b.jpg" class="img-fluid" alt="Đố Ai Định Nghĩa Được Tình Yêu">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Đố Ai Định Nghĩa Được Tình Yêu</b></p>
+            <p class="artist-newsong" >Bơ, Powerk</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song del-laptop-newsong">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/3/f/f/93ff7ed52bb926e05b65499b1838c014.jpg" class="img-fluid" alt="Hết Yêu Thật Sao">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Hết Yêu Thật Sao</b></p>
+            <p class="artist-newsong" >JSOL</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div> 
+      </div>
+
+      <div class="row-container">
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/b/e/9/7be9788129f81d9c3d685969db8ab70a.jpg" class="img-fluid" alt="Em một mình quen rồi">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Em Một Mình Quen Rồi</b></p>
+            <p class="artist-newsong" >Dương Hoàng Yên, Thanh Hưng</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/c/6/1/c/c61c4df423ed48f366579e06890cd6a9.jpg" class="img-fluid" alt="Sao Phải Thức Khuya Vậy">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Sao Phải Thức Khuya Vậy?</b></p>
+            <p class="artist-newsong" >Trọng Nhân, Sơn</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song del-laptop-newsong">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/9/9/e/999e7aa9d6d42e60d3b2f28072a0c968.jpg" class="img-fluid" alt="Sao Chẳng Phải Anh">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Sao Chẳng Phải Anh</b></p>
+            <p class="artist-newsong" >Chi Dân<i class="fas fa-star"></i></p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div> 
+      </div>
+
+      <div class="row-container ">
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/5/5/8/2558009b7d45f1e2211794a55fa55506.jpg" class="img-fluid" alt="Tìm Được Một Nửa Hóa Ra Lại Chưa">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Tìm Được Một Nửa Hóa Ra Lại Chưa</b></p>
+            <p class="artist-newsong" >Thương Võ, Vương Anh Tú</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/0/9/e/309e131067baa7e4907eee169ec2cb8b.jpg" class="img-fluid" alt="Ánh Dương Là Em">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Ánh Dương Là Em</b></p>
+            <p class="artist-newsong" >Vdic, HTropic, Choice</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song del-laptop-newsong">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/a/6/5/8/a65853a1283665ca7ac3f93def9dab4c.jpg" class="img-fluid" alt="Đố Em Bắt Được Anh">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Đố Em Bắt Được Anh</b></p>
+            <p class="artist-newsong" >Đỗ Phú Quý, Double Noize</i></p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div> 
+      </div>
+
+
+      <div class="row-container">
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/0/d/f/70df45ca707630346c93192a91aa2074.jpg" class="img-fluid" alt="Về Lại Đi Em">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Về Lại Đi Em</b></p>
+            <p class="artist-newsong" >Nguyên</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/7/3/2/5/73257d3f2cb6b1c16719bebc443980f9.jpg" class="img-fluid" alt="Tình Đẹp Đến Mấy Cũng Tàn">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Tình Đẹp Đến Mấy Cũng Tàn</b></p>
+            <p class="artist-newsong" >Việt</p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div>
+        <div class="new-song del-laptop-newsong">
+          <div class="new-song-songtheme" >
+            <img src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/7/5/9/e759ac389b4aa3fb119784bc01252cb7.jpg" class="img-fluid" alt="Come With Me">
+            <div class="overlay-newsong"></div>
+            <div class="play-newsong"><i class="fas fa-play"></i></div>
+          </div>
+          <div class="title-newsong">
+            <p class="name-newsong" ><b>Come With Me</b></p>
+            <p class="artist-newsong" >Ogenus</i></p>
+          </div>
+          <div class="icon" id="icon1"><a href="#" title="Xem MV"><i class="material-icons">hd</i></a></div>
+          <div class="icon" id="icon2"><a href="#" title="Thích"><i class="far fa-heart"></a></i></div>
+          <div class="icon" id="icon3"><a href="#" title="Khác"><i class="fas fa-ellipsis-h"></i></a></div>
+        </div> 
+      </div>
+
+      <!--Chu De Va The Loai-->  
+      <div class="title-part-container del-tablet">
+        <h3 class="title-part" >Chủ Đề & Thể Loại </h3>
+    </div>
+    <div class="item-part1">
+        <div class="item-song1">
+            <div class="song-display-img1">
+                <div class="song-img1">
+                    <div class="overlay1"></div>
+                    <img src="https://photo-zmp3.zadn.vn/cover/d/e/a/e/deae7ab8481260c9edb48d5b3c4b6151.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title1">
+                <h5 class="song-name1">Trending</h5>
+                <h5 class="song-artist1"></h5>
+            </div>
+        </div>
+        <div class="item-song1">
+            <div class="song-display-img1">
+                <div class="song-img1">
+                    <div class="overlay1"></div>                  
+                    <img src="https://photo-zmp3.zadn.vn/cover/1/e/0/f/1e0f4998259f2f8a0ae7de1a7110bb62.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title1">
+                <h5 class="song-name1">Nhạc Việt</h5>
+                <h5 class="song-artist1"></h5>
+            </div>
+        </div>
+        <div class="item-song1">
+            <div class="song-display-img1">
+                <div class="song-img1">
+                    <div class="overlay1"></div>                   
+                    <img src="https://photo-zmp3.zadn.vn/cover/2/7/5/3/2753569ef5258e604e8eadf7a155a2ff.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title1">
+                <h5 class="song-name1">Nhạc Âu Mĩ</h5>
+                <h5 class="song-artist1"></h5>
+            </div>
+        </div>
+        <div class="item-song1 del4-1">
+            <div class="song-display-img1">
+                <div class="song-img1">
+                    <div class="overlay1"></div>
+                    <img src="https://photo-zmp3.zadn.vn/cover/a/e/d/3/aed3d129c85c532fbef3c5571bfed4c0.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title1">
+                <h5 class="song-name1">Nhạc Hàn</h5>
+                <h5 class="song-artist1"></h5>
+            </div>
+        </div>
+        <div class="item-song1 del5-1">
+            <div class="song-display-img1">
+                <div class="song-img1">
+                    <div class="overlay1"></div>
+                    <img src="https://photo-zmp3.zadn.vn/covers/1/3/1301c274e77b9fc0e99a4b258eed6d52_1512125175.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title1">
+                <h5 class="song-name1">Giáng Sinh</h5>
+                <h5 class="song-artist1"></h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Album Hot-->  
+    <div class="title-part-container del-tablet"><h3 class="title-part">Album Hot</h3></div>
+    <div class="item-part del-tablet">
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/9/3/0/9/9309938bb0d24237e0055dd35fcfefd0.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Hòa Nhịp Giáng Sinh</h5>
+                <h5 class="song-artist">MIN<i class="fas fa-star"></i></h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/a/6/5/8/a65853a1283665ca7ac3f93def9dab4c.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Đố Anh Bắt Được Em</h5>
+                <h5 class="song-artist">Đỗ Phú Quí,  Double Noize</h5>
+            </div>
+        </div>
+        <div class="item-song">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/b/f/3/3/bf33be2bf9f4918f41322030f39eb7e6.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Kết Duyên (Single)</h5>
+                <h5 class="song-artist">YuniBoo,  Goctoi Mixer</h5>
+            </div>
+        </div>
+        <div class="item-song del4">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/2/9/e/5/29e54706de66f738bd40e02c9266c21d.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Về Lại Đi Em (Single)</h5>
+                <h5 class="song-artist">Nguyên.</h5>
+            </div>
+        </div>
+        <div class="item-song del5">
+            <div class="song-display-img">
+                <div class="song-img">
+                    <div class="overlay"></div>
+                    <div class="play"><i class="far fa-play-circle"></i></div>
+                    <img src="https://photo-resize-zmp3.zadn.vn/w480_r1x1_jpeg/cover/7/3/2/5/73257d3f2cb6b1c16719bebc443980f9.jpg" alt="">
+                </div>
+            </div>
+            <div class="song-title">
+                <h5 class="song-name">Tình Đẹp Đến Mấy Cũng Tàn (Single)</h5>
+                <h5 class="song-artist">Việt</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--MV Hot-->  
+    <div class="title-part-container"><h3 class="title-part">MV HOT</h3></div>
+    <div class="mvhot">
+        <div class="mvhot-item1">
+            <div class="item-song3">
+                <div class="song-display-img3">
+                    <div class="song-img3">
+                        <div class="overlay3"></div>
+                        <div class="play3"><i class="far fa-play-circle"></i></div>
+                        <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/f/9/e/8/f9e8c84054d4b86664994cf12394ea94.jpg" alt="">
+                    </div>
+                </div>
+                <div class="song-title3">
+                    <h5 class="song-name3">You Are My Crush</h5>
+                    <h5 class="song-artist3">Quân A.P, Nguyên JenDa</h5>
+                </div>
+            </div>  
+        </div>
+        <div class="mvhot-item2">
+            <div class="mvhot-item-1">
+                <div class="item-song2">
+                    <div class="song-display-img2">
+                        <div class="song-img2">
+                            <div class="overlay2"></div>
+                            <div class="play2"><i class="far fa-play-circle"></i></div>
+                            <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/3/d/8/0/3d806113294b7391410a216c8936be25.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="song-title2">
+                        <h5 class="song-name2">Giáng Sinh FA</h5>
+                        <h5 class="song-artist2">Vicky Nhung</h5>
+                    </div>
+                </div>   
+                <div class="item-song2">
+                    <div class="song-display-img2">
+                        <div class="song-img2">
+                            <div class="overlay2"></div>
+                            <div class="play2"><i class="far fa-play-circle"></i></div>
+                            <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/c/a/f/a/cafa912025406483167643b69de40013.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="song-title2">
+                        <h5 class="song-name2">Đừng Vì Anh Mà Khóc</h5>
+                        <h5 class="song-artist2">Quang Hùng MasterD</h5>
+                    </div>
+                </div> 
+            </div> 
+            <div class="mvhot-item-1">
+                <div class="item-song2">
+                    <div class="song-display-img2">
+                        <div class="song-img2">
+                            <div class="overlay2"></div>
+                            <div class="play2"><i class="far fa-play-circle"></i></div>
+                            <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/5/f/3/7/5f37fe12210e01447190e6c7159dc871.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="song-title2">
+                        <h5 class="song-name2">Tình Đẹp Đến Mấy Cũng Tàn</h5>
+                        <h5 class="song-artist2">Việt</h5>
+                    </div>
+                </div>   
+                <div class="item-song2">
+                    <div class="song-display-img2">
+                        <div class="song-img2">
+                            <div class="overlay2"></div>
+                            <div class="play2"><i class="far fa-play-circle"></i></div>
+                            <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/c/b/a/9/cba979970f5692224adc6235f538d27e.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="song-title2">
+                        <h5 class="song-name2">Lá Xa Lìa Cành</h5>
+                        <h5 class="song-artist2">Lê Bảo Bình</h5>
+                    </div>
+                </div> 
+            </div>              
+        </div>
+    </div>
+
+    <div class="mvhot-tablet">
+        <div class="mvhot-tablet-item1">
+            <div class="item-tablet-song3">
+                <div class="song-tablet-display-img3">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/f/9/e/8/f9e8c84054d4b86664994cf12394ea94.jpg" alt="">
+                </div>
+                <div class="song-tablet-title3">
+                    <h5 class="song-tablet-name3">You Are My Crush</h5>
+                    <h5 class="song-tablet-artist3">Quân A.P, Nguyên JenDa</h5>
+                </div>
+            </div>  
+            <div class="item-tablet-song3">
+                <div class="song-tablet-display-img3">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/3/d/8/0/3d806113294b7391410a216c8936be25.jpg" alt="">
+                </div>
+                <div class="song-tablet-title3">
+                    <h5 class="song-tablet-name3">Giáng Sinh FA</h5>
+                    <h5 class="song-tablet-artist3">Vicky Nhung</h5>
+                </div>
+            </div> 
+        </div>
+
+        <div class="mvhot-tablet-item1">
+            <div class="item-tablet-song3">
+                <div class="song-tablet-display-img3">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/c/a/f/a/cafa912025406483167643b69de40013.jpg" alt="">
+                </div>
+                <div class="song-tablet-title3">
+                    <h5 class="song-tablet-name3">Đừng Vì Anh Mà Khóc</h5>
+                    <h5 class="song-tablet-artist3">Quang Hùng MasterD</h5>
+                </div>
+            </div>  
+            <div class="item-tablet-song3">
+                <div class="song-tablet-display-img3">
+                    <img src="https://photo-resize-zmp3.zadn.vn/w600_r300x169_jpeg/thumb_video/5/f/3/7/5f37fe12210e01447190e6c7159dc871.jpg" alt="">
+                </div>
+                <div class="song-tablet-title3">
+                    <h5 class="song-tablet-name3">Tình Đẹp Đến Mấy Cũng Tàn</h5>
+                    <h5 class="song-tablet-artist3">Việt</h5>
+                </div>
+            </div> 
+        </div>
+
+        
+        
+    </div>
+
+    <!--Footer-->  
+    <footer>
+        <div class="bannerfooter">
+          <div class="bannerfooter-2">
+            <img src="http://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.png"  alt="">
+          </div>
+          <div class="bannerfooter-3">
+            <p><b>Hãy đăng nhập để khám phá những bài hát dành riêng cho bạn</b></p>
+          </div>
+        </div>
+        <div class="icon-footer">
+          <img src="http://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/logo-mp-3.png" alt="">
+          <p>Một sản phẩm của Zalo</p>
+        </div>
+        <div class="contact-footer">
+          <p class="text-footer" >Giới thiệu</p> 
+          <p class="point-footer"><i class="fas fa-circle" ></i></p>
+          <p class="text-footer" >Liên hệ</p> 
+          <p class="point-footer"><i class="fas fa-circle" ></i></p>
+          <p class="text-footer" >Quảng cáo</p> 
+          <p class="point-footer"><i class="fas fa-circle" ></i></p>
+          <p class="text-footer" >Góp ý</p> 
+          <p class="point-footer"><i class="fas fa-circle" ></i></p>
+          <p class="text-footer" >Thỏa thuận sử dụng</p>
+        </div>
+      </footer>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>         
