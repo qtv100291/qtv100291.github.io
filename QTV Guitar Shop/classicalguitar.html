@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTV Guitar Shop - Guitar Classical</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="style-guitarclassical.css">
+    <!--Fontawesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
+</head>
+<body>
+    <header class="header-desktop">
+        <div class="top-navbar">
+            <div class="avatar">
+                <img src="HomePage/logo.png" alt="QTV Guitar Shop Logo">
+            </div>
+            <div class="menu-bar">
+                <div class="menu-bar-inner">
+                    <div class="avatar-sub-container">
+                        <div class="avatar-sub"><img src="HomePage/Untitled.jpg" alt=""></div>
+                    </div>                   
+                    <ul class="menu-bar-list">
+                        <li class="menu-bar-item-1"><a href="index.html">TRANG CHỦ</a></li>
+                        <li class="menu-bar-item-2">GUITAR
+                            <ul class="sub-menu-guitar">
+                                <div class="blank-sub-menu"></div>
+                                <li><a href="classicalguitar.html">Guitar Cổ Điển</a></li>
+                                <li><a href="acousticguitar.html">Guitar Acoustic</a></li>
+                                <li><a href="electricguitar.html">Guitar Điện</a></li>
+                                <li><a href="ukulele.html">Ukulele</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-bar-item-3"><a href="accessories.html">PHỤ KIỆN</a></li>
+                        <li class="menu-bar-item-4"><a href="guitarshow.html">GUITAR SHOW</a></li>
+                        <li class="menu-bar-item-5"><a href="blog.html">BLOG</a></li>
+                        <li class="menu-bar-item-6"><a href="contact.html">LIÊN HỆ</a></li>
+                        <li></li>
+                    </ul>
+                    <div class="menu-bar-sign-up"><a href="signin.html">ĐĂNG NHẬP</a></div>
+                    <div class="sub-shopping-cart">
+                        <a href="shoppingcart.html"><img src="HomePage/shopping-cart 1.svg" alt=""><span class="total-count-item">0</span></a>
+                        <div class="sub-shopping-cart-display">
+                            <div class="match-box"></div>
+                            <div class="match-box-hidden"></div>
+                            <div class="sub-shopping-cart-container">
+                                <!--Item will be displayed here-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <img src="HomePage/search_24px_outlined.svg" alt="search">
+                <input class="input-search-bar" type="text" placeholder="Nhập nhạc cụ cần tìm kiếm...">
+                <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
+                <div class="suggestion-item">
+                    <div class="suggestion-guitar">
+                        <!--Search Items will be displayed here-->
+                    </div>
+                    <!--<div class="suggestion-category">
+                        <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
+                        <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
+                        <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
+                        <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
+                        <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
+                        <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
+                        <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="address-top-navbar">
+                <i class="fas fa-map-marker-alt location-top"></i>
+                <p>Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội</p>
+            </div>
+            <div class="phone-number-top-navbar">
+                <i class="fas fa-phone-alt phone-top"></i>
+                <p>19001570</p>
+            </div>
+        </div>     
+    </header>
+    <main class="container">
+        <div class="banner">
+            <img src="Product/Classical Guitar/2-1.jpg" alt="">
+        </div>
+        <div class="navigation">
+            <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a href="classicalguitar.html">Guitar Cổ Điển</a> 
+        </div>
+        <div class="main-container">
+            <div class="filter-part">
+                <div class="filter-brand filter-item">
+                    <div class="filter-title">THƯƠNG HIỆU<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Fender">FENDER
+                                <input type="checkbox" id="Fender" data-brand="FENDER">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Manuel-Rodriguez">MANUEL RODRIGUEZ
+                                <input type="checkbox" id="Manuel-Rodriguez" data-brand="MANUEL RODRIGUEZ">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Alvarez">ALVAREZ
+                                <input type="checkbox" id="Alvarez" data-brand="ALVAREZ">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Yamaha">YAMAHA
+                                <input type="checkbox" id="Yamaha" data-brand="YAMAHA">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Cordoba">CORDOBA
+                                <input type="checkbox" id="Cordoba" data-brand="CORDOBA">
+                            <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Kremona">KREMONA
+                                <input type="checkbox" id="Kremona" data-brand="KREMONA">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-body-size filter-item">
+                    <div class="filter-title">KÍCH THƯỚC THÂN ĐÀN<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Full-size">FULL SIZE
+                                <input type="checkbox" id="Full-size" data-body-size ="FULL SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="3/4-size">3/4 SIZE
+                                <input type="checkbox" id="3/4-size" data-body-size="3/4 SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="1/2-size">1/2 SIZE
+                                <input type="checkbox" id="1/2-size" data-body-size="1/2 SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Travel-size">TRAVEL SIZE
+                                <input type="checkbox" id="Travel-size" data-body-size="TRAVEL SIZE"> 
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-price filter-item">
+                    <div class="filter-title">KHOẢNG GIÁ<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Low-end">Dưới 5 Triệu
+                                <input type="checkbox" id="Low-end" data-price-min="0" data-price-max="5000000">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Mid-end">Từ 5 Đến 20 Triệu
+                                <input type="checkbox" id="Mid-end" data-price-min="5000000" data-price-max="20000000">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="High-end">Trên 20 Triệu
+                                <input type="checkbox" id="High-end" data-price-min="20000000" data-price-max="Infinity">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-button">Áp Dụng</div>
+            </div>
+            <div class="product-part">
+                <div class="arrangement-part">
+                    <div class="arrangement-title">Sắp xếp theo
+                        <div><span class="arrangement-executed">Tên Từ A - Z</span> 
+                            <img class="arrow-icon" src="HomePage/expand_more_24px_outlined.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-arrangement">
+                        <div class="arrangement-option option-1">Tên Từ A - Z</div>
+                        <div class="arrangement-option option-2">Giá Tăng Dần</div>
+                        <div class="arrangement-option option-3">Giá Giảm Dần</div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <!--Items will be rendered here-->
+                </div>
+                <div class="pagination">
+                    <!--Pagination will be rendered here-->
+                </div>
+            </div>    
+        </div>
+        <div class="scrolling-button">
+            <div class="scrolling-button-container">
+                <img src="HomePage/up-arrow.svg" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="guitarData.js"></script>
+    <script src="mainguitarclassical.js"></script>
+</body>
+</html>
