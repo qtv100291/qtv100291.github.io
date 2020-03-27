@@ -11,10 +11,22 @@
     <link rel="stylesheet" href="style.css">
     <!--Fontawesome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
-    <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
+    <!--Google Font I have used Roboto, Dancing Script,Lora and Oswald for this website-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
 </head>
-<body>
+<body class="start">
+    <div class="welcome-popup" style="display: none;">
+        <div class="welcome-popup-container">
+            <div class="welcome-popup-image"><img src="HomePage/popup-banner.jpg" alt=""></div>
+            <div class="welcome-popup-content">
+                <p class="welcome-popup-content-title">Welcome To QTV Guitar Shop</p>
+                <p class="welcome-popup-content-presentation">Như các bạn đã biết, thời gian qua dịch Covid-19 đã lây lan nhanh và bùng phát mạnh ở Hà Nội. Để đảm bảo an toàn, Showroom của chúng tôi sẽ tạm thời đóng cửa từ ngày 25/3 và sẽ cố gắng mở lại vào thời gian sớm nhất. Mọi hoạt động đặt hàng Online vẫn được đảm bảo diễn ra đầy đủ, khách hàng có thể liên hệ theo Hotline 19001570 để nhận được sự tư vấn tốt nhất từ chúng tôi.</p>
+                <p class="welcome-popup-content-presentation">Chúng ta hãy cùng nhau đẩy lùi đại dịch bằng cách hạn chế ra ngoài khi không cần thiết ( ở nhà chơi guitar cũng là một lựa chọn không tồi ), đeo khẩu trang ở nơi công cộng và rửa tay thường xuyên.</p>
+                <p class="welcome-popup-content-presentation">Cùng QTV Guitar Shop thực hiện các bạn nhé.</p>
+                <div class="access-button">OK, Đã Rõ</div>
+            </div>
+        </div>
+    </div>
     <header class="header-desktop">
         <div class="top-navbar">
             <div class="avatar">
@@ -89,14 +101,33 @@
     <main class="container">
         <div class="about-store">
             <div class="video-store-container">
-                <video class="video-store" autoplay muted loop>
+                <video class="video-store" muted loop>
                     <source src="shopvideo.mp4" type="video/mp4">
                     Trình duyệt của bạn không hỗ trợ HTML5 Video.
                 </video>
-                <audio id="my-audio" controls muted autoplay>
+                <div class="audio-button">
+                    <div class="column column-1"></div>
+                    <div class="column column-2"></div>
+                    <div class="column column-3"></div>
+                    <div class="column column-4"></div>
+                    <div class="column column-5"></div>
+                    <div class="column column-6"></div>
+                    <div class="tooltip">
+                        <p class="tooltip-title">Tắt Nhạc</p>
+                        <p class="tooltip-title active-tooltip">Bật Nhạc</p>
+                    </div>
+                </div>
+                <audio class="my-audio"loop>
                     <source src="welcomeshop.ogg" type="audio/ogg">
                     <source src="welcomeshop.mp3" type="audio/mp3">
                 </audio> 
+                <div class="store-brief-description">
+                    <div>
+                        <p>GẦN 30 NĂM THÀNH LẬP</p>
+                        <p>500+ SẢN PHẨM TRƯNG BÀY TẠI SHOWROM</p> 
+                    </div>
+                    <a href="">Thăm Quan Showroom</a>
+                </div>
             </div>
         </div>
         <div class="main-container">
@@ -300,7 +331,7 @@
                 <div class="text-sub-banner">
                     <div class="line1-text-sub-banner">Chào mừng ngày 8 tháng 3</div>
                     <div class="line2-text-sub-banner">Giảm Giá Đến 25%</div>
-                    <div class="line3-text-sub-banner">Cho các bạn nữ đến mua guitar tại QTV Guitar Shop</div>
+                    <div class="line3-text-sub-banner">Cho các bạn nữ đến mua ukulele tại QTV Guitar Shop</div>
                 </div>
             </div>
             <div class="part2-guitar-show">
@@ -364,7 +395,23 @@
                     <div class="blog-slide-container">
                         <div class="blog-slide-inner">
                             <div class="blog-slide-content">
-                                <a class="blog-item" href="">
+                                <a class="blog-item first-child" href="">
+                                    <div class="blog-item-photo"><img src="HomePage/pexels-photo-1407322.jpeg" alt=""></div>
+                                    <div class="blog-item-info">
+                                        <div class="blog-item-date">
+                                            <img src="HomePage/calendar 1.png" alt="lịch">
+                                            <div>10 Tháng 02, 2020</div>
+                                        </div>
+                                        <div class="blog-item-author">
+                                            <img src="HomePage/pen 1.png" alt="tác giả">
+                                            <div>Admin</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-item-title">Một Vài Lời Khuyên Và Mẹo Giúp Cho Các Bạn Vừa Đánh Đàn ... </div>
+                                    <div class="blog-item-summary">Đây là hướng dẫn từng bước dành cho các bạn mới học Guitar đệm hát để kết hợp giữa chơi đàn và giọng hát ...</div>
+                                    <div class="blog-item-seeMore">Chi Tiết >></div>
+                                </a>
+                                <a class="blog-item " href="">
                                     <div class="blog-item-photo"><img src="HomePage/keith-richards.jpg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
@@ -412,8 +459,6 @@
                                     <div class="blog-item-summary">Đây là hướng dẫn từng bước dành cho các bạn mới học Guitar đệm hát để kết hợp giữa chơi đàn và giọng hát ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                            </div>
-                            <div class="blog-slide-content">
                                 <a class="blog-item" href="">
                                     <div class="blog-item-photo"><img src="HomePage/keith-richards.jpg" alt=""></div>
                                     <div class="blog-item-info">
@@ -430,7 +475,7 @@
                                     <div class="blog-item-summary">Rất nhiều người trong số họ đã từ giã cõi đời từ rất sớm, nhưng lúc sinh thời, họ đã để lại cho chúng ta những điều tuyệt vời ....</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item" href="">
+                                <a class="blog-item last-child" href="">
                                     <div class="blog-item-photo"><img src="HomePage/fenderGuitar.jpg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
@@ -444,22 +489,6 @@
                                     </div>
                                     <div class="blog-item-title">Một Vài Mẫu Guitar Điện Và Acoustic Mới Năm Nay (Phần 1)</div>
                                     <div class="blog-item-summary">QTV Guitar Shop xin giới thiệu với các bạn một vài mẫu Guitar Điện và Acoustic mới xuất hiện vào tháng 2 năm 2020 ....</div>
-                                    <div class="blog-item-seeMore">Chi Tiết >></div>
-                                </a>
-                                <a class="blog-item" href="">
-                                    <div class="blog-item-photo"><img src="HomePage/pexels-photo-1407322.jpeg" alt=""></div>
-                                    <div class="blog-item-info">
-                                        <div class="blog-item-date">
-                                            <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>10 Tháng 02, 2020</div>
-                                        </div>
-                                        <div class="blog-item-author">
-                                            <img src="HomePage/pen 1.png" alt="tác giả">
-                                            <div>Admin</div>
-                                        </div>
-                                    </div>
-                                    <div class="blog-item-title">Một Vài Lời Khuyên Và Mẹo Giúp Cho Các Bạn Vừa Đánh Đàn ... </div>
-                                    <div class="blog-item-summary">Đây là hướng dẫn từng bước dành cho các bạn mới học Guitar đệm hát để kết hợp giữa chơi đàn và giọng hát ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
                             </div>

@@ -6,9 +6,91 @@ html{
     scroll-behavior: smooth;
 }
 body {
+    width: 100%;
     overflow-x: hidden;
 }
+body.start{
+    overflow: hidden;
+}
 @media only screen and (min-width: 1366px){
+    /*Welcome Popup*/
+    .welcome-popup{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: 1s;
+        transform-origin: top left 0;
+        overflow: hidden;
+    }
+    .welcome-popup-container{
+        width: 100%;
+        max-width: 800px;
+        height: 100vh;
+        max-height: 550px;
+        margin: calc(45vh - 275px) auto;
+        border: 10px solid white;
+        display: flex;
+    }
+    .welcome-popup-image{
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+    }
+    .welcome-popup-image > img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .welcome-popup-content{
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-color: white;
+        font-family: Roboto;
+    }
+    .welcome-popup-content-title{
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .welcome-popup-content-presentation{
+        width: 95%;
+        text-indent: 15px;
+        margin-left: 5%;
+        text-align: left;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .access-button{
+        width: 150px;
+        height: 40px;
+        margin: 25px auto 0 auto;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 40px;
+        margin-bottom: 5px;
+        text-align: center;
+        background-color: rgb(189, 2, 2);
+        color: white;
+    }
+    .access-button:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    .welcome-popup.gone{
+        height: 0;
+    }
     /*Header*/
     .header-desktop{
         width: 100%;
@@ -48,7 +130,6 @@ body {
     }
     .menu-bar{
         width: 100vw;
-
         background-color: white;
         position: absolute;
         z-index: 5;
@@ -635,6 +716,7 @@ body {
     /*Main*/
     .container{
         width: 100%;
+        position: relative;
     }
     .container.scroll{
         margin-top: 124px;
@@ -650,6 +732,7 @@ body {
         margin: 0 auto;
     }
     .video-store-container{
+        position: relative;
         width: 100%;
         height: 600px;
         overflow: hidden;
@@ -659,6 +742,151 @@ body {
         width: 100%;
         position: relative;
         top:-250px;
+    }
+    .my-audio{
+        position: absolute;
+        z-index: 2;
+        bottom: 5%;
+        left: 1%;
+    }
+    .audio-button{
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        right: 5%;
+        justify-content: space-between;
+        width: 28px;
+        height: 18px;
+    }
+    .audio-button:hover{
+        cursor: pointer;
+    }
+    .audio-button:hover .column{
+        background-color: red;
+    }
+    .column{
+        width: 3px;
+        height: 9px;
+        background-color: white;
+        transition: 0.5s;
+        position: absolute;
+        bottom: 0;
+    }
+    .column-1{
+        left: 0;
+    }
+    .column-2{
+        left: 5px;
+    }
+    .column-3{
+        left: 10px;
+    }
+    .column-4{
+        left: 15px;
+    }
+    .column-5{
+        left: 20px;
+    }
+    .column-6{
+        left: 25px;
+    }
+    .playing-1{
+        animation: playing 0.5s infinite;
+    }
+    .playing-2{
+        animation: playing 0.69s infinite;
+    }
+    .playing-3{
+        animation: playing 0.57s infinite;
+    }
+    .playing-4{
+        animation: playing 0.52s infinite;
+    }
+    .playing-5{
+        animation: playing 0.65s infinite;
+    }
+    .playing-6{
+        animation: playing 0.45s infinite;
+    }
+    @keyframes playing{
+        0%{height: 9px;}
+        50%{height: 18px;}
+        100%{height: 9px;}
+    }
+    .tooltip{
+        position: absolute;
+        top: -2px;
+        left: -80px;
+        width: 70px;
+        height: 25px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 7px;
+    }
+    .tooltip-title{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .active-tooltip{
+        opacity: 1;
+    }
+    .tooltip::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent rgba(0, 0, 0, 0.7);
+    }
+    .store-brief-description{
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        bottom: 4%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+    .store-brief-description > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 50px;
+        color: white;
+    }
+    .store-brief-description > a{
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 1px solid white;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+        border-radius: 30px;
+    }
+    .store-brief-description > a:hover{
+        cursor: pointer;
+        color: red;
     }
     .part1-myproduct{
         width: 100%;
@@ -1292,7 +1520,6 @@ body {
         font-size: 50px;
         transition: 1s;
         cursor: pointer;
-        display: none;
     }
     .blog-slide-next{
         position: absolute;
@@ -1319,27 +1546,37 @@ body {
         overflow: hidden;
     }
     .blog-slide-inner{
-        width: 2100px;
+        width: 100%;
         position: relative;
         display: flex;
         height: 470px;
         transition: 1s;
     }
     .blog-slide-content{
-        width: 100%;
-        left: -100%;
-        top: 0%;
+        position: absolute;
+        left: -362.5px;
+        top: 0;
         display: flex;
-        justify-content: space-between;
-        transition: 1s;
+        transition: 0.5s;
     }
-    .blog-slide-content.gone-prev{
-        transform:translateX(100%);
+    @keyframes move-right {
+        0%{ 
+            left: -725px;
+        }
+        100%{
+            left: -362.5px;
+        }
     }
-    .blog-slide-content.arrived-prev{
-        transform: translate(100%);
+    @keyframes move-left {
+        0%{ 
+            left: 0px;
+        }
+        100%{
+            left: -362.5px;
+        }
     }
     .blog-item{
+        margin-right: 37.5px;
         width: 325px;
         height: 470px;
         border: 1px solid #DADADA;

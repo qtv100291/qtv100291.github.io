@@ -268,4 +268,25 @@ var guitarUkuleleData = []
 var accessoriesData=[];
 
 // Guitar Show Data
-var guitarShowData = []
+var guitarShowData = [
+    {
+        id: "20203248537-7349926",
+        name: "Tommy Emmanuel Guitar Show In Viet Nam",
+        group: "guitarshow"
+    },
+    {
+        id: "202032620507-7349926",
+        name: "SungHa Jung Live In Vietnam",
+        group: "guitarshow"
+    },
+    {
+        id: "2020326205250-5800815",
+        name: "Lê Thu Concert : 1001 Đêm",
+        group: "guitarshow"
+    },
+    {
+        id: "2020326205321-6215666",
+        name: "Satoshi Gogo Live In Vietnam",
+        group: "guitarshow"
+    }
+]

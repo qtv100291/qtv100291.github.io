@@ -1,6 +1,6 @@
 //This section is written by using Javascript. 
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
-//I have done that just for practicing both Javascript and Jquery(a very popular framework).
+//I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){

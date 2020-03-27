@@ -20,18 +20,22 @@
             <div class="avatar"><img src="HomePage/logo.png" alt="Logo"></div>
             <div class="payout-process">
                 <div class="step-1">
-                    <div class="title-step">Giỏ Hàng</div>
                     <div class="number-step">1</div>
+                    <div class="title-step">Giỏ Hàng</div>
+                    <div class="step1-arrow"></div>
+                    <div class="step1-arrow-after"></div>
                 </div>
-                <div class="bridge"></div>
                 <div class="step-2">
-                    <div class="title-step">Thanh Toán</div>
                     <div class="number-step">2</div>
+                    <div class="title-step">Thanh Toán</div>
                 </div>
             </div>
             <div class="phone-contact">
                 <div class="phone-icon"><img src="HomePage/phone-call 1.png" alt="phone-icon"></div>
-                <div class="phone-number">19001570</div>
+                <div class="phone-number">
+                    <p>19001570</p> 
+                    <p>8h - 20h, cả T7 & CN</p>
+                </div>
             </div>
         </div>
     </header>
@@ -145,7 +149,7 @@
                                 <input type="radio" name="pay" value="cash" checked id="pay-by-cash">                             
                                 <span class="checkmark"></span>
                             </label><br>
-                            <label for="pay-by-card">Thanh Toán Bằng Thẻ Thanh Toán Quốc Tế
+                            <label for="pay-by-card" class="payByCard">Thanh Toán Bằng Thẻ Thanh Toán Quốc Tế
                                 <input type="radio" name="pay" value="cash" id="pay-by-card">                    
                                 <span class="checkmark"></span><br>
                                 <div class="user-card-input">
@@ -198,6 +202,7 @@
         </div>
     </main>
     <script src="jquery.js"></script>
+    <script src="listDistrictAndCommune.js"></script>
     <script src="guitarData.js"></script>
     <script src="payout.js"></script>
 </body>

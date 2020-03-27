@@ -1,9 +1,63 @@
 //This section is written by using Javascript. 
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
-//I have done that just for practicing both Javascript and Jquery(a very popular framework).
+//I have done that just for practicing both Javascript and Jquery(a very popular library).
 
-//Part 1 : Function for Sticky Menu bar and Animation
+//Part 1 : Function for Welcome Pop Up
+if (localStorage.getItem('popup')){
+    document.body.classList.remove('start');
+    playVideo();
+}
+else document.querySelector('.welcome-popup').style.display = "block";
+document.querySelector('.access-button').addEventListener('click',accessWebsite) // click to close Welcome Pop up
+function accessWebsite(){
+    document.body.classList.remove('start');
+    document.querySelector('.welcome-popup').classList.add('gone');
+    setTimeout(function(){
+        playVideo();
+        playButton();
+        changeContent();
+    },1000) 
+    let firstTime = true; 
+    localStorage.setItem('popup',firstTime)
+}
+document.querySelector('.my-audio').volume = 0.5;
+document.querySelector('.audio-button').addEventListener('click',function(){
+    playButton();
+    changeContent();
+} );
+function playButton(){
+    if(document.querySelector('.my-audio').paused) {
+        playMusic();
+        document.querySelectorAll('.column').forEach( (x,index) => x.classList.add(`playing-${index+1}`));
+    }
+    else {
+        pauseMusic();
+        document.querySelectorAll('.column').forEach( (x,index) => x.classList.remove(`playing-${index+1}`));
+    }
+}
+function playVideo(){
+    document.querySelector('.video-store').play();
+}
+function playMusic(){
+    document.querySelector('.my-audio').play();
+}
+
+function pauseMusic(){
+    document.querySelector('.my-audio').pause();
+}
+
+function changeContent(){
+    let current = document.querySelector('.active-tooltip');
+    let change = document.querySelector('.tooltip-title:not(.active-tooltip)');
+    current.classList.remove('active-tooltip');
+    change.classList.add('active-tooltip');
+}
+//Part 2 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){
+    animationMenuBar();
+    subBannerMove()
+}
+function animationMenuBar(){
     if (document.body.scrollTop > 62 || document.documentElement.scrollTop > 62){
         let addScroll = document.querySelectorAll('.header-desktop, .search-bar, .input-search-bar, .line-1, .avatar, .avatar-sub, .container, .suggestion-item, .x-mark-search-bar');
         for (let i = 0; i < addScroll.length; i++){
@@ -164,26 +218,61 @@ function changeBackgroundColor(){
     }
 }
 //Part 3 : Function for Sub banner
-var x = document.getElementById("my-audio");
-x.autoplay = true;
-//Part 4 : Function for Shopping Cart
+function subBannerMove(){
+    let windowHeight = screen.height;
+    let subBannerHeight = document.querySelector('.sub-banner'.offsetHeight)
+    if (document.querySelector('.sub-banner').getBoundingClientRect().bottom < windowHeight
+        && document.querySelector('.sub-banner').getBoundingClientRect().bottom > subBannerHeight){
+            let x = windowHeight - document.querySelector('.sub-banner').getBoundingClientRect().bottom;
+            let y = 50*x/(windowHeight - subBannerHeight);
+            console.log(y);
+            document.querySelector('.sub-banner').style.backgroundPosition = `50% ${100-y}%`;
+    }
+    
+}
+
 
 //Part 5 : Function for Blog Slide
-let slideIndex = 0; 
-let slideItem = document.querySelector('.blog-slide-inner');
 document.querySelector('.blog-slide-prev').addEventListener('click',prevButton);
 document.querySelector('.blog-slide-next').addEventListener('click',nextButton);
+let blog = document.querySelector('.blog-slide-content');
+let interval;
+interval = setInterval(nextButton,4000);
+document.querySelector('.blog-slide').addEventListener('mouseover',function(){
+    clearInterval(interval);
+})
+document.querySelector('.blog-slide').addEventListener('mouseout',function(){
+    interval = setInterval(nextButton,4000);
+})
 
 function prevButton(){
-    document.querySelector('.blog-slide-inner').style.transform = "translateX(0%)";
-    document.querySelector('.blog-slide-prev').style.display = "none";
-    document.querySelector('.blog-slide-next').style.display = "block";
+    let lastChild = document.querySelector('.last-child');
+    let firstChild = document.querySelector('.first-child')
+    firstChild.classList.remove('first-child');
+    lastChild.classList.remove('last-child');
+    lastChild.classList.add('first-child');
+    blog.insertBefore(lastChild,blog.childNodes[0]);
+    let itemsBlog = document.querySelectorAll('.blog-item');
+    itemsBlog[itemsBlog.length - 1].classList.add('last-child');
+    document.querySelector('.blog-slide-content').style.animation = "move-right 0.5s forwards";
+    setTimeout(function(){
+        document.querySelector('.blog-slide-content').style.animation = ""
+    },530)
 }
 
 function nextButton(){
-    document.querySelector('.blog-slide-inner').style.transform = "translateX(-50%)";
-    document.querySelector('.blog-slide-prev').style.display = "block";
-    document.querySelector('.blog-slide-next').style.display = "none";
+    let lastChild = document.querySelector('.last-child');
+    let firstChild = document.querySelector('.first-child');
+    lastChild.classList.remove('last-child');
+    firstChild.classList.remove('first-child');
+    firstChild.classList.add('last-child');
+    blog.append(firstChild);
+    let itemsBlog = document.querySelectorAll('.blog-item');
+    itemsBlog[0].classList.add('first-child');
+    document.querySelector('.blog-slide-content').style.animation = "move-left 0.5s forwards";
+    setTimeout(function(){
+        document.querySelector('.blog-slide-content').style.animation = ""
+    },530)
 }
 //Part 6 : Funtion for Scrolling Button
 document.querySelector('.scrolling-button').addEventListener('click',scrollToTop);
