@@ -8,17 +8,46 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Css-->
-    <link rel="stylesheet" href="style-guitarshow-item.css">
+    <link rel="stylesheet" href="style/style-guitarshow-item.css">
     <!--Fontawesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
     <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
 </head>
 <body>
     <header class="header-desktop">
         <div class="top-navbar">
-            <div class="avatar">
-                <img src="HomePage/logo.png" alt="QTV Guitar Shop Logo">
+            <div class="top-navbar-container">
+                <div class="avatar">
+                    <img src="HomePage/logo.png" alt="QTV Guitar Shop Logo">
+                </div>
+                <div class="search-bar">
+                    <img src="HomePage/search_24px_outlined.svg" alt="search">
+                    <input class="input-search-bar" type="text" placeholder="Nhập nhạc cụ cần tìm kiếm...">
+                    <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
+                    <div class="suggestion-item">
+                        <div class="suggestion-guitar">
+                            <!--Search Items will be displayed here-->
+                        </div>
+                        <!--<div class="suggestion-category">
+                            <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
+                            <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
+                            <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
+                            <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
+                            <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
+                            <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
+                            <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="address-top-navbar">
+                    <i class="fas fa-map-marker-alt location-top"></i>
+                    <p>Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội</p>
+                </div>
+                <div class="phone-number-top-navbar">
+                    <i class="fas fa-phone-alt phone-top"></i>
+                    <p>19001570</p>
+                </div>
             </div>
             <div class="menu-bar">
                 <div class="menu-bar-inner">
@@ -57,37 +86,24 @@
                     <div class="line-2"></div>
                 </div>
             </div>
-            <div class="search-bar">
-                <img src="HomePage/search_24px_outlined.svg" alt="search">
-                <input class="input-search-bar" type="text" placeholder="Nhập nhạc cụ cần tìm kiếm...">
-                <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
-                <div class="suggestion-item">
-                    <div class="suggestion-guitar">
-                        <!--Search Items will be displayed here-->
-                    </div>
-                    <!--<div class="suggestion-category">
-                        <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
-                        <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
-                        <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
-                        <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
-                        <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
-                        <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
-                        <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="address-top-navbar">
-                <i class="fas fa-map-marker-alt location-top"></i>
-                <p>Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội</p>
-            </div>
-            <div class="phone-number-top-navbar">
-                <i class="fas fa-phone-alt phone-top"></i>
-                <p>19001570</p>
-            </div>
         </div>     
     </header>
     <main class="container">
-        <div class="popup-messenger">Đã Thêm Vào Giỏ Hàng<img src="HomePage/check.svg" alt=""></div>
+        <div class="popup-container">
+            <div class="popup-messenger">
+                Đã Thêm Vào Giỏ Hàng
+                <div class="check-mark-icon">
+                    <div class="circle-left">
+                        <div class="circle-left-rotate"></div>
+                    </div>
+                    <div class="circle-right">
+                        <div class="circle-right-rotate"></div>
+                    </div>
+                    <div class="check-mark-line-1"><span></span></div>
+                    <div class="check-mark-line-2"><span></span></div>
+                </div>
+            </div>
+        </div>
         <div class="navigation">
             <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a href="guitarshow.html">Guitar Show</a>&nbsp;&nbsp;>&nbsp;&nbsp;<div>Tommy Emmanuel Guitar Show</div>
         </div>
@@ -153,10 +169,10 @@
                         </select>
                     </div>
                     <div class="ticket-price">
-                        <div>Giá Tiền : <span class="price-value">999.000</span> Đồng</div>
+                        <div>Giá Tiền : <span class="price-value value-1">999.000</span> Đồng</div>
                     </div>
                     <div class="ticket-number">
-                        <label for="ticket-quantity">Số Lượng</label>
+                        <label for="ticket-quantity-1">Số Lượng</label>
                         <div class="minus-item"><img src="GuitarShow/minus_24px.png" alt="minus-item"></div>
                         <input type="text" value="1" id="ticket-quantity">
                         <div class="plus-item"><img src="GuitarShow/plus.png" alt="plus-item"></div>
@@ -171,8 +187,68 @@
             </div>
         </div>
     </main>
-    <script src="jquery.js"></script>
-    <script src="guitarData.js"></script>
-    <script src="mainguitarshowitem.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="subscription-announcement">Cảm Ơn Bạn Đã Đăng Ký</div>
+            <div class="subscription-part">
+                <div class="subscription-title">ĐĂNG KÝ</div>
+                <div class="line-footer"></div>
+                <div class="subscription-content">Cập nhập liên tục những thông tin mới nhất từ QTV Guitar Shop</div>
+                <div class="name-footer-container">
+                    <input class="name-footer" name="name" type="text" placeholder="Họ Tên...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                </div>
+                <div class="email-footer-container">
+                    <input class="email-footer" name="email" type="text" placeholder="Email...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                    <div class="email-name-check">Email bạn điền không đúng định dạng</div>
+                </div>
+                
+                <div class="subscription-button">ĐĂNG KÝ</div>
+            </div>
+            <div class="client-service-part">
+                <div class="service-title">CHĂM SÓC KHÁCH HÀNG</div>
+                <div class="line-footer"></div>
+                <div class="service-content">
+                    <a href="guideonlineshopping.html">Hướng dẫn mua hàng</a>
+                    <a href="termofservice.html">Điều khoản dịch vụ của chúng tôi</a>
+                    <a href="warrantypolicy.html">Chính sách bảo hành, đổi trả </a>
+                </div>
+            </div>
+            <div class="store-info-part">
+                <div class="store-info-title">ĐỊA CHỈ SHOWROM</div>
+                <div class="line-footer"></div>
+                <div class="store-content">
+                    <div>QTV GUITAR SHOP</div>
+                    <div>Địa chỉ : Tầng 1, Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội.</div>
+                    <div>Điện thoại: 19001570</div>
+                    <div>Email : qtv-guitarshop@gmail.com</div>
+                </div>
+                <div class="store-icon">
+                    <img src="HomePage/fb-icon.png" alt="fb">
+                    <img src="HomePage/TwitterIcon.png" alt="twitter">
+                    <img src="HomePage/youtubeIcon.png" alt="youtube">
+                    <img src="HomePage/instaIcon.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+        <div class="about-website">
+            <div class="about">QTV Guitar Shop @ 2020</div>
+            <div class="about-website-button">About This Website</div>
+            <div class="about-website-container">
+                <div class="about-website-content">
+                    <div class="title-about-website">About This Website </div>
+                    <p>This website is built as part of my Front-end coding bootcamp at TechMaster ( Ha Noi, Vietnam ), not for any commercial purposes. Content in  this website ( photos, videos, articles, ...) is collected on the internet and doesn't belong to me, I have only created UI/UX design and coding part. You can find UI/UX design at : <a href="https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593">https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593</a> ( need to create a Figma account if you don't have one )</p>
+                    <p>In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery. I have done that just for practicing both Javascript and Jquery( a very popular library ). For self-training and challenging myself I haven't used any CSS or Javascript framework and library ( except Jquery ).</p>
+                    <p>Special thanks to Ms. Pham Thi Yen, Mr. Le Chi Linh and Mr. Luu The Vinh for providing guidance and feedback to help me complete this project.</p>
+                    <p>If you have any questions, feel free to contact me by email: quangtuanvu1991@gmail.com. Thanks.</p>
+                    <div class="close-about-website"> Đóng </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/guitarData.js"></script>
+    <script src="js/main-guitarshowitem.js"></script>
 </body>
 </html>

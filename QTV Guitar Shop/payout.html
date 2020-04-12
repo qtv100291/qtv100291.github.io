@@ -8,9 +8,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Css-->
-    <link rel="stylesheet" href="style-payout.css">
+    <link rel="stylesheet" href="style/style-payout.css">
     <!--Fontawesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
     <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
 </head>
@@ -40,22 +40,31 @@
         </div>
     </header>
     <main class="container">
+        <div class="pop-up-modal">
+            <div class="popup-send-feedback">
+                <p class="popup-content">Cảm ơn bạn đã ủng hộ QTV Guitar Shop, nhân viên cửa hàng sẽ liên lạc lại với bạn để xác nhận đơn hàng</p>
+                <div class="close-popup-button">OK</div>
+            </div>
+        </div>
         <div class="main-container">
                 <div class="user-info">
                     <div class="user-address">
                         <div class="user-address-title">THÔNG TIN NGƯỜI NHẬN</div>
                         <div class="user-name-part user-input">
-                            <label for="input-user-name">Họ Tên :</label>
-                            <input type="text" id="input-user-name" placeholder="Nhập Họ và Tên...">
+                            <label for="input-user-name">Họ Tên : <span style="color: red;">*</span></label>
+                            <input type="text" name="name" id="input-user-name" placeholder="Nhập Họ và Tên...">
+                            <div class="empty-check">Bạn phải điền vào mục này</div>
                         </div>
                         <div class="user-phone-part user-input">
-                            <label for="input-user-phone">Điện Thoại :</label>
-                            <input type="text" id="input-user-phone" placeholder="Số Điện Thoại">
+                            <label for="input-user-phone">Điện Thoại : <span style="color: red;">*</span></label>
+                            <input type="tel" name="telephone" id="input-user-phone" placeholder="Số Điện Thoại Di Động">
+                            <div class="empty-check">Bạn phải điền vào mục này</div>
+                            <div class="mobile-phone-check">Số di động bao gồm 10 chữ số</div>
                         </div>
                         <div class="user-city-province user-select">
-                            <label for="input-user-city-province">Tỉnh/Thành Phố: </label>
+                            <label for="input-user-city-province">Tỉnh/Thành Phố : <span style="color: red;">*</span></label>
                             <select name="city-province" id="input-user-city-province">
-                                <option value='0' >&nbsp;Chọn Tỉnh/Thành Phố...</option>
+                                <option value='0'>&nbsp;Chọn Tỉnh/Thành Phố...</option>
                                 <option value='01'>&nbspThành phố Hà Nội</option>
                                 <option value='79'>&nbspThành phố Hồ Chí Minh</option>
                                 <option value='31'>&nbspThành phố Hải Phòng</option>
@@ -120,27 +129,32 @@
                                 <option value='95'>&nbspTỉnh Bạc Liêu</option>
                                 <option value='96'>&nbspTỉnh Cà Mau</option>
                             </select>
+                            <div class="empty-check-option city-option">Bạn phải chọn Tỉnh/Thành phố</div>
                         </div>
                         <div class="user-district user-select">
-                            <label for="input-user-district">Quận/Huyện :</label>
+                            <label for="input-user-district">Quận/Huyện : <span style="color: red;">*</span></label>
                             <select name="district" id="input-user-district">
                                 <option value='0'>&nbsp;Chọn Quận/Huyện...</option>
                             </select>
+                            <div class="empty-check-option">Bạn phải chọn Quận/Huyện</div>
                         </div>
                         <div class="user-commune user-select">
-                            <label for="input-user-commune">Phường/Xã :</label>
+                            <label for="input-user-commune">Phường/Xã : <span style="color: red;">*</span></label>
                             <select name="commune" id="input-user-commune">
                                 <option value='0'>&nbsp;Chọn Phường/Xã...</option>
                             </select>
+                            <div class="empty-check-option">Bạn phải chọn Xã/Phường</div>
                         </div>
                         <div class="user-address-part user-input">
-                            <label for="input-user-address">Địa Chỉ :</label>
+                            <label for="input-user-address">Địa Chỉ : <span style="color: red;">*</span></label>
                             <textarea type="text" id="input-user-address" placeholder="Nhập Số Nhà, Tên Đường..." rows="3" cols="75"></textarea>
+                            <div class="empty-check">Bạn phải điền vào mục này</div>
                         </div>
                         <div class="user-note-part user-input">
                             <label for="input-user-note">Ghi Chú :</label>
                             <textarea type="text" id="input-user-note" placeholder="Bạn Cần Chúng Tôi Chú Ý Điều Gì ..." rows="5" cols="75"></textarea>
                         </div>
+                        <div class="feed-back-require"><span style="color: red;">*</span> Bạn không được để trống mục này</div>
                     </div>
                     <div class="user-payout-infor">
                         <div class="user-payout-title">PHƯƠNG THỨC THANH TOÁN</div>
@@ -154,31 +168,54 @@
                                 <span class="checkmark"></span><br>
                                 <div class="user-card-input">
                                     <div class="user-card-brand user-select-sub">
-                                    <label for="card-brand">Loại Thẻ :</label>
+                                        <label for="card-brand">Loại Thẻ : <span style="color: red;">*</span></label>
                                         <select name="" id="card-brand">
-                                            <option value="1">&nbspLoại Thẻ</option>
-                                            <option value="2">&nbspMaster Card</option>
-                                            <option value="3">&nbspVisa</option>
-                                            <option value="4">&nbspJCB</option>
+                                            <option value="0">&nbspLoại Thẻ</option>
+                                            <option value="1">&nbspMaster Card</option>
+                                            <option value="2">&nbspVisa</option>
+                                            <option value="3">&nbspJCB</option>
                                         </select>
+                                        <div class="empty-check-option">Bạn phải chọn loại thẻ</div>
                                     </div>
                                     <div class="user-card-id user-input-sub">
-                                        <label for="card-id">Số Thẻ :</label>
-                                        <input type="text" id="card-id" placeholder="Số Thẻ Gồm 12 Chữ Số...">
+                                        <label for="card-id">Số Thẻ : <span style="color: red;">*</span></label>
+                                        <input type="text" name="card-number" id="card-id" placeholder="Số Thẻ Gồm 12 Chữ Số...">
+                                        <div class="empty-check">Bạn phải điền vào mục này</div>
+                                        <div class="mobile-phone-check">Số thẻ bao gồm 12 chữ số</div>
                                     </div>
                                     <div class="user-card-owner user-input-sub">
-                                        <label for="card-owner">Tên Chủ Thẻ :</label>
-                                        <input type="text" id="card-owner" placeholder="Lưu Ý Nhập Khớp Với Tên Trên Thẻ ...">
+                                        <label for="card-owner">Tên Chủ Thẻ : <span style="color: red;">*</span></label>
+                                        <input type="text" name="bill_to_name" id="card-owner" placeholder="Lưu Ý Nhập Khớp Với Tên Trên Thẻ ...">
+                                        <div class="empty-check">Bạn phải điền vào mục này</div>
                                     </div>
                                     <div class="user-card-id user-input-sub">
-                                        <label for="card-expiry-date">Ngày Hết Hạn :</label>
-                                        <input type="text" id="card-expiry-date" placeholder="MM / YYYY ... ">
+                                        <label for="card-expiry-date">Ngày Hết Hạn : <span style="color: red;">*</span></label>
+                                        <div class="input-card-expiry-date">
+                                            <div class="card-month">
+                                                <input type="text" id="card-expiry-month" placeholder="MM">
+                                                <div class="empty-check empty-check-date">Bạn phải điền vào mục này</div>
+                                                <div class="mobile-phone-check mobile-phone-check-date">Tháng gồm 2 chữ số từ 01 đến 12</div>
+                                            </div>
+                                            &nbsp;<span>/</span>&nbsp;
+                                            <div class="card-year">
+                                                <input type="text" id="card-expiry-year" placeholder="YYYY">
+                                                <div class="empty-check empty-check-date">Bạn phải điền vào mục này</div>
+                                                <div class="mobile-phone-check mobile-phone-check-year">Năm gồm 4 chữ số</div>
+                                                <div class="expiry-date-check">Thẻ đã hết hạn</div>
+                                            </div>
+                                            
+                                        </div>
+                                        
                                     </div>
                                     <div class="user-card-id user-input-sub">
-                                        <label for="card-password">Mã CVV / CVC :</label>
-                                        <input type="text" id="card-password" placeholder="Gồm 3 Chữ Số In Phía Mặt Sau Thẻ ...">
+                                        <label for="card-password">Mã CVV / CVC : <span style="color: red;">*</span></label>
+                                        <input type="text" name="card_cvn" id="card-password" placeholder="Gồm 3 Chữ Số In Phía Mặt Sau Thẻ ...">
+                                        <div class="empty-check">Bạn phải điền vào mục này</div>
+                                        <div class="mobile-phone-check">Mã số thẻ bao gồm 3 chữ số</div>
                                     </div>
+                                    <div class="feed-back-require item-2"><span style="color: red;">*</span> Bạn không được để trống mục này</div>
                                 </div>
+                                
                             </label>
                         </form>
                     </div>
@@ -201,9 +238,69 @@
             </div>
         </div>
     </main>
-    <script src="jquery.js"></script>
-    <script src="listDistrictAndCommune.js"></script>
-    <script src="guitarData.js"></script>
-    <script src="payout.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="subscription-announcement">Cảm Ơn Bạn Đã Đăng Ký</div>
+            <div class="subscription-part">
+                <div class="subscription-title">ĐĂNG KÝ</div>
+                <div class="line-footer"></div>
+                <div class="subscription-content">Cập nhập liên tục những thông tin mới nhất từ QTV Guitar Shop</div>
+                <div class="name-footer-container">
+                    <input class="name-footer" name="name" type="text" placeholder="Họ Tên...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                </div>
+                <div class="email-footer-container">
+                    <input class="email-footer" name="email" type="text" placeholder="Email...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                    <div class="email-name-check">Email bạn điền không đúng định dạng</div>
+                </div>
+                
+                <div class="subscription-button">ĐĂNG KÝ</div>
+            </div>
+            <div class="client-service-part">
+                <div class="service-title">CHĂM SÓC KHÁCH HÀNG</div>
+                <div class="line-footer"></div>
+                <div class="service-content">
+                    <a href="guideonlineshopping.html">Hướng dẫn mua hàng</a>
+                    <a href="termofservice.html">Điều khoản dịch vụ của chúng tôi</a>
+                    <a href="warrantypolicy.html">Chính sách bảo hành, đổi trả </a>
+                </div>
+            </div>
+            <div class="store-info-part">
+                <div class="store-info-title">ĐỊA CHỈ SHOWROM</div>
+                <div class="line-footer"></div>
+                <div class="store-content">
+                    <div>QTV GUITAR SHOP</div>
+                    <div>Địa chỉ : Tầng 1, Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội.</div>
+                    <div>Điện thoại: 19001570</div>
+                    <div>Email : qtv-guitarshop@gmail.com</div>
+                </div>
+                <div class="store-icon">
+                    <img src="HomePage/fb-icon.png" alt="fb">
+                    <img src="HomePage/TwitterIcon.png" alt="twitter">
+                    <img src="HomePage/youtubeIcon.png" alt="youtube">
+                    <img src="HomePage/instaIcon.png" alt="instagram">
+                </div>
+            </div>
+        </div>
+        <div class="about-website">
+            <div class="about">QTV Guitar Shop @ 2020</div>
+            <div class="about-website-button">About This Website</div>
+            <div class="about-website-container">
+                <div class="about-website-content">
+                    <div class="title-about-website">About This Website </div>
+                    <p>This website is built as part of my Front-end coding bootcamp at TechMaster ( Ha Noi, Vietnam ), not for any commercial purposes. Content in  this website ( photos, videos, articles, ...) is collected on the internet and doesn't belong to me, I have only created UI/UX design and coding part. You can find UI/UX design at : <a href="https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593">https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593</a> ( need to create a Figma account if you don't have one )</p>
+                    <p>In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery. I have done that just for practicing both Javascript and Jquery( a very popular library ). For self-training and challenging myself I haven't used any CSS or Javascript framework and library ( except Jquery ).</p>
+                    <p>Special thanks to Ms. Pham Thi Yen, Mr. Le Chi Linh and Mr. Luu The Vinh for providing guidance and feedback to help me complete this project.</p>
+                    <p>If you have any questions, feel free to contact me by email: quangtuanvu1991@gmail.com. Thanks.</p>
+                    <div class="close-about-website"> Đóng </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/listDistrictAndCommune.js"></script>
+    <script src="js/guitarData.js"></script>
+    <script src="js/main-payout.js"></script>
 </body>
 </html>

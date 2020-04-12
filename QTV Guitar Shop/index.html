@@ -8,19 +8,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <!--Fontawesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
-    <!--Google Font I have used Roboto, Dancing Script,Lora and Oswald for this website-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
+    <!--Google Font I have used Roboto, Dancing Script,Lora for this website-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
 </head>
-<body class="start">
-    <div class="welcome-popup" style="display: none;">
+<body >
+    <div class="welcome-popup">
         <div class="welcome-popup-container">
             <div class="welcome-popup-image"><img src="HomePage/popup-banner.jpg" alt=""></div>
             <div class="welcome-popup-content">
                 <p class="welcome-popup-content-title">Welcome To QTV Guitar Shop</p>
-                <p class="welcome-popup-content-presentation">Như các bạn đã biết, thời gian qua dịch Covid-19 đã lây lan nhanh và bùng phát mạnh ở Hà Nội. Để đảm bảo an toàn, Showroom của chúng tôi sẽ tạm thời đóng cửa từ ngày 25/3 và sẽ cố gắng mở lại vào thời gian sớm nhất. Mọi hoạt động đặt hàng Online vẫn được đảm bảo diễn ra đầy đủ, khách hàng có thể liên hệ theo Hotline 19001570 để nhận được sự tư vấn tốt nhất từ chúng tôi.</p>
+                <p class="welcome-popup-content-presentation">Như các bạn đã biết, thời gian qua dịch Covid-19 đã lây lan nhanh và bùng phát mạnh ở Hà Nội. Để đảm bảo an toàn, Showroom của chúng tôi sẽ tạm thời đóng cửa từ ngày 2 tháng 4 và sẽ cố gắng mở lại vào thời gian sớm nhất. Mọi hoạt động đặt hàng Online vẫn được đảm bảo diễn ra đầy đủ, khách hàng có thể liên hệ theo Hotline 19001570 để nhận được sự tư vấn tốt nhất từ chúng tôi.</p>
                 <p class="welcome-popup-content-presentation">Chúng ta hãy cùng nhau đẩy lùi đại dịch bằng cách hạn chế ra ngoài khi không cần thiết ( ở nhà chơi guitar cũng là một lựa chọn không tồi ), đeo khẩu trang ở nơi công cộng và rửa tay thường xuyên.</p>
                 <p class="welcome-popup-content-presentation">Cùng QTV Guitar Shop thực hiện các bạn nhé.</p>
                 <div class="access-button">OK, Đã Rõ</div>
@@ -29,8 +29,37 @@
     </div>
     <header class="header-desktop">
         <div class="top-navbar">
-            <div class="avatar">
-                <img src="HomePage/logo.png" alt="QTV Guitar Shop Logo">
+            <div class="top-navbar-container">
+                <div class="avatar">
+                    <img src="HomePage/logo.png" alt="QTV Guitar Shop Logo">
+                </div>
+                <div class="search-bar">
+                    <img src="HomePage/search_24px_outlined.svg" alt="search">
+                    <input class="input-search-bar" type="text" placeholder="Nhập nhạc cụ cần tìm kiếm...">
+                    <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
+                    <div class="suggestion-item">
+                        <div class="suggestion-guitar">
+                            <!--Search Items will be displayed here-->
+                        </div>
+                        <!--<div class="suggestion-category">
+                            <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
+                            <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
+                            <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
+                            <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
+                            <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
+                            <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
+                            <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="address-top-navbar">
+                    <i class="fas fa-map-marker-alt location-top"></i>
+                    <p>Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội</p>
+                </div>
+                <div class="phone-number-top-navbar">
+                    <i class="fas fa-phone-alt phone-top"></i>
+                    <p>19001570</p>
+                </div>
             </div>
             <div class="menu-bar">
                 <div class="menu-bar-inner">
@@ -69,33 +98,6 @@
                     <div class="line-2"></div>
                 </div>
             </div>
-            <div class="search-bar">
-                <img src="HomePage/search_24px_outlined.svg" alt="search">
-                <input class="input-search-bar" type="text" placeholder="Nhập nhạc cụ cần tìm kiếm...">
-                <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
-                <div class="suggestion-item">
-                    <div class="suggestion-guitar">
-                        <!--Search Items will be displayed here-->
-                    </div>
-                    <!--<div class="suggestion-category">
-                        <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
-                        <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
-                        <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
-                        <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
-                        <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
-                        <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
-                        <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
-                    </div>-->
-                </div>
-            </div>
-            <div class="address-top-navbar">
-                <i class="fas fa-map-marker-alt location-top"></i>
-                <p>Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội</p>
-            </div>
-            <div class="phone-number-top-navbar">
-                <i class="fas fa-phone-alt phone-top"></i>
-                <p>19001570</p>
-            </div>
         </div>     
     </header>
     <main class="container">
@@ -118,7 +120,6 @@
                     </div>
                 </div>
                 <audio class="my-audio"loop>
-                    <source src="welcomeshop.ogg" type="audio/ogg">
                     <source src="welcomeshop.mp3" type="audio/mp3">
                 </audio> 
                 <div class="store-brief-description">
@@ -126,7 +127,7 @@
                         <p>GẦN 30 NĂM THÀNH LẬP</p>
                         <p>500+ SẢN PHẨM TRƯNG BÀY TẠI SHOWROM</p> 
                     </div>
-                    <a href="">Thăm Quan Showroom</a>
+                    <a href="blogitem6.html">Thăm Quan Showroom</a>
                 </div>
             </div>
         </div>
@@ -140,7 +141,7 @@
                 </div>
                 <div class="row1-part1">
                     <div class="container-1">
-                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310145855-7904004" data-group="classical" onclick="sendData(this)" >
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310145855-7904004" data-group="classical" onmousedown="sendData(this)" >
                             <div class="item-image">
                                 <img class="front-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/1.jpg" alt="Yamaha SLG200N Silent Guitar">
                                 <img class="back-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/2.jpg" alt="Yamaha SLG200N Silent Guitar">
@@ -151,7 +152,7 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020320103451-7349926" data-group="acoustic" onclick="sendData(this)" >
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020320103451-7349926" data-group="acoustic" onmousedown="sendData(this)" >
                             <div class="item-image">
                                 <img class="front-image" src="Product/Acoustic Guitar/Fender PM-3 Deluxe Grand Auditorium - 22.499tr/1.jpg" alt="Fender PM-3 Deluxe">
                                 <img class="back-image" src="Product/Acoustic Guitar/Fender PM-3 Deluxe Grand Auditorium - 22.499tr/2.jpg" alt="Fender PM-3 Deluxe">
@@ -162,31 +163,31 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310145855-7904004" data-group="classical" onclick="sendData(this)" >
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="202048162857-6302466" data-group="ukulele" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/1.jpg" alt="Yamaha SLG200N Silent Guitar">
-                                <img class="back-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/2.jpg" alt="Yamaha SLG200N Silent Guitar">
+                                <img class="front-image" src="Product/Ukulele/Fender Fullerton Strat Concert- 3.999tr/1.jpg" alt="Fender Fullerton Strat">
+                                <img class="back-image" src="Product/Ukulele/Fender Fullerton Strat Concert- 3.999tr/2.jpg" alt="Fender Fullerton Strat">
                             </div>
-                            <div class="item-name">Yamaha SLG200N Silent Guitar</div>
+                            <div class="item-name">Fender Fullerton Strat</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">16.999.000 Đồng</div>
+                            <div class="price-after-reduction">3.999.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310145855-7904004" data-group="classical" onclick="sendData(this)" >
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="202048154437-9546008" data-group="electrical" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/1.jpg" alt="Yamaha SLG200N Silent Guitar">
-                                <img class="back-image" src="Product/Classical Guitar/Yamaha SLG200N Silent Guitar - 16.999tr/2.jpg" alt="Yamaha SLG200N Silent Guitar">
+                                <img class="front-image" src="Product/Electrical Guitar/Gretsch G6134T ’58 Penguin - 74.999tr/1.jpg" alt="Gretsch G6134T ’58 Penguin">
+                                <img class="back-image" src="Product/Electrical Guitar/Gretsch G6134T ’58 Penguin - 74.999tr/2.jpg" alt="Gretsch G6134T ’58 Penguin">
                             </div>
-                            <div class="item-name">Yamaha SLG200N Silent Guitar</div>
+                            <div class="item-name">Gretsch G6134T ’58 Penguin</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">16.999.000 Đồng</div>
+                            <div class="price-after-reduction">74.999.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
                     </div>
                     <div class="container-2">
-                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310143431-8763573" data-group="classical" onclick="sendData(this)" >
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310143431-8763573" data-group="classical" onmousedown="sendData(this)" >
                             <div class="item-image">
                                 <img class="front-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/1.jpg" alt="Kremona Lulo Reinhard Kiano">
                                 <img class="back-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/2.jpg" alt="Kremona Lulo Reinhard Kiano">
@@ -197,36 +198,36 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310143431-8763573" data-group="classical" onclick="sendData(this)" >
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="20204815495-7904004" data-group="electrical" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/1.jpg" alt="Kremona Lulo Reinhard Kiano">
-                                <img class="back-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/2.jpg" alt="Kremona Lulo Reinhard Kiano">
+                                <img class="front-image" src="Product/Electrical Guitar/PRS Mccarty 594-2 LTD Hollow - 120.999tr/1.jpg" alt="PRS Mccarty 594-2 LTD">
+                                <img class="back-image" src="Product/Electrical Guitar/PRS Mccarty 594-2 LTD Hollow - 120.999tr/2.jpg" alt="PRS Mccarty 594-2 LTD">
                             </div>
-                            <div class="item-name">Kremona Lulo Reinhard Kiano</div>
+                            <div class="item-name">PRS Mccarty 594-2 LTD</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">30.299.000 Đồng</div>
+                            <div class="price-after-reduction">120.999.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310143431-8763573" data-group="classical" onclick="sendData(this)" >
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="20204893523-3717531" data-group="acoustic" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/1.jpg" alt="Kremona Lulo Reinhard Kiano">
-                                <img class="back-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/2.jpg" alt="Kremona Lulo Reinhard Kiano">
+                                <img class="front-image" src="Product/Acoustic Guitar/Alvarez MGA77CEARSHB Grand Auditorium 16.499tr/1.jpg" alt="Alvarez MGA77CEARSHB">
+                                <img class="back-image" src="Product/Acoustic Guitar/Alvarez MGA77CEARSHB Grand Auditorium 16.499tr/2.jpg" alt="Alvarez MGA77CEARSHB">
                             </div>
-                            <div class="item-name">Kremona Lulo Reinhard Kiano</div>
+                            <div class="item-name">Alvarez MGA77CEARSHB</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">30.299.000 Đồng</div>
+                            <div class="price-after-reduction">16.499.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310143431-8763573" data-group="classical" onclick="sendData(this)" >
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="202048163314-7256038" data-group="ukulele" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/1.jpg" alt="Kremona Lulo Reinhard Kiano">
-                                <img class="back-image" src="Product/Classical Guitar/Kremona Lulo Reinhard Kiano - 30.299 tr/2.jpg" alt="Kremona Lulo Reinhard Kiano">
+                                <img class="front-image" src="Product/Ukulele/Luna Bamboo Concert - 2.799tr/1.jpg" alt="Luna Bamboo">
+                                <img class="back-image" src="Product/Ukulele/Luna Bamboo Concert - 2.799tr/2.jpg" alt="Luna Bamboo">
                             </div>
-                            <div class="item-name">Kremona Lulo Reinhard Kiano</div>
+                            <div class="item-name">Luna Bamboo</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">30.299.000 Đồng</div>
+                            <div class="price-after-reduction">2.799.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
@@ -234,7 +235,18 @@
                 </div>
                 <div class="row2-part1">
                     <div class="container-1">
-                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310135045-7972660" data-group="classical" onclick="sendData(this)" >
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="202048151219-5800815" data-group="electrical" onmousedown="sendData(this)" >
+                            <div class="item-image">
+                                <img class="front-image" src="Product/Electrical Guitar/ESP Stream NT Namm 2020 Hollow - 279.999tr/1.jpg" alt="ESP Stream NT Namm">
+                                <img class="back-image" src="Product/Electrical Guitar/ESP Stream NT Namm 2020 Hollow - 279.999tr/2.jpg" alt="ESP Stream NT Namm">
+                            </div>
+                            <div class="item-name">ESP Stream NT Namm</div>
+                            <div class="price-before-reduction"></div>
+                            <div class="price-after-reduction">279.999.000 Đồng</div>
+                            <div class="line-item"></div>
+                            <div class="detail-item">CHI TIẾT</div>
+                        </a>
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020310135045-7972660" data-group="classical" onmousedown="sendData(this)" >
                             <div class="item-image">
                                 <img class="front-image" src="Product/Classical Guitar/Cordoba Torres Limited - 149.999tr/1.jpg" alt="Cordoba Torres Limited">
                                 <img class="back-image" src="Product/Classical Guitar/Cordoba Torres Limited - 149.999tr/2.jpg" alt="Cordoba Torres Limited">
@@ -245,82 +257,71 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="">
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="2020489327-6215666" data-group="acoustic" onmousedown="sendData(this)" >
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Acoustic Guitar/Alvarez DYMR70SB Dreadnought  - 69.999tr/1.jpg" alt="Alvarez DYMR70SB">
+                                <img class="back-image" src="Product/Acoustic Guitar/Alvarez DYMR70SB Dreadnought  - 69.999tr/2.jpg" alt="Alvarez DYMR70SB">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Alvarez DYMR70SB</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">69.999.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="">
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="202048165826-9994730" data-group="ukulele" onmousedown="sendData(this)">
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Ukulele/Luna Vista Deer Concert - 8.299tr/1.jpg" alt="Luna Vista Deer">
+                                <img class="back-image" src="Product/Ukulele/Luna Vista Deer Concert - 8.299tr/2.jpg" alt="Luna Vista Deer">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Luna Vista Deer</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
-                            <div class="line-item"></div>
-                            <div class="detail-item">CHI TIẾT</div>
-                        </a>
-                        <a class="item hot-item" href="">
-                            <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
-                            </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
-                            <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">8.299.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
                     </div>
                     <div class="container-2"> 
-                        <a class="item new-item" href="">
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="202032011747-3606061" data-group="acoustic" onmousedown="sendData(this)">
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Acoustic Guitar/Fender Tim Armstrong Hellcat Grand Auditorium - 11.999tr/1.jpg" alt="Fender Tim Armstrong Hellcat">
+                                <img class="back-image" src="Product/Acoustic Guitar/Fender Tim Armstrong Hellcat Grand Auditorium - 11.999tr/2.jpg" alt="Fender Tim Armstrong Hellcat">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Fender Tim Armstrong Hellcat</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">11.999.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="">
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="202048155313-3683488" data-group="ukulele" onmousedown="sendData(this)">
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Ukulele/Cordoba 15CFM Sapphire Blue Concert - 3.499tr/1.jpg" alt="Cordoba 15CFM Sapphire Blue">
+                                <img class="back-image" src="Product/Ukulele/Cordoba 15CFM Sapphire Blue Concert - 3.499tr/2.jpg" alt="Cordoba 15CFM Sapphire Blue">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Cordoba 15CFM Sapphire Blue</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">3.499.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="">
+                        <a class="item new-item" href="productitem.html" target="_blank" data-id="2020310144358-9657577" data-group="classical" onmousedown="sendData(this)">
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Classical Guitar/Manuel Rodriguez-MODEL-BCUT Boca - 23.4tr/1.jpg" alt="Manuel Rodriguez Model Bcut Boca">
+                                <img class="back-image" src="Product/Classical Guitar/Manuel Rodriguez-MODEL-BCUT Boca - 23.4tr/2.jpg" alt="Manuel Rodriguez Model Bcut Boca">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Manuel Rodriguez Bcut Boca</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">23.400.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="">
+                        <a class="item hot-item" href="productitem.html" target="_blank" data-id="20204815261-7381340" data-group="electrical" onmousedown="sendData(this)">
                             <div class="item-image">
-                                <img class="front-image" src="HomePage/1.jpg" alt="Guitar Taylor 312ce - N">
-                                <img class="back-image" src="HomePage/2.jpg" alt="Guitar Taylor 312ce - N">
+                                <img class="front-image" src="Product/Electrical Guitar/Gibson Flying V Antique Natural Solid - 39.499tr/1.jpg" alt="Gibson Flying V Antique Natural">
+                                <img class="back-image" src="Product/Electrical Guitar/Gibson Flying V Antique Natural Solid - 39.499tr/2.jpg" alt="Gibson Flying V Antique Natural">
                             </div>
-                            <div class="item-name">Guitar Taylor 312ce - N</div>
+                            <div class="item-name">Gibson Flying V Antique Natural</div>
                             <div class="price-before-reduction"></div>
-                            <div class="price-after-reduction">55.470.000 Đồng</div>
+                            <div class="price-after-reduction">34.499.000 Đồng</div>
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
@@ -338,35 +339,35 @@
                 <div class="part2-title">GUITAR SHOW</div>
                 <div class="part2-presentation">“... Không chỉ là địa chỉ hàng đầu trong việc cung cấp nhạc cụ, QTV Guitar Shop còn là nhà phân phối vé chính thức của rất nhiều chương trình quy mô lớn, với sự tham gia của nhiều nghệ sĩ tên tuổi trong nước và quốc tế, hãy cùng đến để cảm nhận sự thăng hoa trong từng giai điệu cũng như giao lưu và kết bạn với những tâm hồn đồng điệu...”
                 </div>
-                <a class="part2-seeAllButton" href="">Xem Tất Cả</a>
+                <a class="part2-seeAllButton" href="guitarshow.html">Xem Tất Cả</a>
                 <div class="part2-some-guitar-show">
-                    <a href="" class="part2-guitar-show-item" id="part2-item1">
+                    <a href="guitarshow1.html" class="part2-guitar-show-item" id="part2-item1">
                         <img class="artist-photo" src="HomePage/Tommy Emmanuel.jpg" alt="Tommy Emmanuel">
                         <div class="part2-artist-name">Tommy Emmanuel</div>
                         <div class="overlay-show"></div>
                         <div class="show-presentation">
-                            <div class="show-presentation-time">22 Tháng 3</div>
+                            <div class="show-presentation-time">30 Tháng 4</div>
                             <div class="show-presentation-location">Tại Nhà Hát Lớn Hà Nội</div>
                             <div class="show-presentation-seeMore" >Chi Tiết >></div>
                         </div>
                     </a>
-                    <a href="" class="part2-guitar-show-item" id="part2-item2">
+                    <a href="guitarshow2.html" class="part2-guitar-show-item" id="part2-item2">
                         <img class="artist-photo" src="HomePage/SungHaJung.jpg" alt="Sung Ha Jung">
                         <div class="part2-artist-name">Sung Ha Jung</div>
                         <div class="overlay-show"></div>
                         <div class="show-presentation">
-                            <div class="show-presentation-time">02 Tháng 4</div>
-                            <div class="show-presentation-location">Tại Nhà Hát Tuổi Trẻ</div>
+                            <div class="show-presentation-time">10 Tháng 5</div>
+                            <div class="show-presentation-location">Tại Nhà Hát Star Galaxy</div>
                             <div class="show-presentation-seeMore" >Chi Tiết >></div>
                         </div>
                     </a>
-                    <a href="" class="part2-guitar-show-item" id="part2-item3">
+                    <a href="guitarshow3.html" class="part2-guitar-show-item" id="part2-item3">
                         <img class="artist-photo" src="HomePage/Le Thu.jpg" alt="Lê Thu">
                         <div class="part2-artist-name">Lê Thu</div>
                         <div class="overlay-show"></div>
                         <div class="show-presentation">
                             <div class="show-presentation-time">10 Tháng 4</div>
-                            <div class="show-presentation-location">Tại Nhà Hát Kịch Hà Nội</div>
+                            <div class="show-presentation-location">Tại Dolphin Plaza</div>
                             <div class="show-presentation-seeMore" >Chi Tiết >></div>
                         </div>
                     </a>
@@ -395,8 +396,8 @@
                     <div class="blog-slide-container">
                         <div class="blog-slide-inner">
                             <div class="blog-slide-content">
-                                <a class="blog-item first-child" href="">
-                                    <div class="blog-item-photo"><img src="HomePage/pexels-photo-1407322.jpeg" alt=""></div>
+                                <a class="blog-item first-child" href="blogitem6.html">
+                                    <div class="blog-item-photo"><img src="Blog/qtv_shop_homepage.jpg" alt="qtv guitar shop"></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
@@ -407,16 +408,16 @@
                                             <div>Admin</div>
                                         </div>
                                     </div>
-                                    <div class="blog-item-title">Một Vài Lời Khuyên Và Mẹo Giúp Cho Các Bạn Vừa Đánh Đàn ... </div>
-                                    <div class="blog-item-summary">Đây là hướng dẫn từng bước dành cho các bạn mới học Guitar đệm hát để kết hợp giữa chơi đàn và giọng hát ...</div>
+                                    <div class="blog-item-title">Giới Thiệu Showroom QTV Guitar Shop</div>
+                                    <div class="blog-item-summary">Thành lập từ năm 1991 bới những cựu du học sinh Pháp yêu thích Guitar, với mong muốn lan tỏa niềm đam mê với cây đàn guitar ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item " href="">
+                                <a class="blog-item " href="blogitem1.html">
                                     <div class="blog-item-photo"><img src="HomePage/keith-richards.jpg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>15 Tháng 03, 2020</div>
+                                            <div>29 Tháng 04, 2020</div>
                                         </div>
                                         <div class="blog-item-author">
                                             <img src="HomePage/pen 1.png" alt="tác giả">
@@ -427,12 +428,12 @@
                                     <div class="blog-item-summary">Rất nhiều người trong số họ đã từ giã cõi đời từ rất sớm, nhưng lúc sinh thời, họ đã để lại cho chúng ta những điều tuyệt vời ....</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item" href="">
+                                <a class="blog-item" href="blogitem2.html">
                                     <div class="blog-item-photo"><img src="HomePage/fenderGuitar.jpg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>22 Tháng 02, 2020</div>
+                                            <div>20 Tháng 04, 2020</div>
                                         </div>
                                         <div class="blog-item-author">
                                             <img src="HomePage/pen 1.png" alt="tác giả">
@@ -443,12 +444,12 @@
                                     <div class="blog-item-summary">QTV Guitar Shop xin giới thiệu với các bạn một vài mẫu Guitar Điện và Acoustic mới xuất hiện vào tháng 2 năm 2020 ....</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item" href="">
+                                <a class="blog-item" href="blogitem3.html">
                                     <div class="blog-item-photo"><img src="HomePage/pexels-photo-1407322.jpeg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>10 Tháng 02, 2020</div>
+                                            <div>31 Tháng 03, 2020</div>
                                         </div>
                                         <div class="blog-item-author">
                                             <img src="HomePage/pen 1.png" alt="tác giả">
@@ -459,36 +460,36 @@
                                     <div class="blog-item-summary">Đây là hướng dẫn từng bước dành cho các bạn mới học Guitar đệm hát để kết hợp giữa chơi đàn và giọng hát ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item" href="">
-                                    <div class="blog-item-photo"><img src="HomePage/keith-richards.jpg" alt=""></div>
+                                <a class="blog-item" href="blogitem4.html">
+                                    <div class="blog-item-photo"><img src="Blog/fenderultra - homepage.jpg" alt=""></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>15 Tháng 03, 2020</div>
+                                            <div>12 Tháng 03, 2020</div>
                                         </div>
                                         <div class="blog-item-author">
                                             <img src="HomePage/pen 1.png" alt="tác giả">
                                             <div>Admin</div>
                                         </div>
                                     </div>
-                                    <div class="blog-item-title">7 Câu Nói Truyền Cảm Hứng Từ Các Nghệ Sĩ Guitar Nổi Tiếng</div>
-                                    <div class="blog-item-summary">Rất nhiều người trong số họ đã từ giã cõi đời từ rất sớm, nhưng lúc sinh thời, họ đã để lại cho chúng ta những điều tuyệt vời ....</div>
+                                    <div class="blog-item-title">Cách Tạo Ra Một Chiếc Guitar Fender American Ultra Series</div>
+                                    <div class="blog-item-summary">American Ultra là một trong những dòng sản phẩm cao cấp nhất của Fender, đã giúp Fender gây dựng vị thế ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
-                                <a class="blog-item last-child" href="">
-                                    <div class="blog-item-photo"><img src="HomePage/fenderGuitar.jpg" alt=""></div>
+                                <a class="blog-item last-child" href="blogitem5.html">
+                                    <div class="blog-item-photo"><img src="Blog/thelasttrain - homepage.jpg" alt="The last train"></div>
                                     <div class="blog-item-info">
                                         <div class="blog-item-date">
                                             <img src="HomePage/calendar 1.png" alt="lịch">
-                                            <div>22 Tháng 02, 2020</div>
+                                            <div>25 Tháng 02, 2020</div>
                                         </div>
                                         <div class="blog-item-author">
                                             <img src="HomePage/pen 1.png" alt="tác giả">
                                             <div>Admin</div>
                                         </div>
                                     </div>
-                                    <div class="blog-item-title">Một Vài Mẫu Guitar Điện Và Acoustic Mới Năm Nay (Phần 1)</div>
-                                    <div class="blog-item-summary">QTV Guitar Shop xin giới thiệu với các bạn một vài mẫu Guitar Điện và Acoustic mới xuất hiện vào tháng 2 năm 2020 ....</div>
+                                    <div class="blog-item-title">David Knopfler Giới Thiệu Album Mới – “Last Train Leaving”</div>
+                                    <div class="blog-item-summary">“Last Train Leaving” - Album mới ra mắt của nghệ sĩ guitar và ca sĩ gạo cội David Knopfler với 14 tác phẩm mang âm hưởng ballad ...</div>
                                     <div class="blog-item-seeMore">Chi Tiết >></div>
                                 </a>
                             </div>
@@ -505,21 +506,30 @@
     </div>
     <footer>
         <div class="footer-container">
+            <div class="subscription-announcement">Cảm Ơn Bạn Đã Đăng Ký</div>
             <div class="subscription-part">
                 <div class="subscription-title">ĐĂNG KÝ</div>
                 <div class="line-footer"></div>
                 <div class="subscription-content">Cập nhập liên tục những thông tin mới nhất từ QTV Guitar Shop</div>
-                <input class="name-footer" type="text" placeholder="Họ Tên...">
-                <input class="email-footer" type="text" placeholder="Email...">
+                <div class="name-footer-container">
+                    <input class="name-footer" name="name" type="text" placeholder="Họ Tên...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                </div>
+                <div class="email-footer-container">
+                    <input class="email-footer" name="email" type="text" placeholder="Email...">
+                    <div class="empty-check">Bạn phải điền vào mục này</div>
+                    <div class="email-name-check">Email bạn điền không đúng định dạng</div>
+                </div>
+                
                 <div class="subscription-button">ĐĂNG KÝ</div>
             </div>
             <div class="client-service-part">
                 <div class="service-title">CHĂM SÓC KHÁCH HÀNG</div>
                 <div class="line-footer"></div>
                 <div class="service-content">
-                    <a href="">Các câu hỏi thường gặp (FAQ)</a>
-                    <a href="">Điều khoản dịch vụ của chúng tôi</a>
-                    <a href="">Chính sách bảo hành, đổi trả </a>
+                    <a href="guideonlineshopping.html">Hướng dẫn mua hàng</a>
+                    <a href="termofservice.html">Điều khoản dịch vụ của chúng tôi</a>
+                    <a href="warrantypolicy.html">Chính sách bảo hành, đổi trả </a>
                 </div>
             </div>
             <div class="store-info-part">
@@ -539,8 +549,22 @@
                 </div>
             </div>
         </div>
+        <div class="about-website">
+            <div class="about">QTV Guitar Shop @ 2020</div>
+            <div class="about-website-button">About This Website</div>
+            <div class="about-website-container">
+                <div class="about-website-content">
+                    <div class="title-about-website">About This Website </div>
+                    <p>This website is built as part of my Front-end coding bootcamp at TechMaster ( Ha Noi, Vietnam ), not for any commercial purposes. Content in  this website ( photos, videos, articles, ...) is collected on the internet and doesn't belong to me, I have only created UI/UX design and coding part. You can find UI/UX design at : <a href="https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593">https://www.figma.com/file/YhjxIz2P6KEcUaTrtCkQuu/QTV-Guitar-Shop-Project?node-id=145%3A593</a> ( need to create a Figma account if you don't have one )</p>
+                    <p>In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery. I have done that just for practicing both Javascript and Jquery( a very popular library ). For self-training and challenging myself I haven't used any CSS or Javascript framework and library ( except Jquery ).</p>
+                    <p>Special thanks to Ms. Pham Thi Yen, Mr. Le Chi Linh and Mr. Luu The Vinh for providing guidance and feedback to help me complete this project.</p>
+                    <p>If you have any questions, feel free to contact me by email: quangtuanvu1991@gmail.com. Thanks.</p>
+                    <div class="close-about-website"> Đóng </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="guitarData.js"></script>
-    <script src="main.js"></script>
+    <script src="js/guitarData.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
