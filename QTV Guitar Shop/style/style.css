@@ -246,6 +246,9 @@ body.start{
         text-decoration: none;
         color: black;
         font-weight: 500;
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
     }
     .sub-menu-guitar > li:hover > a{
         color: orangered;
@@ -1204,7 +1207,6 @@ body.start{
         justify-content: center;
         color: #000000;
         transition: 0.2s;
-
     }
     .part2-seeAllButton:hover{
         background-color: black;
@@ -1285,7 +1287,7 @@ body.start{
         font-style: normal;
         font-weight: 200;
         font-size: 22px;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;       
         color: #FFFFFF;
     }
@@ -1294,7 +1296,7 @@ body.start{
         font-style: normal;
         font-weight: 200;
         font-size: 22px;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;      
         color: #FFFFFF;
     }

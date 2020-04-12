@@ -170,6 +170,9 @@ body.popup{
         text-decoration: none;
         color: black;
         font-weight: 500;
+        width: 150px;
+        height: 30px;
+        line-height: 30px;
     }
     .sub-menu-guitar > li:hover > a{
         color: orangered;
