@@ -375,7 +375,7 @@ body.start {
         cursor: pointer;
         background-color: red;
     }
-    .shopping-cart-note {
+    .shopping-cart-note{
         height: 50px;
         text-align: center;
         font-family: Roboto;
@@ -693,6 +693,53 @@ body.start {
         width: 100%;
         max-width: 300px;
     }
+    .remove-item-part{
+        width: 100%;
+        margin-bottom: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .filter-part-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+    }
+    .filter-part-img{
+        width: 36px;
+        height: 36px;
+        margin-right: 5px;
+    }
+    .filter-part-img > img{
+        width: 100%;
+        height: 100%;
+        transform: rotate(90deg);
+    }
+    .remove-item-button{
+        width: 100px;
+        height: 38px;
+        border-radius: 999px;
+        display: flex;
+        border: 1px solid #BDB4B4;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: black;
+        transition: 0.3s;
+    }
+    .remove-item-button:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
     .filter-item{
         width: 100%;
         border: 1px solid #BDB4B4;
@@ -712,9 +759,20 @@ body.start {
         border-bottom: 1px solid #BDB4B4;
         display: flex;
         justify-content: space-between;
+        padding: 5px 0;
+        align-items: center;
     }
     .more-icon{
         display: none;
+    }
+    .filter-title > span{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    .filter-title > span > img{
+        width: 100%;
+        height: 100%;
     }
     .filter-content{
         width: 100%;
@@ -738,6 +796,12 @@ body.start {
         display: flex;
         align-items: center;
         position: relative;
+    }
+    .filter-content > li:first-child{
+        margin-top: 8px;
+    }
+    .filter-content > li:last-child{
+        margin-bottom: 8px;
     }
     .filter-content >li >label{
         text-indent: 30px;
@@ -818,11 +882,11 @@ body.start {
         width: 45px;
     }
     .filter-button{
-        width: 100px;
+        width: 110px;
         height: 40px;
         margin: 15px auto 0px auto ;
         background-color: #f16d61;
-        border-radius: 5px;
+        border-radius: 999px;
         display: flex;
         justify-content: center;
         align-items: center;

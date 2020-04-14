@@ -1,0 +1,449 @@
+*, body {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1366px){
+    
+    /*Main*/
+    .container{
+        width: 100%;
+    }
+    .container.scroll{
+        margin-top: 124px;
+        position: relative;
+    }
+    .main-container{
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 95%;
+        max-width: 1200px;
+        margin: 20px auto 0px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .modal-seat-map{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    .seat-map-photo{
+        width: 90vw;
+        height: 85vh;
+        margin: 5vw auto;
+    }
+    .seat-map-photo> img{
+        width: 100%;
+        height: 100%;
+    }
+    .close-icon{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 1vw;
+        right: 1vw;
+        opacity: 0.5;
+    }
+    .close-icon:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .close-icon > img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-title{
+        margin-top: 20px ;
+        width: 850px;
+        height: 50px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .show-item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .show-main-content{
+        width: 100%;
+        max-width: 800px;
+    }
+    .show-detail{
+        width: 100%;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+    .show-presentation{
+        width: 100%;
+    }
+    .border{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+    }
+    .border:hover{
+        cursor: pointer;
+    }
+    .showpresentation-title{
+        width: 500px;
+        height: 90px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color:  #C4C4C4;
+    }
+    .show-presentation-photo{
+        width: 95vw;
+        max-width: 700px;
+        margin: 25px auto 25px auto;
+        height: 54vw;
+        max-height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .show-presentation-photo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .seat-map{
+        margin-bottom: 10px;
+    }
+    .article-paragraph-normal{
+        width: 90%;
+        max-width: 700px;
+        margin: 10px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .end-paragraph{
+        margin-bottom: 20px;
+    }
+    .photo-note{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .photo-note > p:nth-child(1){
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .photo-note > p:nth-child(2){
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .order-ticket-part{
+        margin-top: 50px;
+        width: 100%;
+        max-width: 350px;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        height: 470px;
+        position: sticky;
+        top: 92px;
+    }
+    .title-ticket-part{
+        margin: 15px auto;
+        width: 90%;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+    }
+    .show-time{
+        width: 90%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-time > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-time > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-date{
+        width: 90%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-date > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-date > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-location{
+        width: 90%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-location > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-location > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-address{
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-address > div{
+        height: 30px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .ticket-class{
+        width: 90%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ticket-class > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .ticket-class > select{
+        margin-left: 20px;
+        width: 185px;
+        height: 32px;
+        outline: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #C4C4C4;
+    }
+    .ticket-class > select > option{
+        appearance: none;
+        padding-left: 5px;
+        
+    }
+    .ticket-price{
+        width: 90%;
+        margin: 20px auto 0px auto;
+    }
+    .ticket-price > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .price-value{
+        margin-left: 10px;
+    }
+    .ticket-number{
+        width: 90%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .ticket-number > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .minus-item{
+        margin-left:15px ;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .minus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .minus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .ticket-number > input{
+        width: 121px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #C4C4C4;   
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus-item{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .plus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .plus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .add-to-cart-button{
+        width: 90%;
+        max-width: 200px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        background: #DE0000;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .add-to-cart-button:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    
+    .scrolling-button{
+        display: none;
+        width: 40px;
+        height: 40px;
+        right: 5%;
+        bottom: 5%;
+        position: fixed;
+    }
+    .scrolling-button-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(145, 145, 145);
+        border-radius: 5px;
+    }
+    .scrolling-button-container > img{
+        width: 50%;
+        height: 50%;
+    }
+    .scrolling-button:hover{
+        cursor: pointer;
+    }
+}   

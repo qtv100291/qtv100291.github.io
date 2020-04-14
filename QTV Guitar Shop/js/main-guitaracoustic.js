@@ -244,6 +244,14 @@ function filterButton(){
     renderItem(arrayExecuted);
 }
 
+document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
+function removeFilter(){//remove filter condition 
+    arrayExecuted = guitarAcousticData.slice(0);
+    renderItem(arrayExecuted);
+    let uncheckItems = document.querySelectorAll('input:checked')
+    uncheckItems.forEach(x => x.checked = false)
+}
+
 //Part 6 : Function for Arrangement Option
 let arrangementPart = document.querySelector('.arrangement-part');
 window.onclick = function(){ // Click anywhere outside Arrangement Part to close it
@@ -528,7 +536,7 @@ function checkEmailName(id){ // check email name form
 }
 
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.outerWidth - document.body.clientWidth;
+    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
 document.querySelector('.about-website-button').addEventListener('click',openAboutWebsite);

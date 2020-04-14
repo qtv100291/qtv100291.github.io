@@ -195,7 +195,7 @@ function sendData(elt){// send Data to productitem.html
 //Part : Function for Subscription email and About This Website button - Footer
 
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.outerWidth - document.body.clientWidth;
+    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
 document.querySelector('.name-footer').addEventListener('input',function(){
@@ -291,7 +291,7 @@ function checkEmailName(id){ // check email name form
 document.querySelector('.about-website-button').addEventListener('click',openAboutWebsite);
 function openAboutWebsite(){
     if (document.body.offsetHeight > window.innerHeight){
-        scrollBarWidth = window.outerWidth - document.body.clientWidth;
+        scrollBarWidth = window.innerWidth - document.body.clientWidth;
     }
     else scrollBarWidth = 0;
     document.querySelector('.about-website-container').style.display = "block";

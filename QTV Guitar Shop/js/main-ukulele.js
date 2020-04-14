@@ -339,6 +339,14 @@ function renderItem(array){
 
 }
 
+document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
+function removeFilter(){//remove filter condition 
+    arrayExecuted = guitarUkuleleData.slice(0);
+    renderItem(arrayExecuted);
+    let uncheckItems = document.querySelectorAll('input:checked')
+    uncheckItems.forEach(x => x.checked = false)
+}
+
 //Part 8: Function for Sorting Item
 
 function sortByPriceUp(array){
@@ -538,7 +546,7 @@ function checkEmailName(id){ // check email name form
 }
 
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.outerWidth - document.body.clientWidth;
+    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
 document.querySelector('.about-website-button').addEventListener('click',openAboutWebsite);

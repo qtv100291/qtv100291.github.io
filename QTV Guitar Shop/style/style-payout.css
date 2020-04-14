@@ -677,7 +677,6 @@ body.start{
         background-color: red;
     }
     .order-note{
-        width: 360px;
         height: 30px;
         margin: 0 auto;
         font-family: Roboto;
@@ -686,6 +685,7 @@ body.start{
         font-size: 14px;
         line-height: 20px;
         color: #32323D;
+        text-align: center;
     }
     .summary-shopping-cart{
         width: 100%;

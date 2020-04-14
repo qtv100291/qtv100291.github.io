@@ -263,7 +263,7 @@ function checkEmailName(id){ // check email name form
 }
 
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.outerWidth - document.body.clientWidth;
+    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
 document.querySelector('.about-website-button').addEventListener('click',openAboutWebsite);

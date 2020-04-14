@@ -4,7 +4,7 @@
 
 //Part 1 : Function for Welcome Pop Up
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.outerWidth - document.body.clientWidth;
+    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
 if (localStorage.getItem('popup')){
@@ -63,7 +63,9 @@ function changeContent(){
 //Part 2 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){
     animationMenuBar();
-    subBannerMove()
+    subBannerMove();
+    myProductAnimation();
+    guitarShowAnimation();
 }
 function animationMenuBar(){
     if (document.body.scrollTop > 62 || document.documentElement.scrollTop > 62){
@@ -117,6 +119,7 @@ function countItem(){  //Count Item
 
 function displayCartSub(){ //Display Sub Shopping Cart
     let output= "";
+    let outputTotalMoney="";
     let totalMoney = 0;
     if (shoppingCart.length == 0){
         output = '<div class="shopping-cart-note">Chưa Có Sản Phẩm</div>';
@@ -133,12 +136,11 @@ function displayCartSub(){ //Display Sub Shopping Cart
                          </div>`
     }
     let totalMoneyConvert = separator1000(totalMoney);
-    output +=   `<div class="sub-shopping-cart-total">
-                    <div class="total-money">Tổng : &nbsp;<span class="total-money-number">${totalMoneyConvert}</span>&nbsp;&nbsp;Đồng</div>
-                    <a class="button-access-shopping-cart" href="shoppingcart.html">Thanh Toán</a>
-                 </div>`
+    outputTotalMoney +=  `<div class="total-money">Tổng : &nbsp;<span class="total-money-number">${totalMoneyConvert}</span>&nbsp;&nbsp;Đồng</div>
+                        <a class="button-access-shopping-cart" href="shoppingcart.html">Thanh Toán</a>`
     }
-    document.querySelector('.sub-shopping-cart-container').innerHTML = output;
+    document.querySelector('.sub-shopping-cart-container-item').innerHTML = output;
+    document.querySelector('.sub-shopping-cart-total').innerHTML = outputTotalMoney;
 }
 
 function separator1000(num){ // 1000 separator 
@@ -252,19 +254,56 @@ function changeBackgroundColor(){
     }
 }
 
-//Part 3 : Function for Sub banner
+// Part 3 : Function for Sub banner and Animation
 function subBannerMove(){
-    let windowHeight = screen.height;
-    let subBannerHeight = document.querySelector('.sub-banner'.offsetHeight)
+    let windowHeight = window.innerHeight;
+    let subBannerHeight = document.querySelector('.sub-banner').offsetHeight;
     if (document.querySelector('.sub-banner').getBoundingClientRect().bottom < windowHeight
         && document.querySelector('.sub-banner').getBoundingClientRect().bottom > subBannerHeight){
-            let x = windowHeight - document.querySelector('.sub-banner').getBoundingClientRect().bottom;
-            let y = 50*x/(windowHeight - subBannerHeight);
-            document.querySelector('.sub-banner').style.backgroundPosition = `50% ${100-y}%`;
+            var x = windowHeight - document.querySelector('.sub-banner').getBoundingClientRect().bottom;
+            var y = 42*x/(windowHeight - subBannerHeight);
     }
+    if (document.body.innerWidth > 1366){
+            document.querySelector('.sub-banner').style.backgroundPosition = `50% ${100-y}%`;
+        }
+    else document.querySelector('.sub-banner').style.backgroundPosition = `80% ${100-y}%`;
+    
     
 }
 
+function myProductAnimation(){
+    let windowHeight = window.innerHeight;
+    let heightItem = document.querySelector('.item').clientHeight;
+    if (document.querySelector('.row1-part1').getBoundingClientRect().top < (windowHeight - heightItem)){
+        document.querySelector('.row1-part1').classList.add('loaded');
+    }
+    if (document.querySelector('.row2-part1').getBoundingClientRect().top < (windowHeight - heightItem)){
+        document.querySelector('.row2-part1').classList.add('loaded');
+    }
+}
+
+function guitarShowAnimation(){
+    let windowHeight = window.innerHeight;
+    let heightItem = document.querySelector('.part2-guitar-show-item').clientHeight;
+    if (document.querySelector('#part2-item1').getBoundingClientRect().top < (windowHeight - heightItem)){
+        document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
+    }
+    if (document.querySelector('#part2-item2').getBoundingClientRect().top < (windowHeight - heightItem)){
+        document.querySelector('#part2-item2').classList.add('loaded-guitar-show')
+    }
+    if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
+        document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
+    }
+}
+// if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
+//     document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
+//     setTimeout(function(){
+//         document.querySelector('#part2-item2').classList.add('loaded-guitar-show');
+//     },600)
+//     setTimeout(function(){
+//         document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
+//     },1200)  
+// }
 
 //Part 5 : Function for Blog Slide
 document.querySelector('.blog-slide-prev').addEventListener('click',prevButton);
