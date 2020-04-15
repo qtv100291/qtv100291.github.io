@@ -34,6 +34,7 @@ document.querySelector('.audio-button').addEventListener('click',function(){
     changeContent();
 } );
 function playButton(){
+    if (window.innerwidth < 1025) return
     if(document.querySelector('.my-audio').paused) {
         playMusic();
         document.querySelectorAll('.column').forEach( (x,index) => x.classList.add(`playing-${index+1}`));
@@ -114,7 +115,7 @@ function countItem(){  //Count Item
     for (let i = 0; i < shoppingCart.length; i++){
         itemCount += shoppingCart[i].count;
     }
-    document.querySelector('.total-count-item').textContent = itemCount;
+    document.querySelectorAll('.total-count-item').forEach( x => x.textContent = itemCount);
 }
 
 function displayCartSub(){ //Display Sub Shopping Cart
@@ -148,7 +149,8 @@ function separator1000(num){ // 1000 separator
 }
 
 // Part 3: Function for Search Bar
-document.querySelector('.input-search-bar').addEventListener('focus',(function(){
+
+document.querySelector('.input-search-bar').addEventListener('focus',(function(){//for Mobile
     document.querySelector('.suggestion-item').classList.add('being-focus');
 }))
 document.querySelector('.input-search-bar').addEventListener('blur',(function(){
@@ -176,7 +178,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendData(this);deleteContent()" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="sendData(this);deleteContentClick(this)" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }        
     }
@@ -186,7 +188,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendDataAccesories(this);deleteContent()" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="sendDataAccesories(this);deleteContentClick(this)" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }   
     }
@@ -196,7 +198,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a href="guitarshow${i+1}.html" onclick="deleteContent()" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }    
     }
@@ -205,6 +207,68 @@ function searchItem(){
     } 
     document.querySelector('.suggestion-guitar').innerHTML = output;
 }
+
+
+document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('focus',(function(){//for Desktop
+    document.querySelector('.top-navbar-container > .search-bar > .suggestion-item').classList.add('being-focus');
+}))
+document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('blur',(function(){
+    setTimeout (function (){document.querySelector('.top-navbar-container > .search-bar > .suggestion-item').classList.remove('being-focus')},150);
+}))
+document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('input',searchItemDesktop)
+function searchItemDesktop(){
+    let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
+    let output="";
+    if (input.length == 0) {
+        document.querySelector('.top-navbar-container > .search-bar > .suggestion-item >.suggestion-guitar').innerHTML = output;
+        document.querySelector('.top-navbar-container > .search-bar > .x-mark-search-bar').style.display = "none";
+        return;
+    }
+    else document.querySelector('.top-navbar-container > .search-bar > .x-mark-search-bar').style.display = "block";
+    searchName(guitarClassicalData);
+    searchName(guitarElectricalData);
+    searchName(guitarAcousticData);
+    searchName(guitarUkuleleData);
+    searchNameAccessories(accessoriesData);
+    searchNameGuitarShow(guitarShowData);
+    function searchName(array){
+        for (let i = 0; i < array.length; i++){
+            if (array[i]['name'].toLowerCase().includes(input)){
+                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+                output += `<a onclick="sendData(this);deleteContentClick(this)" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+            }
+        }        
+    }
+    function searchNameAccessories(array){
+        for (let i = 0; i < array.length; i++){
+            if (array[i]['name'].toLowerCase().includes(input)){
+                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+                output += `<a onclick="sendDataAccesories(this);deleteContentClick(this)" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+            }
+        }   
+    }
+    function searchNameGuitarShow(array){
+        for (let i = 0; i < array.length; i++){
+            if (array[i]['name'].toLowerCase().includes(input)){
+                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+                output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+            }
+        }    
+    }
+    if (output.length == 0){
+        output = `<div class="search-bar-notification">Không có sản phẩm phù hợp</div>`
+    } 
+    document.querySelector('.top-navbar-container > .search-bar > .suggestion-item > .suggestion-guitar').innerHTML = output;
+}
+
+
+
 
 function sendData(elt){
     let itemData = new Object;
@@ -219,10 +283,24 @@ function sendDataAccesories(elt){
     localStorage.setItem('dataaccessoryitem',JSON.stringify(itemData));
 }
 
-document.querySelector('.x-mark-search-bar').addEventListener('click',deleteContent)
-function deleteContent(){
-    document.querySelector('.input-search-bar').value = "";
-    document.querySelector('.x-mark-search-bar').style.display = "none";
+document.querySelectorAll('.x-mark-search-bar').forEach(x => x.addEventListener('click',function(){
+    let elt = this;
+    deleteContent(elt)
+}))
+function deleteContent(elt){
+    elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
+    elt.parentNode.childNodes[1].value = "";
+    elt.style.display = "none";
+    elt.parentNode.childNodes[3].childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
+    setTimeout (function (){
+        elt.parentNode.childNodes[3].childNodes[0].innerHTML = "";
+    },350)
+}
+function deleteContentClick(elt){
+    elt.parentNode.parentNode.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
+    elt.parentNode.parentNode.parentNode.childNodes[1].value = "";
+    elt.style.display = "none";
+    elt.parentNode.innerHTML = "";
 }
 
 //Part 4 : Function for button "Nổi bật" and "Sản Phẩm Mới"
@@ -233,8 +311,9 @@ for(let i =0; i< pagination.length;i++){
 let hotItems = document.querySelectorAll('.container-1');
 let newItems = document.querySelectorAll('.container-2');
 function changePagination(){
-    changeBackgroundColor();
-    this.style.backgroundColor = "#A47C44";
+    if (this.classList.contains('active-pagination')) return
+    document.querySelector('.active-pagination').classList.remove('active-pagination')
+    this.classList.add('active-pagination');
     if (this.dataset.type == 1){
         hotItems.forEach(x => x.style.opacity = "1")
         newItems.forEach(x => x.style.opacity = "0")
@@ -246,11 +325,6 @@ function changePagination(){
         newItems.forEach(x => x.style.opacity = "1")
         hotItems.forEach(x => x.style.visibility = "hidden") 
         newItems.forEach(x => x.style.visibility = "visible") 
-    }
-}
-function changeBackgroundColor(){
-    for(let i =0; i< pagination.length; i++){
-        pagination[i].style.backgroundColor = "#F2F0F0";
     }
 }
 
@@ -285,24 +359,25 @@ function myProductAnimation(){
 function guitarShowAnimation(){
     let windowHeight = window.innerHeight;
     let heightItem = document.querySelector('.part2-guitar-show-item').clientHeight;
-    if (document.querySelector('#part2-item1').getBoundingClientRect().top < (windowHeight - heightItem)){
-        document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
-    }
     if (document.querySelector('#part2-item2').getBoundingClientRect().top < (windowHeight - heightItem)){
-        document.querySelector('#part2-item2').classList.add('loaded-guitar-show')
-    }
-    if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
-        document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
+        document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
+        setTimeout(function(){
+            document.querySelector('#part2-item2').classList.add('loaded-guitar-show');
+        },600)
+        setTimeout(function(){
+            document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
+        },1200)  
     }
 }
-// if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
+
+// if (document.querySelector('#part2-item1').getBoundingClientRect().top < (windowHeight - heightItem)){
 //     document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
-//     setTimeout(function(){
-//         document.querySelector('#part2-item2').classList.add('loaded-guitar-show');
-//     },600)
-//     setTimeout(function(){
-//         document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
-//     },1200)  
+// }
+// if (document.querySelector('#part2-item2').getBoundingClientRect().top < (windowHeight - heightItem)){
+//     document.querySelector('#part2-item2').classList.add('loaded-guitar-show')
+// }
+// if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
+//     document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
 // }
 
 //Part 5 : Function for Blog Slide
@@ -360,18 +435,25 @@ function sendSubscriptionEmail(){
     if (!checkEmpty('name-footer')) return;
     if (!checkEmpty('email-footer')) return;
     if (!checkEmailName('email-footer')) return;
-    document.querySelector('.subscription-announcement').style.zIndex = 15;
+    document.querySelector('.subscription-announcement-container').style.display = "block";
+    document.body.classList.add('start');
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.header-desktop').style.paddingRight = `${scrollBarWidth}px`;
     setTimeout(function(){
-        document.querySelector('.subscription-announcement').style.visibility = "visible";
-        document.querySelector('.subscription-announcement').style.opacity = 1;
+        document.querySelector('.subscription-announcement-container').style.visibility = "visible";
+        document.querySelector('.subscription-announcement-container').style.opacity = 1;
+        
     },100);
     setTimeout(function(){
-        document.querySelector('.subscription-announcement').style.opacity = 0;
-    },2000)
+        document.querySelector('.subscription-announcement-container').style.opacity = 0;
+    },3000)
     setTimeout(function(){
-        document.querySelector('.subscription-announcement').style.visibility = "hidden";
-        document.querySelector('.subscription-announcement').style.zIndex = -1;
-    },2100)
+        document.body.classList.remove('start');
+        document.body.style.paddingRight = `0px`;
+        document.querySelector('.header-desktop').style.paddingRight = `0px`;
+        document.querySelector('.subscription-announcement-container').style.display = "none";
+    },3500)
+    
     document.querySelector('.name-footer').value = "";
     document.querySelector('.email-footer').value = "";
 }

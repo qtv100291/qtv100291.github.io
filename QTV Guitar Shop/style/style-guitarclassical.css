@@ -1022,7 +1022,7 @@ body.start {
     }
     .item:hover .back-image{
         opacity: 1;
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) ;
     }
     .item-image{
         width: 250px;
@@ -1032,17 +1032,18 @@ body.start {
         z-index: 1;
         display: flex;
         justify-content: center;
+        background-color: white;
     }
     .front-image{
         height: 100%;
         opacity: 1;
-        background-color: white;
+
     }
     .back-image{
         height: 100%;
         position: absolute;
         top: 0px;
-        transform: rotateY(90deg);
+        transform: rotateY(90deg) ;
         z-index: 2;
         opacity: 0;
         background-color: white;

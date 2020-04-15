@@ -27,6 +27,34 @@
             </div>
         </div>
     </div>
+    <header class="header-tablet">
+        <div class="top-navbar-mobile">
+            <div class="menu-icon-mobile"><i class="fas fa-bars"></i></div>
+            <div class="logo-mobile"><img src="HomePage/Untitled.jpg" alt="logo"></div>
+            <div class="sub-shopping-cart">
+                <a href="shoppingcart.html"><img src="HomePage/shopping-cart 1.svg" alt=""><span class="total-count-item">0</span></a>
+            </div>  
+            <div class="search-bar">
+                <img src="HomePage/search_24px_outlined.svg" alt="search">
+                <input class="input-search-bar" type="text" placeholder="Tìm kiếm trên QTV Guitar Shop...">
+                <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
+                <div class="suggestion-item">
+                    <div class="suggestion-guitar">
+                        <!--Search Items will be displayed here-->
+                    </div>
+                    <!--<div class="suggestion-category">
+                        <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
+                        <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
+                        <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
+                        <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
+                        <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
+                        <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
+                        <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
+                    </div>-->
+                </div>
+            </div>  
+        </div>
+    </header>
     <header class="header-desktop">
         <div class="top-navbar">
             <div class="top-navbar-container">
@@ -141,8 +169,12 @@
             <div class="part1-myproduct">
                 <div class="title-part1">SẢN PHẨM CỦA CHÚNG TÔI</div>
                 <div class="row-button">
-                    <div class="pagination hot-button" data-type ="1">Nổi Bật</div>
-                    <div class="pagination new-button" data-type="2">Sản Phẩm Mới</div>
+                    <div class="hot-button-container">
+                        <div class="pagination hot-button active-pagination" data-type ="1">Nổi Bật</div>
+                    </div>
+                    <div class="new-button-container">
+                        <div class="pagination new-button" data-type="2">Sản Phẩm Mới</div>
+                    </div>
                 </div>
                 <div class="row1-part1">
                     <div class="container-1">
@@ -179,7 +211,7 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item new-item" href="productitem.html"  data-id="202048154437-9546008" data-group="electrical" onmousedown="sendData(this)" >
+                        <a class="item hot-item" href="productitem.html"  data-id="202048154437-9546008" data-group="electrical" onmousedown="sendData(this)" >
                             <div class="item-image">
                                 <img class="front-image" src="Product/Electrical Guitar/Gretsch G6134T ’58 Penguin - 74.999tr/1.jpg" alt="Gretsch G6134T ’58 Penguin">
                                 <img class="back-image" src="Product/Electrical Guitar/Gretsch G6134T ’58 Penguin - 74.999tr/2.jpg" alt="Gretsch G6134T ’58 Penguin">
@@ -319,7 +351,7 @@
                             <div class="line-item"></div>
                             <div class="detail-item">CHI TIẾT</div>
                         </a>
-                        <a class="item hot-item" href="productitem.html"  data-id="20204815261-7381340" data-group="electrical" onmousedown="sendData(this)">
+                        <a class="item new-item" href="productitem.html"  data-id="20204815261-7381340" data-group="electrical" onmousedown="sendData(this)">
                             <div class="item-image">
                                 <img class="front-image" src="Product/Electrical Guitar/Gibson Flying V Antique Natural Solid - 39.499tr/1.jpg" alt="Gibson Flying V Antique Natural">
                                 <img class="back-image" src="Product/Electrical Guitar/Gibson Flying V Antique Natural Solid - 39.499tr/2.jpg" alt="Gibson Flying V Antique Natural">
@@ -511,7 +543,9 @@
     </div>
     <footer>
         <div class="footer-container">
-            <div class="subscription-announcement">Cảm Ơn Bạn Đã Đăng Ký</div>
+            <div class="subscription-announcement-container">
+                <div class="subscription-announcement">Cảm Ơn Bạn Đã Lựa Chọn Đồng Hành Cùng QTV Guitar Shop</div>
+            </div>
             <div class="subscription-part">
                 <div class="subscription-title">ĐĂNG KÝ</div>
                 <div class="line-footer"></div>
