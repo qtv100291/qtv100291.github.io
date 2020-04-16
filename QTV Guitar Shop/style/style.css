@@ -3729,6 +3729,10 @@ body.start{
         justify-content: center;
         color: #32323D;
     }
+    .blog-slide{
+        width: 100%;
+        margin-top: 25px;
+    }
     .blog-slide-prev{
         position: absolute;
         left: 0;
@@ -3779,10 +3783,7 @@ body.start{
     .blog-slide:hover .blog-slide-next{
         opacity: 1;
     }
-    .blog-slide{
-        width: 100%;
-        margin-top: 25px;
-    }
+    
     .blog-slide-container{
         width: 1000px;
         margin: 0 auto;
@@ -4329,8 +4330,13 @@ body.start{
 
 @media only screen and (min-width: 769px) and (max-width:1024px){
     /*Welcome Popup*/
+    body{
+        overflow-x: hidden;
+    }
     .welcome-popup{
-        position: absolute;
+        top: 0;
+        left: 0;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -4341,16 +4347,16 @@ body.start{
         display: none;
     }
     .welcome-popup-container{
-        width: 100%;
+        width: 95%;
         max-width: 800px;
-        height: 80vh;
+        height: 80vw;
         max-height: 550px;
         margin: calc(45vh - 275px) auto;
         border: 10px solid white;
         display: flex;
     }
     .welcome-popup-image{
-        width: 100%;
+        width: 50%;
         max-width: 400px;
         height: 100%;
     }
@@ -4359,14 +4365,14 @@ body.start{
         object-fit: cover;
     }
     .welcome-popup-content{
-        width: 100%;
+        width: 50%;
         max-width: 400px;
         height: 100%;
         background-color: white;
         font-family: Roboto;
     }
     .welcome-popup-content-title{
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 15px;
         font-family: Dancing Script;
         font-style: normal;
@@ -4410,7 +4416,83 @@ body.start{
     }
     /*Header Mobile*/
     .header-tablet{
-        width: 100%;        
+        width: 100%;     
+    }
+    .menu-mobile{
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 11;
+        overflow: hidden;
+    }
+    .menu-mobile.active{
+        left: 0;
+    }
+    .menu-mobile-container{
+        width: 90%;
+        max-width: 350px;
+        background-color: white;
+        height: 100%;
+    }
+    .menu-mobile-signin{
+        display: block;
+        width: 100%;
+        height: 50px;
+        background-color: #4ac6ff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+    .user-icon{
+        margin-left: 20px;
+    }
+    .user-icon > i{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .menu-mobile-signin > h4{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .singin-icon{
+        margin-left: calc(100% - 137.5px - 40px);
+    }
+    .menu-mobile-item{
+        display: block;
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        text-indent: 20px;
+        width: 100%;
+        color: black;
+    }
+    .menu-mobile-item:hover{
+        background-color: rgb(224, 224, 224);
+    }
+    .break-title{
+        margin-top: 10px;
+        border-top: 1px solid #C4C4C4;
+        display: block;
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+        text-indent: 20px;
+        width: 100%;
+        color: rgb(177, 175, 175);
     }
     .top-navbar-mobile{
         width: 100%;
@@ -4421,16 +4503,19 @@ body.start{
         align-items: center;
         position: fixed;
         top: 0;
-        left: 0;
-        z-index: 10;
+        right: 0;
+        z-index: 8;
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     }
     .menu-icon-mobile{
-        width: 40px;
-        height: 40px;
-        margin-left: 15px;
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
         font-size: 30px;
         line-height: 40px;
+    }
+    .menu-icon-mobile:hover{
+        cursor: pointer;
     }
     .logo-mobile{
         height: 100%;
@@ -4448,7 +4533,7 @@ body.start{
         line-height: 19px;
         width: 40px;
         height: 40px;
-        margin-right: 15px;
+        margin-right: 10px;
         position: relative;
         color: black;
         display: flex;
@@ -4559,10 +4644,6 @@ body.start{
     .suggestion-item.scroll{
         left: 92px;
         width: calc(100% - 150px);
-        display: none;
-    }
-    .search-bar:hover .suggestion-item.scroll{
-        display: block;
     }
     .suggestion-guitar{
         width: 100%;
@@ -4769,14 +4850,7 @@ body.start{
         background-color: white;
     }
     .back-image{
-        height: 100%;
-        position: absolute;
-        top: 0px;
-        transform: rotateY(90deg);
-        z-index: 2;
-        opacity: 0;
-        background-color: white;
-        transition: 0.6s;
+        display: none;
     }
     .item-name{
         margin: 20px auto 0px auto;
@@ -4841,8 +4915,8 @@ body.start{
         border-radius: 30px;
         overflow: hidden;
         margin: 60px auto 0px auto;
-        background-image: url(../HomePage/Red-rose-guitar_resize.jpg);
-        background-position: 80% 100%;
+        background-image: url(../HomePage/sub-banner-mobile1.jpg);
+        background-position: 50% 100%;
         background-attachment: scroll;
         background-repeat: no-repeat;
     }
@@ -4902,7 +4976,7 @@ body.start{
     .part2-guitar-show{
         position: relative;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .part2-title{
         width: 500px;
@@ -5047,7 +5121,7 @@ body.start{
     }
     /* Part2-item1*/
     #part2-item1{
-        transform: translate(-75px, 340px);
+        transform: translateX(75px);
     }
     #part2-item1 .overlay-show{
         clip-path: polygon(40% 0, 100% 0 , 100% 100%, 60% 100%);
@@ -5069,7 +5143,7 @@ body.start{
 
     /*Part2-item2*/
     #part2-item2{
-        transform: translate(75px, -340px);
+        transform: translate(-75px);
     }
     #part2-item2 .part2-artist-name{
         left: 0px;
@@ -5101,12 +5175,13 @@ body.start{
     }
     /*Quote*/
     .quote-part2{
-        width: 95%;
+        width: 700px;
+        height: 190px;
         margin: 70px auto 0px auto;
-        height: 200px;
-        border: 5px solid #E1E1E1;
+        border: 2px solid rgb(238, 238, 238);
         box-sizing: border-box;
         position: relative;
+        border-radius: 20px;
     }
     .quote-item{
         width: 100%;
@@ -5114,13 +5189,7 @@ body.start{
         position: relative;
     }
     .quote-item-photo{
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        overflow: hidden;
-        position: absolute;
-        top: 45px;
-        left: 50px;
+        display: none;
     }
     .quote-item-photo img{
         width: 100%;
@@ -5128,14 +5197,14 @@ body.start{
     }
     .quote-item-name{
         position: absolute;
-        left: 169px;
-        top: 65px;
+        right:  50px;
+        bottom: 40px;
         width: 130px;
         height: 30px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 21px;
         display: flex;
         align-items: center;
@@ -5144,14 +5213,14 @@ body.start{
     }
     .quote-item-job{
         position: absolute;
-        left: 169px;
-        top: 95px;
+        right: 50px;
+        bottom: 15px;
         width: 130px;
         height: 30px;
         font-family: Roboto;
         font-style: italic;
         font-weight: 300;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 21px;
         display: flex;
         align-items: center;
@@ -5159,41 +5228,24 @@ body.start{
         color: #000000;  
     }
     .line-fence{
+        top:8px;
+        left: 35px;
         position: absolute;
-        left: 340px;
-        top: 20px;
-        width: 40px;
-        height: 150px;
     }
     .line-fence-top{
-        width: 1px;
-        height: 55px;
-        margin: 0 auto;
-        background-color: #DADADA;
+        width: 5px;
+        height: 110px;
+        background-color: rgb(179, 179, 179);
     }
     .line-fence-center{
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        border: 1px solid #DADADA;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       display: none;
     }
     .line-fence-center img{
         width: 25px;
         height: 25px;
-    }
-    .line-fence-bottom{
-        width: 1px;
-        height: 55px;
-        margin: 0 auto;
-        background-color: #DADADA;
+        display: none;
     }
     .quote-item-eng{
-        width: 550px;
-        height: 50px;
-        position: absolute;
         top: 40px;
         left: 410px;
         font-family: Roboto;
@@ -5203,12 +5255,15 @@ body.start{
         display: flex;
         align-items: center;
         color: #000000;
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 20px 5px 5px 40px;
     }
     .quote-item-viet{
-        width: 550px;
-        height: 50px;
-        position: absolute;
-        top: 95px;
+        width: 600px;
+        margin: 0 auto;
+        padding-top: 15px;
         left: 410px;
         font-family: Roboto;
         font-style: italic;
@@ -5218,12 +5273,14 @@ body.start{
         display: flex;
         align-items: center;
         color: #000000;
+
+        padding: 5px 5px 20px 40px;
     }
     /*Part3 Blog*/
     .part3-blog{
         position: relative;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .part3-title{
         width: 700px;
@@ -5232,12 +5289,16 @@ body.start{
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 38px;
+        line-height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #32323D;
+    }
+    .blog-slide{
+        width: 100%;
+        margin-top: 25px;
     }
     .blog-slide-prev{
         position: absolute;
@@ -5289,12 +5350,9 @@ body.start{
     .blog-slide:hover .blog-slide-next{
         opacity: 1;
     }
-    .blog-slide{
-        width: 100%;
-        margin-top: 25px;
-    }
+    
     .blog-slide-container{
-        width: 1000px;
+        width: 665px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -5307,17 +5365,17 @@ body.start{
     }
     .blog-slide-content{
         position: absolute;
-        left: -345px;
+        left: -355px;
         top: 0;
         display: flex;
         transition: 0.5s;
     }
     @keyframes move-right {
         0%{ 
-            left: -690px;
+            left: -710px;
         }
         100%{
-            left: -345px;
+            left: -355px;
         }
     }
     @keyframes move-left {
@@ -5325,11 +5383,11 @@ body.start{
             left: 0px;
         }
         100%{
-            left: -345px;
+            left: -355px;
         }
     }
     .blog-item{
-        margin-right: 35px;
+        margin-right: 45px;
         width: 310px;
         height: 470px;
         border: 1px solid #DADADA;
@@ -5466,8 +5524,7 @@ body.start{
         margin-top: 50px;
     }
     .footer-container{
-        width: 1000px;
-        margin: 0 auto;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -5506,12 +5563,14 @@ body.start{
         position: absolute;
     }
     .subscription-part{
-        width: 300px;
+        width: 50%;
         overflow: auto;
+        margin: 0 auto;
     }
     .subscription-title{
-        width: 187px;
+        width: 300px;
         height: 30px;
+        margin: 0 auto;
         margin-top: 32px;
         font-family: Roboto;
         font-style: normal;
@@ -5521,14 +5580,16 @@ body.start{
         color: #FFFFFF;
     }
     .line-footer{
-        width: 100%;
+        width: 300px;
         height: 1px;
+        margin: 0 auto;
         margin-top: 10px;
         background-color: white;
     }
     .subscription-content{
+        margin: 0 auto;
         margin-top: 10px;
-        width: 100%;
+        width: 300px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -5537,8 +5598,10 @@ body.start{
         color: #FFFFFF;       
     }
     .name-footer{
+        display: block;
+        margin: 0 auto;
         margin-top: 10px;
-        width: 100%;
+        width: 300px;
         height: 32px;
         outline: none;
         border: 0;
@@ -5561,8 +5624,9 @@ body.start{
         color: #000000;
     }
     .email-footer{
-        margin-top: 10px;
-        width: 100%;
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 300px;
         height: 32px;
         outline: none;
         border: 0;
@@ -5639,7 +5703,7 @@ body.start{
     }
     .subscription-button{
         width: 150px;
-        height: 50px;
+        height: 40px;
         margin: 25px auto 35px auto;
         background: #FFFFFF;
         border-radius: 25px;
@@ -5664,6 +5728,7 @@ body.start{
     .client-service-part{
         width: 300px;
         overflow: auto;
+        display: none;
     }
     .service-title{
         width: 250px;
@@ -5701,12 +5766,13 @@ body.start{
     }
     /*Column 3 Footer*/
     .store-info-part{
-        width: 300px;
+        width: 50%;
         overflow: auto;
     }
     .store-info-title{
-        width: 250px;
+        width: 300px;
         height: 30px;
+        margin: 0 auto;
         margin-top: 32px;
         font-family: Roboto;
         font-style: normal;
@@ -5716,14 +5782,16 @@ body.start{
         color: #FFFFFF;
     }
     .line-footer{
-        width: 100%;
+        width: 300px;
         height: 1px;
+        margin: 0 auto;
         margin-top: 10px;
         background-color: white;
     }
     .store-content{
+        margin: 0 auto;
         margin-top: 10px;
-        width: 100%;      
+        width: 300px;      
     }
     .store-content > div{
         font-family: Roboto;
@@ -5792,7 +5860,7 @@ body.start{
         transition: 0.5s;
     }
     .about-website-content{
-        width: 95%;
+        width: 90%;
         max-width: 900px;
         margin: 5% auto 0 auto;
     }

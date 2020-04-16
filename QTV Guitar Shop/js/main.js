@@ -14,12 +14,16 @@ else {
     document.body.classList.add('start');
     document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.querySelector('.welcome-popup').style.display = "block";
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `${10 + scrollBarWidth}px`;
 }
 document.querySelector('.access-button').addEventListener('click',accessWebsite) // click to close Welcome Pop up
 function accessWebsite(){
     document.body.classList.remove('start');
     document.querySelector('.welcome-popup').classList.add('gone');
     document.body.style.paddingRight = `0px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
     setTimeout(function(){
         playVideo();
         playButton();
@@ -34,7 +38,7 @@ document.querySelector('.audio-button').addEventListener('click',function(){
     changeContent();
 } );
 function playButton(){
-    if (window.innerwidth < 1025) return
+    if (window.innerWidth < 1025) return
     if(document.querySelector('.my-audio').paused) {
         playMusic();
         document.querySelectorAll('.column').forEach( (x,index) => x.classList.add(`playing-${index+1}`));
@@ -61,6 +65,7 @@ function changeContent(){
     current.classList.remove('active-tooltip');
     change.classList.add('active-tooltip');
 }
+
 //Part 2 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){
     animationMenuBar();
@@ -85,6 +90,24 @@ function animationMenuBar(){
     }
 }
 
+
+// Part Function for Opening Mobile Menu
+document.querySelector('.menu-icon-mobile').addEventListener('click',openMenuMobile)
+function openMenuMobile(){
+    document.querySelector('.menu-mobile').classList.add('active');
+    document.body.classList.add('start');
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `${10 + scrollBarWidth}px`;
+}
+document.querySelector('.menu-mobile').addEventListener('click',closeMenuMobile)
+function closeMenuMobile(){
+    document.querySelector('.menu-mobile').classList.remove('active')
+    document.body.classList.remove('start');
+    document.body.style.paddingRight = `0px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
+}
 // Part 2 : Function for Shopping Cart
 let shoppingCart=[];
 if (localStorage.getItem('shoppingcartguitar') != null){
