@@ -3,8 +3,9 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Sticky Menu bar and Animation
+let scrollBarWidth;
 if ($('body').innerHeight() > $(window).height()){
-    var scrollBarWidth = $(window).outerWidth() - $('body').innerWidth();
+    scrollBarWidth = $(window).outerWidth() - $('body').innerWidth();
 }
 else scrollBarWidth = 0;
 $(window).scroll(function(){

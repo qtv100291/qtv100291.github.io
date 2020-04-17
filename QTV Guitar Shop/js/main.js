@@ -3,10 +3,13 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Welcome Pop Up
+let scrollBarWidth
 if (document.body.offsetHeight > window.innerHeight){
-    var scrollBarWidth = window.innerWidth - document.body.clientWidth;
+    scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
+if (window.innerWidth < 576) document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm..."
+if (window.innerWidth < 450) document.querySelector('.line3-text-sub-banner').textContent = "Cho các bạn nữ đến mua guitar"
 if (localStorage.getItem('popup')){
     playVideo();
 }
