@@ -8,7 +8,7 @@ if (document.body.offsetHeight > window.innerHeight){
     scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
-if (window.innerWidth < 576) document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm..."
+if (window.innerWidth < 576) document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm Với QTV Shop..."
 if (window.innerWidth < 450) document.querySelector('.line3-text-sub-banner').textContent = "Cho các bạn nữ đến mua guitar"
 if (localStorage.getItem('popup')){
     playVideo();
@@ -157,7 +157,7 @@ function displayCartSub(){ //Display Sub Shopping Cart
             output +=   `<div class="sub-shopping-cart-item">
                             <div class="image-item-shopping"><img src="${shoppingCart[i].image}" alt="item"></div>
                             <div class="info-item-shopping">
-                                <div class="name-item-shopping">${shoppingCart[i].name}</div>
+                                <div class="name-item-shopping" title="${shoppingCart[i].name}">${shoppingCart[i].name}</div>
                                 <div class="price-item"><span class="count-item-shopping">${shoppingCart[i].count}</span>&nbsp;&nbsp;x&nbsp;&nbsp;<span class="price-item-shopping">${shoppingCart[i].price}</span> Đồng</div>
                             </div>
                          </div>`

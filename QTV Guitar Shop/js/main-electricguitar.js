@@ -309,7 +309,7 @@ function renderItem(array){
         for (let i = 0; i < array.length; i++){
             let index = Math.floor(i/itemInOnePage);
             output += 
-                `<a class="item page-${index + 1}" href="productitem.html" target="_blank" data-id="${array[i].id}" data-group="${array[i].group}" onmousedown="sendData(this)" >
+                `<a class="item page-${index + 1}" href="productitem.html"  data-id="${array[i].id}" data-group="${array[i].group}" onmousedown="sendData(this)" >
                     <div class="item-image">
                         <img class="front-image" src="${array[i].photo}/1.jpg" alt="${array[i].name}">
                         <img class="back-image" src="${array[i].photo}/2.jpg" alt="${array[i].name}">

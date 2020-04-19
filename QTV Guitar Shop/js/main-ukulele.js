@@ -1,4 +1,4 @@
-//This section is written by using Javascript. 
+//This section is written by using pure Javascript. 
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
@@ -65,7 +65,7 @@ function displayCartSub(){ //Display Sub Shopping Cart
             output +=   `<div class="sub-shopping-cart-item">
                             <div class="image-item-shopping"><img src="${shoppingCart[i].image}" alt="item"></div>
                             <div class="info-item-shopping">
-                                <div class="name-item-shopping">${shoppingCart[i].name}</div>
+                                <div class="name-item-shopping" title ="${shoppingCart[i].name}">${shoppingCart[i].name}</div>
                                 <div class="price-item"><span class="count-item-shopping">${shoppingCart[i].count}</span>&nbsp;&nbsp;x&nbsp;&nbsp;<span class="price-item-shopping">${shoppingCart[i].price}</span> Đồng</div>
                             </div>
                          </div>`
@@ -301,7 +301,7 @@ function renderItem(array){
         for (let i = 0; i < array.length; i++){
             let index = Math.floor(i/itemInOnePage);
             output += 
-                `<a class="item page-${index + 1}" href="productitem.html" target="_blank" data-id="${array[i].id}" data-group="${array[i].group}" onmousedown="sendData(this)" >
+                `<a class="item page-${index + 1}" href="productitem.html" data-id="${array[i].id}" data-group="${array[i].group}" onmousedown="sendData(this)" >
                     <div class="item-image">
                         <img class="front-image" src="${array[i].photo}/1.jpg" alt="${array[i].name}">
                         <img class="back-image" src="${array[i].photo}/2.jpg" alt="${array[i].name}">
