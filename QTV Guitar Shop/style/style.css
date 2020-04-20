@@ -6805,7 +6805,7 @@ body.start{
     .quote-part2{
         width: 540px;
         height: 190px;
-        margin: 70px auto 0px auto;
+        margin: 50px auto 0px auto;
         border: 2px solid rgb(238, 238, 238);
         box-sizing: border-box;
         position: relative;
@@ -7566,9 +7566,10 @@ body.start{
         transform-origin: top left 0;
         overflow: hidden;
         display: none;
+        overflow-y: auto;
     }
     .welcome-popup-container{
-        width: 90%;
+        width: 95%;
         max-width: 800px;
         margin: calc(45vh - 275px) auto;
         display: flex;
@@ -7612,14 +7613,14 @@ body.start{
         color: white;
     }
     .access-button{
-        width: 150px;
-        height: 40px;
+        width: 120px;
+        height: 35px;
         margin: 25px auto 0 auto;
         border-radius: 20px;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 40px;
+        font-size: 15px;
+        line-height: 35px;
         margin-bottom: 5px;
         text-align: center;
         background-color: rgb(189, 2, 2);
@@ -8264,7 +8265,8 @@ body.start{
         height: 53.33vw;
         box-sizing: border-box;
         margin: 0 auto;
-        padding-top: 5px;
+        padding-top: 7px;
+        object-fit: cover;
     }
     .part2-artist-name{
         width: 85vw ;
@@ -8335,7 +8337,7 @@ body.start{
     /*Quote*/
     .quote-part2{
         width: 95%;
-        margin: 70px auto 0px auto;
+        margin: 30px auto 0px auto;
         border: 2px solid rgb(238, 238, 238);
         box-sizing: border-box;
         position: relative;
@@ -9037,6 +9039,8 @@ body.start{
         display: none;
         opacity: 0;
         transition: 0.5s;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     .about-website-content{
         width: 90%;
@@ -9061,6 +9065,7 @@ body.start{
     }
     .about-website-content > p > a{
         color: white;
+        word-break: break-all;
     }
     .close-about-website{
         width: 100px;
@@ -9098,6 +9103,7 @@ body.start{
         transform-origin: top left 0;
         overflow: hidden;
         display: none;
+        overflow: auto;
     }
     .welcome-popup-container{
         width: 95%;
@@ -9182,10 +9188,11 @@ body.start{
         left: 0;
     }
     .menu-mobile-container{
-        width: 78%;
+        width: 82%;
         max-width: 300px;
         background-color: white;
         height: 100%;
+        overflow: auto;
     }
     .menu-mobile-signin{
         display: block;
@@ -9198,10 +9205,10 @@ body.start{
         color: white;
     }
     .user-icon{
-        margin-left: 15px;
+        margin-left: 10px;
     }
     .user-icon > i{
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 300;
     }
     .menu-mobile-signin > h4{
@@ -9220,9 +9227,9 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        text-indent: 15px;
+        font-size: 13px;
+        line-height: 25px;
+        text-indent: 10px;
         width: 100%;
         color: black;
     }
@@ -9237,9 +9244,9 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 35px;
-        text-indent: 15px;
+        font-size: 14px;
+        line-height: 25px;
+        text-indent: 10px;
         width: 100%;
         color: rgb(177, 175, 175);
     }
@@ -9257,11 +9264,13 @@ body.start{
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
     }
     .menu-icon-mobile{
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         margin-left: 10px;
-        font-size: 27px;
+        font-size: 25px;
         line-height: 45px;
+        display: flex;
+        align-items: center;
     }
     .menu-icon-mobile:hover{
         cursor: pointer;
@@ -9289,8 +9298,8 @@ body.start{
         align-items: center;
     }
     .sub-shopping-cart > a > img{
-        width: 32px;
-        height: 32px;
+        width: 25px;
+        height: 25px;
     }
     .total-count-item{
         text-align: center;
@@ -9324,7 +9333,7 @@ body.start{
         height: 45px;
     }
     .search-bar.scroll{
-        width: calc(95% - 60px);
+        width: calc(95% - 65px);
         left: 50%;
         transform: translateX(-50%);
         top: 0px;
@@ -9339,7 +9348,7 @@ body.start{
     }
     .x-mark-search-bar{
         position: absolute;
-        right: 30px;
+        right: 15px;
         z-index: 7;
         display: none;
         transition: 0.3s;
@@ -9349,10 +9358,10 @@ body.start{
         cursor: pointer;
     }
     .x-mark-search-bar.scroll{
-        right: 30px;
+        right: 15px;
     }
     .input-search-bar{
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
         height: 32px;
         left: 32px;
         z-index: 6;
@@ -9360,7 +9369,7 @@ body.start{
         border-radius: 0px 3px 3px 0px;
         border-left: 1px solid black;
         text-indent: 10px;
-        font-size: 14px;
+        font-size: 13px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -9368,7 +9377,7 @@ body.start{
     }
     .input-search-bar::placeholder{
         text-indent: 10px;
-        font-size: 14px;
+        font-size: 13px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -9402,14 +9411,13 @@ body.start{
     }
     .search-bar-item{
         text-decoration: none;
-        height: 25px;
         display: block;
         text-indent: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 13px;
+        line-height: 20px;
         color: black;
     }
     .search-bar-item:hover{
@@ -9465,31 +9473,29 @@ body.start{
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
     }
     .row-button{
         width: 100%;
-        margin: 20px auto 0px auto;
+        margin: 10px auto 0px auto;
         display: flex;
-        justify-content: center
-    }
-    .hot-button-container,
-    .new-button-container{
-        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .hot-button{
-        margin: 0px 25px 0px auto;
-        width: 90px;
-        height: 30px;
+        margin: 0px 5px 10px 5px;
+        width: 70px;
+        height: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
         background-color: #F2F0F0;
         border-radius: 999px;
     }
@@ -9497,17 +9503,17 @@ body.start{
         cursor: pointer;
     }
     .new-button{
-        margin: 0px auto 0 25px;
-        width: 120px;
-        height: 30px;
+        margin: 0px 5px 0px 5px;
+        width: 100px;
+        height: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 13px;
+        line-height: 20px;
         background-color: #F2F0F0;
         border-radius: 999px;
     }
@@ -9520,7 +9526,7 @@ body.start{
     }
     .row1-part1{
         width: 100%;
-        margin: 40px auto 0px auto;
+        margin: 20px auto 0px auto;
         display: flex;
         justify-content: center;
         overflow: visible;
@@ -9572,8 +9578,8 @@ body.start{
     }
     /*Common Part: Item */
     .item{
-        width: 230px;
-        height: 375px;
+        width: 220px;
+        height: 340px;
         text-decoration: none;
         color: black;
         display: block;
@@ -9583,14 +9589,13 @@ body.start{
         transition: 0.5s;
         margin: 0 15px 25px 15px;
     }
-
     .item:hover .back-image{
         opacity: 1;
         transform: rotateY(0deg);
     }
     .item-image{
-        width: 215px;
-        height: 215px;
+        width: 205px;
+        height: 205px;
         margin: 12.5px auto 0px auto;
         position: relative;
         z-index: 1;
@@ -9614,32 +9619,32 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 13px;
         line-height: 22px;
     }
     .item-name:hover{
         color: orangered;
     }
     .price-before-reduction{
-        height: 22px;
+        height: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .price-after-reduction{
-        height: 25px;
+        height: 22px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 22px;
         color: #AC0101;
     }
     .line-item{
-        margin: 15px auto 0px auto;
+        margin: 10px auto 0px auto;
         width: 85px;
         height: 0px;
         border: 0.5px dashed #000000
@@ -9664,10 +9669,10 @@ body.start{
     .sub-banner{
         position: relative;
         width: 95%;
-        height: 180px;
+        height: 120px;
         border-radius: 10px;
         overflow: hidden;
-        margin: 30px auto 0px auto;
+        margin: 10px auto 0px auto;
         background-image: url(../HomePage/sub-banner-mobile1.jpg);
         background-position: 50% 100%;
         background-attachment: scroll;
@@ -9684,7 +9689,7 @@ body.start{
         font-family: Roboto;
         font-style: italic;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         display: flex;
         align-items: center;
@@ -9700,8 +9705,8 @@ body.start{
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 28px;
+        line-height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9710,51 +9715,51 @@ body.start{
     .line3-text-sub-banner{
         position: absolute;
         width: 100%;
-        top: 67%;  
+        top: 70%;  
         font-family: Roboto;
         font-style: italic;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
         display: flex;
         align-items: center;   
         justify-content: center;
         color: #FFFFFF;
+        
         width: 100%;
     }
     /*Part 2 Guitar Show*/
     .part2-guitar-show{
         position: relative;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 25px;
     }
     .part2-title{
         margin: 0 auto;
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #32323D;
     }
     .part2-presentation{
-        margin: 20px auto 0px auto;
+        margin: 10px auto 0px auto;
         width: 85%;
         font-family: Roboto;
         font-style: italic;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 22px;
         color: #000000;
-        
     }
     .part2-seeAllButton{
         text-decoration: none;
-        width: 100px;
-        height: 30px;
+        width: 90px;
+        height: 25px;
         margin: 15px auto 0px auto;
         background: #DE0000;
         border-radius: 999px;
@@ -9762,8 +9767,8 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 2px;
+        font-size: 13px;
+        line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9783,7 +9788,7 @@ body.start{
         display: block;
         text-decoration: none;
         color: black;
-        width: 91%;
+        width: 95%;
         margin: 10px auto 0px auto;
         padding-bottom: 15px;
         position: relative;
@@ -9795,16 +9800,16 @@ body.start{
         height: 53.33vw;
         box-sizing: border-box;
         margin: 0 auto;
-        padding-top: 5px;
+        padding-top: 7px;
     }
     .part2-artist-name{
-        width: 85vw ;
+        width: 85vw;
         margin: 10px auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 18px;
+        line-height: 22px;
         position: relative;
         transform: translateY(-45%);
         display: none;
@@ -9829,15 +9834,15 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
         margin-top: 15px;
     }
     .show-presentation-mobile-location{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 18px;
         margin-top: 5px;
     }
@@ -9866,12 +9871,12 @@ body.start{
     /*Quote*/
     .quote-part2{
         width: 95%;
-        margin: 70px auto 0px auto;
+        margin: 25px auto 0px auto;
         border: 2px solid rgb(238, 238, 238);
         box-sizing: border-box;
         position: relative;
         border-radius: 20px;
-        padding-bottom: 60px;
+        padding-bottom: 55px;
     }
     .quote-item{
         width: 100%;
@@ -9887,15 +9892,15 @@ body.start{
     }
     .quote-item-name{
         position: absolute;
-        right:  10%;
+        right:  8%;
         bottom: -35px;
         width: 130px;
         height: 30px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 14px;
+        line-height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;  
@@ -9903,15 +9908,15 @@ body.start{
     }
     .quote-item-job{
         position: absolute;
-        right: 10%;
-        bottom: -60px;
+        right: 8%;
+        bottom: -55px;
         width: 130px;
         height: 30px;
         font-family: Roboto;
         font-style: italic;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: 14px;
+        line-height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9937,12 +9942,10 @@ body.start{
         display: none;
     }
     .quote-item-eng{
-        top: 40px;
-        left: 410px;
         font-family: Roboto;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 18px;
         display: flex;
         align-items: center;
         color: #000000;
@@ -9951,20 +9954,20 @@ body.start{
         padding: 10px 5px 5px 15px;
         border-left:5px solid #C4C4C4;
         margin-left: 10px;
+        display: none;
     }
     .quote-item-viet{
-        margin: 0 auto;
+        margin: 15px auto 0px auto;
         padding-top: 15px;
-        left: 410px;
         font-family: Roboto;
         font-style: italic;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 18px;
         display: flex;
         align-items: center;
         color: #000000;
-        padding: 5px 5px 10px 15px;
+        padding: 10px 5px 10px 15px;
         border-left:5px solid #C4C4C4;
         margin-left: 10px;
     }
@@ -9972,7 +9975,7 @@ body.start{
     .part3-blog{
         position: relative;
         width: 100%;
-        margin-top: 40px;
+        margin-top: 25px;
     }
     .part3-title{
         width: 90%;
@@ -9980,8 +9983,8 @@ body.start{
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9990,55 +9993,53 @@ body.start{
     .blog-slide{
         width: 98%;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 15px;
         position: relative;
     }
     .blog-slide-prev{
         position: absolute;
         left: 0;
-        top: 50%;
-        font-size: 30px;
-        transition: 1s;
+        top: 32%;
+        font-size: 20px;
         cursor: pointer;
         z-index: 3;
         background-color: white;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         border-radius: 999px;
         border: 1px solid #c4c4c4;
     }
     .blog-slide-prev > i{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 30px;
-        height: 30px;
+        top: 57%;
+        left: 55%;
+        width: 25px;
+        height: 25px;
         transform: translate(-40%,-50%);
     }
     .blog-slide-next{
         position: absolute;
         right: 0;
-        top: 50%;
-        font-size: 30px;
-        transition: 1s;
+        top: 32%;
+        font-size: 20px;
         cursor: pointer;
         z-index: 3;
         background-color:white;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         border-radius: 999px;
         border: 1px solid #c4c4c4;
     }
     .blog-slide-next > i{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 30px;
-        height: 30px;
+        top: 57%;
+        left: 55%;
+        width: 25px;
+        height: 25px;
         transform: translate(-30%,-50%);
     }
     .blog-slide-container{
-        width: 325px;
+        width: 220px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -10046,22 +10047,22 @@ body.start{
         width: 100%;
         position: relative;
         display: flex;
-        height: 470px;
+        height: 400px;
         transition: 1s;
     }
     .blog-slide-content{
         position: absolute;
-        left: -362.5px;
+        left: -250px;
         top: 0;
         display: flex;
         transition: 0.5s;
     }
     @keyframes move-right {
         0%{ 
-            left: -725px;
+            left: -500px;
         }
         100%{
-            left: -362.5px;
+            left: -250px;
         }
     }
     @keyframes move-left {
@@ -10069,13 +10070,13 @@ body.start{
             left: 0px;
         }
         100%{
-            left: -362.5px;
+            left: -250px;
         }
     }
     .blog-item{
-        margin-right: 37.5px;
-        width: 325px;
-        height: 470px;
+        margin-right: 30px;
+        width: 220px;
+        height: 380px;
         border: 1px solid #DADADA;
         box-sizing: border-box;
         border-radius: 5px;
@@ -10084,8 +10085,8 @@ body.start{
         color: black;
     }
     .blog-item-photo{
-        width: 325px;
-        height: 250px;
+        width: 220px;
+        height: 170px;
     }
     .blog-item-photo > img{
         width: 100%;
@@ -10093,20 +10094,20 @@ body.start{
         object-fit: cover;
     }
     .blog-item-info{
-        width: 285px;
-        margin: 16px auto 0px auto;
+        width: 200px;
+        margin: 13px auto 0px auto;
         display: flex;
         justify-content: space-between;
     }
     .blog-item-date{
-        width: 138px;
+        width: 135px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .blog-item-date > img{
-        width: 16px;
-        height: 16px;
+        width: 13px;
+        height: 13px;
     }
     .blog-item-date > div{
         width: 115px;
@@ -10114,7 +10115,7 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 34px;  
         color: #000000;
     }
@@ -10125,8 +10126,8 @@ body.start{
         align-items: center;
     }
     .blog-item-author > img{
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
     }
     .blog-item-author > div{
         width: 44px;
@@ -10134,41 +10135,43 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 34px;  
         color: #000000;
     }
     .blog-item-title{
-        width: 285px;
-        height: 60px;
+        width: 200px;
+        height: 44px;
         margin: 6px auto 0px auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 22px;
         color: #000000;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     .blog-item-summary{
-        width: 285px;
-        height: 60px;
+        width: 200px;
         margin: 0px auto;
+        margin-top: 5px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 20px;
         color: #000000;
     }
     .blog-item-seeMore{
         width: 80px;
         height: 20px;
-        margin: 10px 20px 0px auto;
+        margin: 5px 20px 0px auto;
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 13px;
+        line-height: 18px;
         text-align: right;    
         color: #32323D;
     
@@ -10178,8 +10181,8 @@ body.start{
     }
     .scrolling-button{
         display: none;
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
         right: 5%;
         bottom: 5%;
         position: fixed;
@@ -10207,7 +10210,7 @@ body.start{
         background-size: cover;
         background-position: center;
         width: 100%;
-        margin-top: 330px;
+        margin-top: 305px;
     }
     .footer-container{
         width: 100%;
@@ -10254,7 +10257,7 @@ body.start{
         margin: 0 auto;
         position: absolute;
         width: 100%;
-        top: -280px;
+        top: -240px;
     }
     .subscription-title{
         width: 90%;
@@ -10262,8 +10265,8 @@ body.start{
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -10284,8 +10287,8 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;  
+        font-size: 13px;
+        line-height: 18px;  
         color: black ;
         text-align: center;
     }
@@ -10305,7 +10308,7 @@ body.start{
         outline: none;
         border: 0;
         border-radius: 3px;
-        text-indent: 15px;
+        text-indent: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -10316,7 +10319,7 @@ body.start{
         width: 100%;
     }
     .name-footer::placeholder{
-        text-indent: 15px;
+        text-indent: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -10331,18 +10334,18 @@ body.start{
         outline: none;
         border: 0;
         border-radius: 3px;
-        text-indent: 15px;
+        text-indent: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 32px;
         color: #000000;
         border: 1px solid black;
         width: 100%;
     }
     .email-footer::placeholder{
-        text-indent: 15px;
+        text-indent: 10px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -10352,8 +10355,8 @@ body.start{
     }
     .empty-check{
         background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 200px;
+        height: 30px;
+        width: 95%;
         border-radius: 10px 10px 10px 10px;
         opacity: 0;
         transition: 0.5s;
@@ -10361,18 +10364,18 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
+        font-size: 13px;
+        line-height: 30px;
         color: white;
         text-align: center;
-        left: 10px;
+        left: 0px;
         top: 39px;
         z-index: -1;
     }
     .email-name-check{
         background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 260px;
+        height: 30px;
+        width: 95%;
         border-radius: 10px 10px 10px 10px;
         opacity: 0;
         transition: 0.5s;
@@ -10380,11 +10383,11 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
+        font-size: 13px;
+        line-height: 30px;
         color: white;
         text-align: center;
-        left: 10px;
+        left: 0px;
         top: 39px;
         z-index: -1;
     }
@@ -10398,9 +10401,9 @@ body.start{
         border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
     }
     .subscription-button{
-        width: 120px;
-        height: 35px;
-        margin: 25px auto 35px auto;
+        width: 90px;
+        height: 25px;
+        margin: 15px auto 20px auto;
         background: #FFFFFF;
         border-radius: 25px;
         display: flex;
@@ -10409,8 +10412,8 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 25px;
         text-align: center;
         color: #000000;
         border: 1px solid black;
@@ -10469,14 +10472,14 @@ body.start{
     }
     .store-info-title{
         width: 300px;
-        height: 30px;
+        height: 25px;
         margin: 0 auto;
         margin-top: 32px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 25px;
         color: #FFFFFF;
         display: none;
     }
@@ -10502,16 +10505,17 @@ body.start{
         color: white;
     }
     .store-content > div:first-child{
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 25px;
         margin-top: 20px;
     }
     .store-icon{
-        width: 265px;
+        width: 100%;
         margin: 27px auto 0px auto;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        flex-wrap: wrap;
     }
     .store-icon:hover{
         cursor: pointer;
@@ -10531,22 +10535,22 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 13px;
+        line-height: 25px;
         color: white;
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .about-website-button{
-        padding: 5px 10px;
+        padding: 5px 5px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 20px;
         border-radius: 999px;
-        margin-left: 15px;
+        margin: 0px 10px;
         border: 1px solid white;
         display: flex;
         justify-content: center;
@@ -10568,6 +10572,7 @@ body.start{
         display: none;
         opacity: 0;
         transition: 0.5s;
+        overflow: auto;
     }
     .about-website-content{
         width: 90%;
@@ -10578,24 +10583,25 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 30px;
         margin-bottom: 5px;
     }
     .about-website-content > p{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 20px;
         margin-bottom: 8px;
     }
     .about-website-content > p > a{
         color: white;
+        word-break: break-all;
     }
     .close-about-website{
-        width: 100px;
-        height: 25px;
+        width: 90px;
+        height: 22px;
         padding: 5px 0px;
         margin: 15px auto;
         border-radius: 999px;
@@ -10604,7 +10610,7 @@ body.start{
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 25px;
+        line-height: 22px;
         display: flex;
         justify-content: center;
         align-items: center;

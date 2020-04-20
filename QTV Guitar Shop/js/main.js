@@ -8,8 +8,10 @@ if (document.body.offsetHeight > window.innerHeight){
     scrollBarWidth = window.innerWidth - document.body.clientWidth;
 }
 else scrollBarWidth = 0;
-if (window.innerWidth < 576) document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm Với QTV Shop..."
-if (window.innerWidth < 450) document.querySelector('.line3-text-sub-banner').textContent = "Cho các bạn nữ đến mua guitar"
+if (window.innerWidth < 351) {
+    document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm...";
+}
+if (window.innerWidth < 450) document.querySelector('.line3-text-sub-banner').textContent = "Cho các bạn nữ đến mua guitar";
 if (localStorage.getItem('popup')){
     playVideo();
 }
@@ -411,14 +413,15 @@ document.querySelector('.blog-slide-prev').addEventListener('click',prevButton);
 document.querySelector('.blog-slide-next').addEventListener('click',nextButton);
 let blog = document.querySelector('.blog-slide-content');
 let interval;
-interval = setInterval(nextButton,4000);
+if (window.innerWidth > 1024){
+    interval = setInterval(nextButton,4000);
 document.querySelector('.blog-slide').addEventListener('mouseover',function(){
     clearInterval(interval);
 })
 document.querySelector('.blog-slide').addEventListener('mouseout',function(){
     interval = setInterval(nextButton,4000);
 })
-
+}
 function prevButton(){
     let lastChild = document.querySelector('.last-child');
     let firstChild = document.querySelector('.first-child')

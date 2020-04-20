@@ -1181,14 +1181,24 @@ body.start {
         display: flex;
         justify-content: space-between;
     }
-    .subscription-announcement{
+    .subscription-announcement-container{
         position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 15;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .subscription-announcement{
         width: 90%;
         max-width: 300px;
         left: 50%;
-        top: 30%;
-        transform: translateX(-50%);
-        z-index: 15;
+        top: 40%;
+        transform: translate(-50%,-50%);
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1197,16 +1207,13 @@ body.start {
         color: #000000;
         background-color: white;
         border: 1px solid #C4C4C4;
-        border-radius: 20px;
+        border-radius: 15px;
         height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        opacity: 0;
-        z-index: -1;
-        transition: 0.5s;
-        visibility: hidden;
+        position: absolute;
     }
     .subscription-part{
         width: 350px;
@@ -1251,7 +1258,7 @@ body.start {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 32px;
         color: #000000;
     }
     .name-footer::placeholder{
@@ -1260,7 +1267,7 @@ body.start {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 32px;
         color: #000000;
     }
     .email-footer{
@@ -1275,7 +1282,7 @@ body.start {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 32px;
         color: #000000;
     }
     .email-footer::placeholder{
@@ -1284,7 +1291,7 @@ body.start {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 18px;
+        line-height: 32px;
         color: #000000;
     }
     .name-footer-container,.email-footer-container{
