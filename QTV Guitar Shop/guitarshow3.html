@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QTV Guitar Shop - Guitar Show</title>
+    <title>Lê Thu Concert : 1001 Đêm</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Css-->
+    <link rel="stylesheet" href="style/style-header&footer.css">
     <link rel="stylesheet" href="style/style-guitarshow-item.css">
     <!--Fontawesome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
@@ -15,6 +16,58 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
 </head>
 <body>
+    <header class="header-tablet">
+        <div class="menu-mobile">
+            <div class="menu-mobile-container">
+                <a href="signin.html" class="menu-mobile-signin">
+                    <div class="user-icon"><i class="fas fa-user-circle"></i></div>
+                    <h4>Đăng Nhập</h4>
+                    <div class="singin-icon"><i class="fas fa-sign-in-alt"></i></div>
+                </a>
+                <a href="index.html" class="menu-mobile-item">Trang Chủ</a>
+                <ul>
+                    <li><a class="menu-mobile-item" href="classicalguitar.html">Guitar Cổ Điển</a></li>
+                    <li><a class="menu-mobile-item" href="acousticguitar.html">Guitar Acoustic</a></li>
+                    <li><a class="menu-mobile-item" href="electricguitar.html">Guitar Điện</a></li>
+                    <li><a class="menu-mobile-item" href="ukulele.html">Ukulele</a></li>
+                </ul>
+                <a href="accessories.html" class="menu-mobile-item">Phụ Kiện</a>
+                <a href="guitarshow.html" class="menu-mobile-item">Guitar Show</a>
+                <a href="blog.html" class="menu-mobile-item">Blog</a>
+                <a href="contact.html" class="menu-mobile-item">Liên Hệ</a>
+                <div class="break-title">CHĂM SÓC KHÁCH HÀNG</div>
+                <a href="guideonlineshopping.html" class="menu-mobile-item">Hướng dẫn mua hàng</a>
+                <a href="termofservice.html" class="menu-mobile-item">Điều khoản dịch vụ </a>
+                <a href="warrantypolicy.html" class="menu-mobile-item">Chính sách bảo hành, đổi trả </a>
+            </div>
+        </div>
+        <div class="top-navbar-mobile">
+            <div class="menu-icon-mobile"><i class="fas fa-bars"></i></div>
+            <div class="logo-mobile"><img src="HomePage/Untitled.jpg" alt="logo"></div>
+            <div class="sub-shopping-cart">
+                <a href="shoppingcart.html"><img src="HomePage/shopping-cart 1.svg" alt=""><span class="total-count-item">0</span></a>
+            </div>  
+            <div class="search-bar">
+                <img src="HomePage/search_24px_outlined.svg" alt="search">
+                <input class="input-search-bar" type="text" placeholder="Tìm kiếm trên QTV Guitar Shop...">
+                <img class="x-mark-search-bar" src="HomePage/x-mark 1.png" alt="x-mark">
+                <div class="suggestion-item">
+                    <div class="suggestion-guitar">
+                        <!--Search Items will be displayed here-->
+                    </div>
+                    <!--<div class="suggestion-category">
+                        <div class="suggestion-category-title">Hay Được Tìm Kiếm :</div>
+                        <a class="suggestion-category-item category-1" href="classicalguitar.html">Guitar Cổ Điển</a>
+                        <a class="suggestion-category-item category-2" href="acousticguitar.html">Guitar Acoustic</a>
+                        <a class="suggestion-category-item category-3" href="electricguitar.html">Guitar Điện</a>
+                        <a class="suggestion-category-item category-4" href="ukulele.html">Ukulele</a>
+                        <a class="suggestion-category-item category-5" href="accessories.html">Phụ Kiện</a>
+                        <a class="suggestion-category-item category-6" href="guitarshow.html">Guitar Show</a>
+                    </div>-->
+                </div>
+            </div>  
+        </div>
+    </header>
     <header class="header-desktop">
         <div class="top-navbar">
             <div class="top-navbar-container">
@@ -78,7 +131,12 @@
                             <div class="match-box"></div>
                             <div class="match-box-hidden"></div>
                             <div class="sub-shopping-cart-container">
-                                <!--Item will be displayed here-->
+                                <div class="sub-shopping-cart-container-item">
+                                    <!--Item will be displayed here-->
+                                </div>
+                                <div class="sub-shopping-cart-total">
+                                    <!--Total money will be displayed here-->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -176,7 +234,9 @@
     </main>
     <footer>
         <div class="footer-container">
-            <div class="subscription-announcement">Cảm Ơn Bạn Đã Đăng Ký</div>
+            <div class="subscription-announcement-container">
+                <div class="subscription-announcement">Cảm Ơn Bạn Đã Đồng Hành Cùng QTV Guitar Shop</div>
+            </div>
             <div class="subscription-part">
                 <div class="subscription-title">ĐĂNG KÝ</div>
                 <div class="line-footer"></div>
@@ -236,6 +296,7 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/guitarData.js"></script>
+    <script src="js/main-commonPartJquery.js"></script>
     <script src="js/main-guitarshowitem.js"></script>
 </body>
 </html>
