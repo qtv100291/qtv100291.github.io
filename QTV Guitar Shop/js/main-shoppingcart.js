@@ -19,7 +19,7 @@ function loadCart(){//Load Cart
 shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
 }
 
-function displayShoppingCart(){ //Display Sub Shopping Cart
+function displayShoppingCart(){ //Display Shopping Cart
 let output= "";
 let totalMoney = 0;
 if (shoppingCart.length == 0){
@@ -33,10 +33,10 @@ else{
     for (let i = 0; i < shoppingCart.length; i++){
         let addressPage;
         if (["classical","acoustic","electrical","ukulele"].includes(shoppingCart[i].group)){
-            addressPage = "productitem.html";
+            addressPage = `productitem.html#${shoppingCart[i].id}+${shoppingCart[i].group}`;
         }
         if (shoppingCart[i].group == "accessory"){
-            addressPage = "accessories.html";
+            addressPage = `accessories.html#${shoppingCart[i].id}+${shoppingCart[i].group}`;
         }
         if (shoppingCart[i].group == "guitarshow"){
             switch (shoppingCart[i].id){

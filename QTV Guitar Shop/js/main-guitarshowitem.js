@@ -108,8 +108,8 @@ $('.add-to-cart-button').click(function(){
 })
   
 function addToCart(){
-    let group = $('.order-ticket-part').data('group');
-    let id = $('.order-ticket-part').data('id');
+    let group = $('.order-ticket-part').attr('data-group');
+    let id = $('.order-ticket-part').attr('data-id');
     let name = $('.title-ticket-part').text() + " - Vé " + $('#ticket-option').val();
     let price = $('.price-value').text();
     let image = $('.order-ticket-part').data('photo');

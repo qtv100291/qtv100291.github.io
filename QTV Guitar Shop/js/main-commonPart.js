@@ -145,7 +145,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendData(this);deleteContentClick(this)" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContentClick(this)" href="productitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }        
     }
@@ -155,7 +155,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendDataAccesories(this);deleteContentClick(this)" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContentClick(this)" href="accessoriesitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }   
     }
@@ -204,7 +204,7 @@ function searchItemDesktop(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendData(this);deleteContentClick(this)" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContentClick(this)" href="productitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }        
     }
@@ -214,7 +214,7 @@ function searchItemDesktop(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendDataAccesories(this);deleteContentClick(this)" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContentClick(this)" href="accessoriesitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }   
     }
@@ -373,10 +373,14 @@ function openAboutWebsite(){
     document.body.classList.add('start');
     document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.querySelector('.header-desktop').style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `${10 + scrollBarWidth}px`;
 }
 document.querySelector('.close-about-website').addEventListener('click',closeAboutWebsite);
 function closeAboutWebsite(){
     document.querySelector('.about-website-container').style.opacity = "0";
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
     setTimeout(function(){
         document.querySelector('.about-website-container').style.display = "none";
         document.body.classList.remove('start');

@@ -3,31 +3,40 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Rendering productitem.html
-let itemData = new Object;
-itemData = JSON.parse(localStorage.getItem('dataguitaritem'));
+let itemData = {
+    group: "",
+    id: ""
+};
+itemData.id = window.location.href.split("#")[1].split("+")[0];
+itemData.group = window.location.href.split("#")[1].split("+")[1];
 renderProductItem(itemData);
 function renderProductItem(objectData){
     let arrayExecuted =[];
+    let bannerAddress;
     switch (objectData.group){
         case "classical":
             $('.main-section-name').text('Guitar Cổ Điển');
             $('.main-section-name').attr('href','classicalguitar.html');
             arrayExecuted = guitarClassicalData;
+            bannerAddress = `Product/Classical Guitar/banner - 2.jpg`
             break;
         case "acoustic":
             $('.main-section-name').text('Guitar Acoustic');
             $('.main-section-name').attr('href','acousticguitar.html');
             arrayExecuted = guitarAcousticData;
+            bannerAddress = `Product/Acoustic Guitar/banner - 2.jpg`
             break;
         case "electrical":
             $('.main-section-name').text('Guitar Điện');
             $('.main-section-name').attr('href','electricguitar.html');
             arrayExecuted = guitarElectricalData;
+            bannerAddress = `Product/Electrical Guitar/banner - 2.jpg`
             break;
         case "ukulele":
             $('.main-section-name').text('Ukulele');
             $('.main-section-name').attr('href','ukulele.html');
             arrayExecuted = guitarUkuleleData;
+            bannerAddress = `Product/Ukulele/banner - 2.jpg`
             break;
     }
     let objectProductItem;
@@ -41,12 +50,20 @@ function renderProductItem(objectData){
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}`).attr('src',`${objectProductItem.photo}/${i}.jpg`)
     }
-    $('title').text(`${objectProductItem.name}`)
-    $('.item-detail').data('group',objectProductItem.group);
-    $('.item-detail').data('id',objectProductItem.id);
+    for (let i = 1; i < 6 ; i++){
+        $(`.item-photo-${i}-indicator`).attr('src',`${objectProductItem.photo}/${i} - Indicator.jpg`)
+    }
+    $('title').text(objectProductItem.name);
+    $('.banner > img').attr('src',bannerAddress);
+    $('.item-detail').attr('data-group',objectProductItem.group);
+    $('.item-detail').attr('data-id',objectProductItem.id);
     $('.item-name').text(objectProductItem.name);
     $('.item-price').text(objectProductItem.price);
     $('#player').attr('src',`${objectProductItem.video}`);
+}
+
+function getRandomValue(max,min){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 //Part 2 : Function for Scaling Display Photo
@@ -189,6 +206,15 @@ function changeTab(){
 } 
 
 //Part 8: Function for Shopping Cart
+function Item(group, id, name, price, count, image){ //Item Constructor
+    this.group = group;
+    this.id = id;
+    this.name = name;
+    this.price = price;
+    this.count = count;
+    this.image = image;
+}
+
 $('.submit-button').click(function(){
     if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
     else shoppingCart=[];
@@ -197,8 +223,8 @@ $('.submit-button').click(function(){
 })
    
 function addToCart(){
-    let group = $('.item-detail').data('group');
-    let id = $('.item-detail').data('id');
+    let group = $('.item-detail').attr('data-group');
+    let id = $('.item-detail').attr('data-id');
     let name = $('.item-name').text();
     let price = $('.item-price').text();
     let image = $('.item-photo-1').attr('src');

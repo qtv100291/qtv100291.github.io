@@ -70,7 +70,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendData(this);deleteContent()" href="productitem.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContent();reloadPage()" href="productitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }       
     }
@@ -80,7 +80,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="sendDataAccesories(this);deleteContent()" href="accessories.html" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContent()" href="accessoriesitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }  
     }
@@ -122,6 +122,11 @@ function deleteContent(){
     $('.suggestion-guitar').html("");
 }
 
+function reloadPage(){
+    setTimeout(function(){
+        location.reload();
+    },50)
+}
 // Part 5 : Function for Displaying shopping cart
 let shoppingCart=[];
 if (localStorage.getItem('shoppingcartguitar') != null){
@@ -130,15 +135,6 @@ if (localStorage.getItem('shoppingcartguitar') != null){
     countItem()
 }
 else displayCartSub();
-function Item(group, id, name, price, count, image){ //Item Constructor
-    this.group = group;
-    this.id = id;
-    this.name = name;
-    this.price = price;
-    this.count = count;
-    this.image = image;
-}
-
 function saveCart (){//Save Cart
     localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart))
 }

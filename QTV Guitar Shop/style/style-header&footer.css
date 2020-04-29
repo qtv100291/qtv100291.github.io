@@ -771,7 +771,6 @@ body.start{
         color: white;
         font-size: 90%;
     }
-     
     /*footer*/
     .scrolling-button{
         display: none;
@@ -3680,6 +3679,7 @@ body.start{
         text-align: center;
         color: white;
     }
+    /*Main*/
     
     /*Column 2 footer*/
     .client-service-part{
@@ -4210,7 +4210,7 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400 !important;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 30px;
         color: orangered;
     }
@@ -5009,7 +5009,7 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400 !important;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 30px;
         color: orangered;
     }
@@ -5059,7 +5059,7 @@ body.start{
         background-size: cover;
         background-position: center;
         width: 100%;
-        margin-top: 305px;
+        margin-top: 250px;
     }
     .footer-container{
         width: 100%;
@@ -5359,7 +5359,7 @@ body.start{
         margin-top: 20px;
     }
     .store-icon{
-        width: 100%;
+        width: 220px;
         margin: 27px auto 0px auto;
         display: flex;
         justify-content: space-between;
@@ -5390,13 +5390,13 @@ body.start{
         padding: 5px 0px;
     }
     .about-website-button{
-        padding: 5px 5px;
+        padding: 5px 10px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 13px;
+        font-size: 12px;
         line-height: 20px;
         border-radius: 999px;
         margin: 0px 10px;

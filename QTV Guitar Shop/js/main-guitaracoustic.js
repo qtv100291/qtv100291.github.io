@@ -3,9 +3,11 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 // Part 1 : Function for Showing Filter Part
-let filterContent = document.querySelectorAll('.filter-content');
-for (let i = 0; i < filterContent.length; i++){ //Set a definite Number for max-height
+if (window.innerWidth > 1024){
+    let filterContent = document.querySelectorAll('.filter-content');
+    for (let i = 0; i < filterContent.length; i++){ //Set a definite Number for max-height
     filterContent[i].style.maxHeight = filterContent[i].scrollHeight + "px";
+    }
 }
 
 let filterTitle = document.querySelectorAll('.filter-title');
@@ -145,15 +147,23 @@ function renderItem(array){
         let outputPagination = `<div class="pagination-button prev-button "><img src="Blog/arrow_back_ios_24px_outlined.svg" alt=""></div>
                                 <div class="pagination-button button-number button-1 active">1</div>`;
         //Add page for Pagination (Apply 9 item for 1 page) 
-        let itemInOnePage = 9;
+        let itemInOnePage;
+        switch (true) {
+            case window.innerWidth > 768:
+                itemInOnePage = 9;
+                break;
+            default:
+                itemInOnePage = 8;
+                break;
+        }
         numberOfPage = Math.ceil(array.length/itemInOnePage);
         for (let i = 0; i < array.length; i++){
             let index = Math.floor(i/itemInOnePage);
             output += 
-                `<a class="item page-${index + 1}" href="productitem.html" data-id="${array[i].id}" data-group="${array[i].group}" onmousedown="sendData(this)" >
+                `<a class="item page-${index + 1}" href="productitem.html#${array[i].id}+${array[i].group}">
                     <div class="item-image">
-                        <img class="front-image" src="${array[i].photo}/1.jpg" alt="${array[i].name}">
-                        <img class="back-image" src="${array[i].photo}/2.jpg" alt="${array[i].name}">
+                        <img class="front-image" src="${array[i].photo}/1 - banner.jpg" alt="${array[i].name}">
+                        <img class="back-image" src="${array[i].photo}/2 - banner.jpg" alt="${array[i].name}">
                     </div>
                     <div class="item-name">${array[i].name}</div>
                     <div class="price-before-reduction"></div>
