@@ -36,7 +36,7 @@ else{
             addressPage = `productitem.html#${shoppingCart[i].id}+${shoppingCart[i].group}`;
         }
         if (shoppingCart[i].group == "accessory"){
-            addressPage = `accessories.html#${shoppingCart[i].id}+${shoppingCart[i].group}`;
+            addressPage = `accessoriesitem.html#${shoppingCart[i].id}+${shoppingCart[i].group}`;
         }
         if (shoppingCart[i].group == "guitarshow"){
             switch (shoppingCart[i].id){
@@ -52,8 +52,7 @@ else{
                 case "2020326205321-6215666":
                     addressPage = "guitarshow4.html";
                     break
-            }
-                
+            }       
         }
         let provisionalMoney = shoppingCart[i].price.replace(/\D/g,'') * shoppingCart[i].count;
         let realMoney = provisionalMoney - provisionalMoney*discount;

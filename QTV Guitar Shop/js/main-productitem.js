@@ -2,6 +2,19 @@
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
+//Youtube API
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video-review', {
+  });
+}
+
 //Part 1 : Function for Rendering productitem.html
 let itemData = {
     group: "",
@@ -59,7 +72,7 @@ function renderProductItem(objectData){
     $('.item-detail').attr('data-id',objectProductItem.id);
     $('.item-name').text(objectProductItem.name);
     $('.item-price').text(objectProductItem.price);
-    $('#player').attr('src',`${objectProductItem.video}`);
+    $('#video-review').attr('src',`${objectProductItem.video}?enablejsapi=1`);
 }
 
 function getRandomValue(max,min){
@@ -117,7 +130,7 @@ function chooseIndicator(){
     currentPhoto.removeClass('active-photo');
     let currentIndicator = $('.active-indicator');
     currentIndicator.removeClass('active-indicator');
-    $(this).addClass('active-indicator');;
+    $(this).addClass('active-indicator');
     let indicator = $(this).data('indicator');
     $(`.item-photo-${indicator}`).addClass('active-photo');
     photoZoom(`.item-photo-${indicator}`);
@@ -182,28 +195,27 @@ function plusItem(){
 
 //Part 6: Function for Changing Tab Specification 
 $('.item-description').height(function(){
-    return $('.description-active').outerHeight(true)
+    return $('.description-active').outerHeight(true);
 })
 $('.tab-item').click(changeTab)
 function changeTab(){
     let currentTab = $('.tab-active');
-    currentTab.removeClass('tab-active')
+    currentTab.removeClass('tab-active');
     let currentPage = $(`.description-active`);
     currentPage.removeClass('description-active');
 
-    $(this).addClass('tab-active')
-    let pageIndex = $(this).data('item')
-    $(`.description-${pageIndex}`).addClass('description-active')
+    $(this).addClass('tab-active');
+    let pageIndex = $(this).data('item');
+    $(`.description-${pageIndex}`).addClass('description-active');
     //Change height of specfication
     $('.item-description').height(function(){
-        return $('.description-active').outerHeight(true)
+        return $('.description-active').outerHeight(true);
     })
-    // //Stopping video when changing tab. I have used Youtube Player API . This API help me stop video YouTube. Can see in more detail at: https://developers.google.com/youtube/iframe_api_reference
-    // if ($('.description-2').css('opacity') == 0){
-    //     document.getElementById('player').pauseVideo();
-    // }
-    
-} 
+    //Stopping video when changing tab. 
+    if (!$('.description-2').hasClass('description-active')){
+        player.pauseVideo();
+    }
+}
 
 //Part 8: Function for Shopping Cart
 function Item(group, id, name, price, count, image){ //Item Constructor
@@ -227,7 +239,7 @@ function addToCart(){
     let id = $('.item-detail').attr('data-id');
     let name = $('.item-name').text();
     let price = $('.item-price').text();
-    let image = $('.item-photo-1').attr('src');
+    let image = $('.item-photo-1-indicator').attr('src');
     let count = parseInt($('#item-quantity').val());
     for (let i = 0; i < shoppingCart.length; i++){
         if (shoppingCart[i].id == id){
@@ -269,6 +281,7 @@ function popupAddToCart(){
         $('.popup-container').css('display','none')
     },1600)
 }
+
 
 
 

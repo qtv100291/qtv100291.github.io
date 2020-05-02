@@ -24,7 +24,6 @@ function closeModal(){
     $('.header-desktop').css('paddingRight','0px');
 }
 
-
 //Part 2: Function for Ticket Option
 let ticketPrice1 = ['999.000','1.199.000','1.599.000']
 let ticketPrice2 = ['800.000','1.500.000','2.200.000','2.500.000']
@@ -100,6 +99,14 @@ function plusItem(elt){
 }
 
 //Part 3: Function for Shopping Cart
+function Item(group, id, name, price, count, image){ //Item Constructor
+    this.group = group;
+    this.id = id;
+    this.name = name;
+    this.price = price;
+    this.count = count;
+    this.image = image;
+}
 $('.add-to-cart-button').click(function(){
     if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
     else shoppingCart=[];

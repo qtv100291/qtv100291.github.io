@@ -558,9 +558,9 @@
         display: block;
         margin: 30px auto;
         width: 95vw;
-        max-width: 500px;
+        max-width: 600px;
         height: 53.44vw;
-        max-height: 280px;
+        max-height: 340px;
     }
     .description-active{
         opacity: 1;

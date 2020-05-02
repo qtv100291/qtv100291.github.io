@@ -44,7 +44,6 @@ function showFilterContent(){
             this.childNodes[2].style.display = "none";  
         }
     }
-    
 }
 
 // Part 2 : Function for Filtering Item

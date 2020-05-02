@@ -964,7 +964,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Capo",
         price: "450.000",
-        photo:"Accessories/Capo D'addario Pro - 0.45tr"
+        photo:"Accessories/Capo D'addario Pro - 0.45tr",
+        photoNumber:"2"
     },
     {
         id: "2020429162854-5800815",
@@ -973,7 +974,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Capo",
         price: "200.000",
-        photo:"Accessories/Capo D'addario ratchet - 0.2tr"
+        photo:"Accessories/Capo D'addario ratchet - 0.2tr",
+        photoNumber:"2"
     },
     {
         id: "202042916309-6215666",
@@ -982,7 +984,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Capo",
         price: "550.000",
-        photo:"Accessories/Capo D'addario Tri-action - 0.55tr"
+        photo:"Accessories/Capo D'addario Tri-action - 0.55tr",
+        photoNumber:"3"
     },
     {
         id: "2020429163136-3606061",
@@ -991,7 +994,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Capo",
         price: "550.000",
-        photo:"Accessories/Capo Fender Dragon - 0.35tr"
+        photo:"Accessories/Capo Fender Dragon - 0.35tr",
+        photoNumber:"2"
     },
     {
         id: "2020429163238-3717531",
@@ -1000,7 +1004,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Capo",
         price: "470.000",
-        photo:"Accessories/Capo Fender Phoenix - 0.47tr"
+        photo:"Accessories/Capo Fender Phoenix - 0.47tr",
+        photoNumber:"2"
     },
     {
         id: "2020429163324-7972660",
@@ -1009,7 +1014,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Capo",
         price: "580.000",
-        photo:"Accessories/Capo Fender Smart - 0.58tr"
+        photo:"Accessories/Capo Fender Smart - 0.58tr",
+        photoNumber:"2"
     },
     {
         id: "2020429163346-1126158",
@@ -1018,7 +1024,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Dây đàn",
         price: "165.000",
-        photo:"Accessories/Dây Đàn D'addario EJ11 Bronze Acoustic - 0.165tr"
+        photo:"Accessories/Dây Đàn D'addario EJ11 Bronze Acoustic - 0.165tr",
+        photoNumber:"2"
     },
     {
         id: "2020429163811-7846511",
@@ -1027,7 +1034,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Dây đàn",
         price: "180.000",
-        photo:"Accessories/Dây Đàn D'addario EJ27N Normal Tension - 0.18tr"
+        photo:"Accessories/Dây Đàn D'addario EJ27N Normal Tension - 0.18tr",
+        photoNumber:"2"
     },
     {
         id: "2020429163947-8330409",
@@ -1036,7 +1044,8 @@ var accessoriesData=[
         brand: "Elixir",
         type: "Dây đàn",
         price: "250.000",
-        photo:"Accessories/Dây Đàn Elixir Nickel Plated OPTIWEB Super Light (.009-.042) 0.25tr"
+        photo:"Accessories/Dây Đàn Elixir Nickel Plated OPTIWEB Super Light (.009-.042) 0.25tr",
+        photoNumber:"2"
     },
     {
         id: "2020429164053-7381340",
@@ -1045,7 +1054,8 @@ var accessoriesData=[
         brand: "Elixir",
         type: "Dây đàn",
         price: "360.000",
-        photo:"Accessories/Dây Đàn Elixir Phosphor Bronze NANOWEB Light (.012-.053) 0.36tr"
+        photo:"Accessories/Dây Đàn Elixir Phosphor Bronze NANOWEB Light (.012-.053) 0.36tr",
+        photoNumber:"2"
     },
     {
         id: "2020429164148-1408174",
@@ -1054,7 +1064,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Dây đàn",
         price: "120.000",
-        photo:"Accessories/Dây Đàn Fender 60L PHOS Bronze Ball 12-53 - 0.12tr"
+        photo:"Accessories/Dây Đàn Fender 60L PHOS Bronze Ball 12-53 - 0.12tr",
+        photoNumber:"1"
     },
     {
         id: "2020429164227-4726293",
@@ -1063,7 +1074,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Dây đàn",
         price: "150.000",
-        photo:"Accessories/Dây Đàn Fender 3250 R 10-46 Bullet - 0.15tr"
+        photo:"Accessories/Dây Đàn Fender 3250 R 10-46 Bullet - 0.15tr",
+        photoNumber:"1"
     },
     {
         id: "2020429164423-8763573",
@@ -1072,7 +1084,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Tuner",
         price: "480.000",
-        photo:"Accessories/Tuner D'addario Clip-on Headstock - 0.48tr"
+        photo:"Accessories/Tuner D'addario Clip-on Headstock - 0.48tr",
+        photoNumber:"3"
     },
     {
         id: "2020429164445-8114319",
@@ -1081,7 +1094,8 @@ var accessoriesData=[
         brand: "D'addario",
         type: "Tuner",
         price: "400.000",
-        photo:"Accessories/Tuner D'addario Micro Universal - 0.4tr"
+        photo:"Accessories/Tuner D'addario Micro Universal - 0.4tr",
+        photoNumber:"3"
     },
     {
         id: "202042916465-4361825",
@@ -1090,7 +1104,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Tuner",
         price: "450.000",
-        photo:"Accessories/Tuner Fender California Series Clip-on - 0.45tr"
+        photo:"Accessories/Tuner Fender California Series Clip-on - 0.45tr",
+        photoNumber:"2"
     },
     {
         id: "2020429164653-9657577",
@@ -1099,7 +1114,8 @@ var accessoriesData=[
         brand: "Fender",
         type: "Tuner",
         price: "500.000",
-        photo:"Accessories/Tuner Fender FCT-12 Clip-on - 0.5tr"
+        photo:"Accessories/Tuner Fender FCT-12 Clip-on - 0.5tr",
+        photoNumber:"3"
     },
     {
         id: "2020429164959-8843011",
@@ -1108,7 +1124,8 @@ var accessoriesData=[
         brand: "Fishman",
         type: "Tuner",
         price: "600.000",
-        photo:"Accessories/Tuner Fishman FT-2 - 0.6tr"
+        photo:"Accessories/Tuner Fishman FT-2 - 0.6tr",
+        photoNumber:"2"
     },
     {
         id: "2020429165125-1506131",
@@ -1117,7 +1134,8 @@ var accessoriesData=[
         brand: "Fishman",
         type: "Tuner",
         price: "950.000",
-        photo:"Accessories/Tuner Fishman FT-4 Clip-on - 0.95tr"
+        photo:"Accessories/Tuner Fishman FT-4 Clip-on - 0.95tr",
+        photoNumber:"2"
     }
 ];
 

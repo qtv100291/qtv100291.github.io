@@ -1,0 +1,14 @@
+
+@media only screen and (min-width: 1366px){
+    /*Header*/
+    .menu-bar-item-2{
+        border: none;
+    }
+    .menu-bar-item-3{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .item-picture:hover{
+        cursor: context-menu;
+    }
+}

@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1366px){
+@media only screen and (min-width: 1367px){
     /*Header*/
     
     .menu-bar-item-1{
@@ -155,7 +155,7 @@
     .guitar-show-name{
         width: 78.75vw;
         max-width: 700px;
-        margin: 15px auto 0px auto;
+        margin: 20px auto 0px auto;
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
@@ -249,5 +249,1221 @@
     }
     #line-item-4{
         height: 592px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+    /*Header*/
+    
+    .menu-bar-item-1{
+        border: none; 
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .container{
+        width: 100%;
+        margin-top: 62px;
+    }
+    .container.scroll{
+        margin-top: 124px;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navigation{
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .guitar-show-item{
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .guitar-show-item-1{
+        margin-top: 50px;
+    }
+    .show-item-date{
+        width: 150px;
+        height: 150px;
+        margin-top: 120px;
+        box-sizing: border-box;
+        border: 7px solid #A47C44;
+        overflow: hidden;
+
+    }
+    .show-item-date:hover .date-show{
+        transform: translateY(-100%)
+    }.show-item-date:hover .day-left{
+        transform: translateY(-100%)
+    }
+    .date-show{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.5s;
+        position: relative;
+        overflow: auto;
+    }
+    
+    .date-show p:nth-child(1){
+        margin-top: 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 60px;
+        color: #32323D;
+    }
+    .date-show p:nth-child(2){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left > div:first-child{
+        margin-top: 5px;
+    }
+    .day-left-number{
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .guitar-show-detail{
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .guitar-show-photo{
+        width: 700px;
+        height: 350px;
+    }
+    .guitar-show-photo > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .line-break{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .guitar-show-presentation{
+        width: 700px;
+        background-color: rgba(0,0, 0, 0.9) ;
+        overflow: auto;
+    }
+    .guitar-show-name{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        text-indent: 20px;
+    }
+    .guitar-show-location{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 20px;
+    }
+    .guitar-show-artist{
+        width: 100%;
+        margin: 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 20px;
+    }
+    .guitar-show-price{
+        width: 100%;
+        margin: 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 20px;
+    }
+    .guitar-show-moreDetail{
+        width: 100px;
+        direction: rtl;
+        margin-left: 550px;
+        margin-bottom: 10px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    .guitar-show-moreDetail:hover{
+        color: orangered;
+    }
+    .timeline-line{
+        width: 40px;
+        position: relative;
+    }
+    .circle-out{
+        margin-top: 180px;
+        position: relative;
+        z-index: 2;
+        width: 38px;
+        height: 38px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .circle-in{
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .line{
+        position: absolute;
+        top: 0px;
+        left: 19px;
+        height: 692px;
+        z-index: 1;
+        width: 2px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    #line-item-4{
+        height: 552px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none; 
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .container{
+        width: 100%;
+        margin-top: 125px;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+        display: none;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navigation{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .guitar-show-item{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .guitar-show-item-1{
+        margin-top: 25px;
+    }
+    .show-item-date{
+        width: 120px;
+        height: 120px;
+        margin-top: 140px;
+        box-sizing: border-box;
+        border: 5px solid #A47C44;
+        overflow: hidden;
+    }
+    .date-show{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.5s;
+        position: relative;
+        overflow: auto;
+    }
+    .date-show p:nth-child(1){
+        margin-top: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .date-show p:nth-child(2){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left > div:first-child{
+        margin-top: 5px;
+    }
+    .day-left-number{
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .guitar-show-detail{
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        overflow: hidden;
+        width: calc(95vw - 200px);
+    }
+    .guitar-show-photo{
+        width: 100%;
+        height: calc((95vw - 200px)/2);
+    }
+    .guitar-show-photo > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .line-break{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .guitar-show-presentation{
+        width: 100%;
+        background-color: rgba(0,0, 0, 0.9) ;
+        overflow: auto;
+    }
+    .guitar-show-name{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        text-indent: 15px;
+    }
+    .guitar-show-location{
+        width: 100%;
+        margin: 5px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 15px;
+    }
+    .guitar-show-artist{
+        width: 100%;
+        margin: 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 15px;
+    }
+    .guitar-show-price{
+        width: 100%;
+        margin: 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        text-indent: 15px;
+    }
+    .guitar-show-moreDetail{
+        width: 100px;
+        margin-left: calc(100% - 130px);
+        margin-bottom: 10px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    .guitar-show-moreDetail:hover{
+        color: orangered;
+    }
+    .timeline-line{
+        width: 30px;
+        position: relative;
+    }
+    .circle-out{
+        margin-top: 180px;
+        position: relative;
+        z-index: 2;
+        width: 28px;
+        height: 28px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .circle-in{
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .line{
+        position: absolute;
+        top: 0px;
+        left: 14px;
+        height: 692px;
+        z-index: 1;
+        width: 2px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    #line-item-4{
+        height: 552px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none; 
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .container{
+        width: 100%;
+        margin-top: 125px;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+        display: none;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navigation{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .guitar-show-item{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .guitar-show-item-1{
+        margin-top: 20px;
+    }
+    .show-item-date{
+        width: 95px;
+        height: 95px;
+        box-sizing: border-box;
+        border: 3px solid #A47C44;
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+        top: calc(45vw + 22px);
+    }
+    .date-show{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.5s;
+        position: relative;
+        overflow: auto;
+    }
+    .date-show p:nth-child(1){
+        margin-top: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        color: white;
+    }
+    .date-show p:nth-child(2){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+    }
+    .day-left{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left > div:first-child{
+        margin-top: 5px;
+    }
+    .day-left-number{
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .guitar-show-detail{
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        width: 90vw;
+    }
+    .guitar-show-photo{
+        width: 100%;
+        height: 45vw;
+    }
+    .guitar-show-photo > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .line-break{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+    .guitar-show-presentation{
+        width: 100%;
+        background-color: rgba(0,0, 0, 0.9) ;
+        overflow: auto;
+    }
+    .guitar-show-name{
+        width: calc(100% - 150px);
+        margin: 15px auto 0px 20px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .guitar-show-location{
+        width: calc(100% - 150px);
+        margin: 5px auto 0px 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .guitar-show-artist{
+        width: calc(100% - 150px);
+        margin: 0px auto 0px 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .guitar-show-price{
+        width: calc(100% - 150px);
+        margin: 0px auto 0px 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    .guitar-show-moreDetail{
+        width: 100px;
+        margin-left: calc(100% - 130px);
+        margin-bottom: 10px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: right;
+        color: #FFFFFF;
+        display: none;
+    }
+    .guitar-show-moreDetail:hover{
+        color: orangered;
+    }
+    .timeline-line{
+        width: 30px;
+        position: relative;
+        display: none;
+    }
+    .circle-out{
+        margin-top: 180px;
+        position: relative;
+        z-index: 2;
+        width: 28px;
+        height: 28px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .circle-in{
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .line{
+        position: absolute;
+        top: 0px;
+        left: 14px;
+        height: 692px;
+        z-index: 1;
+        width: 2px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    #line-item-4{
+        height: 552px;
+    }
+    /*Footer*/
+    footer{
+        margin-top: 50px;
+    }
+    .subscription-part{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 576px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none; 
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .container{
+        width: 100%;
+        margin-top: 94px;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+        display: none;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navigation{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .guitar-show-item{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .guitar-show-item-1{
+        margin-top: 15px;
+    }
+    .show-item-date{
+        width: 70px;
+        height: 70px;
+        box-sizing: border-box;
+        border: 2px solid #A47C44;
+        overflow: hidden;
+        position: absolute;
+        right: 15px;
+        top: calc(45vw + 12px);
+    }
+    .date-show{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.5s;
+        position: relative;
+        overflow: auto;
+    }
+    .date-show p:nth-child(1){
+        margin-top: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        color: white;
+    }
+    .date-show p:nth-child(2){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: white;
+    }
+    .day-left{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left > div:first-child{
+        margin-top: 5px;
+    }
+    .day-left-number{
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .guitar-show-detail{
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        width: 100%;
+    }
+    .guitar-show-photo{
+        width: 100%;
+        height: 45vw;
+    }
+    .guitar-show-photo > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color: white;
+    }
+    .guitar-show-presentation{
+        width: 100%;
+        background-color: rgba(0,0, 0, 0.9) ;
+        overflow: auto;
+    }
+    .guitar-show-name{
+        width: calc(100% - 100px);
+        margin: 10px auto 0px 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .guitar-show-location{
+        width: calc(100% - 110px);
+        margin: 5px auto 0px 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .guitar-show-artist{
+        width: calc(100% - 110px);
+        margin: 0px auto 0px 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .guitar-show-price{
+        width: calc(100% - 110px);
+        margin: 0px auto 0px 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    .guitar-show-moreDetail{
+        width: 100px;
+        margin-left: calc(100% - 130px);
+        margin-bottom: 10px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: right;
+        color: #FFFFFF;
+        display: none;
+    }
+    .guitar-show-moreDetail:hover{
+        color: orangered;
+    }
+    .timeline-line{
+        width: 30px;
+        position: relative;
+        display: none;
+    }
+    .circle-out{
+        margin-top: 180px;
+        position: relative;
+        z-index: 2;
+        width: 28px;
+        height: 28px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .circle-in{
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .line{
+        position: absolute;
+        top: 0px;
+        left: 14px;
+        height: 692px;
+        z-index: 1;
+        width: 2px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    #line-item-4{
+        height: 552px;
+    }
+    /*Footer*/
+    footer{
+        margin-top: 50px;
+    }
+    .subscription-part{
+        display: none;
+    }
+    .store-info-part{
+        width: 92%;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none; 
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .container{
+        width: 100%;
+        margin-top: 94px;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        max-width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+        display: none;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navigation{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .guitar-show-item{
+        width: 92%;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .guitar-show-item-1{
+        margin-top: 10px;
+    }
+    .show-item-date{
+        width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        border: 2px solid #A47C44;
+        overflow: hidden;
+        position: absolute;
+        right: 10px;
+        top: calc(45vw + 12px);
+    }
+    .date-show{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.5s;
+        position: relative;
+        overflow: auto;
+    }
+    .date-show p:nth-child(1){
+        margin-top: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+    }
+    .date-show p:nth-child(2){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 25px;
+        color: white;
+    }
+    .day-left{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+        color: #32323D;
+    }
+    .day-left > div:first-child{
+        margin-top: 5px;
+    }
+    .day-left-number{
+        transition:0.5s;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 50px;
+        color: #32323D;
+    }
+    .guitar-show-detail{
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        width: 100%;
+    }
+    .guitar-show-photo{
+        width: 100%;
+        height: 45vw;
+    }
+    .guitar-show-photo > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color: white;
+    }
+    .guitar-show-presentation{
+        width: 100%;
+        background-color: rgba(0,0, 0, 0.9) ;
+        overflow: auto;
+    }
+    .guitar-show-name{
+        width: calc(100% - 80px);
+        margin: 10px auto 0px 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .guitar-show-location{
+        width: calc(100% - 85px);
+        margin: 5px auto 0px 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .guitar-show-artist{
+        width: calc(100% - 80px);
+        margin: 0px auto 0px 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .guitar-show-price{
+        width: calc(100% - 80px);
+        margin: 0px auto 0px 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 13px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    .guitar-show-moreDetail{
+        width: 100px;
+        margin-left: calc(100% - 130px);
+        margin-bottom: 10px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: right;
+        color: #FFFFFF;
+        display: none;
+    }
+    .guitar-show-moreDetail:hover{
+        color: orangered;
+    }
+    .timeline-line{
+        width: 30px;
+        position: relative;
+        display: none;
+    }
+    .circle-out{
+        margin-top: 180px;
+        position: relative;
+        z-index: 2;
+        width: 28px;
+        height: 28px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .circle-in{
+        width: 18px;
+        height: 18px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .line{
+        position: absolute;
+        top: 0px;
+        left: 14px;
+        height: 692px;
+        z-index: 1;
+        width: 2px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    #line-item-4{
+        height: 552px;
+    }
+    /*Footer*/
+    footer{
+        margin-top: 50px;
+    }
+    .subscription-part{
+        display: none;
+    }
+    .store-info-part{
+        width: 95%;
     }
 }
