@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1366px){
+@media only screen and (min-width: 1367px){
     /*Header*/
     .menu-bar-item-1{
         border: none;
@@ -26,7 +26,7 @@
         position: absolute;
         background-color: white;
         top: 30%;
-        left: calc(50% - 75px);
+        left: calc(50% - 150px);
         z-index: 2;
         display: flex;
         justify-content: center;
@@ -241,8 +241,8 @@
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 50px;
-        line-height: 30px;
+        font-size: 40px;
+        line-height: 40px;
         color: #000000;
     }
     .show-item{
@@ -531,7 +531,7 @@
         height: 75%;
     }
     .ticket-number > input{
-        width: 121px;
+        width: 117px;
         height: 34px;
         box-sizing: border-box;
         outline: none;
@@ -583,5 +583,2301 @@
         background-color: rgb(255, 0, 0);
         cursor: pointer;
     }
-}   
+} 
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none;
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .popup-container{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.25s;
+        z-index: 15;
+    }
+    .popup-messenger{
+        width: 300px;
+        height: 100px;       
+        position: absolute;
+        background-color: white;
+        top: 30%;
+        left: calc(50% - 150px);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        border-radius: 10px;
+    }
+    .add-to-cart{
+        opacity: 1;
+    }
+    .popup-messenger > img {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .check-mark-icon{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid transparent;
+        position: relative;
+       transform: rotate(-45deg);
+    }
+    .circle-left{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .circle-left-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+    }
+    .circle-left-rotate.show{
+        animation: rotate-circle 0.1s 0.4s linear forwards;
+    }
+    .circle-right{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: 24px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .circle-right-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+    .circle-right-rotate.show{
+        animation: rotate-circle 0.1s 0.3s linear forwards;
+    }
+    @keyframes rotate-circle{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+    }
+    .check-mark-line-1{
+        height: 15px;
+        width: 3px;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .check-mark-line-1 span{
+        display: block;
+        width: 3px;
+        height: 0;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-1 span.show{
+        animation: line-1 0.1s 0.5s linear forwards;
+    }
+    .check-mark-line-2{
+        height: 3px;
+        width: 25px;
+        background-color: transparent;
+        position: absolute;
+        top: 27px;
+        left: 17px;
+    }
+    .check-mark-line-2 span{
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-2 span.show{
+        animation: line-2 0.1s 0.6s linear forwards;
+    }
+    @keyframes line-1{
+        0%{height: 0;}
+        100%{height: 15px;}
+    }
+    @keyframes line-2{
+        0%{width: 0;}
+        100%{width: 25px;}
+    }
+    .container{
+        margin-top: 82px;
+        width: 100%;
+    }
+    .banner{
+        width: 1000px;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .banner > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container.scroll{
+        margin-top: 144px;
+        position: relative;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 1000px;
+        margin: 20px auto 0px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .modal-seat-map{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .seat-map-photo{
+        height: 85vh;
+        margin: 5vw auto;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .seat-map-photo> img{
+        height: 100%;
+    }
+    .close-icon{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 1vw;
+        right: 1vw;
+        opacity: 0.5;
+    }
+    .close-icon:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .close-icon > img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-title{
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 30px ;
+        height: 50px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .show-item{
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .show-main-content{
+        width: 675px;
+    }
+    .show-detail{
+        width: 100%;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .show-presentation{
+        width: 100%;
+    }
+    .border{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+    }
+    .border:hover{
+        cursor: pointer;
+    }
+    .showpresentation-title{
+        width: 500px;
+        height: 90px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color:  #C4C4C4;
+    }
+    .show-presentation-photo{
+        width: 90%;
+        margin: 25px auto 25px auto;
+        height: 350px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .show-presentation-photo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .seat-map{
+        margin-bottom: 10px;
+    }
+    .article-paragraph-normal{
+        width: 90%;
+        margin: 10px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .end-paragraph{
+        margin-bottom: 20px;
+    }
+    .photo-note{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .photo-note > p:nth-child(1){
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .photo-note > p:nth-child(2){
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .order-ticket-part{
+        margin-top: 30px;
+        max-width: 300px;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        position: sticky;
+        top: 92px;
+        padding-bottom: 25px;
+    }
+    .title-ticket-part{
+        margin: 15px auto;
+        width: 90%;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    .show-time{
+        width: 95%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-time > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-time > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-date{
+        width: 95%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-date > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-date > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-location{
+        width: 95%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-location > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-location > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-address{
+        width: 95%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-address > div{
+        height: 30px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .ticket-class{
+        width: 95%;
+        margin: 30px auto 0px auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ticket-class > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .ticket-class > select{
+        margin-left: 20px;
+        width: 185px;
+        height: 32px;
+        outline: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #C4C4C4;
+    }
+    .ticket-class > select > option{
+        appearance: none;
+        padding-left: 5px;
+        
+    }
+    .ticket-price{
+        width: 95%;
+        margin: 20px auto 0px auto;
+    }
+    .ticket-price > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .price-value{
+        margin-left: 10px;
+    }
+    .ticket-number{
+        width: 95%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .ticket-number > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .minus-item{
+        margin-left:15px ;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .minus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .minus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .ticket-number > input{
+        width: 117px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #C4C4C4;   
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus-item{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .plus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .plus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .add-to-cart-button{
+        width: 90%;
+        max-width: 200px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        background: #DE0000;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .add-to-cart-button:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+}  
+ 
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none;
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .popup-container{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.25s;
+        z-index: 15;
+    }
+    .popup-messenger{
+        width: 300px;
+        height: 100px;       
+        position: absolute;
+        background-color: white;
+        top: 35%;
+        left: calc(50% - 150px);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        border-radius: 10px;
+    }
+    .add-to-cart{
+        opacity: 1;
+    }
+    .popup-messenger > img {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .check-mark-icon{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid transparent;
+        position: relative;
+       transform: rotate(-45deg);
+    }
+    .circle-left{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .circle-left-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+    }
+    .circle-left-rotate.show{
+        animation: rotate-circle 0.1s 0.4s linear forwards;
+    }
+    .circle-right{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: 24px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .circle-right-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+    .circle-right-rotate.show{
+        animation: rotate-circle 0.1s 0.3s linear forwards;
+    }
+    @keyframes rotate-circle{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+    }
+    .check-mark-line-1{
+        height: 15px;
+        width: 3px;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .check-mark-line-1 span{
+        display: block;
+        width: 3px;
+        height: 0;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-1 span.show{
+        animation: line-1 0.1s 0.5s linear forwards;
+    }
+    .check-mark-line-2{
+        height: 3px;
+        width: 25px;
+        background-color: transparent;
+        position: absolute;
+        top: 27px;
+        left: 17px;
+    }
+    .check-mark-line-2 span{
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-2 span.show{
+        animation: line-2 0.1s 0.6s linear forwards;
+    }
+    @keyframes line-1{
+        0%{height: 0;}
+        100%{height: 15px;}
+    }
+    @keyframes line-2{
+        0%{width: 0;}
+        100%{width: 25px;}
+    }
+    .container{
+        margin-top: 124px;
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 90%;
+        margin: 20px auto 0px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .modal-seat-map{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .seat-map-photo{
+        margin: 20vw auto;
+        width: 95vw;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .seat-map-photo> img{
+        width: 100%;
+        min-width: 1000px;
+    }
+    .close-icon{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        top: 2vw;
+        right: 2vw;
+        opacity: 1;
+    }
+    .close-icon > img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-title{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px ;
+        height: 50px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 30px;
+        color: #000000;
+        text-align: center;
+    }
+    .show-item{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .show-main-content{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .show-detail{
+        width: 100%;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .show-presentation{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .border{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+    }
+    .border:hover{
+        cursor: pointer;
+    }
+    .showpresentation-title{
+        width: 500px;
+        height: 90px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color:  #C4C4C4;
+    }
+    .show-presentation-photo{
+        width: 90%;
+        margin: 25px auto 25px auto;
+        height: 350px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .show-presentation-photo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .seat-map{
+        margin-bottom: 10px;
+    }
+    .article-paragraph-normal{
+        width: 90%;
+        margin: 10px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .end-paragraph{
+        margin-bottom: 20px;
+    }
+    .photo-note{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .photo-note > p:nth-child(1){
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .photo-note > p:nth-child(2){
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .order-ticket-part{
+        margin: 20px auto 0 auto;
+        width: 700px;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-bottom: 25px;
+    }
+    .title-ticket-part{
+        margin: 15px auto;
+        width: 90%;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    .show-information{
+        width: 100%; 
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .show-information-part-1{
+        width: 45%;
+    }
+    .show-information-part-2{
+        width: 45%;
+    }
+    .show-time{
+        width: 100%;
+        margin: 15px auto 0px 15px;
+        display: flex;
+        align-items: center;
+    }
+    .show-time > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-time > div{
+        height: 32px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-date{
+        width: 100%;
+        margin: 10px auto 0 15px;
+        display: flex;
+        align-items: center;
+    }
+    .show-date > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-date > div{
+        height: 32px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-location{
+        width: 100%;
+        margin: 10px auto 0 15px;
+        display: flex;
+        align-items: center;
+    }
+    .show-location > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-location > div{
+        height: 32px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-address{
+        width: 100%;
+        margin: 7px auto 0 15px;
+        display: flex;
+        align-items: center;
+    }
+    .show-address > div{
+        height: 32px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .ticket-class{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ticket-class > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .ticket-class > select{
+        margin-left: 20px;
+        width: 185px;
+        height: 32px;
+        outline: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #C4C4C4;
+    }
+    .ticket-class > select > option{
+        appearance: none;
+        padding-left: 5px;
+        
+    }
+    .ticket-price{
+        width: 100%;
+        margin: 10px auto 0px auto;
+    }
+    .ticket-price > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .price-value{
+        margin-left: 10px;
+    }
+    .ticket-number{
+        width: 100%;
+        margin: 10px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .ticket-number > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .minus-item{
+        margin-left:15px ;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .minus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .minus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .ticket-number > input{
+        width: 117px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #C4C4C4;   
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus-item{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .plus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .plus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .add-to-cart-button{
+        width: 90%;
+        max-width: 200px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        background: #DE0000;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .add-to-cart-button:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+}  
+ 
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none;
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .popup-container{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.25s;
+        z-index: 15;
+    }
+    .popup-messenger{
+        width: 300px;
+        height: 100px;       
+        position: absolute;
+        background-color: white;
+        top: 30%;
+        left: calc(50% - 150px);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        border-radius: 10px;
+    }
+    .add-to-cart{
+        opacity: 1;
+    }
+    .popup-messenger > img {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .check-mark-icon{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid transparent;
+        position: relative;
+       transform: rotate(-45deg);
+    }
+    .circle-left{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .circle-left-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+    }
+    .circle-left-rotate.show{
+        animation: rotate-circle 0.1s 0.4s linear forwards;
+    }
+    .circle-right{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: 24px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .circle-right-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+    .circle-right-rotate.show{
+        animation: rotate-circle 0.1s 0.3s linear forwards;
+    }
+    @keyframes rotate-circle{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+    }
+    .check-mark-line-1{
+        height: 15px;
+        width: 3px;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .check-mark-line-1 span{
+        display: block;
+        width: 3px;
+        height: 0;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-1 span.show{
+        animation: line-1 0.1s 0.5s linear forwards;
+    }
+    .check-mark-line-2{
+        height: 3px;
+        width: 25px;
+        background-color: transparent;
+        position: absolute;
+        top: 27px;
+        left: 17px;
+    }
+    .check-mark-line-2 span{
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-2 span.show{
+        animation: line-2 0.1s 0.6s linear forwards;
+    }
+    @keyframes line-1{
+        0%{height: 0;}
+        100%{height: 15px;}
+    }
+    @keyframes line-2{
+        0%{width: 0;}
+        100%{width: 25px;}
+    }
+    .container{
+        margin-top: 124px;
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 95%;
+        margin: 20px auto 0px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .modal-seat-map{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .seat-map-photo{
+        margin: 20vw auto;
+        width: 95vw;
+        overflow: auto;
+    }
+    .seat-map-photo> img{
+        width: 100%;
+    }
+    .close-icon{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 1vw;
+        right: 1vw;
+        opacity: 1;
+    }
+    .close-icon > img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-title{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px ;
+        height: 50px;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 40px;
+        color: #000000;
+        text-align: center;
+    }
+    .show-item{
+        width: 520px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .show-main-content{
+        width: 520px;
+        margin: 0 auto;
+    }
+    .show-detail{
+        width: 100%;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .show-presentation{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .border{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+    }
+    .border:hover{
+        cursor: pointer;
+    }
+    .showpresentation-title{
+        width: 90%;
+        height: 90px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color:  #C4C4C4;
+    }
+    .show-presentation-photo{
+        width: 90%;
+        margin: 25px auto 25px auto;
+        height: 270px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .show-presentation-photo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .seat-map{
+        margin-bottom: 10px;
+    }
+    .article-paragraph-normal{
+        width: 90%;
+        margin: 10px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .end-paragraph{
+        margin-bottom: 20px;
+    }
+    .photo-note{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .photo-note > p:nth-child(1){
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .photo-note > p:nth-child(2){
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;  
+        text-align: center;
+        color: #000000;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .order-ticket-part{
+        margin: 20px auto 0 auto;
+        width: 100%;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-bottom: 25px;
+    }
+    .title-ticket-part{
+        margin: 15px auto;
+        width: 90%;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    .show-information{
+        width: 100%; 
+    }
+    .show-information-part-1{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .show-information-part-2{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .show-time{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-time > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-time > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-date{
+        width: 100%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-date > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-date > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-location{
+        width: 100%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-location > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-location > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-address{
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-address > div{
+        height: 30px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .ticket-class{
+        width: 100%;
+        margin: 30px auto 0px auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ticket-class > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .ticket-class > select{
+        margin-left: 20px;
+        width: 185px;
+        height: 32px;
+        outline: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #C4C4C4;
+    }
+    .ticket-class > select > option{
+        appearance: none;
+        padding-left: 5px;
+        
+    }
+    .ticket-price{
+        width: 100%;
+        margin: 20px auto 0px auto;
+    }
+    .ticket-price > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .price-value{
+        margin-left: 10px;
+    }
+    .ticket-number{
+        width: 100%;
+        margin: 20px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .ticket-number > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .minus-item{
+        margin-left:15px ;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .minus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .minus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .ticket-number > input{
+        width: 117px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #C4C4C4;   
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus-item{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .plus-item:hover{
+        background-color: rgb(219, 218, 218);
+        cursor: pointer;
+    }
+    .plus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .add-to-cart-button{
+        width: 90%;
+        max-width: 200px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        background: #DE0000;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .add-to-cart-button:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    /*footer*/
+    .subscription-part{
+        display: none;
+    }
+    footer{
+        margin-top: 30px;
+    }
+}  
+ 
+@media only screen and (min-width: 351px) and (max-width: 576px){
+    /*Header*/
+    .menu-bar-item-1{
+        border: none;
+    }
+    .menu-bar-item-4{
+        border-bottom: 2px solid black;
+    }
+    /*Main*/
+    .popup-container{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: none;
+        opacity: 0;
+        transition: opacity 0.25s;
+        z-index: 15;
+    }
+    .popup-messenger{
+        width: 300px;
+        height: 100px;       
+        position: absolute;
+        background-color: white;
+        top: 30%;
+        left: calc(50% - 150px);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        border-radius: 10px;
+    }
+    .add-to-cart{
+        opacity: 1;
+    }
+    .popup-messenger > img {
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .check-mark-icon{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid transparent;
+        position: relative;
+       transform: rotate(-45deg);
+    }
+    .circle-left{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .circle-left-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .circle-left-rotate.show{
+        animation: rotate-circle 0.1s 0.4s linear forwards;
+    }
+    .circle-right{
+        width: 28px;
+        height: 56px;
+        position: absolute;
+        top: -3px;
+        left: 24px;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .circle-right-rotate{
+        width: 50px;
+        height: 50px;
+        border-radius: 999px;
+        border: 3px solid rgb(140, 233, 0);
+        clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+        position: absolute;
+        top: 0px;
+        right: 0px; 
+    }
+    .circle-right-rotate.show{
+        animation: rotate-circle 0.1s 0.3s linear forwards;
+    }
+    @keyframes rotate-circle{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(180deg);}
+    }
+    .check-mark-line-1{
+        height: 15px;
+        width: 3px;
+        background-color: transparent;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .check-mark-line-1 span{
+        display: block;
+        width: 3px;
+        height: 0;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-1 span.show{
+        animation: line-1 0.1s 0.5s linear forwards;
+    }
+    .check-mark-line-2{
+        height: 3px;
+        width: 25px;
+        background-color: transparent;
+        position: absolute;
+        top: 27px;
+        left: 17px;
+    }
+    .check-mark-line-2 span{
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: rgb(140, 233, 0);
+    }
+    .check-mark-line-2 span.show{
+        animation: line-2 0.1s 0.6s linear forwards;
+    }
+    @keyframes line-1{
+        0%{height: 0;}
+        100%{height: 15px;}
+    }
+    @keyframes line-2{
+        0%{width: 0;}
+        100%{width: 25px;}
+    }
+    .container{
+        margin-top: 94px;
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 95%;
+        margin: 20px auto 0px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .modal-seat-map{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+    }
+    .seat-map-photo{
+        margin: 20vw auto;
+        width: 95vw;
+        overflow: auto;
+    }
+    .seat-map-photo> img{
+        width: 100%;
+    }
+    .close-icon{
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 1vw;
+        right: 1vw;
+        opacity: 1;
+    }
+    .close-icon > img{
+        width: 100%;
+        height: 100%;
+    }
+    .show-title{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 10px ;
+        font-family: Dancing Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 35px;
+        color: #000000;
+        text-align: center;
+    }
+    .show-item{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .show-main-content{
+        width: 100%;
+    }
+    .show-detail{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .show-presentation{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .showpresentation-title{
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .line-break{
+        width: 100%;
+        height: 1px;
+        background-color:  #C4C4C4;
+        display: none;
+    }
+    .show-presentation-photo{
+        width: 100%;
+        margin: 15px auto 15px auto;
+        height: 54vw;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .show-presentation-photo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .seat-map{
+        margin-bottom: 10px;
+    }
+    .article-paragraph-normal{
+        width: 100%;
+        margin: 10px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+    .end-paragraph{
+        margin-bottom: 20px;
+    }
+    .photo-note{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .photo-note > p:nth-child(1){
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;  
+        text-align: center;
+        color: #000000;
+    }
+    .photo-note > p:nth-child(2){
+        font-family: Roboto;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;  
+        text-align: center;
+        color: #000000;
+    }
+    .price{
+        font-weight: bold;
+    }
+    .order-ticket-part{
+        margin: 0px auto 0 auto;
+        width: 100%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    .title-ticket-part{
+        margin: 10px auto;
+        width: 90%;
+        height: 60px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        display: none;
+    }
+    .show-information{
+        width: 100%; 
+    }
+    .show-information-part-1{
+        margin-left: 10%;
+    }
+    .show-information-part-2{
+        margin-left: 10%;
+    }
+    .show-time{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-time > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-time > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-date{
+        width: 100%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-date > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-date > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-location{
+        width: 100%;
+        margin:0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-location > img{
+        width: 16px;
+        height: 16px;
+    }
+    .show-location > div{
+        height: 30px;
+        margin-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .show-address{
+        width: 100%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .show-address > div{
+        height: 30px;
+        margin-left: 25px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .ticket-class{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+        
+    }
+    .ticket-class > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .ticket-class > select{
+        margin-left: 20px;
+        width: 185px;
+        height: 32px;
+        outline: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        border: 1px solid #C4C4C4;
+    }
+    .ticket-class > select > option{
+        appearance: none;
+        padding-left: 5px;
+        
+    }
+    .ticket-price{
+        width: 100%;
+        margin: 15px auto 0px auto;
+    }
+    .ticket-price > div{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .price-value{
+        margin-left: 10px;
+    }
+    .ticket-number{
+        width: 100%;
+        margin: 15px auto 0px auto;
+        display: flex;
+        align-items: center;
+    }
+    .ticket-number > label{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .minus-item{
+        margin-left:15px ;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px 0px 0px 3px;
+    }
+    .minus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .ticket-number > input{
+        width: 117px;
+        height: 34px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #C4C4C4;   
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .plus-item{
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        height: 34px;
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 3px 3px 0px;
+    }
+    .plus-item > img{
+        padding: 25%;
+        width: 75%;
+        height: 75%;
+    }
+    .add-to-cart-button{
+        width: 180px;
+        height: 40px;
+        margin: 25px auto 0px auto;
+        background: #DE0000;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+    .add-to-cart-button:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    /*footer*/
+    .subscription-part{
+        display: none;
+    }
+    footer{
+        margin-top: 10px;
+    }
+}  
  

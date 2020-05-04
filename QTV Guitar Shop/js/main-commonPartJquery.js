@@ -37,8 +37,8 @@ function closeMenuMobile(){
     $('.menu-mobile').removeClass('active-mobile');
     $('body').removeClass('start');
     $('body').css('padding-right', `0px`);
-    $('.top-navbar-mobile').css('padding-right', `0px`);
-    $('.menu-icon-mobile').css('margin-left',`0px`);
+    $('.top-navbar-mobile').css('padding-right',`0px`);
+    $('.menu-icon-mobile').css('margin-left',`10px`);
 }
 
 // Part 4: Function for Search Bar
