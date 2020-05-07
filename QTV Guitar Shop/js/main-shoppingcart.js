@@ -1,5 +1,5 @@
 //This section is written by using Javascript. 
-//In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
+//In this project, some pages are written by using pure Javascript and all others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Shopping Cart
@@ -100,6 +100,8 @@ output +=   `<div class="summary-shopping-cart">
 }
 
 function modifyItemNumber(elt){
+    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
+    else shoppingCart=[];
     let idItem = elt.parentNode.dataset.id;
     let nameItem = elt.parentNode.dataset.name;
     for (let i = 0; i < shoppingCart.length; i++){
@@ -144,16 +146,18 @@ function checkIsOnlyNumber(elt){
 }
 
 function minusItem(elt){  // Minus Number item
+    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
+    else shoppingCart=[];
     elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
-    if (elt.parentNode.childNodes[1].value > 1){
-        let currentValue = elt.parentNode.childNodes[1].value;
-        currentValue -= 1;
-        elt.parentNode.childNodes[1].value = `${currentValue}`; 
+        if (elt.parentNode.childNodes[1].value > 1){   
         let idItem = elt.parentNode.dataset.id;
         let nameItem = elt.parentNode.dataset.name;
         for (let i = 0; i < shoppingCart.length; i++){
             if (shoppingCart[i].id == idItem && shoppingCart[i].name == nameItem){
-                shoppingCart[i].count = parseInt(elt.parentNode.childNodes[1].value);
+                let currentValue = shoppingCart[i].count;
+                currentValue -= 1;
+                elt.parentNode.childNodes[1].value = `${currentValue}`;         
+                shoppingCart[i].count = currentValue;
                 break;
             }
         }  
@@ -164,31 +168,42 @@ function minusItem(elt){  // Minus Number item
 }
 
 function plusItem(elt){  // Plus Number item
-    elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
-    let currentValue = parseInt(elt.parentNode.childNodes[1].value);
-    currentValue += 1;
-    elt.parentNode.childNodes[1].value = `${currentValue}`;
+    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
+    else shoppingCart=[];
+    elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node  
     let idItem = elt.parentNode.dataset.id;
     let nameItem = elt.parentNode.dataset.name;
     for (let i = 0; i < shoppingCart.length; i++){
         if (shoppingCart[i].id === idItem && shoppingCart[i].name === nameItem){
-            shoppingCart[i].count = parseInt(elt.parentNode.childNodes[1].value);
+            let currentValue = shoppingCart[i].count;
+            currentValue += 1;
+            elt.parentNode.childNodes[1].value = `${currentValue}`;    
+            shoppingCart[i].count = currentValue;
             break;
         }
     } 
     saveCart();
     displayShoppingCart();
+    // setTimeout(function(){
+    //     elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
+    //     let currentValue = parseInt(elt.parentNode.childNodes[1].value);
+    //     currentValue += 1;
+    //     elt.parentNode.childNodes[1].value = `${currentValue}`;
+    //     let idItem = elt.parentNode.dataset.id;
+    //     let nameItem = elt.parentNode.dataset.name;
+    //     for (let i = 0; i < shoppingCart.length; i++){
+    //         if (shoppingCart[i].id === idItem && shoppingCart[i].name === nameItem){
+    //             shoppingCart[i].count = parseInt(elt.parentNode.childNodes[1].value);
+    //             break;
+    //         }
+    //     } 
+    //     saveCart();
+    //     displayShoppingCart();
+    // },200)
 }
 
 function separator1000(num){ // 1000 separator 
 return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
-}
-
-function sendData(elt){// send Data to productitem.html
-    let itemData = new Object;
-    itemData.group = elt.dataset.group;
-    itemData.id = elt.dataset.id;
-    localStorage.setItem('dataguitaritem',JSON.stringify(itemData))
 }
 
 //Part : Function for Subscription email and About This Website button - Footer
