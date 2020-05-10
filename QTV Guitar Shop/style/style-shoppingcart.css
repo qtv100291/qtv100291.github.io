@@ -311,7 +311,9 @@
         height: 34px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -768,7 +770,9 @@
         height: 34px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;  
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -1215,7 +1219,9 @@
         height: 34px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;  
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -1671,7 +1677,9 @@
         height: 34px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;  
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -2137,7 +2145,9 @@
         height: 30px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4; 
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -2584,7 +2594,9 @@
         height: 27px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;

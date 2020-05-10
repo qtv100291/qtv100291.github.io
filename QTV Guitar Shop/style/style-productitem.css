@@ -418,7 +418,9 @@
         height: 34px;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid #C4C4C4;   
+        border-width: 1px 0 1px 0;
+        border-style: solid;
+        border-color: #C4C4C4;  
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -523,8 +525,8 @@
     }
     .specification-description{
         width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         top: 0px;
         left: 0px;  
         font-family: Roboto;
@@ -537,6 +539,9 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s linear;
+    }
+    .specification-description > p{
+        text-transform: capitalize;
     }
     .item-description{
         width: 100%;
@@ -553,14 +558,15 @@
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s linear;
+        padding: 10px 0 15px 0;
     }
     .video-description >iframe{
         display: block;
         margin: 30px auto;
         width: 95vw;
-        max-width: 600px;
+        max-width: 700px;
         height: 53.44vw;
-        max-height: 340px;
+        max-height: 400px;
     }
     .description-active{
         opacity: 1;

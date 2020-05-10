@@ -26,6 +26,8 @@ renderProductItem(itemData);
 function renderProductItem(objectData){
     let arrayExecuted =[];
     let bannerAddress;
+    let outputDescription = "";
+    let outputSpecification = "";
     switch (objectData.group){
         case "classical":
             $('.main-section-name').text('Guitar Cổ Điển');
@@ -73,13 +75,22 @@ function renderProductItem(objectData){
     $('.item-name').text(objectProductItem.name);
     $('.item-price').text(objectProductItem.price);
     $('#video-review').attr('src',`${objectProductItem.video}?enablejsapi=1`);
+    console.log(objectProductItem.content)
+    for (let i = 0; i < objectProductItem['content'].length; i++){
+        outputDescription +=`<p>${objectProductItem['content'][i]}</p>`;
+    }
+    $('.brief-presentation').html(outputDescription);
+    for (let i = 0; i < objectProductItem['specification'].length; i++){
+        outputSpecification +=`<p>- ${objectProductItem['specification'][i]}</p>`;
+    }
+    $('.specification-description').html(outputSpecification);
 }
 
 function getRandomValue(max,min){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-//Part 2 : Function for Scaling Display Photo
+//Part 2 : Function for Scaling Photo
 photoZoom('.item-photo-1');
 function photoZoom(photo){
     let img = $(photo);

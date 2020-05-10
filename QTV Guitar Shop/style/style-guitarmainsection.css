@@ -504,6 +504,9 @@
         background-color: #DE0000;
         color: white;
     }
+    footer{
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1366px){
@@ -1004,6 +1007,9 @@
         background-color: #DE0000;
         color: white;
     }
+    footer{
+        margin-top: 40px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1483,6 +1489,9 @@
     .active{
         background-color: #DE0000;
         color: white;
+    }
+    footer{
+        margin-top: 30px;
     }
 }
 

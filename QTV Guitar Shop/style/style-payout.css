@@ -1,26 +1,12 @@
-*, body {
-    margin: 0px;
-    padding: 0px;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    width: 100%;
-    box-sizing: border-box;
-}
-body.start{
-    overflow: hidden;
-}
 
 @media only screen and (min-width: 1366px){
     /*Main*/
     header{
         width: 100%;
-        border-bottom: 2px solid rgb(180, 180, 180)
+        border-bottom: 1px solid rgb(180, 180, 180)
     }
     .header-main-container{
-        width: 100%;
+        width: 95%;
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -28,12 +14,12 @@ body.start{
         align-items: center;
     }
     .avatar{
-        width: 124px;
-        height: 124px;
+        width: 170px;
+        height: 85px;
+        position: relative;
     }
     .avatar > img{
         width: 100%;
-        height: 100%;
     }
     .payout-process{
         width: 50%;
@@ -44,17 +30,17 @@ body.start{
         position: relative;
     }
     .step-1 {
-        padding: 15px 0px;
+        padding:15px 0px;
         width: 35%;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: #83d7fe;
+        background-color: #C4C4C4;
         box-sizing: border-box;
         border-width: 2px 0px 2px 2px;
         border-style: solid;
-        border-color: #C4C4C4;
+        border-color: black;
         position: relative;
         z-index: 1;
     }
@@ -65,7 +51,7 @@ body.start{
         width: 45px;
         height: 100%;
         clip-path: polygon(0 0, 3px 0, 100% 50%,3px 100%,0 100%);
-        background-color: #C4C4C4;
+        background-color: black;
         z-index: 1;
     }
     .step1-arrow-after{
@@ -75,7 +61,7 @@ body.start{
         width: 42px;
         height: 100%;
         clip-path: polygon(0 0, 100% 50%, 0 100%);
-        background-color: #83d7fe;
+        background-color: #C4C4C4;
         z-index: 2;
     }
     .step-2{
@@ -87,14 +73,15 @@ body.start{
         justify-content: center;
         align-items: center;
         position: relative;
-        background-color: #83d7fe;
+        background-color: white;
         box-sizing: border-box;
         border-width: 2px 2px 2px 0px;
         border-style: solid;
-        border-color: #C4C4C4;
+        border-color: black;
     }
     .step-2 .number-step{
         margin-left: 30px;
+        background-color: white;
     }
     .title-step{
         width: 110px;
@@ -106,7 +93,7 @@ body.start{
         color: black;
         margin-bottom: 5px;
         text-align: center;
-        color: rgb(126, 126, 126);
+        color: black;
     }
     .number-step{
         height: 40px;
@@ -117,16 +104,16 @@ body.start{
         font-weight: normal;
         font-size: 18px;
         line-height: 40px;
-        color: rgb(126, 126, 126);
+        color: black;
         text-align: center;
-        background-color: #83d7fe;
-        border: 1px solid rgb(126, 126, 126);
+        background-color: #C4C4C4;
+        border: 1px solid black;
     }
     .phone-contact{
         height: 60px;
         display: flex;
         align-items: center;
-        border: 1px solid #dbdbdb;
+        border: 1px solid black;
         padding: 0px 10px;
         border-radius: 30px;
     }

@@ -16,17 +16,33 @@ for(let i = 0; i < filterTitle.length; i++){
 
 function showFilterContent(){
     this.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm));//remove text node
-    if ( this.childNodes[1].style.display != "block"){
-        this.parentNode.childNodes[1].style.maxHeight = "0px";
-        this.style.borderBottom = "none";
-        this.childNodes[1].style.display = "block";  
-        this.childNodes[2].style.display = "none";     
+    if (window.innerWidth > 1024){  
+        if ( this.childNodes[1].style.display != "block"){
+            this.parentNode.childNodes[1].style.maxHeight = "0px";
+            this.style.borderBottom = "none";
+            this.childNodes[1].style.display = "block";  
+            this.childNodes[2].style.display = "none";     
+         }
+        else {
+            this.parentNode.childNodes[1].style.maxHeight = this.parentNode.childNodes[1].scrollHeight + "px";
+            this.style.borderBottom = "1px solid #BDB4B4";
+            this.childNodes[1].style.display = "none";  
+            this.childNodes[2].style.display = "block";  
+        }
     }
     else {
-        this.parentNode.childNodes[1].style.maxHeight = this.parentNode.childNodes[1].scrollHeight + "px";
-        this.style.borderBottom = "1px solid #BDB4B4";
-        this.childNodes[1].style.display = "none";  
-        this.childNodes[2].style.display = "block";  
+        if ( this.childNodes[2].style.display != "block"){
+            this.parentNode.childNodes[1].style.maxHeight = this.parentNode.childNodes[1].scrollHeight + "px";
+            this.style.borderBottom = "1px solid #BDB4B4";
+            this.childNodes[1].style.display = "none";  
+            this.childNodes[2].style.display = "block";  
+        }
+        else {
+            this.parentNode.childNodes[1].style.maxHeight = "0px";
+            this.style.borderBottom = "none";
+            this.childNodes[1].style.display = "block";  
+            this.childNodes[2].style.display = "none";  
+        }
     }
 }
 
