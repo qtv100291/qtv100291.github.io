@@ -3147,7 +3147,7 @@
     /*sub-banner*/
     .sub-banner{
         position: relative;
-        width: 95%;
+        width: 90%;
         height: 200px;
         border-radius: 30px;
         overflow: hidden;
@@ -4077,15 +4077,15 @@
     }
     .artist-photo{
         display: block;
-        width: 85vw;
+        width: calc(100% - 20px);
         height: 53.33vw;
         box-sizing: border-box;
         margin: 0 auto;
-        padding-top: 7px;
+        padding-top: 10px;
         object-fit: cover;
     }
     .part2-artist-name{
-        width: 85vw ;
+        width: calc(100% - 20px) ;
         margin: 10px auto;
         font-family: Roboto;
         font-style: normal;

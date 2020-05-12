@@ -1,4 +1,8 @@
-
+.empty{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
 @media only screen and (min-width: 1367px){
     /*Main*/
     header{
@@ -389,7 +393,9 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
@@ -848,7 +854,9 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
@@ -1297,7 +1305,9 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
@@ -1758,7 +1768,9 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
@@ -2222,13 +2234,15 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 20px;
+        line-height: 30px;
         color: #000000;
     }
     .summary-shopping-cart{
@@ -2671,13 +2685,15 @@
         color: #000000;
     }
     .shopping-cart-note{
-        margin-top: 10vh;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
         text-align: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: px;
         color: #000000;
     }
     .summary-shopping-cart{

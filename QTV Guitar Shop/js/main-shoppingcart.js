@@ -26,7 +26,7 @@ if (shoppingCart.length == 0){
     output = '<div class="shopping-cart-note">Chưa Có Sản Phẩm Nào Trong Giỏ Hàng</div>';
     document.querySelector('.shopping-cart-item-container').innerHTML = output;
     if (document.body.clientHeight < window.innerHeight){
-            document.querySelector('footer').classList.add('empty');
+        document.querySelector('footer').classList.add('empty');
     }
 }
 else{
