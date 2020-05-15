@@ -14,6 +14,8 @@ function renderProductItem(objectData){
     let arrayExecuted =[];
     let bannerAddress;
     let output= "";
+    let outputDescription = "Giới Thiệu :";
+    let outputSpecification = "";
     const altPhoto = ['detail-1','detail-2','detail-3']
     arrayExecuted = accessoriesData;
     let objectProductItem;
@@ -42,6 +44,14 @@ function renderProductItem(objectData){
     $('.item-name').text(objectProductItem.name);
     $('.item-price').text(objectProductItem.price);
     $('#player').attr('src',`${objectProductItem.video}`);
+    for (let i = 0; i < objectProductItem['content'].length; i++){
+        outputDescription +=`<p>${objectProductItem['content'][i]}</p>`;
+    }
+    $('.brief-presentation').html(outputDescription);
+    for (let i = 0; i < objectProductItem['specification'].length; i++){
+        outputSpecification +=`<p>- ${objectProductItem['specification'][i]}</p>`;
+    }
+    $('.specification-description').html(outputSpecification);
 }
 
 function getRandomValue(max,min){

@@ -180,9 +180,9 @@ function renderItem(array){
                         <img class="front-image" src="${array[i].photo}/1 - banner.jpg" alt="${array[i].name}">
                         <img class="back-image" src="${array[i].photo}/2 - banner.jpg" alt="${array[i].name}">
                     </div>
-                    <div class="item-name">${array[i].name}</div>
+                    <h4 class="item-name">${array[i].name}</h4>
                     <div class="price-before-reduction"></div>
-                    <div class="price-after-reduction">${array[i].price} Đồng</div>
+                    <div class="price-after-reduction">${array[i].price} VND</div>
                     <div class="line-item"></div>
                     <div class="detail-item">CHI TIẾT</div>
                 </a>`

@@ -65,7 +65,7 @@ else{
                                 <div class="item-photo"><img src="${shoppingCart[i].image}" alt="item-photo"></div>
                                 <div class="item-detail-info">
                                     <a class="item-name" onclick="sendData(this)" href="${addressPage}" data-id="${shoppingCart[i].id}" data-group="${shoppingCart[i].group}">${shoppingCart[i].name}</a>
-                                    <div class="item-price"><span>${shoppingCart[i].price}</span> Đồng</div>
+                                    <div class="item-price"><span>${shoppingCart[i].price}</span> VND</div>
                                     <div class="delete-button" onclick="deleteItem(this)">
                                         <img src="HomePage/delete-icon.png" alt="delete-icon">
                                         Xóa
@@ -81,7 +81,7 @@ else{
                             </div>
                             <div class="provisional-value">
                                 <p>Thành Tiền : </p>
-                                <p><span class="provisional-money-value">${provisionalMoneyConvert}</span> Đồng</p>
+                                <p><span class="provisional-money-value">${provisionalMoneyConvert}</span> VND</p>
                             </div>
                         </div>
                     </div>`
@@ -90,7 +90,7 @@ let totalMoneyConvert = separator1000(totalMoney);
 output +=   `<div class="summary-shopping-cart">
                 <div class="summary-shopping-cart-container">
                     <div class="summary-title">Tổng Số Tiền</div>
-                    <div class="summary-money"><span class="summary-total-value">${totalMoneyConvert}</span> Đồng</div>
+                    <div class="summary-money"><span class="summary-total-value">${totalMoneyConvert}</span> VND</div>
                     <a class="submit-button" href="payout.html">Thanh Toán</a>
                 </div>
             </div>`

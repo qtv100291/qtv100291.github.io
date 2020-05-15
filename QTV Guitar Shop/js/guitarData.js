@@ -1784,19 +1784,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/Gretsch G6134T ’58 Penguin - 74.999tr",
         video: "https://www.youtube.com/embed/bTjPFOdqCx4",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Lấy cảm hứng từ những năm tháng vàng son những năm 1950 và thời kỳ hoàng kim đầu thập niên 60, Vintage Select Edition được thiết kế như là cách Gretsch nhắc lại cho người chơi những di sản vô giá của hãng. Gretsch G6134T ’58 Penguin  là một tuyệt tác với biểu tượng loài chim cánh cụt trên thân đàn.",
+            "Gretsch G6134T ’58 Penguin được trang bị một cặp Filter’Tron™ pickup ở cần đàn và thân đàn, bổ sung cho âm than đặc trưng của thân đàn làm từ gỗ dái ngựa (Mahogany), giúp tăng cường sự phong phú và hai hòa bằng cách tạo ra sự cộng hưởng giữa mặt trên và thân đàn cho giai điệu sống động và rõ ràng hơn.",
             ],
         specification:[
             "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
+            "Kiểu thân : solid body",
             "Mặt đàn : Gỗ thích (Maple)",
             "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Huệ mộc (Padauk)",
+            "Khóa đàn : Grover Imperial Die-Cast",
+            "Pick-up cần đàn : TV Jones Filter'Tron Classic",
+            "Pick-up cầu ngựa : TV Jones Filter'Tron Classic",
             "Dây đàn : Nickel Plated Steel"
         ]
     },
@@ -1810,20 +1810,20 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/Gretsch G9555 New Yorker Hollow - 14.999tr",
         video: "https://www.youtube.com/embed/ska7UPeCc9U",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Cây guitar của thập niên 50 đã trở lại! Dù chỉ là ngẫu hứng trong cuộc sống thường ngày hay là biểu diễn chuyên nghiệp, với kích thước thân đàn lớn với phần mặt trên hình vòm sẽ giúp bạn tạo ra các giai điệu tuyệt vời nhất.",
+            "Sở hữu mặt đàn dáng vòng cung bằng gỗ thông, mặt lưng bằng gỗ thích, pick-up được custom riêng cho đàn, cần đàn làm từ gỗ dái ngựa (Mahogany) nguyên khối, đây là cây đàn xứng đáng với giá trị mà nó mang lại.",
             ],
         specification:[
-            "Scale length : 62.5cm",
+            "Scale length : 63.5cm",
             "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
+            "Mặt đàn : Gỗ thông(spruce)",
             "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Padauk (Padauk)",
+            "Khóa đàn : Grover Sta-Tite Geared",
+            "Pick-up cần đàn : Custom single-coil pickup",
+            "Pick-up cầu ngựa : Custom single-coil pickup",
+            "Dây đàn : 	D'Addario® EHR350 Half Rounds"
         ]
     },
     {
@@ -1836,19 +1836,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/PRS Mccarty 594 Indigo Glow Semi Hollow - 259.999tr",
         video: "https://www.youtube.com/embed/8D3L-nnp-hs",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Một chiếc guitar huyền thoại được chết tạo từ những loại vật liệu tốt nhất, được chế tạo bởi những nghệ nhân giỏi nhất và có sẵn những tùy biến do chính bạn lựa chọn. ",
+            "PRS Mccarty 594 Indigo Glow sỡ hữu phần mặt đàn tuyệt đẹp bằng gỗ thích (Maple), cùng với đó là lớp sơn hoàn thiện Indigo Glow bí ẩn quyển rũ. McCarty 594 có thể làm chủ hoàn toàn những âm vực một cách hoàn hảo nhờ vào các bộ pick-up 58/15 LT với cần điều khiển âm lượng kéo/đẩy giúp người chơi dễ dàng thao tác.",
             ],
         specification:[
             "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
+            "Kiểu thân : Semi-Hollow body",
             "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Mặt lưng : Gỗ tần bì (Ash)",
+            "Cần đàn : Gỗ thích (Maple)",
+            "Fingerboard : Gỗ đen châu phi (African Blackwood)",
+            "Khóa đàn : PRS Phase III Locking",
+            "Pick-up cần đàn : 58/15 LT",
+            "Pick-up cầu ngựa : 58/15 LT",
             "Dây đàn : Nickel Plated Steel"
         ]
     },
@@ -1862,19 +1862,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/PRS Mccarty 594-2 LTD Hollow - 120.999tr",
         video: "https://www.youtube.com/embed/emgMe-e2LFs",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Phiên bản này ra đời vào năm 2018, đánh dấu 60 năm phát triển của thương hiệu Paul Reed Smith. PRS Mccarty 594-2 LTD có thiết kế thân làm từ gỗ thích đỏ (Flame Maple), kết hợp cùng fingerboard làm từ gỗ thích (Maple). Từng thớ gỗ đều được lựa chọn bởi những nghệ nhân chuyên nghiệp, cùng với đó là kĩ thuật nhuộm màu Stock stain techniques cho phép chúng tôi tạo ra những màu sắc ấn tượng trên thân gỗ của cây đàn. Đàn sử dụng 58/15 LT (Low Turn) pickups mang đến âm thanh trầm ấm, trong không có tạp âm.",
+            "",
             ],
         specification:[
             "Scale length : 62.5cm",
             "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Mặt đàn : Gỗ thích đỏ (Flame Maple)",
+            "Mặt lưng : Gỗ tần bì xanh (Swamp Ash)",
+            "Cần đàn : Gỗ thích (Maple)",
+            "Fingerboard : Gỗ thích (Maple)",
+            "Khóa đàn : Phase III Locking Tuners",
+            "Pick-up cần đàn : 58/15 LT ",
+            "Pick-up cầu ngựa : 58/15 LT ",
             "Dây đàn : Nickel Plated Steel"
         ]
     },
@@ -1888,19 +1888,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/PRS S2 Mira Solid - 29.999tr",
         video: "https://www.youtube.com/embed/jFFo1lUGApg",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Với vẻ ngoài tinh tế, tinh tế, thoải mái và dễ dàng làm quen ngay lập tức, và tiếng đàn quen thuộc và quyến rũ, S2 Mira là cây đàn guitar mà bạn sẽ không muốn đặt xuống khi đã được chạm vào.",
+            "Thân đàn bằng gỗ dái ngựa (Mahogany) với đỉnh đàn không đối xứng của nó mang tới cho S2 Mira những giai điệu bùng nổ. Và mặc dù không phải là một cây guitar có công suất siêu cao, S2 Mira có thể được chuyển sang các giai điệu thuần rock một cách dễ dàng, mà không làm biến đổi hay méo đi âm sắc của đàn.",
             ],
         specification:[
             "Scale length : 62.5cm",
             "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
+            "Mặt đàn : Gỗ dái ngựa (Mahogany)",
+            "Mặt lưng : Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
             "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Khóa đàn : PRS S2 Locking Tuners",
+            "Pick-up cần đàn : S2 Mira Custom",
+            "Pick-up cầu ngựa : S2 Mira Custom",
             "Dây đàn : Nickel Plated Steel"
         ]
     },
@@ -1914,19 +1914,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/PRS SE Custom 22 Solid - 19.999tr",
         video: "https://www.youtube.com/embed/uLMub6fB7g8",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `SE Custom 22 là "ngựa chiến" theo phong cách classic, cấu trúc hợp lý được tạo ra để mang đến cho bạn tính năng và âm thanh PRS lừng danh mà lại không vượt quá ngân sách`,
+            "Các điểm chính gồm thân đàn gỗ dái ngựa (Mahogany) đường nét đẹp mắt với mặt đàn thích đỏ (Flame Maple), dáng cần PRS mỏng, rộng, mặt cần gỗ hồng mộc (Rosewood) và cặp 85/15 S humbuckers linh hoạt. Tạo ra âm thanh rõ rành mạch và cả chất crunch nặng, dày, pickup này tuyệt vời dành cho nhiều phong cách chơi và thể loại nhạc. PRS tremolo giúp vặn chỉnh, rẽ hướng và dive-bombing mà bạn có thể thể hiện trong khi vẫn duy trì được tính ổn định. Các chi tiết hoàn thiện có thêm đặc trưng PRS cho cây đàn bao gồm Bird inlay cổ điển và chữ ký của Paul Reed SMith trên phần đầu đàn.",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
+            "Scale length : 63.5cm",
+            "Kiểu thân : Solid body",
+            "Mặt đàn : Gỗ thích đỏ (Flame Maple)",
+            "Thân đàn : Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ thích (Maple)",
             "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Khóa đàn : PRS-Designed Tuners",
+            "Pick-up cần đàn : 85/15 “S”",
+            "Pick-up cầu ngựa : 85/15 “S”",
             "Dây đàn : Nickel Plated Steel"
         ]
     },
@@ -1940,19 +1940,19 @@ var guitarElectricalData = [
         photo:"Product/Electrical Guitar/PRS SE Standard 24 Solid - 11.5tr",
         video:"https://www.youtube.com/embed/BkCHlfCrljU",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `PRS SE Standard 24 là "ngựa chiến" theo phong cách classic, cấu trúc hợp lý được tạo ra để mang đến cho bạn tính năng và âm thanh PRS lừng danh mà lại không vượt quá ngân sách`,
+            "Các điểm chính gồm thân đàn gỗ dái ngựa (Mahogany) đường nét đẹp mắt với mặt đàn thích đỏ (Flame Maple), dáng cần PRS mỏng, rộng, mặt cần gỗ hồng mộc (Rosewood). Được truyền tải bằng cặp 85/15 S HFS humbuckers linh hoạt, tạo ra âm thanh rõ rành mạch và cả chất crunch nặng, dày. Sở hữu push/pull coil tapping trên phần chỉnh tone để có được âm thanh linh hoạt hơn, và PRS tremolo giúp vặn chỉnh, rẽ hướng và dive-bombing mà bạn có thể thể hiện trong khi vẫn duy trì được tính ổn định.",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
+            "Scale length : 63.5cm",
+            "Kiểu thân : Solid body",
+            "Mặt đàn : Gỗ thích đỏ (Flame Maple)",
+            "Thân đàn : Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ thích (Maple)",
             "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
+            "Khóa đàn : PRS-Designed Tuners",
+            "Pick-up cần đàn : PRS 85/15 S Humbuckers",
+            "Pick-up cầu ngựa : PRS 85/15 S Humbuckers",
             "Dây đàn : Nickel Plated Steel"
         ]
     }
@@ -1971,20 +1971,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 15CFM Sapphire Blue Concert - 3.499tr",
         video: "https://www.youtube.com/embed/-wrcC2q_vLc",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "15CFM bổ sung loại gỗ thích đỏ tuyệt đẹp và các tùy chọn màu sắc nổi bật cho dòng đàn Ukulele bán chạy nhất mọi thời đại 15CM ",
+            "Gỗ thích đỏ nguyên khối cung cấp cho cây đàn âm sắc đầy đủ, phong phú. Các tính năng bổ sung bao gồm bộ chỉnh dây đàn bằng bạc với nút ngọc trai, dây Aquila cao cấp và lớp phủ satin bóng mượt có sẵn trong 4 màu tùy chỉnh: Ngọc xanh, xanh Sapphire, xám granite và đỏ hồng.",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 61cm",
+            "Kiểu thân : Concert",
+            "Mặt đàn : Gỗ thích đỏ (Flamed Mahogany)",
+            "Mặt lưng và mặt bên : Gỗ thích đỏ (Flamed Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Pau Ferro (Pau Ferro)",
+            "Khóa đàn : Cordoba Silver with Pearl Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Concert 7U"
         ]
     },
     {
@@ -1997,20 +1996,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 20BM Baritone - 2.5tr",
         video: "https://www.youtube.com/embed/cRvhxPYRiD8",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Đàn ukulele 20 series có mặt trên và mặt sau bằng gỗ dái ngựa (Mahogany). Vân gỗ tự nhiên được tăng sự bóng bẩy bằng cách phủ lên lớp son satin bóng làm cho nó trở thành một nhạc cụ thực sự đẹp cho cả người mới bắt đầu hay những người đã đam mê ukulele từ lâu.",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 77.5cm",
+            "Kiểu thân : Baritone",
+            "Mặt đàn : Gỗ dái ngựa (Mahogany)",
+            "Mặt lưng và mặt bên : Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Pau Ferro (Pau Ferro)",
+            "Khóa đàn : Cordoba Nickel with Pearl Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Baritone 21U"
         ]
     },
     {
@@ -2023,20 +2021,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 24B Baritone- 6.999tr",
         video: "https://www.youtube.com/embed/eUvcMiLzIlI",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Đàn ukulele 20 series có mặt trên làm bằng gỗ tuyết tùng (Cedar) và mặt sau bằng gỗ dái ngựa (Mahogany). Vân gỗ tự nhiên được tăng sự bóng bẩy bằng cách phủ lên lớp son satin bóng làm cho nó trở thành một nhạc cụ thực sự đẹp cho cả người mới bắt đầu hay những người đã đam mê ukulele từ lâu.",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 77.5cm",
+            "Kiểu thân : Baritone",
+            "Mặt đàn : Gỗ tuyết tùng (Cedar)",
+            "Mặt lưng và mặt bên: Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Pau Ferro (Pau Ferro)",
+            "Khóa đàn : Cordoba Nickel with Pearl Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Baritone 21U"
         ]
     },
     {
@@ -2049,20 +2046,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 24S Soprano - 6.099tr",
         video: "https://www.youtube.com/embed/p7K8SFxR8H4",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Cordoba 24S sử dụng gỗ thích (Maple) với vân gỗ kỳ lạ, mang đến vẻ ngoài khác biệt và giai điệu độc đáo. Những chiếc ukulele này có mặt trên làm bằng gỗ tuyết tùng (Cedar) nguyên khối, phản chiếu của chúng, bất kể kích thước. Padauk ràng buộc cơ thể và ngón tay, kết hợp với một viền sơn màu đỏ tuyệt đẹp cho vẻ ngoài đã nổi bật của cây đàn càng thêm quyến rũ. Các bộ phận đặc biệt bổ sung cho cây đàn là cần đàn bằng gỗ dái ngựa (Mahogany) và đầu đàn làm bằng gỗ thích (Maple).",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 53.3cm",
+            "Kiểu thân : Soprano",
+            "Mặt đàn : Gỗ tuyết tùng (Cedar)",
+            "Mặt lưng và mặt bên: Gỗ thích (Maple)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ Pau Ferro (Pau Ferro)",
+            "Khóa đàn : Cordoba Satin Nickel with Black Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Soprano 4U"
         ]
     },
     {
@@ -2075,20 +2071,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 25C Concert - 5.99tr",
         video: "https://www.youtube.com/embed/tFm_IBxYW28",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Cordoba 25C Series thể hiện sự quyến rũ của ukelele truyền thống, được chế tác bởi sự kết hợp của gỗ tràm (Acacia), một loại gỗ nhiệt đới kì lạ có nguồn gốc rất gần với cây Koa - loại gỗ rất được yêu thích trong chế tạo guitar. Cordoba 25C có chất âm trong sáng, tròn đầy và mang lại cảm giác rất thân thuộc.",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 61cm",
+            "Kiểu thân : Concert",
+            "Mặt đàn : Gỗ TRÀM (Acacia)",
+            "Mặt lưng và mặt bên: Gỗ tràm (Acacia)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ nhựa (Composite wood)",
+            "Khóa đàn : Cordoba Satin Nickel with Black Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Concert 7U"
         ]
     },
     {
@@ -2101,20 +2096,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Cordoba 35T Tenor - 14.999tr",
         video: "https://www.youtube.com/embed/og6gRxAavF8",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Cordoba 35T sử dụng gỗ tràm cho tất cả mặt trên, mặt lưng và mặt bên của đàn, sự đồng nhất này mang lại cho nó một tông màu rõ ràng, tươi sáng và một vẻ ngoài khác biệt. ",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "Chiều dài : 65.7cm",
+            "Kiểu thân : Tenor",
+            "Mặt đàn : Gỗ tràm (Acacia)",
+            "Mặt lưng và mặt bên: Gỗ tràm (Acacia)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ hồng mộc (Rosewood)",
+            "Khóa đàn : Grover Sta-Tite Nickel with Black Buttons",
+            "EQ : không có",
+            "Dây đàn : Aquila New Nylgut Tenor 15U"
         ]
     },
     {
@@ -2127,20 +2121,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Fender Fullerton Jazzmaster Concert - 5.199tr",
         video: "https://www.youtube.com/embed/CFvQnHh62qA",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Fender Fullerton Jazzmaster được chế tác dựa trên nguyên mẫu từ kết cấu và thẩm mĩ của ukulele truyền thống, tấm bảo vệ thân đàn (pick guard) có rất nhiều lựa chọn dành cho bạn, khóa đàn theo phong cách 4-in-line đặc trưng của thương hiệu Fender. Fender Fullerton Jazzmaste là sự lựa chọn hoàn hảo cho người chơi ukulele truyền thống muốn truyền tinh thần rock ’n roll vào mọi mà trình diễn.",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 38.2cm",
+            "Kiểu thân : Concert",
+            "Mặt đàn : Gỗ thông (Spruce)",
+            "Mặt lưng và mặt bên: Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ thích (Maple)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Sealed Nickel",
+            "EQ : không có",
+            "Dây đàn : Aquila Nylgut Concert"
         ]
     },
     {
@@ -2153,20 +2146,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Fender Fullerton Strat Concert- 3.999tr",
         video: "https://www.youtube.com/embed/FS2OrwVEq4A",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Fender Fullerton Strat có tất cả các đặc điểm của một cây đàn trong series Stratocaster : pick-guard 1 lớp, khóa đàn 4-in-line và tất nhiên dáng đàn Strat đặc trưng.",
+            "Nhưng chiếc ukulele này không chỉ là là một biểu tượng đơn thuân về sự rung cảm, nó còn là tập hợp của rất nhiều các bộ phận có chất lượng tuyệt vời khác: như cầu ngựa bằng gỗ óc chó (Walnut), xương lược đàn từ nhựa tổng hợp và bộ chỉnh đàn Sealed Nickel, tất cả những chi tiết đó giúp tăng cường âm sắc và hỗ trợ rất tốt cho nhạc cụ tuyệt vời này.",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 38.2cm",
+            "Kiểu thân : Concert",
+            "Mặt đàn : Gỗ thông (Spruce)",
+            "Mặt lưng và mặt bên: Gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ thích (Maple)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Sealed Nickel",
+            "EQ : không có",
+            "Dây đàn : Aquila Nylgut Concert"
         ]
     },
     {
@@ -2179,20 +2171,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Fender Montecito Tenor - 4.399tr",
         video: "https://www.youtube.com/embed/MC2se-xu8Ow",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Lấy cảm hứng từ thành phố California - nơi sinh sống của rất nhiều các ngôi sao, chiếc ukulele này có vẻ ngoài hào nhoáng như một ngôi sao điện ảnh vậy và chỉ một cái tên có thể phù hợp với nó - the Montecito Ukulele.",
+            "Được chế tác hoàn toàn từ gỗ Koa, cây đàn dáng Tenor này có tiếng vang, hợp âm phong phú, rất phù hợp với vẻ bên ngoài xa hoa thanh lịch của nó. Phần mặt thân đàn được chế tác từ gỗ nguyên khối, giúp tăng sự cộng hưởng và duy trì sự cân bằng.",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel",
+            "scale length : 43.2cm",
+            "Kiểu thân : Tenor",
+            "Mặt đàn : Gỗ thông (Koa)",
+            "Mặt lưng và mặt bên: Gỗ dái ngựa (Koa)",
+            "Cần đàn : Gỗ hồng đào việt nam (Nato)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Sealed Nickel",
+            "EQ : không có",
+            "Dây đàn : Standard Tenor Uke"
         ]
     },
     {
@@ -2205,20 +2196,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Fender Rincon Tenor - 5.5tr",
         video: "https://www.youtube.com/embed/xbfFy0yRchs",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            "Được chế tạo với phong cách thanh lịch và các tính năng hàng đầu, Fender Rincon có kích thước tenor với âm trầm, sâu sắc, truyền cảm hứng độc đáo. Việc gắn EQ không phải là việc phổ biến với ukulele, tuy nhiên nếu bạn muốn kết nối với các thiết bị thu phát, cây đàn này được trang bị một EQ Fishman Kula Preamp sẽ giúp bạn rất thỏa mãn đam mê của mình.",
+            "",
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 43.2cm",
+            "Kiểu thân : Tenor",
+            "Mặt đàn : Gỗ Ovangkol (Ovangkol)",
+            "Mặt lưng và mặt bên: Gỗ Ovangkol (Ovangkol)",
+            "Cần đàn : Gỗ hồng đào việt nam (Nato)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Sealed Nickel",
+            "EQ : Fishman Kula Preamp with Built-in Tuner",
+            "Dây đàn : Standard Tenor Uke"
         ]
     },
     {
@@ -2229,22 +2219,21 @@ var guitarUkuleleData = [
         body:"Soprano",
         price: "1.999.000",
         photo:"Product/Ukulele/Fender Venice Soprano - 1.999tr",
-        video: "https://www.youtube.com/embed/PnBOFAsiLxY",
+        video: "https://www.youtube.com/embed/CVYYKP-go4M",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Lấy cảm hứng từ các chuyến tham quan giải trí và lòng hiếu khách chân thật, vô tư của Venice - California, chúng tôi đã tạo ra một cây đàn ukulele soprano như là một sự rung cảm của chính Venice - Fender Venice Ukulele. Nhờ kích thước cơ thể nhỏ gọn, thoải mái, Venice dễ dàng di chuyển từ bãi biển đến phòng thu trong khi vẫn giữ được âm thanh nhẹ nhàng, cổ điển khiến đàn ukulele trở thành thứ "must-have" cho người chơi ngày nay.`,
+            `Cấu hình cổ hình chữ "C" mỏng, thoải mái khi cầm và dễ chơi, trong khi cầu ngựa đàn dạng kéo giúp việc thay đổi dây trở nên dễ dàng. Phần đầu với các nút vặn theo phong cách 4-in-line bổ sung thêm một nét độc đáo của phong cách Fender .`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 43.2cm",
+            "Kiểu thân : Soprano",
+            "Mặt đàn : Gỗ đoạn (Basswood)",
+            "Mặt lưng và mặt bên: Gỗ đoạn (Basswood)",
+            "Cần đàn : Gỗ hồng đào việt nam (Nato)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open-Back Geared",
+            "EQ : không đàn",
+            "Dây đàn : Standard Soprano Uke"
         ]
     },
     {
@@ -2257,20 +2246,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna Bamboo Concert - 2.799tr",
         video: "https://www.youtube.com/embed/eogqkeeScjM",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Luna tiếp tục bước tiến độc đáo của mình trong vương quốc của các loại gỗ kỳ lạ bằng cách thêm Ukulele Bamboo bao gồm các kích cỡ Soprano, Concert và Tenor vào trong bộ sưu tập của hãng.`,
+            `Luna Bamboo Concert được xây dựng với một cần đàn dài 38.1 (15 inch), cần đàn gỗ dái ngựa (Mahogany), fingerboard gỗ óc chó (Walnut), và những họa tiết khảm trai hình ánh trăng tuyệt đẹp trên cần đàn.`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 38.1cm",
+            "Kiểu thân : Soprano",
+            "Mặt đàn : Tre (Bamboo)",
+            "Mặt lưng và mặt bên: Tre (Bamboo)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Cream Button",
+            "EQ : không đàn",
+            "Dây đàn : Aquila Super Nylgut"
         ]
     },
     {
@@ -2283,48 +2271,21 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna High Tide Soprano - 6.499tr",
         video: "https://www.youtube.com/embed/veG-GNOeg5U",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Được tạo ra với sự chăm chút đến từng chi tiết là những gì bạn có thể mong đợi từ với dòng ukulele hàng đầu Lunas High Tide. Từ những chi tiết nhỏ nhất trên phần đầu đàn đến những chi tiết vòng khảm trai xung quanh lỗ sound hole`,
+            `Là sự bổ sung hoàn hảo cho dòng ukulele cao cấp hàng đầu của Luna, Luna High Tide lấy cảm hứng từ ánh trăng - biểu tượng của hãng vào những lúc thủy triều lên bằng những hình khảm mà bạn có thể thấy trên mặt trước cần đàn. Cây ukulele này là sự lựa chọn hoàn hảo của những nhạc sĩ không chỉ muốn một nhạc cụ có âm thanh chất lượng mà còn yêu cầu cả sự tinh tế, vẻ đẹp của nhạc cụ đó.`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 34.3cm",
+            "Kiểu thân : Soprano",
+            "Mặt đàn : gỗ ngựa vằn (Zebra Wood)",
+            "Mặt lưng và mặt bên: gỗ ngựa vằn (Zebra Wood)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : Luna UK-T2 w/Tune",
+            "Dây đàn : Aquila Super Nylgut"
         ]
 
-    },
-    {
-        id: "202048165515-3195381",
-        name: "Luna Starry Night",
-        group: "ukulele",
-        brand:"LUNA",
-        body:"Tenor",
-        price: "3.500.000",
-        photo:"Product/Ukulele/Luna Starry Night Tenor - 3.5tr",
-        video: "https://www.youtube.com/embed/wVL_qpZ8gDM",
-        content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
-            ],
-        specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
-        ]
     },
     {
         id: "20204816575-5804857",
@@ -2336,20 +2297,44 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna Uke High Tide AE Baritone - 7.6tr",
         video: "https://www.youtube.com/embed/35J-s_YiqeY",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Cây đàn ukulele xinh đẹp này được làm từ gỗ ngựa vằn (Zebra Wood) tạo ra âm thanh tròn đầy, sâu lắng cùng với dáng đàn baritone to, chắc. Phần cổ được chế tạo từ gỗ dái ngựa (Mahogany) và ngựa đàn bằng gỗ óc chó (Walnut). Khóa đàn theo kiểu open-style giữ cho dây đàn luôn có âm chuẩn xác và bộ EQ trên thân đàn cung cấp khả năng kết nối với các thiết bị thu phát cho âm thanh phát ra đầy đủ, không bị biến đổi. Luna High Tide AE xứng đáng là một trong những dòng đàn chủ lực làm nên tên tuổi của Luna từ trước đến giờ.`,
+            ``,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 48.3cm",
+            "Kiểu thân : Baritone",
+            "Mặt đàn : gỗ ngựa vằn (Zebra Wood)",
+            "Mặt lưng và mặt bên: gỗ ngựa vằn (Zebra Wood)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : Luna Preamp",
+            "Dây đàn : Aquila Super Nylgut"
+        ]
+    },
+    {
+        id: "202048165515-3195381",
+        name: "Luna Starry Night",
+        group: "ukulele",
+        brand:"LUNA",
+        body:"Tenor",
+        price: "3.500.000",
+        photo:"Product/Ukulele/Luna Starry Night Tenor - 3.5tr",
+        video: "https://www.youtube.com/embed/wVL_qpZ8gDM",
+        content:[
+            `"Sáng nay anh nhìn quang cảnh vùng nông thôn từ cửa sổ rất lâu trước khi mặt trời mọc, không có gì ngoài ngôi sao mai, trông rất lớn." Những lời này được viết bởi Van Gogh, gửi cho em trai Theo, mô tả cảm hứng của ông ấy về một trong những bức tranh của bản thân. Không có gì truyền cảm hứng cho sự sáng tạo hơn một bức tranh lập dị có ý nghĩa lịch sử quan trọng. The ukulele Starry Night Tenor được tạo ra để khuyến khích người chơi ukulele thực sự  "Play the Art of the Music" - Sự sáng tạo truyền cảm hứng cho tất cả mọi thứ.`,
+            `Được làm thủ công một cách tỉ mỉ từ gỗ dái ngựa (Mahogany) và gỗ thông (Spruce). Chiếc ukulele này là niêm kiêu hãnh về chất lượng và tương xứng với âm thanh và thiết kế tuyệt đẹp của nó. Cho dù bạn đang tìm kiếm một chiếc guitar để biểu diễn trên sân khấu hay chỉ đơn giản là thỏa mãn đam mê cá nhân, đây là một chiếc ukulele tuyệt vời.`,
+            ],
+        specification:[
+            "scale length : 43.2cm",
+            "Kiểu thân : Tenor",
+            "Mặt đàn : gỗ thông (Spruce)",
+            "Mặt lưng và mặt bên: gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : không đàn",
+            "Dây đàn : Aquila Super Nylgut"
         ]
     },
     {
@@ -2362,20 +2347,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna Vintage Mahogany Baritone - 3.3tr",
         video: "https://www.youtube.com/embed/r_OOv_fz830",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Đã đến lúc đưa cây uklele tài năng của bạn bước lên sân khấu lớn. Luna Vintage Mahogany là một cây guitar như vậy, có giá cả rất phải chăng nhưng vẫn được trang bị một chiếc EQ Luna UK-T2 rất chất lượng.  `,
+            `Thân và cần đàn đều được làm gỗ dái ngựa (Mahogany), fingerboard được làm từ gỗ óc chó (Walnut) và khảm trai hình tam giác, phần rosette được khắc laser xung quanh lỗ thoát âm chính là điểm nhấn của thiết kế, đặc biệt phù hợp với tone màu nâu của chính cây đàn.`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 43.2cm",
+            "Kiểu thân : Baritone",
+            "Mặt đàn : gỗ dái ngựa (Mahogany)",
+            "Mặt lưng và mặt bên: gỗ dái ngựa (Mahogany)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : Luna UK-T2 w/Tuner",
+            "Dây đàn : Aquila Super Nylgut"
         ]
     },
     {
@@ -2388,20 +2372,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna Vista Deer Concert - 8.299tr",
         video: "https://www.youtube.com/embed/mGypsuX3SXc",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `The Vista Series là sự kết hợp giữa một thế giới mĩ thuật với nghệ thuật chế tác nhạc cụ tiên tiến. Mỗi chiếc ukulele trong series này là một bức tranh đầy màu sắc về một loại động vật hoang dã.`,
+            `Luna Vista Deer như cái tên của nó, là một tuyệt tác về loài hưu, mặt trên thân đàn được làm thủ công hoàn toàn từ gỗ Koa kết hợp với rất nhiều loại vật liệu khác như gõ thích (Maple), gỗ đen (Blackwood), trai (Mother of Pearl),... thể hiện khung cảnh đêm trăng với đôi hươu bên nhau. Âm thanh đàn được khuếch đại bằng EQ Fishman Kula giúp tăng cường âm sắc khi biểu diễn trên sân khấu.`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 38.1cm",
+            "Kiểu thân : Concert",
+            "Mặt đàn : gỗ koa (Koa)",
+            "Mặt lưng và mặt bên: gỗ koa (Koa)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : Fishman Kula (OEM-KUL-201)",
+            "Dây đàn : Aquila Super Nylgut"
         ]
     },
     {
@@ -2414,20 +2397,19 @@ var guitarUkuleleData = [
         photo:"Product/Ukulele/Luna Ziricote Soprano - 4.3tr",
         video: "https://www.youtube.com/embed/GdhgLCMAqRU",
         content:[
-            "Không có gì là thừa trên cây đàn tuyệt vời này, một nhạc cụ mang đầy đủ những nét tinh túy của Gretsch, hoàn hảo, tinh khiết mà đầy sức mạnh là những gì nói về Gretsch G5422TG Electromatic.",
-            "Đẹp nhưng vô cùng mạnh mẽ, Gretsch G5422TG Electromatic có thân đàn mảnh hơn, rỗng được chế tác với bộ lọc Filter’Tron™ giúp thu được toàn bộ âm thanh bên trong thân đàn và khuếch đại lên một cách chính xác nhất. Giống như tất cả các cây guitar Electromatic, nó mang đến sự tự tin, không sợ hãi của một cây rock guitar đích thực.",
+            `Luna đưa phong cách, sự thanh lịch và nghệ thuật trừu tượng lên một tầm cao mới với Ziricote Ukulele. Ziricote như một bảng màu quyến rũ và hoa văn vân gỗ độc đáo, bao gồm phần lớn màu nâu sẫm và các một đường sơn màu vàng xuyên suốt ở mặt trước thân đàn. Mọi người chắc chắn sẽ bị hấp dẫn bởi vẻ đẹp tự nhiên của chiếc ukulele này.`,
+            `Ziricote uke được xây dựng trên cấu trúc của một chiếc ukulele truyền thống, cầu đàn bằng gỗ dái ngựa (Mahogany) và fingerboard bằng gỗ óc chó (Walnut), trên cần đàn còn được trang trí bằng những hình khảm trai mặt trăng tuyệt đẹp.`,
             ],
         specification:[
-            "Scale length : 62.5cm",
-            "Kiểu thân : Hollow body",
-            "Mặt đàn : Gỗ thích (Maple)",
-            "Mặt lưng : Gỗ thích (Maple)",
-            "Cần đàn : Gỗ hồng mộc (Rosewood)",
-            "Fingerboard : Gỗ Hồng mộc (Rosewood)",
-            "Khóa đàn : Die-Cast",
-            "Pick-up cần đàn : Black Top Filter'Tron",
-            "Pick-up cầu ngựa : Black Top Filter'Tron",
-            "Dây đàn : Nickel Plated Steel"
+            "scale length : 34.3cm",
+            "Kiểu thân : Soprano",
+            "Mặt đàn : gỗ Ziricote (Ziricote)",
+            "Mặt lưng và mặt bên: gỗ Ziricote (Ziricote)",
+            "Cần đàn : Gỗ dái ngựa (Mahogany)",
+            "Fingerboard : Gỗ óc chó (Walnut)",
+            "Khóa đàn : Open Gear Black Button",
+            "EQ : không có",
+            "Dây đàn : Aquila Super Nylgut"
         ]
     }
 ]
@@ -2442,7 +2424,21 @@ var accessoriesData=[
         type: "Capo",
         price: "450.000",
         photo:"Accessories/Capo D'addario Pro - 0.45tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        video: "https://www.youtube.com/embed/95vhIwcHVMA",
+        content:[
+            `Capo D'addario Pro làm từ nhôm cường độ cao, thích hợp cho đàn guitar acoustic và guitar điện 6 hoặc 12 dây.  `,
+            `Cơ chế điều chỉnh micromet đã được cấp chứng nhận cho phép người chơi chọn số theo độ căng chính xác cần cho guitar bất kỳ, cỡ dây đàn và vị trí chơi. Đặc tính này giúp giảm đáng kể nhu cầu chỉnh lại dây và sau khi sử dụng capo. Cấu trúc nhôm nhẹ, đẹp mắt mang lại hiệu suất vượt trội trong khi chỉ làm tăng thêm trọng lượng tối thiểu ở cần đàn.`,
+            ],
+        specification:[
+            "Tên : Capo D'addario Pro",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : nhôm cường độ cao (alloy 6061 T6)",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 22.623g",
+            "Kích thước : 9.525x1.905x17.602 cm",
+            "Màu tùy chọn : đen, bạc, đồng nâu, xám"
+        ]
     },
     {
         id: "2020429162854-5800815",
@@ -2452,7 +2448,21 @@ var accessoriesData=[
         type: "Capo",
         price: "200.000",
         photo:"Accessories/Capo D'addario ratchet - 0.2tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        video: "https://www.youtube.com/embed/95vhIwcHVMA",
+        content:[
+            `Được thiết kế cho guitar điện và guitar acoustic tiêu chuẩn, với thiết kế đúc D'Addario Ratchet Capo mang đến sự dễ sử dụng và đầy đủ tính năng với giá cả phải chăng. Thiết kế cần xiết đơn giản và trực quan khóa dây vào vị trí với một chuyển động bóp đơn giản. Một lần nhấn của đòn bẩy sẽ mở khóa capo để dễ dàng gỡ bỏ hoặc định vị lại trên cần đàn một cách nhanh chóng.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Capo D'addario Ratchet",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : nhôm cường độ cao (alloy 6061 T6)",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 53.864g",
+            "Kích thước : 8.89x1.295x17.805 cm",
+            "Màu tùy chọn : đen"
+        ]
     },
     {
         id: "202042916309-6215666",
@@ -2462,7 +2472,21 @@ var accessoriesData=[
         type: "Capo",
         price: "550.000",
         photo:"Accessories/Capo D'addario Tri-action - 0.55tr",
-        photoNumber:"3"
+        photoNumber:"3",
+        video: "https://www.youtube.com/embed/95vhIwcHVMA",
+        content:[
+            `Capo D'addario Tri-action capo từ D'Addario đảm bảo sẽ luôn đúng nhịp ở mọi vị trí phím. Hình học Tri-Action (ba tác động) giúp có thể dễ dàng sử dụng một tay và giảm lực khi mở và đóng capo. Áp dụng ngay cả lực căng trên mặt cần đàn giúp loại bỏ vấn đề đẩy dây sang hai bên và không cần chỉnh lại dây khi đang sử dụng. Hơn nữa, cấu trúc bằng nhôm nhẹ tăng thêm trọng lượng không đáng kể cho cần đàn. Được thiết kế bởi Ned Steinberger và hiện có hai phiên bản với lớp phủ đen và bạc, và có cả nơi gắn pick.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Capo D'addario Tri-action",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : nhôm cường độ cao (alloy 6061 T6)",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 8.165g",
+            "Kích thước : 14.986x1.016x17.78 cm",
+            "Màu tùy chọn : đen và bạc"
+        ]
     },
     {
         id: "2020429163136-3606061",
@@ -2472,7 +2496,20 @@ var accessoriesData=[
         type: "Capo",
         price: "550.000",
         photo:"Accessories/Capo Fender Dragon - 0.35tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Planet Waves NS Tri-Action capo từ D'Addario đảm bảo sẽ luôn đúng nhịp ở mọi vị trí phím. Hình học Tri-Action (ba tác động) giúp có thể dễ dàng sử dụng một tay và giảm lực khi mở và đóng capo. Áp dụng ngay cả lực căng trên mặt cần đàn giúp loại bỏ vấn đề đẩy dây sang hai bên và không cần chỉnh lại dây khi đang sử dụng. Hơn nữa, cấu trúc bằng nhôm nhẹ tăng thêm trọng lượng không đáng kể cho cần đàn. Được thiết kế bởi Ned Steinberger và hiện có hai phiên bản với lớp phủ đen và bạc, và có cả nơi gắn pick.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Capo Fender Drago",
+            "Hãng sản xuất : Fender",
+            "vật liệu : nhôm đúc",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 42.808g",
+            "Kích thước : 7.62x17.78x22.86 cm",
+            "Màu tùy chọn : đen "
+        ]
     },
     {
         id: "2020429163238-3717531",
@@ -2482,7 +2519,20 @@ var accessoriesData=[
         type: "Capo",
         price: "470.000",
         photo:"Accessories/Capo Fender Phoenix - 0.47tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Sử dụng đơn giản và được chế tạo bằng nhôm đúc siêu bền, Dragon Capo là sự lựa chọn lý tưởng dù bạn găn nó ở bất cứ đâu dọc theo cần của bất kỳ cây guitar acoustic hay guitar điện nào. Cơ chết mở tiện lợi cho phép bạn thay đổi vị trí nhanh chóng và dễ dàng chỉ với một lực mở rất nhỏ tại bất kỳ phím đàn nào, và miếng đệm bảo vệ đặc biệt sẽ không gây hại cho lớp sơn phía sau cần đàn.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Capo Fender Drago",
+            "Hãng sản xuất : Fender",
+            "vật liệu : nhôm đúc",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 42.808g",
+            "Kích thước : 7.62x17.78x22.86 cm",
+            "Màu tùy chọn : đen "
+        ]
     },
     {
         id: "2020429163324-7972660",
@@ -2492,7 +2542,20 @@ var accessoriesData=[
         type: "Capo",
         price: "580.000",
         photo:"Accessories/Capo Fender Smart - 0.58tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Với thiết kế gọn nhẹ và di động, Fender Smart Capo hoàn hảo khi bạn muôn thay đổi vị trí của capo nhanh như chớp bất kể khi đang biểu diễn trên sân khấu. Bằng cách bóp capo vào cần đàn hoặc đơn giản là ấn vào chốt, người chơi có thể gắn hoặc gỡ bỏ chiếc capo này khỏi đàn guitar của họ trong vài giây . Thay đổi độ cao một cách dễ dàng và duy trì độ căng của dây đàn hoàn hảo trong khi vẫn giữ chuẩn âm đàn và loại bỏ tiếng ồn khó chịu.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Capo Fender Smart",
+            "Hãng sản xuất : Fender",
+            "vật liệu : nhôm đúc",
+            "Phù hợp : guitar acoustic và guitar điện",
+            "trọng lượng : 39.689g",
+            "Kích thước : 2.286x9.652x18.288 cm",
+            "Màu tùy chọn : đen "
+        ]
     },
     {
         id: "2020429163346-1126158",
@@ -2502,7 +2565,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "165.000",
         photo:"Accessories/Dây Đàn D'addario EJ11 Bronze Acoustic - 0.165tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Dây Đàn Guitar D'Addario EJ11 là dòng sản phẩm dây Bronze (dây đồng) của hãng D'Addario (Mỹ), kích cỡ 12-53, loại Light. Đây là mẫu dây đàn guitar acoustic rất nổi tiếng và phổ biến, được người dùng đánh giá cao và được coi là một trong những bộ dây tốt nhất dành cho đàn guitar acoustic.`,
+            `Dây đồng của D'Addario luôn có lõi dây làm bằng thép pha carbon, hình lục giác, chế tác bằng công nghệ hiện đại, độ bền cao, bao bì thân thiện với môi trường. Một điều lưu ý: dây guitar của hãng này chỉ sản xuất tại Mỹ (Made in USA)`,
+            ],
+        specification:[
+            "Tên : D'addario EJ11",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : đồng",
+            "Phù hợp : guitar acoustic",
+            "trọng lượng (cả vỏ): 30.050g",
+            "Kích thước (cả vỏ): 8.001x11.988x0.508 cm ",
+            "Size : Light, 12-53 "
+        ]
     },
     {
         id: "2020429163811-7846511",
@@ -2512,7 +2588,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "180.000",
         photo:"Accessories/Dây Đàn D'addario EJ27N Normal Tension - 0.18tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Daddario EJ27N Normal Tension bao gồm 3 dây dưới thuần nylon và 3 dây trên là đồng mạ bạc. Nó cung cấp âm thanh mềm mại và nổi bật cho các loại nhạc cụ. Mang tiêu chuẩn cao và chuyên nghiệp, bộ dây đàn này phù hợp cho tất cả mọi người vì giá thành rẻ và độ bền của nó.`,
+            ``,
+            ],
+        specification:[
+            "Tên : D'addario EJ27N",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : đồng và nylon",
+            "Phù hợp : guitar cổ điển",
+            "trọng lượng (cả vỏ): 10.971g",
+            "Kích thước (cả vỏ): 11.43x11.43x0.508 cm",
+            "Size : Normal, 0.28 "
+        ]
     },
     {
         id: "2020429163947-8330409",
@@ -2522,7 +2611,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "250.000",
         photo:"Accessories/Dây Đàn Elixir Nickel Plated OPTIWEB Super Light (.009-.042) 0.25tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Dây đàn Elixir hiện nay là một trong những dây đàn bán chạy nhất thị trường, và dĩ nhiên phải có nguyên do. Sở hữu phần bọc Nanoweb và Polyweb trong nhiều loại dây và kích cỡ dây để đáp ứng được nhiều sở thích khác nhau của người chơi. Phần bọc giúp âm sắc được cân bằng với cảm giác phản ứng siêu mượt làm giảm tiếng rít ngón tay, trong khi kéo dài hơn gấp 3-5 lần so với dây thông thường nhờ vào lớp bọc bảo vệ tránh mồ hôi và bụi bẩn. Điều này đồng nghĩa bạn không cần mua nhiều dây và không cần thay dây liên tục, tiết kiệm được chi phí đáng kể.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Elixir Nickel Plated",
+            "Hãng sản xuất : Elixir",
+            "vật liệu : thép mạ niken",
+            "Phù hợp : guitar điện",
+            "trọng lượng (cả vỏ): 30.050g",
+            "Kích thước (cả vỏ): 1.27x10.414x11.938 cm",
+            "Size : Light (.010-.046)"
+        ]
     },
     {
         id: "2020429164053-7381340",
@@ -2532,7 +2634,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "360.000",
         photo:"Accessories/Dây Đàn Elixir Phosphor Bronze NANOWEB Light (.012-.053) 0.36tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Theo các tay đàn, dây đàn Elixir giữ được âm thanh lâu hơn so với các loại dây khác dù không có lớp phủ hoặc có phủ. Dây của Elixir có tính năng chơi tốt và âm thanh kéo dài mà nhiều nghệ sỹ hàng đầu trên khắp thế giới luôn chọn sử dụng, và có hai loại lớp phủ là Nanoweb hoặc Polyweb.`,
+            `Acoustic Phosphor Bronze Strings của Elixir có lớp phủ NANOWEB cho âm sắc sáng và có độ ấm đặc trưng, đồng thời cũng tăng được tuổi thọ âm.`,
+            ],
+        specification:[
+            "Tên : Elixir Phosphor Bronze",
+            "Hãng sản xuất : Elixir",
+            "vật liệu : đồng",
+            "Phù hợp : guitar acoustic",
+            "trọng lượng (cả vỏ): 22.679g",
+            "Kích thước (cả vỏ): 1.524x10.414x11.938 cm ",
+            "Size : Light (.012-.053)"
+        ]
     },
     {
         id: "2020429164148-1408174",
@@ -2542,7 +2657,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "120.000",
         photo:"Accessories/Dây Đàn Fender 60L PHOS Bronze Ball 12-53 - 0.12tr",
-        photoNumber:"1"
+        photoNumber:"1",
+        content:[
+            `Dây guitar thùng Fender 60L PHOS BRNZ BALL 12-53 làm từ phosphor bronze cho âm thanh ấm áp hài hòa, dãy Mid thấp và độ bền cao hơn. `,
+            ``,
+            ],
+        specification:[
+            "Tên : Fender 60L PHOS",
+            "Hãng sản xuất : Fender",
+            "vật liệu : đồng",
+            "Phù hợp : guitar acoustic",
+            "trọng lượng (cả vỏ): 34.019g ",
+            "Kích thước (cả vỏ): 1.27x11.43x11.43 cm ",
+            "Size : Light (.012-.053)"
+        ]
     },
     {
         id: "2020429164227-4726293",
@@ -2552,7 +2680,20 @@ var accessoriesData=[
         type: "Dây đàn",
         price: "150.000",
         photo:"Accessories/Dây Đàn Fender 3250 R 10-46 Bullet - 0.15tr",
-        photoNumber:"1"
+        photoNumber:"1",
+        content:[
+            `Dây đàn guitar điện FENDER 3250 R 10-46 BULLET Kết hợp đầu ra chất lượng cao và âm thanh năng động của thép với cảm giác mượt mà của niken. Super Bullets® của chúng tôi là những dây đàn hoàn hảo cho nhạc rock và các loại nhạc khác. `,
+            ``,
+            ],
+        specification:[
+            "Tên : Fender 3250R",
+            "Hãng sản xuất : Fender",
+            "vật liệu : thép mạ niken",
+            "Phù hợp : guitar điện",
+            "trọng lượng (cả vỏ): 113.398g",
+            "Kích thước (cả vỏ): 2.54x15.24x15.24 cm ",
+            "Size : Medium 10-46"
+        ]
     },
     {
         id: "2020429164423-8763573",
@@ -2562,7 +2703,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "480.000",
         photo:"Accessories/Tuner D'addario Clip-on Headstock - 0.48tr",
-        photoNumber:"3"
+        photoNumber:"3",
+        content:[
+            `Tuner D'addario Clip-on Headstock có thể lấy chính xác cao độ của dây đàn nhiều loại nhạc cụ như guitar, bass, ... bằng việc sự dụng tần số dao động chứ không phải phân tích âm thanh như nhiều loại Tuner khác. Sử dụng bộ cảm biến piezo censor có độ nhạy cao và màn hình đa màu lớn, D'addario Clip-on Headstock cho phép bạn điều chỉnh dễ dàng và chính xác trong môi trường ồn ào và thiếu sự yên tĩnh khi nhiều bộ điều chỉnh khác bị nhiễu.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Tuner D'addario Clip-on Headstock",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass, violon",
+            "trọng lượng : 45.359g ",
+            "Kích thước : 2.692x10.16x14.605 cm ",
+            "Pin : 1 Lithium Metal"
+        ]
     },
     {
         id: "2020429164445-8114319",
@@ -2572,7 +2726,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "400.000",
         photo:"Accessories/Tuner D'addario Micro Universal - 0.4tr",
-        photoNumber:"3"
+        photoNumber:"3",
+        content:[
+            `D'Addario Micro Headstock Tuner là tuner mang tính năng mới. Tuner chính xác này có màn hình hiển thị đủ màu với 4 góc nhìn tuỳ chọn (2 ngang, 2 dọc) qua dáng ngoài có thể kết hợp với kiểu dáng của mọi cây đàn. Các thuật toán tinh chỉnh nâng cao cho phép bạn điều chỉnh trong môi trường nhiều tiếng ồn, trong khi kẹp gắn chắc vào đàn trong thời gian diễn live. Nhỏ, thuận tiện, và chính xác, bạn sẽ muốn sở hữu một Tuner như thế cho mọi cây đàn mình có.`,
+            ``,
+            ],
+        specification:[
+            "Tên : D'addario Micro Universal",
+            "Hãng sản xuất : D'addario",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass",
+            "trọng lượng : 45.359g",
+            "Kích thước : 2.692x10.16x14.605 cm",
+            "Pin : 1 CR2 Battery"
+        ]
     },
     {
         id: "202042916465-4361825",
@@ -2582,7 +2749,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "450.000",
         photo:"Accessories/Tuner Fender California Series Clip-on - 0.45tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Tuner Fender California có trang bị cảm biến rất thuận tiện tự động bật ngay khi được gắn vào phần đầu của guitar hoặc bass. Khả năng cảm biến rung của bộ điều chỉnh nhỏ gọn cho phép người chơi điều chỉnh dễ dàng và chính xác trong mọi tình huống, màn hình LCD với màu sắc rất sáng của nó rất lý tưởng cho các sân khấu tối, ít ánh sáng vì dễ dàng đọc thông số mà không gây ra bất kì sự bất tiện nào.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Fender California",
+            "Hãng sản xuất : Fender",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass",
+            "trọng lượng : 21g",
+            "Kích thước : 4.8x4.4x2.7 cm",
+            "Pin : 1 CR2 Battery"
+        ]
     },
     {
         id: "2020429164653-9657577",
@@ -2592,7 +2772,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "500.000",
         photo:"Accessories/Tuner Fender FCT-12 Clip-on - 0.5tr",
-        photoNumber:"3"
+        photoNumber:"3",
+        content:[
+            `Fender FCT-12 Chromatic Color Clip-On Tuner nhỏ gọn và dễ vận hành ngay cả trong điều kiện sân khấu tối, thiếu ánh sáng. Nó hoạt động dựa trên các thiết bị sử dụng cảm biến rung tích hợp để điều chỉnh và cho kết quả chính xác ngay cả ở những khu vực ồn ào. Màn hình LCD sáng và đầy màu sắc với màn hình kim quét dễ đọc ngay cả khi xoay 360 độ để dễ nhìn.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Fender FCT-12",
+            "Hãng sản xuất : Fender",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass",
+            "trọng lượng : 50g",
+            "Kích thước : N/A",
+            "Pin : 1 CR2032 battery"
+        ]
     },
     {
         id: "2020429164959-8843011",
@@ -2602,7 +2795,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "600.000",
         photo:"Accessories/Tuner Fishman FT-2 - 0.6tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Fishman FT-2 Digital Tuner là bộ chỉnh cung cấp một cách nhanh chóng các phép đọc chính xác và cùng với hệ thống FLIP ON, tất cả những gì bạn cần làm là gạt lên để mở, và gạt xuống để tắt. Màn hình hiển thị LCD dễ đọc giúp điều chỉnh dễ dàng hơn rất nhiều trong các môi trường khác nhau và khi không sử dụng, sẽ giảm công suất để tiết kiệm năng lượng.`,
+            ``,
+            ],
+        specification:[
+            "Tên : Fishman FT-2",
+            "Hãng sản xuất : Fishman",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass",
+            "trọng lượng : 50g",
+            "Kích thước : 4.826x4.318x2.794 cm ",
+            "Pin : 1 2032 coin battery"
+        ]
     },
     {
         id: "2020429165125-1506131",
@@ -2612,7 +2818,20 @@ var accessoriesData=[
         type: "Tuner",
         price: "950.000",
         photo:"Accessories/Tuner Fishman FT-4 Clip-on - 0.95tr",
-        photoNumber:"2"
+        photoNumber:"2",
+        content:[
+            `Bộ điều chỉnh Clip-On Fishman FT-4 cung cấp sự chính xác và độ nhạy tốt trong một thiết bị với hình dáng rất dễ sử dụng. Mạnh mẽ và nhỏ gọn, FT-4 có kiểu gắn mới, nhiều chế độ điều chỉnh, máy đếm nhịp trực quan và hiển thị màu sắc sống động.`,
+            `Thiết bị này cũng rất nhẹ, vì vậy không ảnh hưởng đến thao tác trên nhạc cụ của bạn. FT-4 hoạt động cả dưới dạng bộ gắn trực tiếp và micrô. Màn hình có thể được xoay để dễ sử dụng và cặp khóa có thể được gắn vào hai bên để thuận tiện sử dụng hoặc loại bỏ hoàn toàn để sử dụng độc lập.`,
+            ],
+        specification:[
+            "Tên : Fishman FT-4",
+            "Hãng sản xuất : Fishman",
+            "vật liệu : nhựa dẻo",
+            "Phù hợp : guitar, bass",
+            "trọng lượng : 38g",
+            "Kích thước : 7.00x3.10x3.10 cm",
+            "Pin : 1 2032 coin battery"
+        ]
     }
 ];
 

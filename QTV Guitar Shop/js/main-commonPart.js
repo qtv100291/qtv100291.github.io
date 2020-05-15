@@ -99,12 +99,12 @@ function displayCartSub(){ //Display Sub Shopping Cart
                             <div class="image-item-shopping"><img src="${shoppingCart[i].image}" alt="item"></div>
                             <div class="info-item-shopping">
                                 <div class="name-item-shopping" title="${shoppingCart[i].name}">${shoppingCart[i].name}</div>
-                                <div class="price-item"><span class="count-item-shopping">${shoppingCart[i].count}</span>&nbsp;&nbsp;x&nbsp;&nbsp;<span class="price-item-shopping">${shoppingCart[i].price}</span> Đồng</div>
+                                <div class="price-item"><span class="count-item-shopping">${shoppingCart[i].count}</span>&nbsp;&nbsp;x&nbsp;&nbsp;<span class="price-item-shopping">${shoppingCart[i].price}</span> VND</div>
                             </div>
                          </div>`
     }
     let totalMoneyConvert = separator1000(totalMoney);
-    outputTotalMoney +=  `<div class="total-money">Tổng : &nbsp;<span class="total-money-number">${totalMoneyConvert}</span>&nbsp;&nbsp;Đồng</div>
+    outputTotalMoney +=  `<div class="total-money">Tổng : &nbsp;<span class="total-money-number">${totalMoneyConvert}</span>&nbsp;&nbsp;VND</div>
                         <a class="button-access-shopping-cart" href="shoppingcart.html">Thanh Toán</a>`
     }
     document.querySelector('.sub-shopping-cart-container-item').innerHTML = output;

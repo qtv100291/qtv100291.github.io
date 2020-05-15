@@ -136,14 +136,14 @@ function displayShoppingCart(){ //Display Shopping Cart
             totalMoney += realMoney;
             output +=   `<div class="shopping-cart-item">
                             <div class="item-detail"><span class="number-item">${shoppingCart[i].count}</span> x <span class="item-name">${shoppingCart[i].name}</span></div>
-                            <div class="item-money-value">= <span class="money-value">${realMoneyConvert}</span> Đ</div>
+                            <div class="item-money-value">= <span class="money-value">${realMoneyConvert}</span> VND</div>
                         </div>`
     }
     let totalMoneyConvert = separator1000(totalMoney);
     output +=   `<div class="total-money">
                     <div class="total-money-title">
                         <div>Thành Tiền:</div>
-                        <div><span class="total-money-value">${totalMoneyConvert}</span> Đ</div>
+                        <div><span class="total-money-value">${totalMoneyConvert}</span> VND</div>
                     </div>
                     <div class="total-money-note">( Đã Bao Gồm Thuế VAT )</div>
                 </div>`

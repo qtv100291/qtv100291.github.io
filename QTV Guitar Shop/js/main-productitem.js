@@ -26,7 +26,7 @@ renderProductItem(itemData);
 function renderProductItem(objectData){
     let arrayExecuted =[];
     let bannerAddress;
-    let outputDescription = "";
+    let outputDescription = "Giới Thiệu :";
     let outputSpecification = "";
     switch (objectData.group){
         case "classical":
@@ -75,7 +75,6 @@ function renderProductItem(objectData){
     $('.item-name').text(objectProductItem.name);
     $('.item-price').text(objectProductItem.price);
     $('#video-review').attr('src',`${objectProductItem.video}?enablejsapi=1`);
-    console.log(objectProductItem.content)
     for (let i = 0; i < objectProductItem['content'].length; i++){
         outputDescription +=`<p>${objectProductItem['content'][i]}</p>`;
     }
