@@ -103,7 +103,7 @@ function limitCharacter(elt,limitNumber){
     }
 }
 
-//Part : Function for Rendering Item
+//Part 3 : Function for Rendering Item
 let shoppingCart=[];
 let discount = 0;
 if (localStorage.getItem('shoppingcartguitar') != null){
@@ -155,7 +155,7 @@ function displayShoppingCart(){ //Display Shopping Cart
 function separator1000(num){ // 1000 separator 
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
-//Part 3: Function for Submit Order
+//Part 4 : Function for Submit Order
 if ($('body').height() > $(window).outerHeight()){
     scrollBarWidth = $(window).outerWidth() - $('body').innerWidth();
 }
@@ -163,17 +163,21 @@ else scrollBarWidth = 0;
 
 $('.order-button').click(sendOrder);
 function sendOrder(){
+    let numberReturn, bodyYPosition, productYPosition;
+    bodyYPosition = $('body').offset();
+    productYPosition = $('.user-info').offset();
+    numberReturn = productYPosition.top - bodyYPosition.top; //scrollbar backs to top of the product part 
     // check shopping cart is empty 
     loadCart();
     if (shoppingCart.length ==0) window.location.href = "index.html";
-    // check whether input field takes a valid value
-    if (!checkEmpty('input-user-name')) {$(window).scrollTop(0); return};
-    if (!checkEmpty('input-user-phone')) {$(window).scrollTop(0); return};
-    if (!checkLimitedNumber('input-user-phone',10)) {$(window).scrollTop(0); return};
-    if (!checkSelectInput('input-user-city-province')) {$(window).scrollTop(0); return};
-    if (!checkSelectInput('input-user-district')) {$(window).scrollTop(0); return};
-    if (!checkSelectInput('input-user-commune')) {$(window).scrollTop(0); return};
-    if (!checkEmpty('input-user-address')) {$(window).scrollTop(0); return};
+    //check whether input field takes a valid value
+    if (!checkEmpty('input-user-name')) {$(window).scrollTop( numberReturn); return};
+    if (!checkEmpty('input-user-phone')) {$(window).scrollTop( numberReturn); return};
+    if (!checkLimitedNumber('input-user-phone',10)) {$(window).scrollTop( numberReturn); return};
+    if (!checkSelectInput('input-user-city-province')) {$(window).scrollTop( numberReturn); return};
+    if (!checkSelectInput('input-user-district')) {$(window).scrollTop( numberReturn); return};
+    if (!checkSelectInput('input-user-commune')) {$(window).scrollTop( numberReturn); return};
+    if (!checkEmpty('input-user-address')) {$(window).scrollTop( numberReturn); return};
     if ($('#pay-by-card').is(':checked')){
         if (!checkSelectInput('card-brand'))  return;
         if (!checkEmpty('card-id')) return;
@@ -191,7 +195,7 @@ function sendOrder(){
     // show pop-up 
     $('.pop-up-modal').css('display','block');
     setTimeout(function(){$('.pop-up-modal').css('opacity','1');},100) 
-    $('body').addClass('pop-up');
+    $('body').addClass('start');
     $('body').css('padding-right',`${scrollBarWidth}px`)
     
 }
@@ -268,24 +272,12 @@ function checkMonth(id){
 }
 
 function checkExpiryDate(id){
-    let inputCheckYear = $(`#${id}`).val();
-    let inputCheckMonth = $('#card-expiry-month').val();
-    let monthNow = new Date().getMonth();
-    let yearNow = new Date().getFullYear();
-    if (yearNow > inputCheckYear){
-        $(`#${id}`).parent().children().last().css('z-index','3');
-        setTimeout(function(){
-            $(`#${id}`).parent().children().last().css('opacity','1');
-        },100)
-        setTimeout(function(){
-            $(`#${id}`).parent().children().last().css('opacity','0');
-        },2500)
-        setTimeout(function(){
-            $(`#${id}`).parent().children().last().css('z-index','-1');
-        },2600)    
-        return false;
-    }
-    else if (monthNow + 1 > inputCheckMonth){
+    inputCheckYear = $(`#${id}`).val();
+    inputCheckMonth = $('#card-expiry-month').val();
+    monthNow = new Date().getMonth();
+    yearNow = new Date().getFullYear();
+    if ( yearNow > inputCheckYear || 
+         yearNow == inputCheckYear && monthNow + 1 > inputCheckMonth){
         $(`#${id}`).parent().children().last().css('z-index','3');
         setTimeout(function(){
             $(`#${id}`).parent().children().last().css('opacity','1');
@@ -319,7 +311,7 @@ function closePopup(){
     window.location.href = "index.html";
 }
 
-//Part : Showing Pay by Card Option
+//Part 5 : Showing Pay by Card Option
 let heightPayByCardInitial = $('.user-payout-infor').innerHeight();
 $('.user-payout-infor').innerHeight(heightPayByCardInitial);
 $('#pay-by-card').on('change',showPayByCard);
@@ -348,7 +340,7 @@ function hidePayByCard(){
 
 
 
-//Part : Function for Subscription email and About This Website button - Footer
+//Part 6 : Function for Subscription email and About This Website button - Footer
 
 $('.name-footer').on('input',function(){
     let elt = $(this);
@@ -449,7 +441,7 @@ function closeAboutWebsite(){
     },600)
 }
 
-//Part 3: Funtion for Scrolling Button
+//Part 8: Funtion for Scrolling Button
 $('.scrolling-button').click(scrollToTop);
 function scrollToTop(){
     $(window).scrollTop(0); 

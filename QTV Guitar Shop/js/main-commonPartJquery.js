@@ -48,6 +48,24 @@ $('.input-search-bar').on('focus',function(){
 $('.input-search-bar').on('blur',function(){
     setTimeout (function (){$('.suggestion-item').removeClass('being-focus')},150);
 })
+$('.input-search-bar').on('keyup',function(event){
+    if (event.keyCode === 13 && $('.input-search-bar:focus').val() !== ""){
+        let input = $('.input-search-bar:focus').val().toLowerCase();
+        $('.input-search-bar:focus').val("");
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+})
+$('.search-bar > img:first-child').on('click',function(){
+    if ($(this).parent().children(':nth-child(2)').val() !== ""){
+        let input =$(this).parent().children(":nth-child(2)").val().toLowerCase();
+        $(this).parent().children(":nth-child(2)").val("");
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+})
 $('.input-search-bar').on('input',searchItem)
 function searchItem(){
     let input = $('.input-search-bar:focus').val().toLowerCase();

@@ -1325,7 +1325,7 @@ var guitarElectricalData = [
             "Scale length : 65cm",
             "Kiểu thân : solid body",
             "Mặt trên : Gỗ trăn (Alder)",
-            "Thân đàn : Gỗ dái ngựa (Alder)",
+            "Thân đàn : Gỗ trăn (Alder)",
             "Cần đàn : Gỗ thích (Maple)",
             "Fingerboard : Gỗ mun Macassar (Macassar Ebony)",
             "Khóa đàn : LTD Locking",

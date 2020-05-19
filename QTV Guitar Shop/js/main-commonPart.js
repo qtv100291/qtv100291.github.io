@@ -116,14 +116,31 @@ function separator1000(num){ // 1000 separator
 }
 
 // Part 5: Function for Search Bar
-
 document.querySelector('.input-search-bar').addEventListener('focus',(function(){//for Mobile
     document.querySelector('.suggestion-item').classList.add('being-focus');
 }))
 document.querySelector('.input-search-bar').addEventListener('blur',(function(){
     setTimeout (function (){document.querySelector('.suggestion-item').classList.remove('being-focus')},150);
 }))
-document.querySelector('.input-search-bar').addEventListener('input',searchItem)
+document.querySelector('.input-search-bar').addEventListener('input',searchItem)//display suggestion item
+document.querySelector('.input-search-bar').addEventListener('keyup',(function(event){//go to search page
+    if (event.keyCode === 13 && document.querySelector('.input-search-bar').value !==""){
+        let input = document.querySelector('.input-search-bar').value.toLowerCase();
+        document.querySelector('.input-search-bar').value = "";
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+}))
+document.querySelector('.search-bar > img').addEventListener('click',function(){
+    if (document.querySelector('.input-search-bar').value !==""){
+        let input = document.querySelector('.input-search-bar').value.toLowerCase();
+        document.querySelector('.input-search-bar').value = "";
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+})
 function searchItem(){
     let input = document.querySelector('.input-search-bar').value.toLowerCase();
     let output="";
@@ -138,7 +155,7 @@ function searchItem(){
     searchName(guitarAcousticData);
     searchName(guitarUkuleleData);
     searchNameAccessories(accessoriesData);
-    searchNameGuitarShow(guitarShowData);
+    // searchNameGuitarShow(guitarShowData);
     function searchName(array){
         for (let i = 0; i < array.length; i++){
             if (array[i]['name'].toLowerCase().includes(input)){
@@ -159,22 +176,21 @@ function searchItem(){
             }
         }   
     }
-    function searchNameGuitarShow(array){
-        for (let i = 0; i < array.length; i++){
-            if (array[i]['name'].toLowerCase().includes(input)){
-                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
-                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
-                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
-            }
-        }    
-    }
+    // function searchNameGuitarShow(array){
+    //     for (let i = 0; i < array.length; i++){
+    //         if (array[i]['name'].toLowerCase().includes(input)){
+    //             let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+    //             let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+    //             let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+    //             output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+    //         }
+    //     }    
+    // }
     if (output.length == 0){
         output = `<div class="search-bar-notification">Không có sản phẩm phù hợp</div>`
     } 
     document.querySelector('.suggestion-guitar').innerHTML = output;
 }
-
 
 document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('focus',(function(){//for Desktop
     document.querySelector('.top-navbar-container > .search-bar > .suggestion-item').classList.add('being-focus');
@@ -182,7 +198,25 @@ document.querySelector('.top-navbar-container > .search-bar > .input-search-bar'
 document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('blur',(function(){
     setTimeout (function (){document.querySelector('.top-navbar-container > .search-bar > .suggestion-item').classList.remove('being-focus')},150);
 }))
-document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('input',searchItemDesktop)
+document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('input',searchItemDesktop);
+document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('keyup',(function(event){//go to search page
+    if (event.keyCode === 13 && document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value !==""){
+        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
+        document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value = "";
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+}))
+document.querySelector('.top-navbar-container > .search-bar > img').addEventListener('click',function(){
+    if (document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value !==""){
+        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
+        document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value = "";
+        setTimeout(() => {
+            window.location.href = `searchpage.html#${input}`;
+        }, 30); 
+    }
+})
 function searchItemDesktop(){
     let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
     let output="";
@@ -197,7 +231,7 @@ function searchItemDesktop(){
     searchName(guitarAcousticData);
     searchName(guitarUkuleleData);
     searchNameAccessories(accessoriesData);
-    searchNameGuitarShow(guitarShowData);
+    // searchNameGuitarShow(guitarShowData);
     function searchName(array){
         for (let i = 0; i < array.length; i++){
             if (array[i]['name'].toLowerCase().includes(input)){
@@ -218,16 +252,16 @@ function searchItemDesktop(){
             }
         }   
     }
-    function searchNameGuitarShow(array){
-        for (let i = 0; i < array.length; i++){
-            if (array[i]['name'].toLowerCase().includes(input)){
-                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
-                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
-                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
-            }
-        }    
-    }
+    // function searchNameGuitarShow(array){
+    //     for (let i = 0; i < array.length; i++){
+    //         if (array[i]['name'].toLowerCase().includes(input)){
+    //             let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+    //             let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+    //             let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+    //             output += `<a href="guitarshow${i+1}.html" onclick="deleteContentClick(this)" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+    //         }
+    //     }    
+    // }
     if (output.length == 0){
         output = `<div class="search-bar-notification">Không có sản phẩm phù hợp</div>`
     } 

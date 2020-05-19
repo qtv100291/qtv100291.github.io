@@ -136,16 +136,6 @@ function guitarShowAnimation(){
     }
 }
 
-// if (document.querySelector('#part2-item1').getBoundingClientRect().top < (windowHeight - heightItem)){
-//     document.querySelector('#part2-item1').classList.add('loaded-guitar-show');
-// }
-// if (document.querySelector('#part2-item2').getBoundingClientRect().top < (windowHeight - heightItem)){
-//     document.querySelector('#part2-item2').classList.add('loaded-guitar-show')
-// }
-// if (document.querySelector('#part2-item3').getBoundingClientRect().top < (windowHeight - heightItem)){
-//     document.querySelector('#part2-item3').classList.add('loaded-guitar-show');
-// }
-
 //Part 4 : Function for Blog Slide
 document.querySelector('.blog-slide-prev').addEventListener('click',prevButton);
 document.querySelector('.blog-slide-next').addEventListener('click',nextButton);

@@ -64,7 +64,7 @@ else{
                             <div class="item-detail">
                                 <div class="item-photo"><img src="${shoppingCart[i].image}" alt="item-photo"></div>
                                 <div class="item-detail-info">
-                                    <a class="item-name" onclick="sendData(this)" href="${addressPage}" data-id="${shoppingCart[i].id}" data-group="${shoppingCart[i].group}">${shoppingCart[i].name}</a>
+                                    <a class="item-name" href="${addressPage}" data-id="${shoppingCart[i].id}" data-group="${shoppingCart[i].group}">${shoppingCart[i].name}</a>
                                     <div class="item-price"><span>${shoppingCart[i].price}</span> VND</div>
                                     <div class="delete-button" onclick="deleteItem(this)">
                                         <img src="HomePage/delete-icon.png" alt="delete-icon">

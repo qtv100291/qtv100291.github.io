@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Tìm Kiếm</title>
     <!--Favicon-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--Css-->
     <link rel="stylesheet" href="style/style-header&footer.css">
-    <link rel="stylesheet" href="style/style-productitem.css">
+    <link rel="stylesheet" href="style/style-guitarmainsection.css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
     <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
@@ -150,101 +150,140 @@
         </div>     
     </header>
     <main class="container">
-        <div class="popup-container">
-            <div class="popup-messenger">
-                Đã Thêm Vào Giỏ Hàng
-                <div class="check-mark-icon">
-                    <div class="circle-left">
-                        <div class="circle-left-rotate"></div>
-                    </div>
-                    <div class="circle-right">
-                        <div class="circle-right-rotate"></div>
-                    </div>
-                    <div class="check-mark-line-1"><span></span></div>
-                    <div class="check-mark-line-2"><span></span></div>
-                </div>
-            </div>
-        </div>
         <div class="banner">
-            <img src="" alt="banner">
+            <img src="Product/Classical Guitar/banner - 1.jpg" alt="">
         </div>
         <div class="navigation">
-            <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a href="" class="main-section-name"></a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<span class="product-item-name"></span>
+            <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a>Tìm Kiếm</a> 
         </div>
         <div class="main-container">
-            <div class="item-presentation">
-                <div class="item-picture" id="hehehe">
-                    <div class="item-zoom-lens" id="1"></div>
-                    <div class="scale-up-image" id="zoom-img">
-                        <div class="zoom-image-frame"><img class="zoom-image" src="" alt=""></div>
+            <div class="filter-part">       
+                <div class="remove-item-part">
+                    <div class="filter-part-title">
+                        <div class="filter-part-img"><img src="Product/filter_filters_funnel_list_navigation_sort_sorting_icon_123212.svg" alt=""></div>
+                        BỘ LỌC
                     </div>
-                    <div class="item-picture-display">
-                        <img class="item-photo-1 photo-display active-photo" src="" alt="front">
-                        <img class="item-photo-2 photo-display" src="" alt="back">
-                        <img class="item-photo-3 photo-display" src="" alt="detail-1">
-                        <img class="item-photo-4 photo-display" src="" alt="detail-2">
-                        <img class="item-photo-5 photo-display" src="" alt="detail-3">
+                    <div class="remove-item-button">Bỏ Lọc</div>
+                </div>
+                <div class="filter-brand filter-item">
+                    <div class="filter-title">THƯƠNG HIỆU<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Alvarez">ALVAREZ
+                                <input type="checkbox" id="Alvarez" data-brand="ALVAREZ">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Cordoba">CORDOBA
+                                <input type="checkbox" id="Cordoba" data-brand="CORDOBA">
+                            <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Fender">FENDER
+                                <input type="checkbox" id="Fender" data-brand="FENDER">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Kremona">KREMONA
+                                <input type="checkbox" id="Kremona" data-brand="KREMONA">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Manuel-Rodriguez">MANUEL RODRIGUEZ
+                                <input type="checkbox" id="Manuel-Rodriguez" data-brand="MANUEL RODRIGUEZ">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>    
+                        <li>
+                            <label for="Yamaha">YAMAHA
+                                <input type="checkbox" id="Yamaha" data-brand="YAMAHA">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-body-size filter-item">
+                    <div class="filter-title">KÍCH THƯỚC<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Full-size">FULL SIZE
+                                <input type="checkbox" id="Full-size" data-body-size ="FULL SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="3/4-size">3/4 SIZE
+                                <input type="checkbox" id="3/4-size" data-body-size="3/4 SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="1/2-size">1/2 SIZE
+                                <input type="checkbox" id="1/2-size" data-body-size="1/2 SIZE">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Travel-size">TRAVEL SIZE
+                                <input type="checkbox" id="Travel-size" data-body-size="TRAVEL SIZE"> 
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-price filter-item">
+                    <div class="filter-title">KHOẢNG GIÁ<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                        <li>
+                            <label for="Low-end">Dưới 5 Triệu
+                                <input type="checkbox" id="Low-end" data-price-min="0" data-price-max="5000000">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="Mid-end">Từ 5 Đến 20 Triệu
+                                <input type="checkbox" id="Mid-end" data-price-min="5000000" data-price-max="20000000">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="High-end">Trên 20 Triệu
+                                <input type="checkbox" id="High-end" data-price-min="20000000" data-price-max="Infinity">
+                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-button">Áp Dụng</div>
+            </div>
+            <div class="product-part">
+                <div class="arrangement-part">
+                    <div class="arrangement-title">Sắp xếp theo
+                        <div><span class="arrangement-executed">Tên Từ A - Z</span> 
+                            <img class="arrow-icon" src="HomePage/expand_more_24px_outlined.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="menu-arrangement">
+                        <div class="arrangement-option option-1">Tên Từ A - Z</div>
+                        <div class="arrangement-option option-2">Giá Tăng Dần</div>
+                        <div class="arrangement-option option-3">Giá Giảm Dần</div>
                     </div>
                 </div>
-                <div class="item-picture-slider">
-                    <div class="arrow-left"><i class="fas fa-caret-left"></i></div>
-                    <div class="arrow-right"><i class="fas fa-caret-right"></i></div>
-                    <div class="slider-container">
-                        <div class="slider-container-inner">
-                            <div class="indicator-item indicator-5" data-indicator="5">
-                                <div class="overlay-indicator"></div>
-                                <img class="item-photo-5-indicator" src="" alt="detail-3">
-                            </div>
-                            <div class="indicator-item indicator-1 active-indicator" data-indicator="1">
-                                <div class="overlay-indicator"></div>
-                                <img class="item-photo-1-indicator" src="" alt="front">
-                            </div>
-                            <div class="indicator-item indicator-2" data-indicator="2">
-                                <div class="overlay-indicator"></div>
-                                <img class="item-photo-2-indicator" src="" alt="back">
-                            </div>
-                            <div class="indicator-item indicator-3" data-indicator="3">
-                                <div class="overlay-indicator"></div>
-                                <img class="item-photo-3-indicator" src="" alt="detail-1">
-                            </div>
-                            <div class="indicator-item indicator-4" data-indicator="4">
-                                <div class="overlay-indicator"></div>
-                                <img class="item-photo-4-indicator" src="" alt="detail-2">
-                            </div> 
-                        </div>   
-                    </div>
+                <div class="product-item">
+                    <!--Items will be rendered here-->
                 </div>
-            </div>
-            <div class="item-detail" data-group="" data-id="">
-                <h1 class="item-name"></h1>
-                <div class="item-price-tag"><span class="item-price"></span>&nbsp;VND</div>
-                <div class="item-number">
-                    <label for="item-quantity">Số Lượng</label>
-                    <div class="minus-item"><img src="GuitarShow/minus_24px.png" alt="minus-item"></div>
-                    <input type="text" value="1" id="item-quantity">
-                    <div class="plus-item"><img src="GuitarShow/plus.png" alt="plus-item"></div>
+                <div class="pagination">
+                    <!--Pagination will be rendered here-->
                 </div>
-                <div class="submit-button">Thêm Vào Giỏ Hàng</div>
-                <div class="brief-presentation">Giới Thiệu :
-                    
-                </div>
-            </div>
-        </div>
-        <div class="item-specification">
-            <div class="item-list-tab">
-                <div class="tab-item specification tab-active" data-item ="1">Thông Số Kỹ Thuật</div>
-                <div class="tab-item video" data-item="2">Video</div>
-            </div>
-            <div class="item-description">
-                <div class="specification-description description-1 description-active">
-
-                </div>
-                <div class="video-description description-2"><iframe id="video-review" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
+            </div>    
         </div>
         <div class="scrolling-button">
             <div class="scrolling-button-container">
-                <img src="HomePage/up-arrow.svg" alt="arrow">
+                <img src="HomePage/up-arrow.svg" alt="">
             </div>
         </div>
     </main>
@@ -310,9 +349,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery.js"></script>
     <script src="js/guitarData.js"></script>
-    <script src="js/main-commonPartJquery.js"></script>
-    <script src="js/main-productitem.js"></script>
+    <script src="js/main-commonPart.js"></script>
+    <script src="js/main-guitarclassical.js"></script>
 </body>
 </html>
