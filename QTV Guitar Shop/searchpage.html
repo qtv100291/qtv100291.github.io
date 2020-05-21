@@ -10,6 +10,7 @@
     <!--Css-->
     <link rel="stylesheet" href="style/style-header&footer.css">
     <link rel="stylesheet" href="style/style-guitarmainsection.css">
+    <link rel="stylesheet" href="style/style-searchbar.css">
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
     <!--Google Font I have used Roboto, Dancing Script and Lora for this website-->
@@ -102,7 +103,7 @@
                 </div>
                 <div class="phone-number-top-navbar">
                     <i class="fas fa-phone-alt phone-top"></i>
-                    <p>19001570</p>
+                    <p><a href="tel:19001570">19001570</a></p>
                 </div>
             </div>
             <div class="menu-bar">
@@ -156,6 +157,7 @@
         <div class="navigation">
             <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a>Tìm Kiếm</a> 
         </div>
+        <div class="search-keyword">Tìm kiếm cho : <span class="keyword" style="color:orangered"></span> <span class="number-result"></span></div>
         <div class="main-container">
             <div class="filter-part">       
                 <div class="remove-item-part">
@@ -165,97 +167,16 @@
                     </div>
                     <div class="remove-item-button">Bỏ Lọc</div>
                 </div>
+                <div class="filter-product-category filter-item">
+                    <div class="filter-title">LOẠI SẢN PHẨM<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                    <ul class="filter-content">
+                         <!--Filter conditions will be rendered here-->
+                    </ul>
+                </div>
                 <div class="filter-brand filter-item">
                     <div class="filter-title">THƯƠNG HIỆU<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
                     <ul class="filter-content">
-                        <li>
-                            <label for="Alvarez">ALVAREZ
-                                <input type="checkbox" id="Alvarez" data-brand="ALVAREZ">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Cordoba">CORDOBA
-                                <input type="checkbox" id="Cordoba" data-brand="CORDOBA">
-                            <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Fender">FENDER
-                                <input type="checkbox" id="Fender" data-brand="FENDER">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Kremona">KREMONA
-                                <input type="checkbox" id="Kremona" data-brand="KREMONA">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Manuel-Rodriguez">MANUEL RODRIGUEZ
-                                <input type="checkbox" id="Manuel-Rodriguez" data-brand="MANUEL RODRIGUEZ">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>    
-                        <li>
-                            <label for="Yamaha">YAMAHA
-                                <input type="checkbox" id="Yamaha" data-brand="YAMAHA">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-body-size filter-item">
-                    <div class="filter-title">KÍCH THƯỚC<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
-                    <ul class="filter-content">
-                        <li>
-                            <label for="Full-size">FULL SIZE
-                                <input type="checkbox" id="Full-size" data-body-size ="FULL SIZE">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="3/4-size">3/4 SIZE
-                                <input type="checkbox" id="3/4-size" data-body-size="3/4 SIZE">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="1/2-size">1/2 SIZE
-                                <input type="checkbox" id="1/2-size" data-body-size="1/2 SIZE">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Travel-size">TRAVEL SIZE
-                                <input type="checkbox" id="Travel-size" data-body-size="TRAVEL SIZE"> 
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-price filter-item">
-                    <div class="filter-title">KHOẢNG GIÁ<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
-                    <ul class="filter-content">
-                        <li>
-                            <label for="Low-end">Dưới 5 Triệu
-                                <input type="checkbox" id="Low-end" data-price-min="0" data-price-max="5000000">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Mid-end">Từ 5 Đến 20 Triệu
-                                <input type="checkbox" id="Mid-end" data-price-min="5000000" data-price-max="20000000">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="High-end">Trên 20 Triệu
-                                <input type="checkbox" id="High-end" data-price-min="20000000" data-price-max="Infinity">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
+                        <!--Filter conditions will be rendered here-->
                     </ul>
                 </div>
                 <div class="filter-button">Áp Dụng</div>
@@ -323,7 +244,7 @@
                 <div class="store-content">
                     <div>QTV GUITAR SHOP</div>
                     <div>Địa chỉ : Tầng 1, Hồ Gươm Plaza, Trần Phú, Hà Đông, Hà Nội.</div>
-                    <div>Điện thoại: 19001570</div>
+                    <div>Điện thoại: <a href="tel:19001570">19001570</a></div>
                     <div>Email : qtv-guitarshop@gmail.com</div>
                 </div>
                 <div class="store-icon">
@@ -351,6 +272,6 @@
     </footer>
     <script src="js/guitarData.js"></script>
     <script src="js/main-commonPart.js"></script>
-    <script src="js/main-guitarclassical.js"></script>
+    <script src="js/main-searchpage.js"></script>
 </body>
 </html>

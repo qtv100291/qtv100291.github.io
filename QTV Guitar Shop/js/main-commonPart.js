@@ -125,20 +125,24 @@ document.querySelector('.input-search-bar').addEventListener('blur',(function(){
 document.querySelector('.input-search-bar').addEventListener('input',searchItem)//display suggestion item
 document.querySelector('.input-search-bar').addEventListener('keyup',(function(event){//go to search page
     if (event.keyCode === 13 && document.querySelector('.input-search-bar').value !==""){
-        let input = document.querySelector('.input-search-bar').value.toLowerCase();
+        let input = document.querySelector('.input-search-bar').value;
         document.querySelector('.input-search-bar').value = "";
+        document.querySelector('.x-mark-search-bar').display = "none";
+        document.querySelector('.suggestion-guitar').innerHTML = "";
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        // reloadPage();
     }
+    
 }))
 document.querySelector('.search-bar > img').addEventListener('click',function(){
     if (document.querySelector('.input-search-bar').value !==""){
-        let input = document.querySelector('.input-search-bar').value.toLowerCase();
-        document.querySelector('.input-search-bar').value = "";
+        let input = document.querySelector('.input-search-bar').value
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        // reloadPage();
     }
 })
 function searchItem(){
@@ -201,20 +205,26 @@ document.querySelector('.top-navbar-container > .search-bar > .input-search-bar'
 document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('input',searchItemDesktop);
 document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').addEventListener('keyup',(function(event){//go to search page
     if (event.keyCode === 13 && document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value !==""){
-        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
+        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value;
         document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value = "";
+        document.querySelector('.top-navbar-container > .search-bar > .x-mark-search-bar').display = "none";
+        document.querySelector('.top-navbar-container > .search-bar > .suggestion-item > .suggestion-guitar').innerHTML = "";
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        // reloadPage();
     }
 }))
 document.querySelector('.top-navbar-container > .search-bar > img').addEventListener('click',function(){
     if (document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value !==""){
-        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value.toLowerCase();
+        let input = document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value;
         document.querySelector('.top-navbar-container > .search-bar > .input-search-bar').value = "";
+        document.querySelector('.top-navbar-container > .search-bar > .x-mark-search-bar').display = "none";
+        document.querySelector('.top-navbar-container > .search-bar > .suggestion-item > .suggestion-guitar').innerHTML = "";
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        // reloadPage();
     }
 })
 function searchItemDesktop(){
@@ -301,6 +311,11 @@ function deleteContentClick(elt){
     elt.parentNode.innerHTML = "";
 }
 
+function reloadPage(){
+    setTimeout(function(){
+        window.location.reload();
+    },50)
+}
 
 // Part 6: Function for Subscription email and About This Website button - Footer
 document.querySelector('.name-footer').addEventListener('input',function(){

@@ -12,7 +12,7 @@ body{
 body.start{
     overflow: hidden;
 }
-@media only screen and (min-width: 1367px){
+@media only screen and (min-width: 1366px){
     /*Welcome Popup*/
     .welcome-popup{
         position: absolute;
@@ -767,6 +767,10 @@ body.start{
         line-height: 18px;
         color: white;
     }
+    .phone-number-top-navbar > p > a{
+        color: white;
+        text-decoration: none;
+    }
     .phone-top{
         color: white;
         font-size: 90%;
@@ -1071,6 +1075,10 @@ body.start{
         line-height: 30px;
         color: white;
     }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
+    }
     .store-icon{
         width: 265px;
         margin: 27px auto 0px auto;
@@ -1175,7 +1183,7 @@ body.start{
     }
 }   
 
-@media only screen and (min-width: 1025px) and (max-width:1366px){
+@media only screen and (min-width: 1024px) and (max-width:1365px){
     /*Welcome Popup*/
     .welcome-popup{
         position: absolute;
@@ -2197,6 +2205,10 @@ body.start{
         line-height: 30px;
         color: white;
     }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
+    }
     .store-icon{
         width: 265px;
         margin: 27px auto 0px auto;
@@ -2301,7 +2313,7 @@ body.start{
     }
 }   
 
-@media only screen and (min-width: 769px) and (max-width:1024px){
+@media only screen and (min-width: 769px) and (max-width:1023px){
     /*Welcome Popup*/
     .welcome-popup{
         top: 0;
@@ -2565,7 +2577,7 @@ body.start{
     }
     .x-mark-search-bar{
         position: absolute;
-        right: 70px;
+        right: calc(5% + 10px);
         z-index: 7;
         display: none;
         transition: 0.3s;
@@ -2575,13 +2587,13 @@ body.start{
         cursor: pointer;
     }
     .x-mark-search-bar.scroll{
-        right: 70px;
+        right: calc(5% + 10px);
     }
     .search-bar:hover .x-mark-search-bar.scroll{
         opacity: 1;
     }
     .input-search-bar{
-        width: calc(100% - 150px);
+        width: calc(90% - 33px);
         height: 32px;
         left: 32px;
         z-index: 6;
@@ -2607,9 +2619,9 @@ body.start{
     }
     .suggestion-item{
         top: calc(100% - 14px);
-        left: 92px;
+        left: calc(5% + 33px);
         position: absolute;
-        width: calc(100% - 150px);
+        width: calc(90% - 33px);
         background-color: white;
         transform: scaleY(0);
         transition: 0.3s;
@@ -2621,8 +2633,8 @@ body.start{
         transform: scaleY(1);
     }
     .suggestion-item.scroll{
-        left: 92px;
-        width: calc(100% - 150px);
+        left: calc(5% + 33px);
+        width: calc(90% - 33px);
     }
     .suggestion-guitar{
         width: 100%;
@@ -2995,6 +3007,10 @@ body.start{
         line-height: 30px;
         color: white;
     }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
+    }
     .store-icon{
         width: 265px;
         margin: 27px auto 0px auto;
@@ -3360,7 +3376,7 @@ body.start{
     }
     .x-mark-search-bar{
         position: absolute;
-        right: 30px;
+        right: calc(5% + 10px);
         z-index: 7;
         display: none;
         transition: 0.3s;
@@ -3370,10 +3386,10 @@ body.start{
         cursor: pointer;
     }
     .x-mark-search-bar.scroll{
-        right: 30px;
+        right: calc(5% + 10px);
     }
     .input-search-bar{
-        width: calc(100% - 70px);
+        width: calc(90% - 33px);
         height: 32px;
         left: 32px;
         z-index: 6;
@@ -3399,9 +3415,9 @@ body.start{
     }
     .suggestion-item{
         top: calc(100% - 14px);
-        left: 52px;
+        left: calc(5% + 33px);
         position: absolute;
-        width: calc(100% - 70px);
+        width: calc(90% - 33px);
         background-color: white;
         transform: scaleY(0);
         transition: 0.3s;
@@ -3413,8 +3429,8 @@ body.start{
         transform: scaleY(1);
     }
     .suggestion-item.scroll{
-        left: 52px;
-        width: calc(100% - 70px);
+        left: calc(5% + 33px);
+        width: calc(90% - 33px);
     }
     .suggestion-guitar{
         width: 100%;
@@ -3784,6 +3800,10 @@ body.start{
         font-size: 22px;
         line-height: 40px;
         margin-top: 20px;
+    }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
     }
     .store-icon{
         width: 265px;
@@ -4157,7 +4177,7 @@ body.start{
     }
     .x-mark-search-bar{
         position: absolute;
-        right: 30px;
+        right: calc(5% + 10px);
         z-index: 7;
         display: none;
         transition: 0.3s;
@@ -4167,10 +4187,10 @@ body.start{
         cursor: pointer;
     }
     .x-mark-search-bar.scroll{
-        right: 30px;
+        right: calc(5% + 10px);
     }
     .input-search-bar{
-        width: calc(100% - 70px);
+        width: calc(90% - 33px);
         height: 32px;
         left: 32px;
         z-index: 6;
@@ -4600,6 +4620,10 @@ body.start{
         width: 35px;
         height: 35px;
     }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
+    }
     .about-website{
         width: 100%;
         border-top: 1px solid #C4C4C4;
@@ -4966,7 +4990,7 @@ body.start{
     }
     .x-mark-search-bar{
         position: absolute;
-        right: 15px;
+        right: calc(2.5% + 10px);
         z-index: 7;
         display: none;
         transition: 0.3s;
@@ -4976,12 +5000,11 @@ body.start{
         cursor: pointer;
     }
     .x-mark-search-bar.scroll{
-        right: 15px;
+        right: calc(2.5% + 10px);
     }
     .input-search-bar{
-        width: calc(100% - 50px);
+        width: calc(95% - 33px);
         height: 32px;
-        left: 32px;
         z-index: 6;
         border: 1px solid black;
         border-radius: 0px 3px 3px 0px;
@@ -5408,6 +5431,10 @@ body.start{
     .store-icon > img{
         width: 35px;
         height: 35px;
+    }
+    .store-content > div > a{
+        color: white;
+        text-decoration: none;
     }
     .about-website{
         width: 100%;

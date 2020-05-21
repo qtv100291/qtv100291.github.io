@@ -2,6 +2,9 @@
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
+window.onhashchange = function(){//reload page when changing hash url 
+        window.location.reload();
+};
 //Youtube API
 var tag = document.createElement('script');
 

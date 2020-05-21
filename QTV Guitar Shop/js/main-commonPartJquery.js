@@ -50,21 +50,29 @@ $('.input-search-bar').on('blur',function(){
 })
 $('.input-search-bar').on('keyup',function(event){
     if (event.keyCode === 13 && $('.input-search-bar:focus').val() !== ""){
-        let input = $('.input-search-bar:focus').val().toLowerCase();
+        let input = $('.input-search-bar:focus').val();
         $('.input-search-bar:focus').val("");
+        $('.x-mark-search-bar').css('display','none');
+        $('.suggestion-guitar').html("");
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        reloadPage()
     }
+    
 })
 $('.search-bar > img:first-child').on('click',function(){
     if ($(this).parent().children(':nth-child(2)').val() !== ""){
-        let input =$(this).parent().children(":nth-child(2)").val().toLowerCase();
+        let input =$(this).parent().children(":nth-child(2)").val();
         $(this).parent().children(":nth-child(2)").val("");
+        $('.x-mark-search-bar').css('display','none');
+        $('.suggestion-guitar').html("");
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
+        reloadPage()
     }
+    
 })
 $('.input-search-bar').on('input',searchItem)
 function searchItem(){
