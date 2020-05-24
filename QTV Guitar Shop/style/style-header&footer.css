@@ -288,7 +288,6 @@ body.start{
         height: 60px;
         position: absolute;
         color: black;
-        position: absolute;
         width: 100px;
         left: 996px;
     }
@@ -296,6 +295,9 @@ body.start{
         padding: 20px 0px;
         text-decoration: none;
         color: black;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .sub-shopping-cart{
         font-family: Roboto;
@@ -1466,6 +1468,9 @@ body.start{
         padding: 20px 0px;
         text-decoration: none;
         color: black;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .sub-shopping-cart{
         font-family: Roboto;
@@ -2443,9 +2448,13 @@ body.start{
         font-weight: 300;
         font-size: 16px;
         margin-left: 15px;
+        width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .singin-icon{
-        margin-left: calc(100% - 137.5px - 40px);
+        margin-left: calc(100% - 260px);
     }
     .menu-mobile-item{
         display: block;
@@ -3242,9 +3251,13 @@ body.start{
         font-weight: 300;
         font-size: 16px;
         margin-left: 15px;
+        width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .singin-icon{
-        margin-left: calc(100% - 137.5px - 40px);
+        margin-left: calc(100% - 260px);
     }
     .menu-mobile-item{
         display: block;
@@ -4039,9 +4052,13 @@ body.start{
         font-weight: 300;
         font-size: 16px;
         margin-left: 15px;
+        width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .singin-icon{
-        margin-left: calc(100% - 137.5px - 40px);
+        margin-left: calc(100% - 250px);
     }
     .menu-mobile-item{
         display: block;
@@ -4848,11 +4865,15 @@ body.start{
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
-        margin-left: 10px;
+        font-size: 16px;
+        margin-left: 15px;
+        width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .singin-icon{
-        margin-left: calc(100% - 137.5px - 30px);
+        margin-left: calc(100% - 250px);
     }
     .menu-mobile-item{
         display: block;

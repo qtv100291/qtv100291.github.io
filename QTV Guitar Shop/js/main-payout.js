@@ -104,21 +104,67 @@ function limitCharacter(elt,limitNumber){
 }
 
 //Part 3 : Function for Rendering Item
+
+let userList = [];
+let currentID ;
+let currentUser ;
+if (localStorage.getItem('signInSituation') === "true"){
+    if (localStorage.getItem('userListGuitar') != null){
+        loadUserList();
+    }
+    currentID = JSON.parse(localStorage.getItem('currentID'))
+    for (let i = 0; i < userList.length; i++){
+        if (currentID == userList[i].id){
+            currentUser = Object.assign({},userList[i]);
+            break;
+        }
+    }
+}
+
+function loadUserList(){
+    userList = JSON.parse(localStorage.getItem('userListGuitar'))
+} 
+
 let shoppingCart=[];
 let discount = 0;
-if (localStorage.getItem('shoppingcartguitar') != null){
+if (localStorage.getItem('signInSituation') === "true"){
     loadCart();
     displayShoppingCart();
 }
-else displayShoppingCart()
-if (shoppingCart.length ==0) window.location.href = "index.html";
-function saveCart(){//Save Cart
-    localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart))
+else if (localStorage.getItem('shoppingcartguitar') != null){
+    loadCart();
+    displayShoppingCart()
+}
+else displayShoppingCart();
+
+if (shoppingCart.length == 0) window.location.href = "index.html";
+
+function saveCart (){//Save Cart
+    if (localStorage.getItem('signInSituation') === "true"){
+        currentUser.shoppingCart = shoppingCart.slice(0);
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+            userList.splice(i, 1 , currentUser);
+            break;
+            }
+        }
+        localStorage.setItem('userListGuitar', JSON.stringify(userList));
+    }
+    else localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart));
 }
 
-
 function loadCart(){//Load Cart
-    shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadUserList();
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+                currentUser = Object.assign({},userList[i]);
+                break;
+            }
+        }
+        shoppingCart = currentUser.shoppingCart.slice(0);
+    }
+    else shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
 }
 
 function displayShoppingCart(){ //Display Shopping Cart
@@ -155,6 +201,26 @@ function displayShoppingCart(){ //Display Shopping Cart
 function separator1000(num){ // 1000 separator 
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+
+$('#input-user-name').val(`${currentUser.info.name}`);
+$('#input-user-phone').val(`${currentUser.info.phoneNumber}`);
+$('#input-user-email').val(`${currentUser.email}`);
+$('#input-user-password').val(`${currentUser.password}`);
+
+if (currentUser.address.province != ""){
+    $('#input-user-city-province').val(currentUser.address.province);
+    selectProvince();
+    if (currentUser.address.district != ""){
+        $('#input-user-district').val(currentUser.address.district);
+        selectDistrict()
+        if (currentUser.address.commune != ""){
+            $('#input-user-commune').val(currentUser.address.commune);
+        }
+    }
+}
+
+$('#input-user-address').val(currentUser.address.street);
+
 //Part 4 : Function for Submit Order
 if ($('body').height() > $(window).outerHeight()){
     scrollBarWidth = $(window).outerWidth() - $('body').innerWidth();
@@ -325,6 +391,12 @@ function showPayByCard(){
         setTimeout(function(){
             $('.user-card-input').css('opacity','1');
         },550)
+        $('#card-brand').val(currentUser.payment.cardType);
+        $('#card-id').val(currentUser.payment.cardID);
+        $('#card-owner').val(currentUser.payment.cardName);
+        $('#card-password').val(currentUser.payment.cardCGV);
+        $('#card-expiry-month').val(currentUser.payment.cardExpiryMonth);
+        $('#card-expiry-year').val(currentUser.payment.cardExpiryYear);
     }
 }
 $('#pay-by-cash').on('change',hidePayByCard);

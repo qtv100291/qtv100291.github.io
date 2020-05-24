@@ -92,7 +92,6 @@ function filterButton(){
         arrayExecuted = arrayExecuted.filter(function (x) {
             let priceItem = parseInt(x.price.replace(/\D/g,''))
             for (let i = 0; i < priceCondtion.length; i++){
-
                 if (priceItem >= priceCondtion[i].min && priceItem < priceCondtion[i].max)
                 return true
             }

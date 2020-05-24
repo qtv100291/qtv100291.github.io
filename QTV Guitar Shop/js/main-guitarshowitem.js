@@ -108,8 +108,12 @@ function Item(group, id, name, price, count, image){ //Item Constructor
     this.image = image;
 }
 $('.add-to-cart-button').click(function(){
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     addToCart();
     popupAddToCart();
 })

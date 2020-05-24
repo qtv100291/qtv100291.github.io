@@ -11,6 +11,31 @@ else scrollBarWidth = 0;
 if ($(window).outerWidth() < 351) {
     $('.input-search-bar').attr("placeholder", "Tìm Kiếm...");
 }
+
+// Part : Function for Sign In
+let userList = [];
+let currentID ;
+let currentUser ;
+if (localStorage.getItem('signInSituation') === "true"){
+    if (localStorage.getItem('userListGuitar') != null){
+        loadUserList();
+    }
+    currentID = JSON.parse(localStorage.getItem('currentID'))
+    for (let i = 0; i < userList.length; i++){
+        if (currentID == userList[i].id){
+            currentUser = Object.assign({},userList[i]);
+            break;
+        }
+    }
+    $('.menu-bar-sign-up').html (`<a href="account.html" title="${currentUser.info.name}">${currentUser.info.name}</a>`);
+    $('.menu-mobile-signin').attr('href',`account.html`) 
+    $('.menu-mobile-signin > h4').html(`${currentUser.info.name}`);
+}
+
+function loadUserList(){
+    userList = JSON.parse(localStorage.getItem('userListGuitar'))
+} 
+
 // Part 2 : Function for Sticky Menu bar and Animation
 $(window).scroll(function(){
         if ($(window).scrollTop() > 62 ) {
@@ -40,6 +65,8 @@ function closeMenuMobile(){
     $('.top-navbar-mobile').css('padding-right',`0px`);
     $('.menu-icon-mobile').css('margin-left',`10px`);
 }
+
+
 
 // Part 4: Function for Search Bar
 $('.input-search-bar').on('focus',function(){
@@ -89,7 +116,7 @@ function searchItem(){
     searchName(guitarAcousticData);
     searchName(guitarUkuleleData);
     searchNameAccessories(accessoriesData);
-    searchNameGuitarShow(guitarShowData);
+    // searchNameGuitarShow(guitarShowData);
     function searchName(array){
         for (let i = 0; i < array.length; i++){
             if (array[i]['name'].toLowerCase().includes(input)){
@@ -110,16 +137,16 @@ function searchItem(){
             }
         }  
     }
-    function searchNameGuitarShow(array){
-        for (let i = 0; i < array.length; i++){
-            if (array[i]['name'].toLowerCase().includes(input)){
-                let indexArray = array[i]['name'].toLowerCase().indexOf(input);
-                let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
-                let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a href="guitarshow${i+1}.html" onclick="deleteContent()" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
-            }
-        }    
-    }
+    // function searchNameGuitarShow(array){
+    //     for (let i = 0; i < array.length; i++){
+    //         if (array[i]['name'].toLowerCase().includes(input)){
+    //             let indexArray = array[i]['name'].toLowerCase().indexOf(input);
+    //             let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
+    //             let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
+    //             output += `<a href="guitarshow${i+1}.html" onclick="deleteContent()" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+    //         }
+    //     }    
+    // }
     if (output.length == 0){
         output = `<div class="search-bar-notification">Không có sản phẩm phù hợp</div>`
     } 
@@ -140,7 +167,7 @@ function sendDataAccesories(elt){
     localStorage.setItem('dataaccessoryitem',JSON.stringify(itemData));
 }
 
-$('.x-mark-search-bar').on('click',deleteContent)
+$('.x-mark-search-bar').on('click',deleteContent);
 
 function deleteContent(){
     $('.input-search-bar').val('');
@@ -155,18 +182,43 @@ function reloadPage(){
 }
 // Part 5 : Function for Displaying shopping cart
 let shoppingCart=[];
-if (localStorage.getItem('shoppingcartguitar') != null){
+if (localStorage.getItem('signInSituation') === "true"){
+    loadCart();
+    displayCartSub();
+    countItem();
+}
+else if (localStorage.getItem('shoppingcartguitar') != null){
     loadCart();
     displayCartSub()
     countItem()
 }
 else displayCartSub();
 function saveCart (){//Save Cart
-    localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart))
+    if (localStorage.getItem('signInSituation') === "true"){
+        currentUser.shoppingCart = shoppingCart.slice(0);
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+            userList.splice(i, 1 , currentUser);
+            break;
+            }
+        }
+        localStorage.setItem('userListGuitar', JSON.stringify(userList));
+    }
+    else localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart));
 }
 
 function loadCart(){//Load Cart
-    shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadUserList();
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+                currentUser = Object.assign({},userList[i]);
+                break;
+            }
+        }
+        shoppingCart = currentUser.shoppingCart.slice(0);
+    }
+    else shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
 }
 
 function countItem(){  //Count Item 

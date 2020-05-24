@@ -3,20 +3,66 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Shopping Cart
-let shoppingCart=[];
-let discount = 0;
-if (localStorage.getItem('shoppingcartguitar') != null){
-loadCart();
-displayShoppingCart()
+
+let userList = [];
+let currentID ;
+let currentUser ;
+if (localStorage.getItem('signInSituation') === "true"){
+    if (localStorage.getItem('userListGuitar') != null){
+        loadUserList();
+    }
+    currentID = JSON.parse(localStorage.getItem('currentID'))
+    for (let i = 0; i < userList.length; i++){
+        if (currentID == userList[i].id){
+            currentUser = Object.assign({},userList[i]);
+            break;
+        }
+    }
 }
-else displayShoppingCart()
+
+function loadUserList(){
+    userList = JSON.parse(localStorage.getItem('userListGuitar'))
+} 
+
+let discount = 0;
+let shoppingCart=[];
+if (localStorage.getItem('signInSituation') === "true"){
+    loadCart();
+    displayShoppingCart();
+}
+else if (localStorage.getItem('shoppingcartguitar') != null){
+    loadCart();
+    displayShoppingCart()
+}
+else displayShoppingCart();
+
 
 function saveCart (){//Save Cart
-localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart))
+    if (localStorage.getItem('signInSituation') === "true"){
+        currentUser.shoppingCart = shoppingCart.slice(0);
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+            userList.splice(i, 1 , currentUser);
+            break;
+            }
+        }
+        localStorage.setItem('userListGuitar', JSON.stringify(userList));
+    }
+    else localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart));
 }
 
 function loadCart(){//Load Cart
-shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadUserList();
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+                currentUser = Object.assign({},userList[i]);
+                break;
+            }
+        }
+        shoppingCart = currentUser.shoppingCart.slice(0);
+    }
+    else shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
 }
 
 function displayShoppingCart(){ //Display Shopping Cart
@@ -87,11 +133,16 @@ else{
                     </div>`
 }
 let totalMoneyConvert = separator1000(totalMoney);
+let targetPage;
+if (localStorage.getItem('signInSituation') === "true"){
+    targetPage = "payout.html"
+}
+else targetPage = "signin.html";
 output +=   `<div class="summary-shopping-cart">
                 <div class="summary-shopping-cart-container">
                     <div class="summary-title">Tổng Số Tiền</div>
                     <div class="summary-money"><span class="summary-total-value">${totalMoneyConvert}</span> VND</div>
-                    <a class="submit-button" href="payout.html">Thanh Toán</a>
+                    <a class="submit-button" href=${targetPage}>Thanh Toán</a>
                 </div>
             </div>`
     document.querySelector('footer').classList.remove('empty');
@@ -100,8 +151,12 @@ output +=   `<div class="summary-shopping-cart">
 }
 
 function modifyItemNumber(elt){
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     let idItem = elt.parentNode.dataset.id;
     let nameItem = elt.parentNode.dataset.name;
     for (let i = 0; i < shoppingCart.length; i++){
@@ -146,8 +201,12 @@ function checkIsOnlyNumber(elt){
 }
 
 function minusItem(elt){  // Minus Number item
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node
         if (elt.parentNode.childNodes[1].value > 1){   
         let idItem = elt.parentNode.dataset.id;
@@ -168,8 +227,12 @@ function minusItem(elt){  // Minus Number item
 }
 
 function plusItem(elt){  // Plus Number item
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     elt.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm)); //remove text node  
     let idItem = elt.parentNode.dataset.id;
     let nameItem = elt.parentNode.dataset.name;

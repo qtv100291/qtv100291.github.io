@@ -12,6 +12,29 @@ if (window.innerWidth < 351) {
     document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm...";
 }
 
+// Part : Function for Sign In
+let userList = [];
+let currentID ;
+let currentUser ;
+if (localStorage.getItem('signInSituation') === "true"){
+    if (localStorage.getItem('userListGuitar') != null){
+        loadUserList();
+    }
+    currentID = JSON.parse(localStorage.getItem('currentID'))
+    for (let i = 0; i < userList.length; i++){
+        if (currentID == userList[i].id){
+            currentUser = Object.assign({},userList[i]);
+            break;
+        }
+    }
+    document.querySelector('.menu-bar-sign-up').innerHTML = `<a href="account.html" title="${currentUser.info.name}">${currentUser.info.name}</a>`;
+    document.querySelector('.menu-mobile-signin').href = `account.html`;
+    document.querySelector('.menu-mobile-signin > h4').innerHTML = `${currentUser.info.name}`;
+}
+
+function loadUserList(){
+    userList = JSON.parse(localStorage.getItem('userListGuitar'))
+} 
 // Part 2 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){
     animationMenuBar();
@@ -53,14 +76,19 @@ function closeMenuMobile(){
 
 // Part 4 : Function for Displaying shopping cart
 let shoppingCart=[];
-if (localStorage.getItem('shoppingcartguitar') != null){
+if (localStorage.getItem('signInSituation') === "true"){
+    loadCart();
+    displayCartSub();
+    countItem();
+}
+else if (localStorage.getItem('shoppingcartguitar') != null){
     loadCart();
     displayCartSub()
     countItem()
 }
 else displayCartSub();
 
-function Item(group, id, name, price, count, image){ //Item Constructor
+function Item( group, id, name, price, count, image){ //Item Constructor
     this.group = group;
     this.id = id;
     this.name = name;
@@ -70,11 +98,31 @@ function Item(group, id, name, price, count, image){ //Item Constructor
 }
 
 function saveCart (){//Save Cart
-    localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart))
+    if (localStorage.getItem('signInSituation') === "true"){
+        currentUser.shoppingCart = shoppingCart.slice(0);
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+            userList.splice(i, 1 , currentUser);
+            break;
+            }
+        }
+        localStorage.setItem('userListGuitar', JSON.stringify(userList));
+    }
+    else localStorage.setItem('shoppingcartguitar',JSON.stringify(shoppingCart));
 }
 
 function loadCart(){//Load Cart
-    shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadUserList();
+        for (let i = 0; i < userList.length; i++){
+            if (currentID == userList[i].id){
+                currentUser = Object.assign({},userList[i]);
+                break;
+            }
+        }
+        shoppingCart = currentUser.shoppingCart.slice(0);
+    }
+    else shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
 }
 
 function countItem(){  //Count Item 

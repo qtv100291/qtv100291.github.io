@@ -241,12 +241,16 @@ function Item(group, id, name, price, count, image){ //Item Constructor
 }
 
 $('.submit-button').click(function(){
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     addToCart();
     popupAddToCart();
 })
-   
+
 function addToCart(){
     let group = $('.item-detail').attr('data-group');
     let id = $('.item-detail').attr('data-id');

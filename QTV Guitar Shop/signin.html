@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cổng Truy Cập</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Css-->
+    <link rel="stylesheet" href="style/style-signin.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" />
+    <!--Google Font I have used Roboto, Dancing Script,Lora for this website-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Lora:400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet"> 
+</head>
+<body>
+    <div class="form-table">
+
+        <div class="form-table-content">
+            <div class="form-table-content-logo"><a href="index.html"><img src="HomePage/Untitled.jpg" alt=""></a></div>
+            <div class="form-table-content-main">
+                <div class="form-table-sign-in form-active form-item">
+                    <h4 class="title">ĐĂNG NHẬP</h4>
+                    <div class="form-table-notification sign-in-notification"></div>
+                    <label for="email-sign-in" class="label-head">Email :&nbsp;<span style="color: red;"> *</span>
+                        <input type="text" name="email" id="email-sign-in" placeholder="Email...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                        <div class="email-name-check">Email bạn điền không đúng định dạng</div>
+                    </label>
+                    <label for="password-sign-in">Mật Khẩu :&nbsp;<span style="color: red;"> *</span>
+                        <input type="password" name="password" id="password-sign-in" placeholder="Mật Khẩu...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                    </label>
+                    <div class="form-table-sign-in-lost-password">Quên Mật Khẩu ?</div>
+                    <div class="form-table-sign-in-button-sign-in">ĐĂNG NHẬP</div>
+                    <div class="form-table-sign-in-button-sign-up">Đăng ký</div>
+                </div>
+                <div class="form-table-sign-up form-item" >
+                    <h4 class="title">ĐĂNG KÝ</h4>
+                    <div class="form-table-notification sign-up-notification"></div>
+                    <label for="email-sign-up" class="label-head">Email :&nbsp;<span style="color: red;">*</span>
+                        <input type="text" name="email" id="email-sign-up" placeholder="Email...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                        <div class="email-name-check">Email bạn điền không đúng định dạng</div>
+                    </label>
+                    <label for="name-sign-up">Họ Tên :&nbsp;<span style="color: red;">*</span>
+                        <input type="text" name="name" id="name-sign-up" placeholder="Tên...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                    </label>
+                    <label for="phone-sign-up">Số Điện Thoại :&nbsp;<span style="color: red;">*</span>
+                        <input type="text" name="phone" id="phone-sign-up" placeholder="Số điện thoại...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                        <div class="mobile-phone-check">Số di động bao gồm 10 chữ số</div>
+                    </label>
+                    <label for="password-sign-up">Mật Khẩu :&nbsp;<span style="color: red;">*</span>
+                        <input type="password" name="password" id="password-sign-up" placeholder="Mật Khẩu...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                    </label>
+                    <label for="password-sign-up-2">Nhập Lại Mật Khẩu :&nbsp;<span style="color: red;">*</span>
+                        <input type="password" name="password" id="password-sign-up-2" placeholder="Nhập Lại Mật Khẩu...">
+                        <div class="empty-check-input">Bạn phải điền vào mục này</div>
+                        <div class="password-check">Mật khẩu không khớp</div>
+                    </label>
+                    <div class="form-table-sign-up-button-sign-up">ĐĂNG KÝ</div>
+                    <div class="form-table-sign-up-button-sign-in">Đăng nhập</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main-signin.js"></script>
+</body>
+</html>
