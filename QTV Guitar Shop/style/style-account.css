@@ -1,4 +1,9 @@
 
+.empty{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
 @media only screen and (min-width: 1366px){
     /*Main*/
     .container{
@@ -141,10 +146,14 @@
         background-color: red;
     }
 
-
     .account-main-content{
         width: 90%;
         max-width: 900px;
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
     }
     .account-main-content-title-main{
         font-family: Roboto;
@@ -226,6 +235,48 @@
     .input-card-expiry-date{
         max-width: 405px;
     }
+
+    table{
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
+    }
+    table > thead > tr > th{
+        height: 80px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    table > thead > tr > th:first-child{
+        width: 130px;
+    }
+    table > thead > tr > th:last-child{
+        width: 200px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 20px 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
     footer{
         margin-top: 35px;
     }
@@ -360,6 +411,11 @@
 
     .account-main-content{
         width: 700px;
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
     }
     .account-main-content-title-main{
         font-family: Roboto;
@@ -441,6 +497,48 @@
     .input-card-expiry-date{
         max-width: 405px;
     }
+
+    table{
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
+    }
+    table > thead > tr > th{
+        height: 80px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    table > thead > tr > th:first-child{
+        width: 130px;
+    }
+    table > thead > tr > th:last-child{
+        width: 200px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 20px 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
     footer{
         margin-top: 35px;
     }
@@ -571,6 +669,11 @@
 
     .account-main-content{
         width: calc(100% - 230px);
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
     }
     .account-main-content-title-main{
         font-family: Roboto;
@@ -654,6 +757,47 @@
     .input-card-expiry-date{
         max-width: 405px;
     }
+
+    table{
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
+    }
+    table > thead > tr > th{
+        height: 80px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    table > thead > tr > th:first-child{
+        width: 110px;
+    }
+    table > thead > tr > th:last-child{
+        width: 160px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 20px 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
     footer{
         margin-top: 35px;
     }
@@ -666,55 +810,14 @@
         width: 100%;
     }
     .main-container{
-        width: 95%;
-        margin: 0 auto;
-    }
-    .navigation{
-        width: 95%;
-        margin: 20px auto 10px auto;
-    }
-    .navigation > a{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .navigation > div{
-        display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-   
-    /*footer*/
-    footer{
-        margin-top: 30px;
-    }
-    .subscription-part{
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 351px) and (max-width: 768px){
-    /*Main*/
-    .container{
-        margin-top: 94px;
         width: 100%;
-    }
-    .main-container{
-        width: 95%;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .navigation{
-        width: 95%;
+        width: 90%;
         margin: 20px auto 10px auto;
     }
     .navigation > a{
@@ -738,9 +841,517 @@
         color: #000000;
     }
     
+    .account-menu{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .account-menu-member-general{
+        display: flex;
+        align-items: center;
+        width: calc(100% - 7px);
+        height: 45px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+    }
+    .account-menu-member-general > img {
+        width: 45px;
+        height: 45px;
+        border-radius: 999px;
+        box-sizing: border-box;
+        border: 1px solid rgb(192, 192, 192);
+    }
+    .welcome-member{
+        margin-left: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+        width : calc(100% - 60px);
+    }
+    .welcome-member > strong {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .account-menu-sidebar{
+        width: 100%;
+    }
+    .account-menu-sidebar > li{
+        list-style: none;
+        padding: 7px 18px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .account-menu-sidebar > li:hover {
+        cursor: pointer;
+    }
+    .active-menu{
+        background-color: rgb(221, 221, 221);
+    }
+    .fa-user-alt{
+        font-size: 16px;
+        margin-right: 22px;
+    }
+    .fa-bookmark{
+        font-size: 16px;
+        margin-right: 26px;
+    }
+    .log-out-button{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 30px auto;
+        text-align: center;
+        background-color: #DE0000;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+    }
+    .log-out-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .account-main-content{
+        width: 90%;
+        margin: 0 auto;
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
+    }
+    .account-main-content-title-main{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 25px;
+        line-height: 40px;
+        width: 100%;
+        padding-bottom: 10px;
+        
+    }
+    .account-main-content-personal-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .account-main-content-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 40px;
+        padding-top: 10px;
+    }
+    .user-input{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .user-input > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-input > input{
+        width: calc(100% - 150px);
+    }
+    .user-input > textarea{
+        width: calc(100% - 150px);
+    }
+    .save-button{
+        margin: 0 auto;
+        width: 200px;
+        height: 40px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+        background-color: #DE0000;
+        border-radius: 5px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .save-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+    .account-main-content-address-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .user-select{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .user-select > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-select > input{
+        width: calc(100% - 150px);
+    }
+    .user-select > select{
+        width: calc(100% - 150px);
+    }
+    .account-main-content-payment-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .input-card-expiry-date{
+        width: calc(100% - 150px);
+    }
+
+    table{
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
+    }
+    table > thead > tr > th{
+        height: 80px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    table > thead > tr > th:first-child{
+        width: 110px;
+    }
+    table > thead > tr > th:last-child{
+        width: 160px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 20px 5px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
     /*footer*/
     footer{
         margin-top: 30px;
+    }
+    .subscription-part{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 576px){
+    /*Main*/
+    .header-tablet{
+        padding: 0;
+        border: 0;
+    }
+    .container{
+        margin-top: 94px;
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .navigation{
+        width: 90%;
+        margin: 20px auto 10px auto;
+    }
+    .navigation > a{
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: black;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+    }
+    
+    .account-menu{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .account-menu-member-general{
+        display: flex;
+        align-items: center;
+        width: calc(100% - 7px);
+        height: 45px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+    }
+    .account-menu-member-general > img {
+        width: 45px;
+        height: 45px;
+        border-radius: 999px;
+        box-sizing: border-box;
+        border: 1px solid rgb(192, 192, 192);
+    }
+    .welcome-member{
+        margin-left: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+        width : calc(100% - 60px);
+    }
+    .welcome-member > strong {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .account-menu-sidebar{
+        width: 100%;
+    }
+    .account-menu-sidebar > li{
+        list-style: none;
+        padding: 7px 18px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .account-menu-sidebar > li:hover {
+        cursor: pointer;
+    }
+    .active-menu{
+        background-color: rgb(221, 221, 221);
+    }
+    .fa-user-alt{
+        font-size: 16px;
+        margin-right: 22px;
+    }
+    .fa-bookmark{
+        font-size: 16px;
+        margin-right: 26px;
+    }
+    .log-out-button{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 20px auto;
+        text-align: center;
+        background-color: #DE0000;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+    }
+    .log-out-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .account-main-content{
+        width: 90%;
+        margin: 0 auto;
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
+    }
+    .account-main-content-title-main{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 30px;
+        width: 100%;
+        padding-bottom: 10px;
+        
+    }
+    .account-main-content-personal-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .account-main-content-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 32px;
+        padding-top: 10px;
+    }
+    .user-input{
+        margin-left: 0;
+        width: 100%;
+    }
+    .user-input > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-input > input{
+        width: 100%;
+    }
+    .user-input > textarea{
+        width: 100%;
+    }
+    .save-button{
+        margin: 0 auto;
+        width: 200px;
+        height: 40px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+        background-color: #DE0000;
+        border-radius: 5px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .save-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+    .account-main-content-address-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .user-select{
+        margin-left: 0;
+        width: 100%;
+    }
+    .user-select > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-select > input{
+        width: 100%;
+    }
+    .user-select > select{
+        width: 100%;
+    }
+    .account-main-content-payment-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .input-card-expiry-date{
+        width: 100%;
+    }
+
+    table{
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
+    }
+    table > thead > tr > th{
+        height: 60px;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    table > thead > tr > th:first-child{
+        width: 110px;
+    }
+    table > thead > tr > th:last-child{
+        width: 160px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 10px 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .history-trade-content{
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .history-trade-item{
+        width: 100%;
+        padding: 10px 0px;
+        border-top: 1px solid rgb(236, 235, 235);
+    }
+    .history-trade-item-name{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    .history-trade-item-name-date, .history-trade-item-name-money{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgb(117, 117, 117);
+    }
+
+    /*footer*/
+    footer{
+        margin-top: 20px;
     }
     .subscription-part{
         display: none;
@@ -754,8 +1365,9 @@
         width: 100%;
     }
     .main-container{
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
+        flex-direction: column;
     }
     .navigation{
         width: 95%;
@@ -781,105 +1393,253 @@
         line-height: 30px;
         color: #000000;
     }
-    .info-part{
-        width: 100%;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #C4C4C4;
+
+    .account-menu{
+        width: 95%;
+        margin: 0 auto;
     }
-    .info-part-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-        margin: 0px auto 10px auto;
-    }
-    .info-part-item{
-        width: calc(100% - 30px);
+    .account-menu-member-general{
         display: flex;
         align-items: center;
+        width: calc(100% - 7px);
+        height: 45px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+    }
+    .account-menu-member-general > img {
+        width: 45px;
+        height: 45px;
+        border-radius: 999px;
+        box-sizing: border-box;
+        border: 1px solid rgb(192, 192, 192);
+    }
+    .welcome-member{
+        margin-left: 12px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        color: #000000;
+        width : calc(100% - 60px);
+    }
+    .welcome-member > strong {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .account-menu-sidebar{
+        width: 100%;
+    }
+    .account-menu-sidebar > li{
+        list-style: none;
+        padding: 7px 18px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .account-menu-sidebar > li:hover {
+        cursor: pointer;
+    }
+    .active-menu{
+        background-color: rgb(221, 221, 221);
+    }
+    .fa-user-alt{
+        font-size: 16px;
+        margin-right: 22px;
+    }
+    .fa-bookmark{
+        font-size: 16px;
+        margin-right: 26px;
+    }
+    .log-out-button{
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 20px auto;
+        text-align: center;
+        background-color: #DE0000;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+    }
+    .log-out-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
+    .account-main-content{
+        width: 95%;
+        margin: 0 auto;
+        transition: 1s;
+    }
+    .trade-history-main-content{
+        display: none;
+        opacity: 0;
+    }
+    .account-main-content-title-main{
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 30px;
+        width: 100%;
         padding-bottom: 10px;
         
     }
-    .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 25px;
-        color: #000000;
-        margin-left: 25px;
-    }
-    .item-mark{
-        width: 10px;
-        height: 20px;
-        background-color: #83d7fe;
-    }
-    .item-name-mark{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 25px;
-        color: #000000;
-        margin-left: 15px;
-    }
-    .item-policy{
+    .account-main-content-personal-info{
+        border-top: 1px solid rgb(177, 177, 177);
         width: 100%;
-        margin-bottom: 10px;
+        padding-bottom: 30px;
     }
-    .article-part{
-        width: 100%;
-    }
-    .article-title{
+    .account-main-content-title{
         font-family: Roboto;
         font-style: normal;
-        font-weight: 700;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-        margin: 10px auto 10px auto;
+        line-height: 32px;
+        padding-top: 10px;
     }
-    .head-title-policy{
+    .user-input{
+        margin-left: 0;
+        width: 100%;
+    }
+    .user-input > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-input > input{
+        width: 100%;
+    }
+    .user-input > textarea{
+        width: 100%;
+    }
+    .save-button{
+        margin: 0 auto;
+        width: 200px;
+        height: 40px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 40px;
+        color: white;
+        background-color: #DE0000;
+        border-radius: 5px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .save-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+    .account-main-content-address-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .user-select{
+        margin-left: 0;
+        width: 100%;
+    }
+    .user-select > label{
+        width: 150px;
+        line-height: 25px;
+    }
+    .user-select > input{
+        width: 100%;
+    }
+    .user-select > select{
+        width: 100%;
+    }
+    .account-main-content-payment-info{
+        border-top: 1px solid rgb(177, 177, 177);
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .input-card-expiry-date{
+        width: 100%;
+    }
+
+    table{
+        width: 100%;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        border-top: 1px solid black;
+        display:table;
+        border-collapse:collapse;
     }
-    .title-policy{
-        width: 98%;
+    table > thead > tr > th{
+        height: 60px;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    table > thead > tr > th:first-child{
+        width: 110px;
+    }
+    table > thead > tr > th:last-child{
+        width: 160px;
+    }
+    table > tbody > tr {
+        border-top: 1px solid rgb(236, 235, 235);
+        display: table-row;
+    }
+    table > tbody > tr >  td {
+        padding: 10px 5px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        display: table-cell;
+    }
+    .account-main-content-trade-history{
         font-family: Roboto;
-        font-style: italic;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .history-trade-content{
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .history-trade-item{
+        width: 100%;
+        padding: 10px 0px;
+        border-top: 1px solid rgb(236, 235, 235);
+    }
+    .history-trade-item-name{
+        font-family: Roboto;
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-        margin: 0 auto;
+        line-height: 25px;
+        padding-bottom: 10px;
     }
-    .content-text{
-        width: 98%;
+    .history-trade-item-name-date, .history-trade-item-name-money{
         font-family: Roboto;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 25px;
-        color: #000000;
-        margin: 0 auto 5px auto;
+        line-height: 20px;
+        color: rgb(117, 117, 117);
     }
-    .icon-content > img{
-        width: 20px;
-        height: 20px;
-        position: relative;
-        top: 3px;
-    }
+
     /*footer*/
     footer{
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .subscription-part{
         display: none;

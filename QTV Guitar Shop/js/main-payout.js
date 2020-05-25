@@ -28,6 +28,7 @@ function selectDistrict(){
     }
     $('#input-user-commune').html(outputCommune);
 }
+
 //Part 2 : Function for Lmit Number of Character in Input Field
 let limitNumberArray = [10, 12 , 3 ,7];
 $('#card-id').on('input',function(){
@@ -235,7 +236,7 @@ function sendOrder(){
     numberReturn = productYPosition.top - bodyYPosition.top; //scrollbar backs to top of the product part 
     // check shopping cart is empty 
     loadCart();
-    if (shoppingCart.length ==0) window.location.href = "index.html";
+    if (shoppingCart.length == 0) window.location.href = "index.html";
     //check whether input field takes a valid value
     if (!checkEmpty('input-user-name')) {$(window).scrollTop( numberReturn); return};
     if (!checkEmpty('input-user-phone')) {$(window).scrollTop( numberReturn); return};
@@ -258,13 +259,27 @@ function sendOrder(){
         if (!checkEmpty('card-password')) return;
         if (!checkLimitedNumber('card-password',3)) return;
     }
+    let dateSave = new Date().getDate();
+    let monthSave = function(){
+        let month = (new Date().getMonth() + 1).toString();
+        if (month < 10){
+            month = `0${month}`;
+        }
+        return month;
+    }();
+    let yearSave = new Date().getFullYear();
+    let timeNow = `${dateSave}/${monthSave}/${yearSave}`;
+    for (let i = 0; i < shoppingCart.length; i++){
+        shoppingCart[i].time = timeNow;
+    }
+    currentUser.tradeHistory.push(...shoppingCart);
     // show pop-up 
     $('.pop-up-modal').css('display','block');
     setTimeout(function(){$('.pop-up-modal').css('opacity','1');},100) 
     $('body').addClass('start');
     $('body').css('padding-right',`${scrollBarWidth}px`)
-    
 }
+
 function checkEmpty(id){ // check whether a input field is empty
     let inputCheck = $(`#${id}`).val();
     if (inputCheck.length == 0){
@@ -372,12 +387,14 @@ function closePopup(){
     $('input').val('');
     $('textarea').val('');
     $('select').val('0');
+ 
     shoppingCart = [];
     saveCart();
     window.location.href = "index.html";
 }
 
 //Part 5 : Showing Pay by Card Option
+
 let heightPayByCardInitial = $('.user-payout-infor').innerHeight();
 $('.user-payout-infor').innerHeight(heightPayByCardInitial);
 $('#pay-by-card').on('change',showPayByCard);
@@ -409,8 +426,6 @@ function hidePayByCard(){
         $('.user-card-input').css('display','none')
     }
 }
-
-
 
 //Part 6 : Function for Subscription email and About This Website button - Footer
 

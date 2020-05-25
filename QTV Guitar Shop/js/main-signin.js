@@ -125,7 +125,9 @@ function checkAccountInfo(){
             localStorage.setItem('signInSituation', true);
             localStorage.setItem('currentID', userList[i].id);
             if (userList[i].shoppingCart.length == 0){
-                userList[i].shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+                if (localStorage.getItem('shoppingcartguitar') != null){
+                    userList[i].shoppingCart = JSON.parse(localStorage.getItem('shoppingcartguitar'));
+                }
                 saveUserList();
             }
             localStorage.removeItem('shoppingcartguitar');

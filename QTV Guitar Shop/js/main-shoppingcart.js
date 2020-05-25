@@ -22,7 +22,7 @@ if (localStorage.getItem('signInSituation') === "true"){
 
 function loadUserList(){
     userList = JSON.parse(localStorage.getItem('userListGuitar'))
-} 
+}
 
 let discount = 0;
 let shoppingCart=[];

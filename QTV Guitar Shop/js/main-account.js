@@ -1,4 +1,4 @@
-//This section is written by using Javascript. 
+//This section is written by using Jquery. 
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
@@ -111,7 +111,7 @@ if (localStorage.getItem('signInSituation') === "false"){
 
 function saveUserList(){
     localStorage.setItem('userListGuitar', JSON.stringify(userList));
-} 
+}
 
 $('.member-name').text(`${currentUser.info.name}`);
 $('#input-user-name').val(`${currentUser.info.name}`);
@@ -168,6 +168,91 @@ function saveInformation(){
     }
     console.log(currentUser,userList)
     saveUserList();
+    window.location.reload();
+}
+
+// Part : Function for Changing tab
+
+$('.account-menu-info').on('click',function(){
+    $('.account-menu-info').addClass('active-menu');
+    $('.menu-info-main-content').css('display','block');
+    setTimeout(function(){
+        $('.menu-info-main-content').css('opacity','1');
+    },50)
+    $('.account-menu-history-trade').removeClass('active-menu');
+    $('.trade-history-main-content').css('display','none');
+    $('.trade-history-main-content').css('opacity','0');
+    $('footer').removeClass('empty');
+});
+
+$('.account-menu-history-trade').on('click',function(){
+    $('.account-menu-info').removeClass('active-menu');
+    $('.menu-info-main-content').css('display','none');
+    $('.menu-info-main-content').css('opacity','0');
+    $('.account-menu-history-trade').addClass('active-menu');
+    $('.trade-history-main-content').css('display','block');
+    setTimeout(function(){
+        $('.trade-history-main-content').css('opacity','1');
+    },50)
+
+    let output = "";
+    let outputItem = "";
+    if (currentUser.tradeHistory.length != 0){
+        if (window.innerWidth < 577){
+            for (let i = 0; i < currentUser.tradeHistory.length; i++){
+                let moneyItem = currentUser.tradeHistory[i].price.replace(/\D/g,'') * currentUser.tradeHistory[i].count
+                output += 
+                        `<div class = "history-trade-item">
+                            <div class = "history-trade-item-name">${currentUser.tradeHistory[i].count} x ${currentUser.tradeHistory[i].name}</div>
+                            <div class = "history-trade-item-name-date">Ngày đặt hàng : ${currentUser.tradeHistory[i].time}</div>
+                            <div class = "history-trade-item-name-money">Tổng Tiền : ${separator1000(moneyItem)} VND</div>
+                        </div>`
+            }
+            outputItem = 
+                            `<div class="account-main-content-title-main">LỊCH SỬ GIAO DỊCH</div>
+                            <div class ="history-trade-content">
+                                ${output}
+                            </div>
+                            `
+        }
+        else {
+            for (let i = 0; i < currentUser.tradeHistory.length; i++){
+                let moneyItem = currentUser.tradeHistory[i].price.replace(/\D/g,'') * currentUser.tradeHistory[i].count
+                output += 
+                        `<tr>
+                            <td>${currentUser.tradeHistory[i].time}</td>
+                            <td>${currentUser.tradeHistory[i].count} x ${currentUser.tradeHistory[i].name}</td>
+                            <td>${separator1000(moneyItem)} VND</td>
+                        </tr>`
+            }
+            outputItem = 
+                            `<div class="account-main-content-title-main">LỊCH SỬ GIAO DỊCH</div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Ngày Mua</th>
+                                        <th>Sản Phẩm</th>
+                                        <th>Tổng Tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${output}
+                                </tbody>
+                            </table>
+                            `
+        }
+        
+    }
+    else outputItem = `<div class="account-main-content-title-main">LỊCH SỬ GIAO DỊCH</div>
+                        <div class="account-main-content-trade-history">Chưa Có Giao Dịch</div>`
+    $('.trade-history-main-content').html(outputItem)
+    if (document.body.clientHeight < window.innerHeight){
+        $('footer').addClass('empty');
+    }
+});
+
+function separator1000(num){ // 1000 separator 
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 }
 
 // Part : Function for Log out
