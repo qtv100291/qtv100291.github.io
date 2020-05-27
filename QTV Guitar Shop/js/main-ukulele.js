@@ -2,12 +2,9 @@
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
-// Part 1 : Function for Showing Filter Part
-if (window.innerWidth > 1024){
-    let filterContent = document.querySelectorAll('.filter-content');
-    for (let i = 0; i < filterContent.length; i++){ //Set a definite Number for max-height
-    filterContent[i].style.maxHeight = filterContent[i].scrollHeight + "px";
-    }
+let filterContent = document.querySelectorAll('.filter-content');
+for (let i = 0; i < filterContent.length; i++){ //Set a definite Number for max-height
+filterContent[i].style.maxHeight = filterContent[i].scrollHeight + "px";
 }
 
 let filterTitle = document.querySelectorAll('.filter-title');
@@ -17,8 +14,8 @@ for(let i = 0; i < filterTitle.length; i++){
 
 function showFilterContent(){
     this.parentNode.childNodes.forEach(elm => elm.nodeType != 1 && elm.parentNode.removeChild(elm));//remove text node
-    if (window.innerWidth > 1024){  
-        if ( this.childNodes[1].style.display != "block"){
+    if (window.innerWidth > 1023){  
+        if (this.childNodes[1].style.display != "block"){
             this.parentNode.childNodes[1].style.maxHeight = "0px";
             this.style.borderBottom = "none";
             this.childNodes[1].style.display = "block";  
@@ -32,21 +29,47 @@ function showFilterContent(){
         }
     }
     else {
-        if ( this.childNodes[2].style.display != "block"){
-            this.parentNode.childNodes[1].style.maxHeight = this.parentNode.childNodes[1].scrollHeight + "px";
-            this.style.borderBottom = "1px solid #BDB4B4";
-            this.childNodes[1].style.display = "none";  
-            this.childNodes[2].style.display = "block";  
+        if (this.childNodes[1].style.display != "block"){
+            this.parentNode.childNodes[1].style.maxHeight = "0px";
+            this.childNodes[1].style.display = "block";  
+            this.childNodes[2].style.display = "none";    
         }
         else {
-            this.parentNode.childNodes[1].style.maxHeight = "0px";
-            this.style.borderBottom = "none";
-            this.childNodes[1].style.display = "block";  
-            this.childNodes[2].style.display = "none";  
+            this.parentNode.childNodes[1].style.maxHeight = this.parentNode.childNodes[1].scrollHeight + "px";
+            this.childNodes[1].style.display = "none";  
+            this.childNodes[2].style.display = "block";  
         }
     }
 }
 
+
+// Part 3 : Function for Opening Filter Part on mobile
+document.querySelector('.filter-button-mobile').addEventListener('click', openFilterMobile);
+function openFilterMobile(){
+    document.querySelector('.filter-part').classList.add('active-filter');
+    document.body.classList.add('start');
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `${scrollBarWidth}px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `${10 + scrollBarWidth}px`;
+}
+document.querySelector('.filter-part').addEventListener('click', closeFilterMobile)
+function closeFilterMobile(event){
+    if (!event.target.classList.contains('filter-part')) return;
+    let uncheckItems = document.querySelectorAll('input:checked')
+    uncheckItems.forEach(x => x.checked = false)
+    document.querySelector('.filter-part').classList.remove('active-filter')
+    document.body.classList.remove('start');
+    document.body.style.paddingRight = `0px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
+}
+function closeFilterMobileButton(){
+    document.querySelector('.filter-part').classList.remove('active-filter')
+    document.body.classList.remove('start');
+    document.body.style.paddingRight = `0px`;
+    document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
+    document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
+}
 // Part 2 : Function for Filtering Item
 let filterBrand = document.querySelectorAll('.filter-brand > ul > li > label > input');
 let filterBodySize = document.querySelectorAll('.filter-body-size > ul > li > label > input');
@@ -100,6 +123,7 @@ function filterButton(){
     }
     document.querySelector('.arrangement-executed').textContent = "Tên Từ A - Z";
     renderItem(arrayExecuted);
+    closeFilterMobileButton();
 }
 
 // Part 3 : Function for Arrangement Option
@@ -211,6 +235,7 @@ function removeFilter(){//remove filter condition
     renderItem(arrayExecuted);
     let uncheckItems = document.querySelectorAll('input:checked')
     uncheckItems.forEach(x => x.checked = false)
+    closeFilterMobileButton();
 }
 
 // Part 5: Function for Sorting Item

@@ -166,7 +166,7 @@ function saveInformation(){
         break;
         }
     }
-    console.log(currentUser,userList)
+    console.log(currentUser,userList);
     saveUserList();
     window.location.reload();
 }

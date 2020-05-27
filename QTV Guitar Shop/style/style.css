@@ -25,6 +25,18 @@
         height: 600px;
         overflow: hidden;
         margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+    .video-store-container::after{
+    content: "";
+    width: 100%;
+    background-image: url(../HomePage/bg.svg);
+    position: absolute;
+    height: 15px;
+    top: calc(100% - 12px);
+    left: 0;
+    z-index: 1;
     }
     .video-store{
         width: 100%;
@@ -1091,6 +1103,18 @@
         height: 450px;
         overflow: hidden;
         margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+        .video-store-container::after{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/bg.svg);
+        position: absolute;
+        height: 15px;
+        top: calc(100% - 12px);
+        left: 0;
+        z-index: 1;
     }
     .video-store{
         width: 100%;

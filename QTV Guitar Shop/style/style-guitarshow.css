@@ -26,6 +26,18 @@
         max-width: 1200px;
         height: 500px;
         margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+    .banner::after{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/bg.svg);
+        position: absolute;
+        height: 15px;
+        top: calc(100% - 15px);
+        left: 0;
+        z-index: 1;
     }
     .banner > img{
         width: 100%;
@@ -67,11 +79,6 @@
         overflow: hidden;
 
     }
-    .show-item-date:hover .date-show{
-        transform: translateY(-100%)
-    }.show-item-date:hover .day-left{
-        transform: translateY(-100%)
-    }
     .date-show{
         width: 100%;
         height: 100%;
@@ -79,7 +86,6 @@
         transition: 0.5s;
         position: relative;
         overflow: auto;
-
     }
     
     .date-show p:nth-child(1){
@@ -250,6 +256,9 @@
     #line-item-4{
         height: 592px;
     }
+    footer{
+        margin-top: 80px;
+    };
 }
 
 
@@ -317,11 +326,6 @@
         border: 7px solid #A47C44;
         overflow: hidden;
 
-    }
-    .show-item-date:hover .date-show{
-        transform: translateY(-100%)
-    }.show-item-date:hover .day-left{
-        transform: translateY(-100%)
     }
     .date-show{
         width: 100%;

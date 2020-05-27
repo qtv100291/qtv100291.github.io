@@ -161,6 +161,18 @@
         max-width: 1200px;
         height: 500px;
         margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+    .banner::after{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/bg.svg);
+        position: absolute;
+        height: 15px;
+        top: calc(100% - 15px);
+        left: 0;
+        z-index: 1;
     }
     .banner > img{
         width: 100%;
@@ -741,6 +753,18 @@
         max-width: 1200px;
         height: 500px;
         margin: 0 auto;
+        position: relative;
+        z-index: 0;
+    }
+    .banner::after{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/bg.svg);
+        position: absolute;
+        height: 15px;
+        top: calc(100% - 12px);
+        left: 0;
+        z-index: 1;
     }
     .banner > img{
         width: 100%;
@@ -1321,6 +1345,18 @@
         width: 1000px;
         height: 450px;
         margin: 0 auto;
+            position: relative;
+        z-index: 0;
+    }
+    .banner::after{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/bg.svg);
+        position: absolute;
+        height: 17px;
+        top: calc(100% - 17px);
+        left: 0;
+        z-index: 1;
     }
     .banner > img{
         width: 100%;
