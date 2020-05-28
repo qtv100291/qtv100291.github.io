@@ -66,7 +66,7 @@ function renderProductItem(objectData){
     }
     $('.product-item-name').text(objectProductItem.name);
     for (let i = 1; i < 6 ; i++){
-        $(`.item-photo-${i}`).attr('src',`${objectProductItem.photo}/${i}.jpg`)
+        $(`.item-photo-${i}`).attr('src',`${objectProductItem.photo}/${i} - slide.jpg`)
     }
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}-indicator`).attr('src',`${objectProductItem.photo}/${i} - Indicator.jpg`)
@@ -107,7 +107,8 @@ function photoZoom(photo){
         return ratioY*($('.item-picture').height())
     })
     $('.zoom-image').attr('src',function(){
-        return img.attr('src');
+        let imgScaleUp = img.attr('src').replace(' - slide','')
+        return imgScaleUp;
     })
     $('.zoom-image').height(function(){
         return ratioY*(img.height())

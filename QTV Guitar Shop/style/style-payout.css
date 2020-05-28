@@ -1,5 +1,10 @@
-
-@media only screen and (min-width: 1367px){
+@keyframes scale-up{
+    0% {transform: scale(1);}
+    40% {transform: scale(1.5);}
+    70% {transform: scale(0.7);}
+    100%{transform: scale(1);}
+}
+@media only screen and (min-width: 1366px){
     /*Main*/
     header{
         width: 100%;
@@ -184,6 +189,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;
@@ -801,7 +814,7 @@
 }
 
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px){
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
     /*Main*/
     header{
         width: 100%;
@@ -983,6 +996,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;
@@ -1781,6 +1802,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;
@@ -2591,6 +2620,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;
@@ -3405,6 +3442,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;
@@ -4221,6 +4266,14 @@
         background-color: white;
         border-radius: 15px;
         border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
     }
     .popup-content{
         margin: 15px auto 0px auto;

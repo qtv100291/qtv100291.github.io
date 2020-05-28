@@ -3,7 +3,7 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 
-//Part 1: Changing tab
+// Part 1 : Changing tab
 $('.form-table-sign-in-button-sign-up, .form-table-sign-up-button-sign-in').on('click',changingTab);
 function changingTab(){
     $('.form-active > label > input').val('');
@@ -12,9 +12,7 @@ function changingTab(){
     $(this).parent().removeClass('form-active');
 }
 
-
-
-//Part 2:
+// Part 2 :
 if (localStorage.getItem('signInSituation') === "true"){
     window.location.href = "index.html";
 }
@@ -247,3 +245,7 @@ function limitCharacter(elt,limitNumber){
         elt.val(str);
     }
 }
+
+$('.back-home-page-button').on('click', function(){
+    window.location.href = "index.html"
+})

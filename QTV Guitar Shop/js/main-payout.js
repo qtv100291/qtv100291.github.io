@@ -380,6 +380,8 @@ function closePopup(){
     $('.pop-up-modal').css('opacity','0');
     setTimeout(function(){$('.pop-up-modal').css('display','none');},500); 
     $('body').removeClass('pop-up');
+
+    
     $('#email-sender').val('');
     $('#feed-back-content').val('');
     $('body').css('padding-right','0px')

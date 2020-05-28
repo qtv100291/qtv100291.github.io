@@ -165,81 +165,89 @@
             <a href="index.html">Trang Chủ</a>&nbsp;&nbsp;<span>></span>&nbsp;&nbsp;<a>Phụ Kiện</a> 
         </div>
         <div class="main-container">
-            <div class="filter-part">       
-                <div class="remove-item-part">
-                    <div class="filter-part-title">
-                        <div class="filter-part-img"><img src="Product/filter_filters_funnel_list_navigation_sort_sorting_icon_123212.svg" alt=""></div>
-                        BỘ LỌC
+            <div class="filter-part">
+                <div class="filter-part-container">
+                    <div class="remove-item-part">
+                        <div class="filter-part-title">
+                            <div class="filter-part-img"><img src="Product/filter_filters_funnel_list_navigation_sort_sorting_icon_123212.svg" alt=""></div>
+                            BỘ LỌC
+                        </div>
+                        <div class="remove-item-button">Bỏ Lọc</div>
                     </div>
-                    <div class="remove-item-button">Bỏ Lọc</div>
-                </div>
-                <div class="filter-body-size filter-item">
-                    <div class="filter-title">SẢN PHẨM<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
-                    <ul class="filter-content">
-                        <li>
-                            <label for="Capo">Capo
-                                <input type="checkbox" id="Capo" data-body-size ="Capo">
+                    <div class="filter-body-size filter-item">
+                        <div class="filter-title">SẢN PHẨM<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                        <ul class="filter-content">
+                            <li>
+                                <label for="Capo">Capo
+                                    <input type="checkbox" id="Capo" data-body-size ="Capo">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Dây đàn">Dây đàn
+                                    <input type="checkbox" id="Dây đàn" data-body-size="Dây đàn">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Tuner">Tuner
+                                    <input type="checkbox" id="Tuner" data-body-size="Tuner">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-brand filter-item">
+                        <div class="filter-title">THƯƠNG HIỆU<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
+                        <ul class="filter-content">
+                            <li>
+                                <label for="D'addario">D'ADDARIO
+                                    <input type="checkbox" id="D'addario" data-brand="D'addario">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Elixir">ELIXIR
+                                    <input type="checkbox" id="Elixir" data-brand="Elixir">
                                 <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Dây đàn">Dây đàn
-                                <input type="checkbox" id="Dây đàn" data-body-size="Dây đàn">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Tuner">Tuner
-                                <input type="checkbox" id="Tuner" data-body-size="Tuner">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-brand filter-item">
-                    <div class="filter-title">THƯƠNG HIỆU<span class="more-icon"><img src="HomePage/expand_more_24px_outlined.svg" alt="more-icon"></span><span class="less-icon"><img src="HomePage/expand_less_24px_outlined.svg" alt="less-icon"></span></div> 
-                    <ul class="filter-content">
-                        <li>
-                            <label for="D'addario">D'ADDARIO
-                                <input type="checkbox" id="D'addario" data-brand="D'addario">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Elixir">ELIXIR
-                                <input type="checkbox" id="Elixir" data-brand="Elixir">
-                            <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Fender">FENDER
-                                <input type="checkbox" id="Fender" data-brand="Fender">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label for="Fishman">FISHMAN
-                                <input type="checkbox" id="Fishman" data-brand="Fishman">
-                                <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-button">Áp Dụng</div>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Fender">FENDER
+                                    <input type="checkbox" id="Fender" data-brand="Fender">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="Fishman">FISHMAN
+                                    <input type="checkbox" id="Fishman" data-brand="Fishman">
+                                    <span class="checkmark"><img src="HomePage/tick.svg" alt=""></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-button-container"> 
+                        <div class="filter-button">Áp Dụng</div>
+                    </div>
+                </div>    
             </div>
             <div class="product-part">
-                <div class="arrangement-part">
-                    <div class="arrangement-title">Sắp xếp theo
-                        <div><span class="arrangement-executed">Tên Từ A - Z</span> 
-                            <img class="arrow-icon" src="HomePage/expand_more_24px_outlined.svg" alt="">
+                <div class="product-part-header">
+                    <div class="arrangement-part">
+                        <div class="arrangement-title"><span>Sắp xếp theo</span>
+                            <div><span class="arrangement-executed">Tên Từ A - Z</span>
+                                <img class="arrow-icon" src="HomePage/expand_more_24px_outlined.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="menu-arrangement">
+                            <div class="arrangement-option option-1">Tên Từ A - Z</div>
+                            <div class="arrangement-option option-2">Giá Tăng Dần</div>
+                            <div class="arrangement-option option-3">Giá Giảm Dần</div>
                         </div>
                     </div>
-                    <div class="menu-arrangement">
-                        <div class="arrangement-option option-1">Tên Từ A - Z</div>
-                        <div class="arrangement-option option-2">Giá Tăng Dần</div>
-                        <div class="arrangement-option option-3">Giá Giảm Dần</div>
-                    </div>
+                    <div class="filter-button-mobile"><i class="fas fa-filter"></i><span>Lọc</span></div>
                 </div>
+                
                 <div class="product-item">
                     <!--Items will be rendered here-->
                 </div>
@@ -257,7 +265,10 @@
     <footer>
         <div class="footer-container">
             <div class="subscription-announcement-container">
-                <div class="subscription-announcement">Cảm Ơn Bạn Đã Đồng Hành Cùng QTV Guitar Shop</div>
+                <div class="subscription-announcement">
+                    <p>Cảm Ơn Bạn Đã Đồng Hành Cùng QTV Guitar Shop</p> 
+                    <img src="HomePage/email.svg" alt="email">
+                </div>
             </div>
             <div class="subscription-part">
                 <div class="subscription-title">ĐĂNG KÝ</div>

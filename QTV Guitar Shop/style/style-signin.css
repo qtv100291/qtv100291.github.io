@@ -15,7 +15,7 @@ html{
         display: block;
     }
     .form-table{
-        width: 400px;
+        width: 420px;
         background-color: white;
         position: absolute;
         left: 50%;
@@ -49,6 +49,7 @@ html{
     }
     .form-item{
         width: 80%;
+        max-width: 320px;
         margin: 0 auto;
         display: none;
         font-family: Roboto;
@@ -211,7 +212,6 @@ html{
         line-height: 30px;
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 30px;
     }
     .form-table-sign-in-button-sign-up{
         cursor: pointer;
@@ -236,10 +236,20 @@ html{
         text-align: center;
         line-height: 30px;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 20px;  
+    }
+    .back-home-page-button{
+        width: 100px;
+        color: #20a8d8;
+        line-height: 30px;
+        font-size: 15px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
-    .form-table-sign-up-button-sign-in:hover{
+    .fa-arrow-left{
+        font-size: 14px;
+    }
+    .form-table-sign-up-button-sign-in:hover , .back-home-page-button:hover{
         cursor: pointer;
     }
 }
@@ -442,7 +452,6 @@ html{
         line-height: 30px;
         margin: 0 auto;
         margin-top: 20px;
-        margin-bottom: 30px;
     }
     .form-table-sign-in-button-sign-up{
         cursor: pointer;
@@ -468,9 +477,19 @@ html{
         line-height: 30px;
         margin: 0 auto;
         margin-top: 20px;
+    }
+    .back-home-page-button{
+        width: 100px;
+        color: #20a8d8;
+        line-height: 30px;
+        font-size: 15px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
-    .form-table-sign-up-button-sign-in:hover{
+    .fa-arrow-left{
+        font-size: 14px;
+    }
+    .form-table-sign-up-button-sign-in:hover , .back-home-page-button:hover{
         cursor: pointer;
     }
 }

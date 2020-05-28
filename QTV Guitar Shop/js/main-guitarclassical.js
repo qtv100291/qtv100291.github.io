@@ -71,6 +71,7 @@ function closeFilterMobileButton(){
     document.querySelector('.top-navbar-mobile').style.paddingRight = `0px`;
     document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
 }
+
 // Part 2 : Function for Filtering Item
 let filterBrand = document.querySelectorAll('.filter-brand > ul > li > label > input');
 let filterBodySize = document.querySelectorAll('.filter-body-size > ul > li > label > input');

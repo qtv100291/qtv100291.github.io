@@ -12,6 +12,12 @@ body{
 body.start{
     overflow: hidden;
 }
+@keyframes scale-up{
+    0% {transform: scale(1);}
+    40% {transform: scale(1.5);}
+    70% {transform: scale(0.7);}
+    100%{transform: scale(1);}
+}
 @media only screen and (min-width: 1366px){
     /*Welcome Popup*/
     .welcome-popup{
@@ -843,12 +849,25 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+        flex-wrap: wrap;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         width: 350px;
@@ -1976,12 +1995,24 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         width: 300px;
@@ -2769,12 +2800,24 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         width: 50%;
@@ -3554,12 +3597,24 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         overflow: auto;
@@ -3924,7 +3979,7 @@ body.start{
 }   
 
 
-@media only screen and (min-width: 350px) and (max-width:576px){
+@media only screen and (min-width: 351px) and (max-width:576px){
     /*Welcome Popup*/
     .welcome-popup{
         top: 0;
@@ -4359,12 +4414,24 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         overflow: auto;
@@ -4739,7 +4806,7 @@ body.start{
     }
 }   
 
-@media only screen and (max-width:349px){
+@media only screen and (max-width:350px){
     /*Welcome Popup*/
     .welcome-popup{
         top: 0;
@@ -5174,12 +5241,24 @@ body.start{
         background-color: white;
         border: 1px solid #C4C4C4;
         border-radius: 15px;
-        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         position: absolute;
+    }
+    .subscription-announcement > p {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .subscription-announcement > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        animation: scale-up 0.4s 0.5s forwards;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .subscription-part{
         overflow: auto;

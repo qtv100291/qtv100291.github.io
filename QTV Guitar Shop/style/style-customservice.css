@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1367px){
+@media only screen and (min-width: 1366px){
     /*Main*/
     .container{
         margin-top: 82px;
@@ -151,7 +151,7 @@
     }
 }   
 
-@media only screen and (min-width: 1025px) and (max-width: 1366px){
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
     /*Main*/
     .container{
         margin-top: 82px;
@@ -290,7 +290,7 @@
     }
 }   
 
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1023px){
     /*Main*/
     .container{
         margin-top: 124px;

@@ -57,6 +57,76 @@
         line-height: 30px;
         color: #000000;
     }
+
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 95%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 25px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
     .account-menu{
         width: 90%;
         max-width: 250px;
@@ -282,7 +352,7 @@
     }
 }   
 
-@media only screen and (min-width: 1025px) and (max-width: 1366px){
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
     /*Main*/
     .container{
         margin-top: 82px;
@@ -321,6 +391,75 @@
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 95%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 25px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
     }
 
     .account-menu{
@@ -544,7 +683,7 @@
     }
 }   
 
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1023px){
     /*Main*/
     .container{
         margin-top: 124px;
@@ -581,6 +720,75 @@
         color: #000000;
     }
     
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 95%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 25px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
     .account-menu{
         width: 90%;
         max-width: 200px;
@@ -841,6 +1049,75 @@
         color: #000000;
     }
     
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 95%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 25px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
     .account-menu{
         width: 90%;
         margin: 0 auto;
@@ -1106,6 +1383,75 @@
         color: #000000;
     }
     
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 90%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 25px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
+    }
+
     .account-menu{
         width: 90%;
         margin: 0 auto;
@@ -1392,6 +1738,75 @@
         font-size: 16px;
         line-height: 30px;
         color: #000000;
+    }
+
+    .pop-up-modal{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .popup-send-feedback{
+        position: absolute;
+        width: 90%;
+        max-width: 420px;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%,-50%);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #C4C4C4;
+    }
+    .popup-send-feedback > img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 15px;
+        animation: scale-up 0.4s 0.5s forwards;
+    }
+    .popup-content{
+        margin: 15px auto 0px auto;
+        width: 95%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        
+    }
+    .close-popup-button{
+        background-color: #DE0000;
+        border-radius: 20px;
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+        margin: 15px auto 15px auto;
+        color: white;
+    }
+    .close-popup-button:hover{
+        cursor: pointer;
+        background-color: red;
     }
 
     .account-menu{

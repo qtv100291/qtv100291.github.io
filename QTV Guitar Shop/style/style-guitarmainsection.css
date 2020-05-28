@@ -29,8 +29,8 @@
         width: 100%;
         background-image: url(../HomePage/bg.svg);
         position: absolute;
-        height: 14px;
-        top: calc(100% - 14px);
+        height: 17px;
+        top: calc(100% - 17px);
         left: 0;
         z-index: 1;
     }
@@ -213,10 +213,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;
@@ -573,8 +573,8 @@
         width: 100%;
         background-image: url(../HomePage/bg.svg);
         position: absolute;
-        height: 14px;
-        top: calc(100% - 14px);
+        height: 17px;
+        top: calc(100% - 17px);
         left: 0;
         z-index: 1;
     }
@@ -755,10 +755,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;
@@ -1122,7 +1122,7 @@
     }
     .navigation{
         width: 90%;
-        margin: 124px auto 20px auto;
+        margin: 124px auto 15px auto;
     }
     .navigation > a{
         text-decoration: none;
@@ -1299,10 +1299,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;
@@ -1655,7 +1655,7 @@
     }
     .navigation{
         width: 90%;
-        margin: 124px auto 20px auto;
+        margin: 124px auto 15px auto;
     }
     .navigation > a{
         text-decoration: none;
@@ -1835,10 +1835,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;
@@ -2187,7 +2187,7 @@
     }
     .navigation{
         width: 90%;
-        margin: 95px auto 20px auto;
+        margin: 95px auto 15px auto;
     }
     .navigation > a{
         text-decoration: none;
@@ -2368,10 +2368,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;
@@ -2726,7 +2726,7 @@
     }
     .navigation{
         width: 95%;
-        margin: 94px auto 20px auto;
+        margin: 94px auto 15px auto;
     }
     .navigation > a{
         text-decoration: none;
@@ -2903,10 +2903,10 @@
     }
 
     .filter-price > ul > li{
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .filter-price > ul > li:nth-child(2){
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .min-price,.max-price{
         height: 40px;

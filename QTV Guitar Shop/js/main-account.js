@@ -168,9 +168,20 @@ function saveInformation(){
     }
     console.log(currentUser,userList);
     saveUserList();
-    window.location.reload();
+    // show pop-up 
+    $('.pop-up-modal').css('display','block');
+    setTimeout(function(){$('.pop-up-modal').css('opacity','1');},100) 
+    $('body').addClass('start');
+    $('body').css('padding-right',`${scrollBarWidth}px`)
 }
 
+$('.close-popup-button').click(closePopup);//Close Pop-up
+function closePopup(){
+    $('.pop-up-modal').css('opacity','0');
+    setTimeout(function(){$('.pop-up-modal').css('display','none');},500); 
+    $('body').removeClass('pop-up');
+    window.location.reload();
+}
 // Part : Function for Changing tab
 
 $('.account-menu-info').on('click',function(){

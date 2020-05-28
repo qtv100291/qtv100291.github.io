@@ -159,7 +159,7 @@
     .banner{
         width: 95%;
         max-width: 1200px;
-        height: 500px;
+        height: 400px;
         margin: 0 auto;
         position: relative;
         z-index: 0;
@@ -751,7 +751,7 @@
     .banner{
         width: 95%;
         max-width: 1200px;
-        height: 500px;
+        height: 400px;
         margin: 0 auto;
         position: relative;
         z-index: 0;
@@ -1343,7 +1343,7 @@
     }
     .banner{
         width: 1000px;
-        height: 450px;
+        height: 333px;
         margin: 0 auto;
             position: relative;
         z-index: 0;

@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1367px){
+@media only screen and (min-width: 1366px){
     /*Header*/
     .menu-bar-item-1{
         border: none;
@@ -588,7 +588,7 @@
 } 
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1366px){
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
     /*Header*/
     .menu-bar-item-1{
         border: none;
@@ -829,7 +829,7 @@
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 50px;
+        font-size: 45px;
         line-height: 30px;
         color: #000000;
     }
@@ -1172,7 +1172,7 @@
     }
 }  
  
-@media only screen and (min-width: 769px) and (max-width: 1024px){
+@media only screen and (min-width: 769px) and (max-width: 1023px){
     /*Header*/
     .menu-bar-item-1{
         border: none;
@@ -1447,6 +1447,7 @@
         width: 100%;
         height: 1px;
         background-color:  #C4C4C4;
+        display: none;
     }
     .show-presentation-photo{
         width: 90%;
@@ -1507,7 +1508,7 @@
         border-radius: 10px;
         padding-bottom: 25px;
     }
-    .title-ticket-part{
+    .title-ticket-part{   
         margin: 15px auto;
         width: 90%;
         height: 60px;
@@ -1521,6 +1522,7 @@
         align-items: center;
         text-align: center;
         color: #000000;
+        display: none;
     }
     .show-information{
         width: 100%; 
@@ -1528,9 +1530,11 @@
         justify-content: space-evenly;
     }
     .show-information-part-1{
+        margin-top: 10px;
         width: 45%;
     }
     .show-information-part-2{
+        margin-top: 10px;
         width: 45%;
     }
     .show-time{
@@ -1971,7 +1975,7 @@
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 35px;
         line-height: 40px;
         color: #000000;
         text-align: center;
@@ -2008,12 +2012,12 @@
     }
     .showpresentation-title{
         width: 90%;
-        height: 90px;
+        height: 70px;
         margin-left: 25px;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 30px;
         display: flex;
         align-items: center;
@@ -2023,10 +2027,11 @@
         width: 100%;
         height: 1px;
         background-color:  #C4C4C4;
+        display: none;
     }
     .show-presentation-photo{
         width: 90%;
-        margin: 25px auto 25px auto;
+        margin: 10px auto 25px auto;
         height: 270px;
         border-radius: 5px;
         overflow: hidden;
@@ -2097,6 +2102,7 @@
         align-items: center;
         text-align: center;
         color: #000000;
+        display: none;
     }
     .show-information{
         width: 100%; 
@@ -2306,7 +2312,6 @@
     }
     .add-to-cart-button{
         width: 90%;
-        max-width: 200px;
         height: 40px;
         margin: 25px auto 0px auto;
         background: #DE0000;
@@ -2490,7 +2495,7 @@
         margin: 0 auto;
     }
     .navigation{
-        width: 95%;
+        width: 90%;
         margin: 20px auto 0px auto;
     }
     .navigation > a{
@@ -2546,19 +2551,19 @@
         height: 100%;
     }
     .show-title{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         margin-top: 10px ;
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 35px;
         color: #000000;
         text-align: center;
     }
     .show-item{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -2577,7 +2582,7 @@
         margin: 0 auto;
     }
     .showpresentation-title{
-        width: 95%;
+        width: 100%;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -2670,10 +2675,10 @@
         width: 100%; 
     }
     .show-information-part-1{
-        margin-left: 10%;
+        margin-left: 0%;
     }
     .show-information-part-2{
-        margin-left: 10%;
+        margin-left: 0%;
     }
     .show-time{
         width: 100%;
@@ -2691,7 +2696,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 32px;
         color: #000000;
     }
@@ -2711,7 +2716,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 32px;
         color: #000000;
     }
@@ -2731,7 +2736,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 32px;
         color: #000000;
     }
@@ -2747,7 +2752,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 25px;
         color: #000000;
     }
@@ -2863,7 +2868,7 @@
         height: 75%;
     }
     .add-to-cart-button{
-        width: 180px;
+        width: 100%;
         height: 40px;
         margin: 25px auto 0px auto;
         background: #DE0000;
@@ -3230,10 +3235,10 @@
         width: 100%; 
     }
     .show-information-part-1{
-        margin-left: 10%;
+        margin-left: 0%;
     }
     .show-information-part-2{
-        margin-left: 10%;
+        margin-left: 0%;
     }
     .show-time{
         width: 100%;
@@ -3251,7 +3256,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 32px;
         color: #000000;
     }
@@ -3271,7 +3276,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 32px;
         color: #000000;
     }
@@ -3291,7 +3296,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 32px;
         color: #000000;
     }
@@ -3307,7 +3312,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 25px;
         color: #000000;
     }
@@ -3423,7 +3428,7 @@
         height: 75%;
     }
     .add-to-cart-button{
-        width: 180px;
+        width: 100%;
         height: 40px;
         margin: 25px auto 0px auto;
         background: #DE0000;

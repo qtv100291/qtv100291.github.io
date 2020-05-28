@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 1367px){
+@media only screen and (min-width: 1366px){
     /*Main*/
     .container{
         width: 100%;
@@ -34,7 +34,7 @@
     background-image: url(../HomePage/bg.svg);
     position: absolute;
     height: 15px;
-    top: calc(100% - 12px);
+    top: calc(100% - 15px);
     left: 0;
     z-index: 1;
     }
@@ -1079,7 +1079,7 @@
     }
 }   
 
-@media only screen and (min-width: 1025px) and (max-width:1366px){
+@media only screen and (min-width: 1024px) and (max-width:1365px){
     /*Main*/
     .container{
         width: 100%;
@@ -1097,6 +1097,7 @@
         max-width: 1000px;
         margin: 0 auto;
     }
+    
     .video-store-container{
         position: relative;
         width: 100%;
@@ -1106,13 +1107,23 @@
         position: relative;
         z-index: 0;
     }
-        .video-store-container::after{
+    .video-store-container::before{
         content: "";
         width: 100%;
-        background-image: url(../HomePage/bg.svg);
+        background-image: url(../HomePage/up.svg);
         position: absolute;
         height: 15px;
-        top: calc(100% - 12px);
+        top: 50%;
+        left: 0;
+        z-index: 1;
+    }
+    .video-store-container::before{
+        content: "";
+        width: 100%;
+        background-image: url(../HomePage/up.svg);
+        position: absolute;
+        height: 15px;
+        top: 50%;
         left: 0;
         z-index: 1;
     }
@@ -2145,7 +2156,7 @@
     }
 }   
 
-@media only screen and (min-width: 769px) and (max-width:1024px){
+@media only screen and (min-width: 769px) and (max-width:1023px){
     /*Main*/
     .container{
         width: 100%;
