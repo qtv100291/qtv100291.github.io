@@ -96,6 +96,7 @@ window.onscroll = function(){
     guitarShowAnimation();
 }
 function subBannerMove(){
+    if (window.innerWidth < 1023) return
     let windowHeight = window.innerHeight;
     let subBannerHeight = document.querySelector('.sub-banner').offsetHeight;
     if (document.querySelector('.sub-banner').getBoundingClientRect().bottom < windowHeight
@@ -106,7 +107,7 @@ function subBannerMove(){
     if (document.body.innerWidth > 1366){
             document.querySelector('.sub-banner').style.backgroundPosition = `50% ${100-y}%`;
         }
-    else document.querySelector('.sub-banner').style.backgroundPosition = `80% ${100-y}%`;
+    else document.querySelector('.sub-banner').style.backgroundPosition = `50% ${100-y}%`;
     
     
 }

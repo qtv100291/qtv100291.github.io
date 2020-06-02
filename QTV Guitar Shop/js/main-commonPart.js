@@ -159,8 +159,8 @@ function displayCartSub(){ //Display Sub Shopping Cart
     document.querySelector('.sub-shopping-cart-total').innerHTML = outputTotalMoney;
 }
 
-function separator1000(num){ // 1000 separator 
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+function separator1000(num){// 1000 separator 
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 }
 
 // Part 5: Function for Search Bar
@@ -182,7 +182,6 @@ document.querySelector('.input-search-bar').addEventListener('keyup',(function(e
         }, 30); 
         // reloadPage();
     }
-    
 }))
 document.querySelector('.search-bar > img').addEventListener('click',function(){
     if (document.querySelector('.input-search-bar').value !==""){

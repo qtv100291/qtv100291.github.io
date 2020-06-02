@@ -23,6 +23,7 @@ let itemData = {
     group: "",
     id: ""
 };
+let objectProductItem;
 itemData.id = window.location.href.split("#")[1].split("+")[0];
 itemData.group = window.location.href.split("#")[1].split("+")[1];
 renderProductItem(itemData);
@@ -57,7 +58,6 @@ function renderProductItem(objectData){
             bannerAddress = `Product/Ukulele/banner - 2.jpg`
             break;
     }
-    let objectProductItem;
     for (let i = 0; i < arrayExecuted.length; i++){
         if (arrayExecuted[i].id === itemData.id){
             objectProductItem = Object.assign({},arrayExecuted[i]);
@@ -67,6 +67,7 @@ function renderProductItem(objectData){
     $('.product-item-name').text(objectProductItem.name);
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}`).attr('src',`${objectProductItem.photo}/${i} - slide.jpg`)
+        // $(`.item-photo-popup-${i}`).attr('src',`${objectProductItem.photo}/${i}.jpg`)
     }
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}-indicator`).attr('src',`${objectProductItem.photo}/${i} - Indicator.jpg`)
@@ -230,6 +231,89 @@ function changeTab(){
         player.pauseVideo();
     }
 }
+//Part 8: Function for Displaying Modal in mobile and tabllet version
+
+if ($(window).innerWidth() < 1024){
+    $('.photo-display-popup').on('load',loadImage)
+    function loadImage(){
+        $('.onload-icon').css('display','none');
+    }
+
+    $('.item-picture').on('click',displayModalImage);
+    // function displayModalImage(){
+        
+    //     $('.pop-up-photo-container').css('display','block')
+    //     setTimeout(function(){
+    //         $('.pop-up-photo-container').css('opacity','1')
+    //     },50)
+    //     let imageNumber = $('.active-photo').data('imageNumber');
+    //     $(`.item-photo-popup-${imageNumber}`).addClass('active-photo-popup');
+    //     $(`.item-photo-popup-${imageNumber}`).css('opacity','1')
+    //     if ($(window).innerHeight() > $(window).innerWidth()) {
+    //         $('.pop-up-photo').css('height','85%');
+    //         $('.pop-up-photo > img').css('height','100%');
+    //     }
+    //     else {
+    //         $('.pop-up-photo').css('height','85%');
+    //         $('.pop-up-photo > img').css('height','100%');
+    //     }
+    //     $('body').addClass('start');
+    //     $('body').css('padding-right', `${scrollBarWidth}px`);
+    // }
+    function displayModalImage(){
+        $('.pop-up-photo-container').css('display','block')
+        setTimeout(function(){
+            $('.pop-up-photo-container').css('opacity','1')
+        },50)
+        let imageNumber = $('.active-photo').data('imageNumber');
+        $('.photo-display-popup').attr('src',`${objectProductItem.photo}/${imageNumber}.jpg`)
+        $('.photo-display-popup').attr('data-image-number',`${imageNumber}`)
+        $('.pop-up-photo').css('height','85%');
+        $('.pop-up-photo > img').css('height','100%');
+    }
+
+
+    $('.close-icon-popup').on('click',closeModalImage)
+    function closeModalImage(){
+        $('.pop-up-photo-container').css('display','none')
+        setTimeout(function(){
+            $('.pop-up-photo-container').css('opacity','0')
+        },50)
+        $('body').removeClass('start');
+        $('body').css('paddingRight','0px');
+        $('.onload-icon').css('display','none');
+    }
+
+    $('.arrow-right-popup').on('click',nextModalImage)
+    function nextModalImage(){
+        $('.onload-icon').css('display','block');
+        let imageNumber = $('.photo-display-popup').attr('data-image-number');
+        if (imageNumber == "5"){
+            $('.photo-display-popup').attr('src',`${objectProductItem.photo}/${1}.jpg`);
+            $('.photo-display-popup').attr('data-image-number',`${1}`);
+        }
+        else {
+            $('.photo-display-popup').attr('src',`${objectProductItem.photo}/${parseInt(imageNumber) + 1}.jpg`);
+            $('.photo-display-popup').attr('data-image-number',`${parseInt(imageNumber) + 1}`);
+        }
+    }
+
+    $('.arrow-left-popup').on('click',prevModalImage)
+    function prevModalImage(){
+        $('.onload-icon').css('display','block');
+        let imageNumber = $('.photo-display-popup').attr('data-image-number');
+        if (imageNumber == "1"){
+            $('.photo-display-popup').attr('src',`${objectProductItem.photo}/${5}.jpg`);
+            $('.photo-display-popup').attr('data-image-number',`${5}`);
+        }
+        else {
+            $('.photo-display-popup').attr('src',`${objectProductItem.photo}/${parseInt(imageNumber) - 1}.jpg`);
+            $('.photo-display-popup').attr('data-image-number',`${parseInt(imageNumber) - 1}`);
+        }
+    }
+}
+
+
 
 //Part 8: Function for Shopping Cart
 function Item(group, id, name, price, count, image){ //Item Constructor
