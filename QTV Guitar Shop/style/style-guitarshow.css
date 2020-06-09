@@ -57,6 +57,9 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
     .guitar-show-item{
         width: 100%;
         max-width: 1200px;
@@ -308,6 +311,9 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
     .guitar-show-item{
         width: 1000px;
         margin: 0 auto;
@@ -510,6 +516,10 @@
     .menu-bar-item-4{
         border-bottom: 2px solid black;
     }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
+    }
     /*Main*/
     .container{
         width: 100%;
@@ -544,6 +554,9 @@
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > a:nth-child(1):hover{
+        color: red;
     }
     .guitar-show-item{
         width: 95%;
@@ -744,6 +757,10 @@
     }
     .menu-bar-item-4{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .container{
@@ -987,6 +1004,10 @@
     }
     .menu-bar-item-4{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .container{
@@ -1233,6 +1254,10 @@
     }
     .menu-bar-item-4{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .container{

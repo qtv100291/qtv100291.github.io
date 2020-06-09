@@ -1,0 +1,1 @@
+This directory contains exercises and projects that I have made in Front-end coding bootcamp at TechMaster ( Hanoi, Vietnam )

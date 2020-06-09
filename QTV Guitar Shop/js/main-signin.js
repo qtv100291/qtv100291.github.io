@@ -4,12 +4,19 @@
 
 
 // Part 1 : Changing tab
+
+$('.form-table-sign-in').css({'display':'block','opacity':'1'})
+
 $('.form-table-sign-in-button-sign-up, .form-table-sign-up-button-sign-in').on('click',changingTab);
 function changingTab(){
     $('.form-active > label > input').val('');
-    $('.form-table-notification').css('display','none');
-    $('.form-table-content-main').children(':not(.form-active)').addClass('form-active');
-    $(this).parent().removeClass('form-active');
+    $(this).parent().css({'opacity':'0','display':'none'});
+    $('.form-table-content-main').children(':not(.form-active)').css('display','block');
+    setTimeout(() =>{
+        $('.form-table-content-main').children(':not(.form-active)').css('opacity','1');
+        $('.form-table-content-main').children(':not(.form-active)').addClass('form-active');
+        $(this).parent().removeClass('form-active');
+    },50)
 }
 
 // Part 2 :
@@ -140,15 +147,15 @@ function checkAccountInfo(){
 function checkEmpty(id){ // check whether a input field is empty
     let inputCheck = $(`#${id}`).val();
     if (inputCheck.length == 0){
-        $(`#${id}`).next().css('z-index','3');
+        $(`#${id}`).next().next().css('z-index','3');
         setTimeout(function(){
-            $(`#${id}`).next().css('opacity','1');
+            $(`#${id}`).next().next().css('opacity','1');
         },100)
         setTimeout(function(){
-            $(`#${id}`).next().css('opacity','0');
+            $(`#${id}`).next().next().css('opacity','0');
         },2500)
         setTimeout(function(){
-            $(`#${id}`).next().css('z-index','-1');
+            $(`#${id}`).next().next().css('z-index','-1');
         },2600)
         return false
     }
@@ -158,15 +165,15 @@ function checkEmpty(id){ // check whether a input field is empty
 function checkLimitedNumber(id,number){ // check number of digits 
     let inputCheck = $(`#${id}`).val();
     if (inputCheck.length !== number){
-        $(`#${id}`).next().next().css('z-index','3');
+        $(`#${id}`).next().next().next().css('z-index','3');
         setTimeout(function(){
-            $(`#${id}`).next().next().css('opacity','1');
+            $(`#${id}`).next().next().next().css('opacity','1');
         },100)
         setTimeout(function(){
-            $(`#${id}`).next().next().css('opacity','0');
+            $(`#${id}`).next().next().next().css('opacity','0');
         },2500)
         setTimeout(function(){
-            $(`#${id}`).next().next().css('z-index','-1');
+            $(`#${id}`).next().next().next().css('z-index','-1');
         },2600)    
         return false;
     }
@@ -176,15 +183,15 @@ function checkLimitedNumber(id,number){ // check number of digits
 function checkEmailName(id){ // check email name form
     let inputCheck = $(`#${id}`).val();
     if (!inputCheck.includes('@') || !inputCheck.includes('.')){
-        $(`#${id}`).next().next().css('z-index','3');
+        $(`#${id}`).next().next().next().css('z-index','3');
         setTimeout(function(){
-            $(`#${id}`).next().next().css('opacity','1');
+            $(`#${id}`).next().next().next().css('opacity','1');
         },100)
         setTimeout(function(){
-            $(`#${id}`).next().next().css('opacity','0');
+            $(`#${id}`).next().next().next().css('opacity','0');
         },2500)
         setTimeout(function(){
-            $(`#${id}`).next().next().css('z-index','-1');
+            $(`#${id}`).next().next().next().css('z-index','-1');
         },2600)   
         return false
     }
@@ -211,15 +218,15 @@ function checkRePassword(){
     let inputPassword_1 = $('#password-sign-up').val();
     let inputPassword_2 = $('#password-sign-up-2').val();
     if (inputPassword_1 !== inputPassword_2 && inputPassword_1.length != 0 && inputPassword_2.length != 0){
-        $('#password-sign-up-2').next().next().css('z-index','3');
+        $('#password-sign-up-2').next().next().next().css('z-index','3');
         setTimeout(function(){
-            $('#password-sign-up-2').next().next().css('opacity','1');
+            $('#password-sign-up-2').next().next().next().css('opacity','1');
         },100)
         setTimeout(function(){
-            $('#password-sign-up-2').next().next().css('opacity','0');
+            $('#password-sign-up-2').next().next().next().css('opacity','0');
         },2500)
         setTimeout(function(){
-            $('#password-sign-up-2').next().next().css('z-index','-1');
+            $('#password-sign-up-2').next().next().next().css('z-index','-1');
         },2600)   
         return false
     }

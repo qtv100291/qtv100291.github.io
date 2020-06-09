@@ -261,7 +261,7 @@ function closeFilterMobileButton(){
 // Part 3 : Function for Filtering Item
 let filterBrand = document.querySelectorAll('.filter-brand > ul > li > label > input');
 let filterProductCategory = document.querySelectorAll('.filter-product-category > ul > li > label > input');
-document.querySelector('.filter-button').addEventListener('click',filterButton)
+
 function filterButton(){
     arrayExecuted = arrayInitial.slice(0);
     //Filter for Product Category
@@ -290,13 +290,18 @@ function filterButton(){
     closeFilterMobileButton()
 }
 
-document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
 function removeFilter(){//remove filter condition 
     arrayExecuted = arrayInitial.slice(0);
     renderItem(arrayExecuted);
     let uncheckItems = document.querySelectorAll('input:checked')
     uncheckItems.forEach(x => x.checked = false)
-    closeFilterMobileButton()
+    document.querySelector('.filter-button').classList.add('filter-not-allowed');
+    document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
+    document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
+    if (window.innerWidth < 1023){
+        closeFilterMobileButton();
+    }
 }
 
 
@@ -501,5 +506,27 @@ function changePagination(numberPage){
     }
 }
 
+// Part : Function for Checking filter
+document.querySelectorAll('input[type=checkbox]').forEach(input => input.addEventListener('change',checkFilterButton))
+function checkFilterButton(){
+    let inputCheck = 0;
+    let inputGroup = document.querySelectorAll('input[type=checkbox]');
+    for (let i = 0; i < inputGroup.length; i++){
+        if ( inputGroup[i].checked === true ){
+            inputCheck = 1;
+            document.querySelector('.filter-button').classList.remove('filter-not-allowed');
+            document.querySelector('.filter-button').addEventListener('click',filterButton);
+            document.querySelector('.remove-item-button').classList.remove('filter-not-allowed');
+            document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
+            break
+        }
+    }
+    if (inputCheck === 0) {
+        document.querySelector('.filter-button').classList.add('filter-not-allowed');
+        document.querySelector('.filter-button').removeEventListener('click',filterButton);
+        document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
+        document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
+    }
+}
 
 

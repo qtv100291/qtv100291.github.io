@@ -186,6 +186,12 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
+    .navigation > a:nth-child(2):hover{
+        color: red;
+    }
     .navigation > div{
         display: inline;
         color: black;
@@ -772,6 +778,12 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
+    .navigation > a:nth-child(2):hover{
+        color: red;
+    }
     .navigation > div{
         display: inline;
         color: black;
@@ -1180,6 +1192,10 @@
     .menu-bar-item-4{
         border-bottom: 2px solid black;
     }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
+    }
     /*Main*/
     .popup-container{
         width: 100vw;
@@ -1341,6 +1357,12 @@
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
+    .navigation > a:nth-child(3):hover{
+        color: red;
     }
     .navigation > div{
         display: inline;
@@ -1762,6 +1784,10 @@
     }
     .menu-bar-item-4{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .popup-container{
@@ -2347,6 +2373,10 @@
     .menu-bar-item-4{
         border-bottom: 2px solid black;
     }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
+    }
     /*Main*/
     .popup-container{
         width: 100vw;
@@ -2903,6 +2933,10 @@
     }
     .menu-bar-item-4{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(5){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .popup-container{

@@ -146,6 +146,13 @@ body.start{
         width: 100%;
         height: 100%;
     }
+    .avatar > a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
     .menu-bar{
         width: 100%;
         background-color: white;
@@ -185,6 +192,13 @@ body.start{
         width: 100%;
         height: 100%;
     }
+    .avatar-sub > a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
     .avatar-sub.scroll{
         top: 0%;
     }
@@ -222,7 +236,6 @@ body.start{
     .menu-bar-item-2{
         left: 264px;
         width: 70px;
-        
     }
     .menu-bar-item-2:hover{
         cursor: pointer;
@@ -754,6 +767,10 @@ body.start{
         font-weight: 300;
         font-size: 14px;
         line-height: 18px;
+        color: white;
+    }
+    .address-top-navbar > p > a{
+        text-decoration: none;
         color: white;
     }
     .phone-number-top-navbar{
@@ -1331,6 +1348,14 @@ body.start{
         width: 100%;
         height: 100%;
     }
+    .avatar > a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
     .menu-bar{
         width: 100%;
         background-color: white;
@@ -1369,6 +1394,13 @@ body.start{
     .avatar-sub > img{
         width: 100%;
         height: 100%;
+    }
+    .avatar-sub > a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
     .avatar-sub.scroll{
         top: 0%;
@@ -2762,7 +2794,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1.jpg);
+        background-image: url(../HomePage/bg1\ -\ tablette.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -3558,7 +3590,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1.jpg);
+        background-image: url(../HomePage/bg1\ -\ tablette.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -4375,7 +4407,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1.jpg);
+        background-image: url(../HomePage/bg1\ -\ mobile.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -5202,7 +5234,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1.jpg);
+        background-image: url(../HomePage/bg1\ -\ mobile.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;

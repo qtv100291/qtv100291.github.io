@@ -47,6 +47,9 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
     .navigation > div{
         display: inline;
         color: black;
@@ -311,7 +314,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        border-top: 1px solid black;
+        border-top: 1px solid rgb(177, 177, 177);
         display:table;
         border-collapse:collapse;
     }
@@ -381,6 +384,9 @@
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > a:nth-child(1):hover{
+        color: red;
     }
     .navigation > div{
         display: inline;
@@ -642,7 +648,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        border-top: 1px solid black;
+        border-top: 1px solid rgb(177, 177, 177);
         display:table;
         border-collapse:collapse;
     }
@@ -708,6 +714,9 @@
         font-size: 16px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > a:nth-child(1):hover{
+        color: red;
     }
     .navigation > div{
         display: inline;
@@ -971,7 +980,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        border-top: 1px solid black;
+        border-top: 1px solid rgb(177, 177, 177);
         display:table;
         border-collapse:collapse;
     }
@@ -1299,7 +1308,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
-        border-top: 1px solid black;
+        border-top: 1px solid rgb(177, 177, 177);
         display:table;
         border-collapse:collapse;
     }

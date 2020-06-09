@@ -259,7 +259,14 @@ function sendOrder(){
         if (!checkEmpty('card-password')) return;
         if (!checkLimitedNumber('card-password',3)) return;
     }
-    let dateSave = new Date().getDate();
+    let dateSave = function(){
+        let date = new Date().getDate().toString();
+        if (date < 10){
+            date = `0${date}`
+        }
+        return date;
+    }(); 
+        
     let monthSave = function(){
         let month = (new Date().getMonth() + 1).toString();
         if (month < 10){

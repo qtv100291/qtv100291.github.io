@@ -13,7 +13,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
-function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady(){
   player = new YT.Player('video-review', {
   });
 }
@@ -37,25 +37,29 @@ function renderProductItem(objectData){
             $('.main-section-name').text('Guitar Cổ Điển');
             $('.main-section-name').attr('href','classicalguitar.html');
             arrayExecuted = guitarClassicalData;
-            bannerAddress = `Product/Classical Guitar/banner - 2.jpg`
+            bannerAddress = `Product/Classical Guitar/banner - 2.jpg`;
+            $('.menu-mobile-container > ul > li:nth-child(1) > a').css({'font-weight':'500','color':'red'})
             break;
         case "acoustic":
             $('.main-section-name').text('Guitar Acoustic');
             $('.main-section-name').attr('href','acousticguitar.html');
             arrayExecuted = guitarAcousticData;
-            bannerAddress = `Product/Acoustic Guitar/banner - 2.jpg`
+            bannerAddress = `Product/Acoustic Guitar/banner - 2.jpg`;
+            $('.menu-mobile-container > ul > li:nth-child(2) > a').css({'font-weight':'500','color':'red'})
             break;
         case "electrical":
             $('.main-section-name').text('Guitar Điện');
             $('.main-section-name').attr('href','electricguitar.html');
             arrayExecuted = guitarElectricalData;
-            bannerAddress = `Product/Electrical Guitar/banner - 2.jpg`
+            bannerAddress = `Product/Electrical Guitar/banner - 2.jpg`;
+            $('.menu-mobile-container > ul > li:nth-child(3) > a').css({'font-weight':'500','color':'red'})
             break;
         case "ukulele":
             $('.main-section-name').text('Ukulele');
             $('.main-section-name').attr('href','ukulele.html');
             arrayExecuted = guitarUkuleleData;
-            bannerAddress = `Product/Ukulele/banner - 2.jpg`
+            bannerAddress = `Product/Ukulele/banner - 2.jpg`;
+            $('.menu-mobile-container > ul > li:nth-child(4) > a').css({'font-weight':'500','color':'red'})
             break;
     }
     for (let i = 0; i < arrayExecuted.length; i++){
@@ -67,7 +71,6 @@ function renderProductItem(objectData){
     $('.product-item-name').text(objectProductItem.name);
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}`).attr('src',`${objectProductItem.photo}/${i} - slide.jpg`)
-        // $(`.item-photo-popup-${i}`).attr('src',`${objectProductItem.photo}/${i}.jpg`)
     }
     for (let i = 1; i < 6 ; i++){
         $(`.item-photo-${i}-indicator`).attr('src',`${objectProductItem.photo}/${i} - Indicator.jpg`)
@@ -231,7 +234,7 @@ function changeTab(){
         player.pauseVideo();
     }
 }
-//Part 8: Function for Displaying Modal in mobile and tabllet version
+//Part 7: Function for Displaying Modal in mobile and tabllet version
 
 if ($(window).innerWidth() < 1024){
     $('.photo-display-popup').on('load',loadImage)
@@ -240,26 +243,6 @@ if ($(window).innerWidth() < 1024){
     }
 
     $('.item-picture').on('click',displayModalImage);
-    // function displayModalImage(){
-        
-    //     $('.pop-up-photo-container').css('display','block')
-    //     setTimeout(function(){
-    //         $('.pop-up-photo-container').css('opacity','1')
-    //     },50)
-    //     let imageNumber = $('.active-photo').data('imageNumber');
-    //     $(`.item-photo-popup-${imageNumber}`).addClass('active-photo-popup');
-    //     $(`.item-photo-popup-${imageNumber}`).css('opacity','1')
-    //     if ($(window).innerHeight() > $(window).innerWidth()) {
-    //         $('.pop-up-photo').css('height','85%');
-    //         $('.pop-up-photo > img').css('height','100%');
-    //     }
-    //     else {
-    //         $('.pop-up-photo').css('height','85%');
-    //         $('.pop-up-photo > img').css('height','100%');
-    //     }
-    //     $('body').addClass('start');
-    //     $('body').css('padding-right', `${scrollBarWidth}px`);
-    // }
     function displayModalImage(){
         $('.pop-up-photo-container').css('display','block')
         setTimeout(function(){
@@ -271,7 +254,6 @@ if ($(window).innerWidth() < 1024){
         $('.pop-up-photo').css('height','85%');
         $('.pop-up-photo > img').css('height','100%');
     }
-
 
     $('.close-icon-popup').on('click',closeModalImage)
     function closeModalImage(){

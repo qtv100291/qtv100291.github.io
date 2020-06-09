@@ -47,6 +47,9 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
     .navigation > div{
         display: inline;
         color: black;
@@ -346,6 +349,9 @@
         line-height: 30px;
         color: #000000;
     }
+    .navigation > a:nth-child(1):hover{
+        color: red;
+    }
     .navigation > div{
         display: inline;
         color: black;
@@ -618,6 +624,10 @@
     .menu-bar-item-6{
         border-bottom: 2px solid black;
     }
+    .menu-mobile-container > a:nth-child(7){
+        font-weight: 500;
+        color: red;
+    }
     /*Main*/
     .input-search-bar{
         width: calc(90% - 33px);
@@ -643,6 +653,9 @@
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > a:nth-child(1):hover{
+        color: red;
     }
     .navigation > div{
         display: inline;
@@ -914,6 +927,10 @@
     }
     .menu-bar-item-6{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(7){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .input-search-bar{
@@ -1220,6 +1237,10 @@
     }
     .menu-bar-item-6{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(7){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .input-search-bar{
@@ -1527,6 +1548,10 @@
     .menu-bar-item-6{
         border-bottom: 2px solid black;
     }
+    .menu-mobile-container > a:nth-child(7){
+        font-weight: 500;
+        color: red;
+    }
     /*Main*/
     .input-search-bar{
         width: calc(90% - 33px);
@@ -1832,6 +1857,10 @@
     }
     .menu-bar-item-6{
         border-bottom: 2px solid black;
+    }
+    .menu-mobile-container > a:nth-child(7){
+        font-weight: 500;
+        color: red;
     }
     /*Main*/
     .input-search-bar{
