@@ -386,7 +386,6 @@ function closeAboutWebsite(){
         document.querySelector('.about-website-container').style.display = "none";
         document.body.classList.remove('start');
         document.body.style.paddingRight = `0px`;
-        document.querySelector('.about-website-container').style.visibility = "hidden";
     },600)
 }
 

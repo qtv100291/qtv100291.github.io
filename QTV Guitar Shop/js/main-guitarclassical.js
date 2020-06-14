@@ -130,7 +130,6 @@ function filterButton(){
     }
 }
 
-
 function removeFilter(){//remove filter condition 
     arrayExecuted = guitarClassicalData.slice(0);
     renderItem(arrayExecuted);
@@ -381,6 +380,8 @@ function checkFilterButton(){
     if (inputCheck === 0) {
         document.querySelector('.filter-button').classList.add('filter-not-allowed');
         document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    }
+    if (inputCheck === 0 && arrayExecuted.length === guitarClassicalData.length){
         document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
         document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
     }

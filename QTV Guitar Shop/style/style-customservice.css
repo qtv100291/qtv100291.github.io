@@ -1,5 +1,8 @@
 
 @media only screen and (min-width: 1366px){
+    .menu-bar-item-1{
+        border: none;
+    }
     /*Main*/
     .container{
         margin-top: 82px;
@@ -155,6 +158,9 @@
 }   
 
 @media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .menu-bar-item-1{
+        border: none;
+    }
     /*Main*/
     .container{
         margin-top: 82px;

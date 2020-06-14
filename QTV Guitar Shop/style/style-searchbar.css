@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1366px){
     /*Header*/
     .menu-bar-item-1{
-        border-bottom: 2px solid black;
+        border-bottom: none;
     }
     .menu-bar-item-2{
         border-bottom: none;
@@ -50,7 +50,7 @@
 }
 @media only screen and (min-width: 1024px) and (max-width: 1365px){
     .menu-bar-item-1{
-        border-bottom: 2px solid black;
+        border-bottom: none;
     }
     .menu-bar-item-2{
         border-bottom: none;

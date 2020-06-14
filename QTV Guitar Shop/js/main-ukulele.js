@@ -110,7 +110,6 @@ function filterButton(){
             );
         }
     }
-    console.log(priceCondtion)
     if (priceCondtion.length != 0){
         arrayExecuted = arrayExecuted.filter(function (x) {
             let priceItem = parseInt(x.price.replace(/\D/g,''))
@@ -235,6 +234,10 @@ function removeFilter(){//remove filter condition
     renderItem(arrayExecuted);
     let uncheckItems = document.querySelectorAll('input:checked')
     uncheckItems.forEach(x => x.checked = false)
+    document.querySelector('.filter-button').classList.add('filter-not-allowed');
+    document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
+    document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
     closeFilterMobileButton();
 }
 
@@ -370,6 +373,8 @@ function checkFilterButton(){
     if (inputCheck === 0) {
         document.querySelector('.filter-button').classList.add('filter-not-allowed');
         document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    }
+    if (inputCheck === 0 && arrayExecuted.length === guitarUkuleleData.length){
         document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
         document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
     }

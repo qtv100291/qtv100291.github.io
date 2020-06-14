@@ -2,7 +2,6 @@
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
-
 window.onhashchange = function(){
         window.location.reload();
 };
@@ -271,7 +270,6 @@ function filterButton(){
             productCategoryCondtion.push(filterProductCategory[i].dataset.productCategory);
         }
     }
-    console.log()
     if (productCategoryCondtion.length != 0){
         arrayExecuted = arrayExecuted.filter(x => productCategoryCondtion.includes(x.group));
     }
@@ -524,6 +522,8 @@ function checkFilterButton(){
     if (inputCheck === 0) {
         document.querySelector('.filter-button').classList.add('filter-not-allowed');
         document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    }
+    if (inputCheck === 0 && arrayExecuted.length === arrayInitial.length){
         document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
         document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
     }

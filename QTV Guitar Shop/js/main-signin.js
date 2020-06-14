@@ -9,7 +9,8 @@ $('.form-table-sign-in').css({'display':'block','opacity':'1'})
 
 $('.form-table-sign-in-button-sign-up, .form-table-sign-up-button-sign-in').on('click',changingTab);
 function changingTab(){
-    $('.form-active > label > input').val('');
+    $('.form-active > .form-part > input').val('');
+    $('.form-active > .form-table-notification').text('');
     $(this).parent().css({'opacity':'0','display':'none'});
     $('.form-table-content-main').children(':not(.form-active)').css('display','block');
     setTimeout(() =>{
@@ -100,26 +101,24 @@ function checkAndCreateAccount(){
     let password = $('#password-sign-up').val();
     let name = $('#name-sign-up').val();
     let phoneNumber = $('#phone-sign-up').val();
-    console
     for (let i = 0; i < userList.length; i++){
         if (email == userList[i].email){
-            $('.sign-up-notification').css('display','block');
             $('.sign-up-notification').text('Email này đã được sử dụng');
             return ;
         }
     }
     $('.sign-up-notification').text(''); 
-    $('.sign-up-notification').css('display','none');
     let user = new CreateAccount(id, email, password, name, phoneNumber);
-    console.log(user);
     userList.push(user);
     saveUserList();
-    $('#email-sign-up').val('');
-    $('#password-sign-up').val('');
-    $('#name-sign-up').val('');
-    $('#password-sign-up-2').val(''); 
+    $('#email-sign-up, #password-sign-up, #name-sign-up, #phone-sign-up, #password-sign-up-2').val('');
     $('.form-table-sign-in').addClass('form-active');
     $('.form-table-sign-up').removeClass('form-active');
+    $('.form-table-sign-up').css({'opacity':'0','display':'none'});
+    $('.form-table-sign-in').css('display','block')
+    setTimeout(() =>{
+        $('.form-table-sign-in').css('opacity','1')
+    },50)
 } 
 
 function checkAccountInfo(){
@@ -140,7 +139,6 @@ function checkAccountInfo(){
             return;
         }
     }
-    $('.sign-in-notification').css('display','block');
     $('.sign-in-notification').text('Thông tin đăng nhập sai');
 }
 

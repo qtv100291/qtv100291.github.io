@@ -1077,7 +1077,7 @@ body.start{
         color: white;
     }
     .service-content > a:hover{
-        color: orangered;
+        text-decoration: underline;
     }
     /*Column 3 Footer*/
     .store-info-part{
@@ -1142,8 +1142,11 @@ body.start{
         color: white;
         padding: 10px 0px;
     }
+    .about{
+        padding: 3px 15px;
+        border-right: 2px solid white;
+    }
     .about-website-button{
-        padding: 7px 12px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -1153,15 +1156,24 @@ body.start{
         line-height: 20px;
         border-radius: 999px;
         margin-left: 15px;
-        border: 1px solid white;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.25s;
+        position: relative;
+    }
+    .about-website-button > i {
+        position: absolute;
+        left: 128px;
+        transition: 0.25s;
     }
     .about-website-button:hover{
         cursor: pointer;
-        background-color: white;
-        color: orangered;
+        text-decoration: underline;
+    }
+    .about-website-button:hover > i {
+        left: 133px;
+        
     }
     .about-website-container{
         position: fixed;
@@ -1955,11 +1967,11 @@ body.start{
         color: white;
     }
     .address-top-navbar{
-        display: block;
+        display: none;
     }
     
     .phone-number-top-navbar{
-        display: block;
+        display: none;
     }
     /*footer*/
     .scrolling-button{
@@ -2237,7 +2249,7 @@ body.start{
         color: white;
     }
     .service-content > a:hover{
-        color: orangered;
+        text-decoration: underline;
     }
     /*Column 3 Footer*/
     .store-info-part{
@@ -2302,8 +2314,11 @@ body.start{
         color: white;
         padding: 10px 0px;
     }
+    .about{
+        padding: 3px 15px;
+        border-right: 2px solid white;
+    }
     .about-website-button{
-        padding: 7px 12px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -2313,15 +2328,23 @@ body.start{
         line-height: 20px;
         border-radius: 999px;
         margin-left: 15px;
-        border: 1px solid white;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        transition: 0.25s;
+    }
+    .about-website-button > i {
+        position: absolute;
+        left: 128px;
+        transition: 0.25s;
     }
     .about-website-button:hover{
         cursor: pointer;
-        background-color: white;
-        color: orangered;
+        text-decoration: underline;
+    }
+    .about-website-button:hover > i {
+        left: 133px;
     }
     .about-website-container{
         position: fixed;
@@ -2794,7 +2817,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1\ -\ tablette.jpg);
+        background-image: url(../HomePage/bg1-tablette.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -3051,9 +3074,6 @@ body.start{
         line-height: 30px;
         color: white;
     }
-    .service-content > a:hover{
-        color: orangered;
-    }
     /*Column 3 Footer*/
     .store-info-part{
         width: 50%;
@@ -3120,8 +3140,11 @@ body.start{
         color: white;
         padding: 10px 0px;
     }
+    .about{
+        padding: 3px 15px;
+        border-right: 2px solid white;
+    }
     .about-website-button{
-        padding: 7px 12px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -3131,15 +3154,15 @@ body.start{
         line-height: 20px;
         border-radius: 999px;
         margin-left: 15px;
-        border: 1px solid white;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
-    .about-website-button:hover{
-        cursor: pointer;
-        background-color: white;
-        color: orangered;
+    .about-website-button > i {
+        position: absolute;
+        left: 128px;
+        transition: 0.25s;
     }
     .about-website-container{
         position: fixed;
@@ -3590,7 +3613,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1\ -\ tablette.jpg);
+        background-image: url(../HomePage/bg1-tablette.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -3852,9 +3875,6 @@ body.start{
         line-height: 30px;
         color: white;
     }
-    .service-content > a:hover{
-        color: orangered;
-    }
     /*Column 3 Footer*/
     .store-info-part{
         width: 70%;
@@ -3931,8 +3951,11 @@ body.start{
         color: white;
         padding: 10px 0px;
     }
+    .about{
+        padding: 3px 15px;
+        border-right: 2px solid white;
+    }
     .about-website-button{
-        padding: 5px 10px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -3942,15 +3965,15 @@ body.start{
         line-height: 20px;
         border-radius: 999px;
         margin-left: 15px;
-        border: 1px solid white;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
-    .about-website-button:hover{
-        cursor: pointer;
-        background-color: white;
-        color: orangered;
+    .about-website-button > i {
+        position: absolute;
+        left: 128px;
+        transition: 0.25s;
     }
     .about-website-container{
         position: fixed;
@@ -4407,7 +4430,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1\ -\ mobile.jpg);
+        background-image: url(../HomePage/bg1-mobile.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -4674,9 +4697,6 @@ body.start{
         line-height: 30px;
         color: white;
     }
-    .service-content > a:hover{
-        color: orangered;
-    }
     /*Column 3 Footer*/
     .store-info-part{
         width: 95%;
@@ -4756,8 +4776,11 @@ body.start{
         color: white;
         padding: 10px 0px;
     }
+    .about{
+        padding: 3px 10px;
+        border-right: 2px solid white;
+    }
     .about-website-button{
-        padding: 5px 10px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -4766,16 +4789,17 @@ body.start{
         font-size: 14px;
         line-height: 20px;
         border-radius: 999px;
-        margin-left: 15px;
-        border: 1px solid white;
+        padding-left: 10px;
+        margin-right: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
-    .about-website-button:hover{
-        cursor: pointer;
-        background-color: white;
-        color: orangered;
+    .about-website-button > i {
+        position: absolute;
+        left: 135px;
+        transition: 0.25s;
     }
     .about-website-container{
         position: fixed;
@@ -5234,7 +5258,7 @@ body.start{
         cursor: pointer;
     }
     footer{
-        background-image: url(../HomePage/bg1\ -\ mobile.jpg);
+        background-image: url(../HomePage/bg1-mobile.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -5501,9 +5525,6 @@ body.start{
         line-height: 30px;
         color: white;
     }
-    .service-content > a:hover{
-        color: orangered;
-    }
     /*Column 3 Footer*/
     .store-info-part{
         width: 95%;
@@ -5582,10 +5603,13 @@ body.start{
         font-size: 13px;
         line-height: 25px;
         color: white;
-        padding: 5px 0px;
+        padding: 10px 0px;
+    }
+    .about{
+        padding: 3px 10px;
+        border-right: 2px solid white;
     }
     .about-website-button{
-        padding: 5px 10px;
         background-color: transparent;
         color: white;
         font-family: Roboto;
@@ -5595,15 +5619,15 @@ body.start{
         line-height: 20px;
         border-radius: 999px;
         margin: 0px 10px;
-        border: 1px solid white;
+        margin-right: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
-    .about-website-button:hover{
-        cursor: pointer;
-        background-color: white;
-        color: orangered;
+    .about-website-button > i {
+        position: absolute;
+        left: 110px;
     }
     .about-website-container{
         position: fixed;
