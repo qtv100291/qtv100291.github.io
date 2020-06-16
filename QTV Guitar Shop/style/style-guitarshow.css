@@ -46,19 +46,28 @@
     }
     .navigation{
         margin-top: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 100%;
@@ -300,19 +309,28 @@
         width: 1000px;
         margin: 0 auto;
         margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 1000px;
@@ -544,19 +562,28 @@
         width: 95%;
         margin: 0 auto;
         margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 95%;
@@ -786,16 +813,25 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 90%;
@@ -1033,16 +1069,25 @@
         width: 92%;
         margin: 0 auto;
         margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 25px;
         color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 92%;
@@ -1283,16 +1328,25 @@
         width: 92%;
         margin: 0 auto;
         margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 25px;
         color: #000000;
+    }
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .guitar-show-item{
         width: 92%;

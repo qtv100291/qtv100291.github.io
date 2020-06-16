@@ -66,8 +66,6 @@ function closeMenuMobile(){
     $('.menu-icon-mobile').css('margin-left',`10px`);
 }
 
-
-
 // Part 4: Function for Search Bar
 $('.input-search-bar').on('focus',function(){
     $('.suggestion-item').addClass('being-focus');
@@ -84,9 +82,8 @@ $('.input-search-bar').on('keyup',function(event){
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
-        reloadPage()
+        // reloadPage()
     }
-    
 })
 $('.search-bar > img:first-child').on('click',function(){
     if ($(this).parent().children(':nth-child(2)').val() !== ""){
@@ -97,9 +94,8 @@ $('.search-bar > img:first-child').on('click',function(){
         setTimeout(() => {
             window.location.href = `searchpage.html#${input}`;
         }, 30); 
-        reloadPage()
+        // reloadPage()
     }
-    
 })
 $('.input-search-bar').on('input',searchItem)
 function searchItem(){

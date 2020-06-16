@@ -26,13 +26,17 @@
         width: 90%;
         max-width: 1200px;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
     }
@@ -41,6 +45,11 @@
     }
     .navigation > a:nth-child(2):hover{
         color: red;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;
@@ -333,13 +342,17 @@
     .navigation{
         width: 1000px;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -349,6 +362,11 @@
     }
     .navigation > a:nth-child(2):hover{
         color: red;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;
@@ -639,13 +657,17 @@
     .navigation{
         width: 90%;
         margin: 124px auto 20px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -655,6 +677,11 @@
     }
     .navigation > a:nth-child(2):hover{
         color: red;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;
@@ -939,16 +966,25 @@
     .navigation{
         width: 90%;
         margin:0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;
@@ -1244,16 +1280,25 @@
     .navigation{
         width: 90%;
         margin: 90px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;
@@ -1545,16 +1590,25 @@
     .navigation{
         width: 90%;
         margin: 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 14px;
         line-height: 22px;
         color: #000000;
+    }
+    .navigation > div {
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto;
     }
     .article-content{
         width: 90%;

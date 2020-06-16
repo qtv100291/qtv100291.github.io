@@ -34,13 +34,17 @@
         width: 95%;
         max-width: 1200px;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -50,13 +54,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;
@@ -179,13 +178,17 @@
     .navigation{
         width: 1000px;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -195,13 +198,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;
@@ -317,13 +315,17 @@
     .navigation{
         width: 95%;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
@@ -333,13 +335,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;
@@ -453,26 +450,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;
@@ -579,144 +575,6 @@
     }
 }
 
-@media only screen and (min-width: 351px) and (max-width: 768px){
-    /*Main*/
-    .container{
-        margin-top: 94px;
-        width: 100%;
-    }
-    .main-container{
-        width: 95%;
-        margin: 0 auto;
-    }
-    .navigation{
-        width: 95%;
-        margin: 20px auto 10px auto;
-    }
-    .navigation > a{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .navigation > div{
-        display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .info-part{
-        width: 100%;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #C4C4C4;
-    }
-    .info-part-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
-        margin: 0px auto 10px auto;
-    }
-    .info-part-item{
-        width: calc(100% - 30px);
-        display: flex;
-        align-items: center;
-        padding-bottom: 10px;
-        
-    }
-    .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin-left: 25px;
-    }
-    .item-mark{
-        width: 10px;
-        height: 20px;
-        background-color: #83d7fe;
-    }
-    .item-name-mark{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 25px;
-        color: #000000;
-        margin-left: 15px;
-    }
-    .item-policy{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .article-part{
-        width: 100%;
-    }
-    .article-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
-        margin: 10px auto 10px auto;
-    }
-    .head-title-policy{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .title-policy{
-        width: 98%;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-        margin: 0 auto;
-    }
-    .content-text{
-        width: 98%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 25px;
-        color: #000000;
-        margin: 0 auto 5px auto;
-    }
-    .icon-content > img{
-        width: 20px;
-        height: 20px;
-        position: relative;
-        top: 3px;
-    }
-    /*footer*/
-    footer{
-        margin-top: 30px;
-    }
-    .subscription-part{
-        display: none;
-    }
-}
 
 @media only screen and (min-width: 351px) and (max-width: 768px){
     /*Main*/
@@ -731,26 +589,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;
@@ -870,26 +727,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .info-part{
         width: 100%;

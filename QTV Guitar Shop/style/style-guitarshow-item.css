@@ -175,13 +175,17 @@
         width: 95%;
         max-width: 1200px;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -194,13 +198,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;
@@ -767,13 +766,17 @@
     .navigation{
         width: 1000px;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -786,13 +789,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;
@@ -1347,13 +1345,17 @@
     .navigation{
         width: 90%;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -1366,13 +1368,8 @@
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;
@@ -1940,26 +1937,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;
@@ -2527,26 +2523,25 @@
     .navigation{
         width: 90%;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 15px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;
@@ -3091,26 +3086,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 0px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 15px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 30px;
-        color: #000000;
+        color: #6c757d;
+        font-family: Roboto; 
     }
     .modal-seat-map{
         width: 100vw;

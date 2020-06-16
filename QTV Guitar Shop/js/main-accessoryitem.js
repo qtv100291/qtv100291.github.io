@@ -190,11 +190,6 @@ function changeTab(){
     $('.item-description').height(function(){
         return $('.description-active').outerHeight(true)
     })
-    // //Stopping video when changing tab. I have used Youtube Player API . This API help me stop video YouTube. Can see in more detail at: https://developers.google.com/youtube/iframe_api_reference
-    // if ($('.description-2').css('opacity') == 0){
-    //     document.getElementById('player').pauseVideo();
-    // }
-    
 } 
 
 //Part 8: Function for Shopping Cart
@@ -208,8 +203,12 @@ function Item(group, id, name, price, count, image){ //Item Constructor
 }
 
 $('.submit-button').click(function(){
-    if (localStorage.getItem('shoppingcartguitar') != null) loadCart()
-    else shoppingCart=[];
+    if (localStorage.getItem('signInSituation') === "true"){
+        loadCart();
+    }
+    else if (localStorage.getItem('shoppingcartguitar') != null){
+        loadCart();
+    }
     addToCart();
     popupAddToCart();
 })

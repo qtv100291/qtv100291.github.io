@@ -36,31 +36,30 @@
         width: 95%;
         max-width: 1200px;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
-        color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
         line-height: 30px;
-        color: #000000;
     }
-
     .pop-up-modal{
         position: fixed;
         width: 100vw;
@@ -374,23 +373,24 @@
     .navigation{
         width: 1000px;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
-        color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -691,6 +691,9 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1023px){
     /*Main*/
+    .header-tablet{
+        z-index: 1;
+    }
     .container{
         margin-top: 124px;
         width: 100%;
@@ -704,23 +707,24 @@
     .navigation{
         width: 90%;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
-        color: #000000;
     }
     .navigation > a:nth-child(1):hover{
         color: red;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1022,6 +1026,9 @@
 
 @media only screen and (min-width: 577px) and (max-width: 768px){
     /*Main*/
+    .header-tablet{
+        z-index: 1;
+    }
     .container{
         margin-top: 124px;
         width: 100%;
@@ -1036,20 +1043,21 @@
     .navigation{
         width: 90%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
-        color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1357,6 +1365,7 @@
     .header-tablet{
         padding: 0;
         border: 0;
+        z-index: 1;
     }
     .container{
         margin-top: 94px;
@@ -1370,20 +1379,21 @@
     .navigation{
         width: 90%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
-        color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1715,6 +1725,9 @@
 
 @media only screen and (max-width: 350px){
     /*Main*/
+    .header-tablet{
+        z-index: 1;
+    }
     .container{
         margin-top: 94px;
         width: 100%;
@@ -1727,20 +1740,22 @@
     .navigation{
         width: 95%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
     }
     .navigation > div{
         display: inline;
-        color: black;
+        color: #6c757d;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;

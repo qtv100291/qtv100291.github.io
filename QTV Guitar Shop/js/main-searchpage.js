@@ -44,8 +44,7 @@ function renderItem(array){//function for rendering product part
     if (array.length != 0){
         let output = "";
         let outputPagination = `<div class="pagination-button prev-button "><img src="Blog/arrow_back_ios_24px_outlined.svg" alt=""></div>
-                                <div class="pagination-button button-number button-1 active first-button">1</div>
-                                <div class="pagination-button-special first-special">...</div>`;
+                                <div class="pagination-button button-number button-1 active first-button">1</div>`;
         //Add page for Pagination (Apply 9 item for 1 page)
         let itemInOnePage
         switch (true) {
@@ -93,6 +92,7 @@ function renderItem(array){//function for rendering product part
             outputPagination += `<div class="pagination-button next-button"><img src="Blog/arrow_forward_ios_24px_outlined.svg" alt=""></div>`;
         }
         else {
+            output += `<div class="pagination-button-special first-special">...</div>`
             for (let i = 1; i < numberOfPage - 1; i++){
                 outputPagination += `<div class="pagination-button button-number button-${i+1}">${i+1}</div>`;
             }

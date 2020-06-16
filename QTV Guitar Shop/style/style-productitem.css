@@ -196,13 +196,17 @@
         width: 95%;
         max-width: 1200px;
         margin: 20px auto 30px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -213,16 +217,11 @@
     .navigation > a:nth-child(2):hover{
         color: red;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-    }    
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
+    } 
     .item-presentation{
         width: 95vw;
         max-width: 600px;
@@ -799,13 +798,17 @@
         width: 95%;
         max-width: 1200px;
         margin: 20px auto 30px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -816,16 +819,11 @@
     .navigation > a:nth-child(2):hover{
         color: red;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-    }    
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
+    } 
     .item-presentation{
         width: 95vw;
         max-width: 600px;
@@ -1400,13 +1398,17 @@
     .navigation{
         width: 1000px;
         margin: 20px auto 30px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -1417,15 +1419,10 @@
     .navigation > a:nth-child(2):hover{
         color: red;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }    
     .item-presentation{
         width: 500px;
@@ -2069,27 +2066,26 @@
     .navigation{
         width: 90%;
         margin: 20px auto 30px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-    }    
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
+    }  
     .item-presentation{
         width: 600px;
         margin: 0 auto;
@@ -2725,27 +2721,26 @@
     .navigation{
         width: 90%;
         margin: 20px auto 30px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 25px;
         color: #000000;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }    
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
+    } 
     .item-presentation{
         width: 520px;
         margin: 0 auto;
@@ -3381,26 +3376,25 @@
     .navigation{
         width: 95%;
         margin: 20px auto 20px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 16px;
         line-height: 25px;
         color: #000000;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
     }    
     .item-presentation{
         width: 330px;
@@ -4040,27 +4034,26 @@
     .navigation{
         width: 95%;
         margin: 20px auto 10px auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
     }
     .navigation > a{
         text-decoration: none;
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 14px;
         line-height: 22px;
         color: #000000;
     }
-    .navigation > span{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
-        color: #000000;
-    }    
+    .navigation > div{
+        display: inline;
+        color: #6c757d;
+        font-family: Roboto; 
+    }  
     .item-presentation{
         width: 300px;
         margin: 0 auto;
