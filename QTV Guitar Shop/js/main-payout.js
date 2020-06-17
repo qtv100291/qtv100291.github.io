@@ -537,7 +537,7 @@ function closeAboutWebsite(){
     },600)
 }
 
-//Part 8: Funtion for Scrolling Button
+//Part 7: Funtion for Scrolling Button
 $('.scrolling-button').click(scrollToTop);
 function scrollToTop(){
     $(window).scrollTop(0); 

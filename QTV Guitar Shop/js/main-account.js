@@ -104,7 +104,7 @@ function limitCharacter(elt,limitNumber){
     }
 }
 
-// Part : Function for Loading information
+// Part 3: Function for Loading information
 if (localStorage.getItem('signInSituation') === "false"){
     window.location.href = "index.html";
 }
@@ -112,7 +112,7 @@ if (localStorage.getItem('signInSituation') === "false"){
 function saveUserList(){
     localStorage.setItem('userListGuitar', JSON.stringify(userList));
 }
-
+//loading information 
 $('.member-name').text(`${currentUser.info.name}`);
 $('#input-user-name').val(`${currentUser.info.name}`);
 $('#input-user-phone').val(`${currentUser.info.phoneNumber}`);
@@ -140,6 +140,7 @@ $('#card-password').val(currentUser.payment.cardCGV);
 $('#card-expiry-month').val(currentUser.payment.cardExpiryMonth);
 $('#card-expiry-year').val(currentUser.payment.cardExpiryYear);
 
+//updating information
 $('.save-button').on('click', saveInformation);
 
 function saveInformation(){
@@ -182,9 +183,9 @@ function closePopup(){
     $('body').removeClass('pop-up');
     window.location.reload();
 }
-// Part : Function for Changing tab
+// Part 4: Function for Changing tab
 
-$('.account-menu-info').on('click',function(){
+$('.account-menu-info').on('click',function(){//changing tab to "Thông Tin Tài Khoản"
     $('.account-menu-info').addClass('active-menu');
     $('.menu-info-main-content').css('display','block');
     setTimeout(function(){
@@ -196,7 +197,7 @@ $('.account-menu-info').on('click',function(){
     $('footer').removeClass('empty');
 });
 
-$('.account-menu-history-trade').on('click',function(){
+$('.account-menu-history-trade').on('click',function(){//changing tab to "Lịch Sử Giao Dịch"
     $('.account-menu-info').removeClass('active-menu');
     $('.menu-info-main-content').css('display','none');
     $('.menu-info-main-content').css('opacity','0');
@@ -266,7 +267,7 @@ function separator1000(num){ // 1000 separator
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 }
 
-// Part : Function for Log out
+// Part 5: Function for Log out
 $('.log-out-button').on('click',function(){
     localStorage.setItem('signInSituation', false);
     window.location.href = "index.html"

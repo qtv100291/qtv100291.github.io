@@ -12,7 +12,7 @@ if ($(window).outerWidth() < 351) {
     $('.input-search-bar').attr("placeholder", "Tìm Kiếm...");
 }
 
-// Part : Function for Sign In
+// Part 2: Function for Sign In
 let userList = [];
 let currentID ;
 let currentUser ;
@@ -36,7 +36,7 @@ function loadUserList(){
     userList = JSON.parse(localStorage.getItem('userListGuitar'))
 } 
 
-// Part 2 : Function for Sticky Menu bar and Animation
+// Part 3 : Function for Sticky Menu bar and Animation
 $(window).scroll(function(){
         if ($(window).scrollTop() > 62 ) {
             $('.header-desktop, .search-bar, .input-search-bar, .line-1, .avatar, .avatar-sub, .container, .suggestion-item, .x-mark-search-bar').addClass('scroll');
@@ -48,7 +48,7 @@ $(window).scroll(function(){
         }
 });
 
-// Part 3 : Function for Opening mobile menu
+// Part 4 : Function for Opening mobile menu
 $('.menu-icon-mobile').on('click',openMenuMobile);
 function openMenuMobile(){
     $('.menu-mobile').addClass('active-mobile');
@@ -66,7 +66,7 @@ function closeMenuMobile(){
     $('.menu-icon-mobile').css('margin-left',`10px`);
 }
 
-// Part 4: Function for Search Bar
+// Part 5 : Function for Search Bar
 $('.input-search-bar').on('focus',function(){
     $('.suggestion-item').addClass('being-focus');
 })
@@ -176,7 +176,7 @@ function reloadPage(){
         location.reload();
     },50)
 }
-// Part 5 : Function for Displaying shopping cart
+// Part 6 : Function for Displaying shopping cart
 let shoppingCart=[];
 if (localStorage.getItem('signInSituation') === "true"){
     loadCart();
@@ -255,7 +255,7 @@ function separator1000(num){ // 1000 separator
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
-//Part 6: Function for Subscription email and About This Website button - Footer
+//Part 7: Function for Subscription email and About This Website button - Footer
 
 $('.name-footer').on('input',function(){
     let elt = $(this);
@@ -375,7 +375,7 @@ function closeAboutWebsite(){
     },600)
 }
 
-// Part 7: Funtion for Scrolling Button
+// Part 8: Funtion for Scrolling Button
 $('.scrolling-button').click(scrollToTop);
 function scrollToTop(){
     $(window).scrollTop(0); 

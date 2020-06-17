@@ -12,7 +12,7 @@ if (window.innerWidth < 351) {
     document.querySelector('.input-search-bar').placeholder = "Tìm Kiếm...";
 }
 
-// Part : Function for Sign In
+// Part 2: Function for Sign In
 let userList = [];
 let currentID ;
 let currentUser ;
@@ -35,7 +35,7 @@ if (localStorage.getItem('signInSituation') === "true"){
 function loadUserList(){
     userList = JSON.parse(localStorage.getItem('userListGuitar'))
 } 
-// Part 2 : Function for Sticky Menu bar and Animation
+// Part 3 : Function for Sticky Menu bar and Animation
 window.onscroll = function(){
     animationMenuBar();
 }
@@ -56,7 +56,7 @@ function animationMenuBar(){
     }
 }
 
-// Part 3 : Function for Opening mobile menu
+// Part 4 : Function for Opening mobile menu
 document.querySelector('.menu-icon-mobile').addEventListener('click',openMenuMobile)
 function openMenuMobile(){
     document.querySelector('.menu-mobile').classList.add('active-mobile');
@@ -74,7 +74,7 @@ function closeMenuMobile(){
     document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
 }
 
-// Part 4 : Function for Displaying shopping cart
+// Part 5 : Function for Displaying shopping cart
 let shoppingCart=[];
 if (localStorage.getItem('signInSituation') === "true"){
     loadCart();
@@ -163,7 +163,7 @@ function separator1000(num){// 1000 separator
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g,".");
 }
 
-// Part 5: Function for Search Bar
+// Part 6: Function for Search Bar
 document.querySelector('.input-search-bar').addEventListener('focus',(function(){//for Mobile
     document.querySelector('.suggestion-item').classList.add('being-focus');
 }))
@@ -364,7 +364,7 @@ function reloadPage(){
     },50)
 }
 
-// Part 6: Function for Subscription email and About This Website button - Footer
+// Part 7: Function for Subscription email and About This Website button - Footer
 document.querySelector('.name-footer').addEventListener('input',function(){
     let elt = this;
     checkIsOnlyText(elt); 
@@ -484,7 +484,7 @@ function closeAboutWebsite(){
         document.querySelector('.header-desktop').style.paddingRight = `0px`;
     },600)
 }
-//Part 7 : Funtion for Scrolling Button
+//Part 8 : Funtion for Scrolling Button
 document.querySelector('.scrolling-button').addEventListener('click',scrollToTop);
 function scrollToTop(){
     document.body.scrollTop = 0; 

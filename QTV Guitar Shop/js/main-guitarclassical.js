@@ -45,7 +45,7 @@ function showFilterContent(){
 }
 
 
-// Part 3 : Function for Opening Filter Part on mobile
+// Part 2 : Function for Opening Filter Part on mobile
 document.querySelector('.filter-button-mobile').addEventListener('click', openFilterMobile);
 function openFilterMobile(){
     document.querySelector('.filter-part').classList.add('active-filter');
@@ -72,7 +72,7 @@ function closeFilterMobileButton(){
     document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
 }
 
-// Part 2 : Function for Filtering Item
+// Part 3 : Function for Filtering Item
 let filterBrand = document.querySelectorAll('.filter-brand > ul > li > label > input');
 let filterBodySize = document.querySelectorAll('.filter-body-size > ul > li > label > input');
 let filterPrice = document.querySelectorAll('.filter-price > ul > li > label > input');
@@ -144,8 +144,32 @@ function removeFilter(){//remove filter condition
     }
 }
 
+// Function for Checking filter active or not
+document.querySelectorAll('input[type=checkbox]').forEach(input => input.addEventListener('change',checkFilterButton))
+function checkFilterButton(){
+    let inputCheck = 0;
+    let inputGroup = document.querySelectorAll('input[type=checkbox]');
+    for (let i = 0; i < inputGroup.length; i++){
+        if ( inputGroup[i].checked === true ){
+            inputCheck = 1;
+            document.querySelector('.filter-button').classList.remove('filter-not-allowed');
+            document.querySelector('.filter-button').addEventListener('click',filterButton);
+            document.querySelector('.remove-item-button').classList.remove('filter-not-allowed');
+            document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
+            break
+        }
+    }
+    if (inputCheck === 0) {
+        document.querySelector('.filter-button').classList.add('filter-not-allowed');
+        document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    }
+    if (inputCheck === 0 && arrayExecuted.length === guitarClassicalData.length){
+        document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
+        document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
+    }
+}
 
-// Part 3 : Function for Arrangement Option
+// Part 4 : Function for Arrangement Option
 let arrangementPart = document.querySelector('.arrangement-part');
 window.onclick = function(){ // Click anywhere outside Arrangement Part to close it
     if (document.querySelector('.menu-arrangement').style.display == "block"){
@@ -188,7 +212,7 @@ function chooseArrangementOption(elt){
     document.querySelector('.arrangement-executed').textContent = elt.textContent; 
 }
 
-// Part 4 : Function for Rendering Item
+// Part 5 : Function for Rendering Item
 let arrayExecuted = guitarClassicalData.slice(0);
 renderItem(arrayExecuted);
 function renderItem(array){
@@ -248,7 +272,7 @@ function renderItem(array){
 
 }
 
-// Part 5: Function for Sorting Item
+// Part 6: Function for Sorting Item
 function sortByPriceUp(array){
     renderItem(array.sort(function(a,b){
         return parseInt(a.price.replace(/\D/g,"")) - parseInt(b.price.replace(/\D/g,""));
@@ -269,7 +293,7 @@ function sortByNameAToZ(array){
     }));
 }
 
-// Part 6: Function for Pagination
+// Part 7: Function for Pagination
 let numberReturn, bodyYPosition, productYPosition;
 function prevButton(){
     bodyYPosition = document.body.getBoundingClientRect();
@@ -362,27 +386,3 @@ function pagination1(){//When clicking on Arrangement Button Page back to 1st Pa
     }
 } 
 
-// Part : Function for Checking filter
-document.querySelectorAll('input[type=checkbox]').forEach(input => input.addEventListener('change',checkFilterButton))
-function checkFilterButton(){
-    let inputCheck = 0;
-    let inputGroup = document.querySelectorAll('input[type=checkbox]');
-    for (let i = 0; i < inputGroup.length; i++){
-        if ( inputGroup[i].checked === true ){
-            inputCheck = 1;
-            document.querySelector('.filter-button').classList.remove('filter-not-allowed');
-            document.querySelector('.filter-button').addEventListener('click',filterButton);
-            document.querySelector('.remove-item-button').classList.remove('filter-not-allowed');
-            document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
-            break
-        }
-    }
-    if (inputCheck === 0) {
-        document.querySelector('.filter-button').classList.add('filter-not-allowed');
-        document.querySelector('.filter-button').removeEventListener('click',filterButton);
-    }
-    if (inputCheck === 0 && arrayExecuted.length === guitarClassicalData.length){
-        document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
-        document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
-    }
-}

@@ -92,7 +92,7 @@ function renderItem(array){//function for rendering product part
             outputPagination += `<div class="pagination-button next-button"><img src="Blog/arrow_forward_ios_24px_outlined.svg" alt=""></div>`;
         }
         else {
-            output += `<div class="pagination-button-special first-special">...</div>`
+            outputPagination += `<div class="pagination-button-special first-special">...</div>`
             for (let i = 1; i < numberOfPage - 1; i++){
                 outputPagination += `<div class="pagination-button button-number button-${i+1}">${i+1}</div>`;
             }
@@ -188,6 +188,7 @@ function renderFilterPart(array){//function for rendering filter part
     }
     document.querySelector('.filter-brand > .filter-content').innerHTML = outputBrand;
 }
+
 // Part 2 : Function for Showing Filter Part
 let filterContent = document.querySelectorAll('.filter-content');
 for (let i = 0; i < filterContent.length; i++){ //Set a definite Number for max-height
@@ -257,7 +258,7 @@ function closeFilterMobileButton(){
     document.querySelector('.menu-icon-mobile').style.marginLeft = `10px`;
 }
 
-// Part 3 : Function for Filtering Item
+// Part 4 : Function for Filtering Item
 let filterBrand = document.querySelectorAll('.filter-brand > ul > li > label > input');
 let filterProductCategory = document.querySelectorAll('.filter-product-category > ul > li > label > input');
 
@@ -302,8 +303,32 @@ function removeFilter(){//remove filter condition
     }
 }
 
+// Function for Checking filter active or not
+document.querySelectorAll('input[type=checkbox]').forEach(input => input.addEventListener('change',checkFilterButton))
+function checkFilterButton(){
+    let inputCheck = 0;
+    let inputGroup = document.querySelectorAll('input[type=checkbox]');
+    for (let i = 0; i < inputGroup.length; i++){
+        if ( inputGroup[i].checked === true ){
+            inputCheck = 1;
+            document.querySelector('.filter-button').classList.remove('filter-not-allowed');
+            document.querySelector('.filter-button').addEventListener('click',filterButton);
+            document.querySelector('.remove-item-button').classList.remove('filter-not-allowed');
+            document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
+            break
+        }
+    }
+    if (inputCheck === 0) {
+        document.querySelector('.filter-button').classList.add('filter-not-allowed');
+        document.querySelector('.filter-button').removeEventListener('click',filterButton);
+    }
+    if (inputCheck === 0 && arrayExecuted.length === arrayInitial.length){
+        document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
+        document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
+    }
+}
 
-// Part 4 : Function for Arrangement Option
+// Part 5 : Function for Arrangement Option
 let arrangementPart = document.querySelector('.arrangement-part');
 window.onclick = function(){ // Click anywhere outside Arrangement Part to close it
     if (document.querySelector('.menu-arrangement').style.display == "block"){
@@ -348,7 +373,7 @@ function chooseArrangementOption(elt){
 
 
 
-// Part 5: Function for Sorting Item
+// Part 6 : Function for Sorting Item
 function sortByPriceUp(array){
     renderItem(array.sort(function(a,b){
         return parseInt(a.price.replace(/\D/g,"")) - parseInt(b.price.replace(/\D/g,""));
@@ -369,7 +394,7 @@ function sortByNameAToZ(array){
     }));
 }
 
-// Part 6: Function for Pagination
+// Part 7 : Function for Pagination
 let numberReturn, bodyYPosition, productYPosition;
 function prevButton(){
     let currentPage = document.querySelector('.active');
@@ -504,29 +529,6 @@ function changePagination(numberPage){
     }
 }
 
-// Part : Function for Checking filter
-document.querySelectorAll('input[type=checkbox]').forEach(input => input.addEventListener('change',checkFilterButton))
-function checkFilterButton(){
-    let inputCheck = 0;
-    let inputGroup = document.querySelectorAll('input[type=checkbox]');
-    for (let i = 0; i < inputGroup.length; i++){
-        if ( inputGroup[i].checked === true ){
-            inputCheck = 1;
-            document.querySelector('.filter-button').classList.remove('filter-not-allowed');
-            document.querySelector('.filter-button').addEventListener('click',filterButton);
-            document.querySelector('.remove-item-button').classList.remove('filter-not-allowed');
-            document.querySelector('.remove-item-button').addEventListener('click',removeFilter);
-            break
-        }
-    }
-    if (inputCheck === 0) {
-        document.querySelector('.filter-button').classList.add('filter-not-allowed');
-        document.querySelector('.filter-button').removeEventListener('click',filterButton);
-    }
-    if (inputCheck === 0 && arrayExecuted.length === arrayInitial.length){
-        document.querySelector('.remove-item-button').classList.add('filter-not-allowed');
-        document.querySelector('.remove-item-button').removeEventListener('click',removeFilter);
-    }
-}
+
 
 

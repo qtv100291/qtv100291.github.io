@@ -296,7 +296,6 @@ if ($(window).innerWidth() < 1024){
 }
 
 
-
 //Part 8: Function for Shopping Cart
 function Item(group, id, name, price, count, image){ //Item Constructor
     this.group = group;

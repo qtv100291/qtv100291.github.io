@@ -20,7 +20,7 @@ function changingTab(){
     },50)
 }
 
-// Part 2 :
+// Part 2 : Function for sign-in and sign-up
 if (localStorage.getItem('signInSituation') === "true"){
     window.location.href = "index.html";
 }
