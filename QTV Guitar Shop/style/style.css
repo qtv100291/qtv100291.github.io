@@ -38,6 +38,21 @@
         left: 0;
         z-index: 1;
     }
+    .overlay-video{
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+    .overlay-video > img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
     .video-store{
         width: 100%;
         position: relative;

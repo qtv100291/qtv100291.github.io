@@ -63,6 +63,10 @@ function changeContent(){
     change.classList.add('active-tooltip');
 }
 
+document.querySelector('.video-store').addEventListener('canplay',activeVideo);
+function activeVideo(){
+    document.querySelector('.overlay-video').style.display = "none";
+}
 //Part 2 : Function for button "Nổi bật" and "Sản Phẩm Mới"
 let pagination = document.querySelectorAll('.pagination');
 for(let i =0; i< pagination.length;i++){

@@ -46,7 +46,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -347,7 +347,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -651,7 +651,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -954,316 +954,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .navigation > div{
-        display: inline;
-        color: #6c757d;
-        font-family: Roboto; 
-    }
-    .map{
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 90%;
-        height: 40vh;
-        
-    }
-    .map > iframe {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .store-info{
-        width: 90%;
-        margin: 30px auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .contact-info{
-        width: 100%;
-    }
-    .contact-info-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 30px;
-        color: #000000;
-        margin-bottom: 15px;
-    }
-    .contact-info-detail{
-        margin-top: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .contact-info-detail > a {
-        text-decoration: none;
-        color: black;
-    }
-    .feed-back{
-        width: 100%;
-        margin-top: 30px;
-    }
-    .feed-back-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 30px;
-        color: #000000;
-        margin-bottom: 15px;
-    }
-    .feed-back-note{
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 26px;
-        color: #000000;
-        margin-bottom: 10px;
-    }
-    .feed-back-email{
-        font-family: Roboto;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        color: #000000;
-        position: relative;
-    }
-    #email-sender{
-        width: 100%;
-        height: 32px;
-        outline: none;
-        border: 1px solid #C4C4C4;
-        border-radius: 3px;
-        text-indent: 15px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: #000000;
-        margin: 5px 0 15px 0;
-    }
-    .feed-back-container{
-        font-family: Roboto;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 5px;
-        position: relative;
-    }
-    #feed-back-content{
-        resize: none;
-        margin-top: 5px;
-        width: 100%;
-        outline: none;
-        border: 1px solid #C4C4C4;
-        border-radius: 3px;
-        text-indent: 15px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-        margin-bottom: 15px;
-    }
-    #feed-back-content::placeholder{
-        align-items: flex-start;
-    }
-    .feed-back-require{
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 20px;
-    }
-    .submit-feed-back{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 100px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 0 auto;
-        color: white;
-    }
-    .submit-feed-back:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .empty-check-1 {
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 10px;
-        top: 66px;
-        z-index: -1;
-    }
-    .email-name-check-1{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 260px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 10px;
-        top: 66px;
-        z-index: -1;
-    }
-    .empty-check-1::before, .email-name-check-1::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
-    }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 11;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 400px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 100px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    /*footer*/
-    footer{
-        margin: 0;
-    }
-    .subscription-part{
-        display: none;
-    }
-}   
-
-@media only screen and (min-width: 577px) and (max-width: 768px){
-    /*Header*/
-    .menu-bar-item-1{
-        border: none;
-    }
-    .menu-bar-item-6{
-        border-bottom: 2px solid black;
-    }
-    .menu-mobile-container > a:nth-child(7){
         font-weight: 500;
-        color: red;
-    }
-    /*Main*/
-    .input-search-bar{
-        width: calc(90% - 33px);
-    }
-    .container{
-        margin-top: 124px;
-        width: 100%;
-    }
-    .main-container{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .navigation{
-        width: 90%;
-        margin: 20px auto 0px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-    }
-    .navigation > a{
-        text-decoration: none;
-        color: black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 600;
         font-size: 18px;
         line-height: 30px;
         color: #000000;
@@ -1572,7 +1263,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
@@ -1881,7 +1572,7 @@
         color: black;
         font-family: Roboto;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         line-height: 30px;
         color: #000000;
