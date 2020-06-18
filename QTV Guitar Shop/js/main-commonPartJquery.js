@@ -2,6 +2,9 @@
 //In this project, some pages are written by using pure Javascript and the others pages are written by using Jquery.
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
+$(window).on('hashchange', function(){
+    location.reload();
+});
 // Part 1 : Function for determinating scroll bar width
 let scrollBarWidth;
 if ($('body').innerHeight() > $(window).height()){
@@ -119,7 +122,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="deleteContent();reloadPage()" href="productitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContent();" href="productitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }       
     }
@@ -129,7 +132,7 @@ function searchItem(){
                 let indexArray = array[i]['name'].toLowerCase().indexOf(input);
                 let textColored = array[i]['name'].slice(indexArray,indexArray + input.length);
                 let arrayName = array[i]['name'].slice(0,indexArray)  + `<span class="text-mark-search">${textColored}</span>` + array[i]['name'].slice(indexArray + input.length)
-                output += `<a onclick="deleteContent()" href="accessoriesitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
+                output += `<a onclick="deleteContent();" href="accessoriesitem.html#${array[i].id}+${array[i].group}" class="search-bar-item" data-id="${array[i]['id']}" data-group="${array[i]['group']}">${arrayName}</a>`
             }
         }  
     }
