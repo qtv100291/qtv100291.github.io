@@ -3,6 +3,10 @@
 //I have done that just for practicing both Javascript and Jquery(a very popular library).
 
 //Part 1 : Function for Welcome Pop Up
+document.querySelector('.video-store').addEventListener('canplay',activeVideo);
+function activeVideo(){
+    document.querySelector('.overlay-video').style.display = "none";
+}
 if (window.innerWidth < 450) document.querySelector('.line3-text-sub-banner').textContent = "Cho các bạn nữ đến mua guitar";
 if (localStorage.getItem('popup')){
     playVideo();
@@ -63,10 +67,6 @@ function changeContent(){
     change.classList.add('active-tooltip');
 }
 
-document.querySelector('.video-store').addEventListener('canplay',activeVideo);
-function activeVideo(){
-    document.querySelector('.overlay-video').style.display = "none";
-}
 //Part 2 : Function for button "Nổi bật" and "Sản Phẩm Mới"
 let pagination = document.querySelectorAll('.pagination');
 for(let i =0; i< pagination.length;i++){

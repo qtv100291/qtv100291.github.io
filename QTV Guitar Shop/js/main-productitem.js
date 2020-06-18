@@ -253,6 +253,8 @@ if ($(window).innerWidth() < 1024){
         $('.photo-display-popup').attr('data-image-number',`${imageNumber}`)
         $('.pop-up-photo').css('height','85%');
         $('.pop-up-photo > img').css('height','100%');
+        $('body').addClass('start');
+        $('body').css('paddingRight',`${scrollBarWidth}px`);
     }
 
     $('.close-icon-popup').on('click',closeModalImage)
