@@ -438,6 +438,9 @@
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px){
+    .input-search-bar{
+        width: calc(95% - 33px);
+    }
     /*Main*/
     .container{
         margin-top: 124px;
@@ -577,6 +580,9 @@
 
 
 @media only screen and (min-width: 351px) and (max-width: 768px){
+    .input-search-bar{
+        width: calc(95% - 33px);
+    }
     /*Main*/
     .container{
         margin-top: 94px;

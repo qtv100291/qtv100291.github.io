@@ -4033,6 +4033,9 @@ body.start{
     }
 }   
 
+@media only screen and (min-width: 650px) and (max-width:768px){
+    
+}
 
 @media only screen and (min-width: 351px) and (max-width:576px){
     /*Welcome Popup*/

@@ -277,9 +277,9 @@
         cursor: pointer;
     }
     .showpresentation-title{
-        width: 500px;
+        width: 90%;
         height: 90px;
-        margin-left: 25px;
+        margin: 0 auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -374,6 +374,7 @@
         text-align: center;
         color: #000000;
     }
+    
     .show-time{
         width: 90%;
         margin: 15px auto 0px auto;
@@ -871,9 +872,9 @@
         cursor: pointer;
     }
     .showpresentation-title{
-        width: 500px;
+        width: 90%;
         height: 90px;
-        margin-left: 25px;
+        margin: 0 auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1450,9 +1451,9 @@
         cursor: pointer;
     }
     .showpresentation-title{
-        width: 500px;
+        width: 90%;
         height: 90px;
-        margin-left: 25px;
+        margin: 0 auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -1466,7 +1467,6 @@
         width: 100%;
         height: 1px;
         background-color:  #C4C4C4;
-        display: none;
     }
     .show-presentation-photo{
         width: 90%;
@@ -1541,6 +1541,9 @@
         align-items: center;
         text-align: center;
         color: #000000;
+        display: none;
+    }
+    .title-ticket-part + .line-break{
         display: none;
     }
     .show-information{
@@ -1935,7 +1938,7 @@
         margin: 0 auto;
     }
     .navigation{
-        width: 95%;
+        width: 90%;
         margin: 20px auto 0px auto;
         font-family: Roboto;
         font-style: normal;
@@ -1993,7 +1996,6 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 20px ;
-        height: 50px;
         font-family: Dancing Script;
         font-style: normal;
         font-weight: normal;
@@ -2003,7 +2005,7 @@
         text-align: center;
     }
     .show-item{
-        width: 520px;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         align-items: flex-start;
@@ -2011,7 +2013,7 @@
         flex-direction: column-reverse;
     }
     .show-main-content{
-        width: 520px;
+        width: 100%;
         margin: 0 auto;
     }
     .show-detail{
@@ -2035,7 +2037,7 @@
     .showpresentation-title{
         width: 90%;
         height: 70px;
-        margin-left: 25px;
+        margin: 0 auto;
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -2130,11 +2132,11 @@
         width: 100%; 
     }
     .show-information-part-1{
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
     .show-information-part-2{
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
     }
     .show-time{

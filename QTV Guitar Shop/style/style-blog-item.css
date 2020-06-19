@@ -1248,10 +1248,6 @@
     .subscription-part{
         display: none;
     }
-    .store-info-part{
-        width: 90%;
-        margin: 0 auto;
-    }
 }   
 
 @media only screen and (min-width: 351px) and (max-width: 576px){
