@@ -2001,8 +2001,6 @@
         z-index: 1;
     }
     .photo-display-popup{
-        display: none;
-        opacity: 0;
         transition: 0.5s;
     }
     .active-photo-popup{
@@ -2655,8 +2653,6 @@
         z-index: 1;
     }
     .photo-display-popup{
-        display: none;
-        opacity: 0;
         transition: 0.5s;
     }
     .active-photo-popup{
