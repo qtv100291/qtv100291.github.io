@@ -2921,6 +2921,9 @@
     footer{
         margin-top: 10px;
     }
+    .store-info-part{
+        width: 90%;
+    }
 }  
  
 @media only screen and (max-width: 350px){
