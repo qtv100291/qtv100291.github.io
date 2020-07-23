@@ -1,0 +1,86 @@
+header p {
+  font-size: 30px;
+  text-align: center;
+}
+@media (max-width: 460px) {
+  header p {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  .form-group label {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  .form-group input {
+    width: 45px;
+    height: 20px;
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .form-group input:focus {
+    width: 300px;
+    height: 30px;
+  }
+  .btn {
+    width: 40px;
+    height: 20px;
+  }
+  .btn.btn-outline-info {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+}
+
+@media (min-width: 460px) {
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fuild {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fuild {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1440px) {
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fuild {
+    margin-left: 20%;
+  }
+}
+.fas{
+  margin-left: 5px;
+  margin-top: 3px;
+  font-size: 24px;
+  position: absolute;
+  cursor: pointer;
+}
+.thead-dark tr th{
+  text-align: center;
+}
