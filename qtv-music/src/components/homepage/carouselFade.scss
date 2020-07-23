@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.carousel-home-page{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .carousel-banner{
+        width: 100%;
+        padding-top: calc(100%*5/12);
+        position: relative;
+        .carousel-banner-photo{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .carousel-caption{
+        width: 100%;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        h3 {
+            font-family: $font-catamaran;
+        }
+        p { 
+            margin-bottom: 5px;
+        }
+    }
+    #carousel-main-item{
+        h3 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next{
+        span {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

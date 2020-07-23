@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+
+.log-in-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 70px auto;
+    h2{
+        text-align: center;
+    }
+    .log-in-container{
+        padding-top: 30px;
+        width: 95%;
+        max-width: 400px;
+        margin: 150px auto;
+        border-radius: 10px;
+        h2{margin-bottom: 30px;}
+        .log-in-form{
+            width: 100%;
+            button[type = "submit"]{
+                border-radius: 5px;
+                border: 0px;
+                background-color: $color-active;
+                width: 320px;
+                height: 40px;
+                color: white;
+                outline: none;
+                display: block;
+                margin: 50px auto 30px auto;
+                &:hover:not(:disabled){
+                    cursor: pointer;
+                    background-color: $color-active-hover;
+                }
+                &:disabled{
+                    cursor: auto;
+                    opacity: 0.7;
+                }
+            }
+        }
+        p{
+            text-align: center;
+        }
+        
+    }
+}

@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+.navbar-desktop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color-bg-navbar;
+    z-index: 20;
+    .navbar-container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 72px;
+        .navbar-logo{
+            text-decoration: none;
+            h1{
+                margin: 0;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                font-family: $font-catamaran;
+                color: white;
+            }
+            
+        }
+        .navbar-page{
+            .navbar-page-item{
+                margin-left: 20px;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color-active;
+                }
+                &.activeLink{
+                    color: $color-active;
+                }
+            }
+            .navbar-page-item:nth-child(1){
+                margin: 0;
+            }
+        }
+    }
+}

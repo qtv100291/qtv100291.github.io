@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.album-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 45px auto 0 auto;
+    .album-title{
+        height: 40px;
+        margin-bottom: 20px;
+        .title-point{
+            width: 15px;
+            height: 20px;
+            margin-right: 5px;
+            background-color: $color-active;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 24px;
+            margin: 0;
+        }
+    }
+}

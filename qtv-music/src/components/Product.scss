@@ -1,0 +1,63 @@
+@import '../variables.scss';
+
+.product-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 0px auto;
+    >.product-section-container{
+        width: 100%;
+        margin-top: 30px;
+        .filter-part{
+            .filter-part-title{
+                line-height: 40px;
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            width: 100%;
+            max-width: 280px;
+        }
+        .product-part{
+            width: 100%;
+            max-width: 880px;
+            .product-part-sort{
+                height: 40px;
+                margin-bottom: 20px;
+                .dropdown{
+                    width: 290px;
+                    span{
+                        width: 110px;
+                        margin-right: 10px;
+                        display: inline-block;
+                    }
+                    strong {
+                        display: inline-block;
+                        width: 130px;
+                    }
+                    button{
+                        width: 100%;
+                        background-color: white;
+                        outline: none;
+                        color: black;
+                        border-color: #BDB4B4;
+                        height: 40px;
+                    }
+                }
+            }
+            .product-part-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 35px 35px;
+            }
+        }
+    }
+}
+#dropdown-basic:focus{//remove button outline Bootstrap 
+    box-shadow: none;
+}
+.dropdown-menu.show{
+    width: 100%;
+    a:hover{
+        background-color: rgb(194, 194, 194);
+    }
+}

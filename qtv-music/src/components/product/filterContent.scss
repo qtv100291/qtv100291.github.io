@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.list-group-filter{
+    width: 100%;
+    margin-bottom: 45px;
+    li{
+
+        border-radius: 0;
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: 35px;
+        span{
+            background-color: $color-active;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    li:nth-child(1){
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+.navbar-icon-item{
+    svg{
+        font-size: 22px;
+        color: white;
+        &:hover{
+            cursor: pointer;
+            color: $color-active;
+        }
+    }
+}
+
+.shopping-icon-part{
+    position: relative;
+    strong{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 11px;
+        top: -5px;
+        border-radius: 999px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(41, 41, 255);
+        font-size: 0.75rem;
+        font-family: $font-roboto;
+    }
+}

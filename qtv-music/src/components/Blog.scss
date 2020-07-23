@@ -1,0 +1,97 @@
+@import '../variables.scss';
+
+.blog-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 80px auto;
+    .article-section{
+        width: 100%;
+        .article-item{
+            margin-top: 80px;
+            width: 100%;
+            background-color: #F1F2F2;
+            .article-item-photo{
+                width: 100%;
+                max-width: 575px;
+                .article-item-photo-container{
+                    width: 100%;
+                    padding-top: 69.56%;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+            .article-description{
+                width: 100%;
+                max-width: 575px;
+                margin: 0 20px 0 30px;
+                .article-description-title{
+                    margin-top: 25px;
+                    font-size: 30px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+                .article-description-info{
+                    margin: 10px auto;
+                    .article-item-date{
+                        font-size: 14px;
+                        font-weight: 300;
+                        
+                        img{
+                            width: 16px;
+                            height: 16px;
+                        }
+                        p{  
+                            margin: 0;
+                            margin-left: 10px;
+                            margin-top: 3px;
+                        }
+                    }
+                    .article-item-author{
+                        margin-left: 15px;
+                        font-size: 14px;
+                        font-weight: 300;
+                        img{
+                            width: 16px;
+                            height: 16px;
+                        }
+                        p{  
+                            margin: 0;
+                            margin-left: 5px;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+                .article-description-summary{
+                    p{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    .button-access-article{
+                        width: 150px;
+                        height: 40px;
+                        border-radius: 99px;
+                        background-color: $color-active;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $color-active-hover;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

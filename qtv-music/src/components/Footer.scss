@@ -1,0 +1,73 @@
+@import '../variables.scss';
+
+footer
+.footer-desktop{
+    width: 100%;
+    background-color: $color-bg-navbar;
+    .footer-container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 72px;
+        .footer-logo{
+            text-decoration: none;
+            h1{
+                margin: 0;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 40px;
+                font-family: $font-catamaran;
+                color: white;
+            }
+        }
+        .footer-page{
+            .footer-page-item{
+                margin-left: 20px;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color-active;
+                }
+                &.activeLink{
+                    color: $color-active;
+                }
+            }
+            .navbar-page-item:nth-child(1){
+                margin: 0;
+            }
+        }
+        .footer-icon{
+            a{
+                display: inline-block;
+                margin-left: 35px;
+                font-size: 30px;
+            }
+            a:nth-child(1){
+                margin-left: 0;
+            }
+        }
+    }
+}
+.footer-about-website{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    > h5{
+        margin: 0;
+        line-height: 30px;
+        font-weight: 800;
+        font-size: 16px;
+        font-family: $font-catamaran;
+        > span{
+            font-size: 16px;
+            font-family: $font-catamaran;
+            &:hover{
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

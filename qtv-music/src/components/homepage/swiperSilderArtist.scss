@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.slider-artist-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        transition: 0.25s;
+        object-fit: cover;
+    }
+    &:hover img{
+        transform: scale(1.08) rotate(2.5deg) ;
+    }
+    .overlay-slider-item{
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-indent: 20px;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+// .swiper-button-next{
+//     height: 100%!important;
+//     right: 0!important;
+//     padding: 0 10px!important;
+//     transform: translateY(-45%);
+// }

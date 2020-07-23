@@ -1,0 +1,135 @@
+@import '../../variables.scss';
+
+.preview-modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active-mode{
+        visibility: visible;
+        opacity: 1;
+        width: calc(100% - 17px);
+    }
+    .preview-modal-container{
+        width: 920px;
+        height: 430px;
+        border-width: 15px;
+        border-style: solid;
+        border-color: white;
+        border-right: 0px;
+        background-color: white;
+        box-sizing: content-box;
+        position: relative;
+        .close-button{
+            position: absolute;
+            top: -25px;
+            left: calc(100% - 15px);
+            font-size: 30px;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            color: $color-active;
+            border-radius: 99px;
+            :hover{
+                cursor: pointer;
+            }
+        }
+        .preview-modal-photo{
+            width: 430px;
+            height: 430px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .preview-modal-content{
+            width: 450px;
+            height: 430px;
+            overflow: auto;
+            scrollbar-width:thin;
+            scrollbar-color:#C4C4C4;
+            &::-webkit-scrollbar{
+                width: 7px;
+            }
+            &::-webkit-scrollbar-track{
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+            &::-webkit-scrollbar-thumb{
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                background: #C4C4C4;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+                .album-name{
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+            }
+            .album-band-name{
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                font-weight: 600;
+                color: #B4B4B4;
+                margin-bottom: 10px;
+            }
+            .album-price{
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 28px;
+                font-weight: bold;
+                color: $color-active;
+                margin-bottom: 30px;
+            }
+            .button-add-to-cart{
+                width: 200px;
+                height: 40px;
+                background-color: $color-active;
+                border-radius: 5px;
+                color: white;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 30px;
+                &:hover{
+                    background-color: $color-active-hover;
+                    cursor: pointer;
+                }
+            }
+            .audio-player-container{
+                padding-right: 10px;
+                .audio-player-detail{
+                    margin-left: 20px;
+                }
+            }
+            .preview-modal-presentation{
+                width: 100%;
+                .preview-modal-presentation-title{
+                    font-size: 20px;
+                    margin-top: 25px;
+                    margin-top: 15px;
+                }
+                .album-description{
+                    padding-right: 10px;
+                }
+            } 
+        }
+    }
+}

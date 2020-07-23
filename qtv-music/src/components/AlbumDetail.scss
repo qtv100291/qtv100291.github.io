@@ -1,0 +1,140 @@
+@import '../variables.scss';
+
+.section-album-detail{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 0 auto;
+    .section-album-detail-container{
+        margin-top: 70px;
+        .album-cover-photo{
+            width: 100%;
+            max-width: 475px;
+            .album-cover-photo-container{
+                width: 100%;
+                padding-top: 100%;
+                position: -webkit-sticky;
+                position: sticky;
+                top : 102px;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .album-detail{
+            width: 100%;
+            max-width: 650px;
+            .album-name{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 10;
+            }
+            .album-band-name{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #B4B4B4;
+                margin-bottom: 10px;
+            }
+            .album-price{
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                font-size: 30px;
+                font-weight: bold;
+                color: $color-active;
+                margin-bottom: 30px;
+            }
+            .button-add-to-cart{
+                width: 200px;
+                height: 40px;
+                background-color: $color-active;
+                border-radius: 5px;
+                color: white;
+                font-weight: 500;
+                font-size: 16px;
+                margin-top: 40px;
+                &:hover{
+                    background-color: $color-active-hover;
+                    cursor: pointer;
+                }
+            }
+            .product-presentation{
+                width: 100%;
+                margin-top: 40px;
+                .product-presentation-header{
+                    width: 100%;
+                    height: 38px;
+                    border-bottom: solid 1px #C4C4C4;
+                    .header-item{
+                        width: 110px;
+                        margin-right: 20px;
+                        height: 38px;
+                        border-bottom: 2px solid transparent;
+                        font-weight: 600;
+                        font-size: 18px;
+                        &:hover{
+                            cursor: pointer;
+                            border-bottom: 2px solid black;
+                        }
+                    }
+                    .header-item.active-tab{
+                        background-color: white;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+            .product-presentation-content{
+                width: 100%;
+                padding-top: 20px;
+                .tab-content{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
+                    display: none;
+                    opacity: 0;
+                }
+                .album-description{
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+                .album-description.active-tab-content{
+                    display: block;
+                    opacity: 1;
+                }
+                .album-track-list{
+                    width: 100%;
+                    .album-track-list-song{
+                        p{
+                            margin-bottom: 0;
+                            padding: 15px 0px;
+                        }
+                    }
+                    .album-track-list-song-duration{
+                        p{
+                            margin-bottom: 0;
+                            padding: 15px 0px;
+                            text-align: right;
+                        }
+                    }
+                }
+                .album-track-list.active-tab-content{
+                    display: flex;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .related-album{
+        margin-bottom: 45px;
+    }
+}

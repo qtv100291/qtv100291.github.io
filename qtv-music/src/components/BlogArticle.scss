@@ -1,0 +1,89 @@
+@import '../variables.scss';
+
+.blog-detail{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 70px auto;
+    .section-article-content{
+        width: 100%;
+        margin-top: 50px;
+        .title-article{
+            font-weight: bold;
+            font-size: 35px;
+            line-height: 50px;
+            margin: 0;
+        }
+        .article-description-info{
+            margin: 10px auto 20px auto;
+            .article-item-date{
+                font-size: 16px;
+                font-weight: 300;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+                p{  
+                    margin: 0;
+                    margin-left: 10px;
+                    margin-top: 3px;
+                }
+            }
+            .article-item-author{
+                margin-left: 15px;
+                font-size: 16px;
+                font-weight: 300;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+                p{  
+                    margin: 0;
+                    margin-left: 5px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .article-header-photo{
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        .article-photo{
+            width: 100%;
+            max-width: 800px;
+            margin: 25px auto;
+            img{
+                width: 100%;
+            }
+            figcaption{
+                margin-top: 15px;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+        .article-header-intro{
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .article-paragraph{
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .article-title-part{
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 15px;
+        }
+        .youtube-video-part{
+            width: 90%;
+            max-width: 800px;
+            margin: 25px auto;
+            iframe{
+                width: 100%;
+                height: 50.625vw;
+                max-height: 450px;
+            }
+        }
+    }
+}

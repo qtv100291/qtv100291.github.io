@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.input-group{
+    input{
+        height: 36px;
+        border: 1px solid rgb(175, 175, 175);
+        border-radius: 3px;
+        text-indent: 10px;
+        line-height: 36px;
+        outline: none;
+    }
+    &::placeholder{
+        text-indent: 10px;
+        line-height: 36px;
+    }
+}

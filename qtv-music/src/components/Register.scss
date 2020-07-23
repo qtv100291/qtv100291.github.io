@@ -1,0 +1,55 @@
+@import '../variables.scss';
+
+.register-section{
+    width: 100%;
+    max-width: 1200px;
+    margin: 72px auto 70px auto;
+    .register-container{
+        padding-top: 30px;
+        width: 95%;
+        max-width: 400px;
+        margin: 150px auto;
+        border-radius: 10px;
+        h2{
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+        .register-form{
+            width: 100%;
+            button[type = "submit"]{
+                border-radius: 5px;
+                border: 0px;
+                background-color: $color-active;
+                width: 100%;
+                max-width: 320px;
+                height: 40px;
+                color: white;
+                outline: none;
+                margin: 30px auto;
+                display: block;
+                &:hover:not(:disabled){
+                    cursor: pointer;
+                    background-color: $color-active-hover;
+                }
+                &:disabled{
+                    cursor: auto;
+                    opacity: 0.7;
+                }
+            }
+            p {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+                text-align: left;
+                span > a{
+                    color: $color-active;
+                }
+            }
+            
+        }
+        p {
+            text-align: center;
+        }
+        
+    }
+}

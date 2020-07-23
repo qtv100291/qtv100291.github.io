@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+
+@keyframes text-marquee {
+    from {left: 100%;}
+    to {left: -100%;}
+}
+
+.audio-player-container{
+    width: 100%;
+    #play-button{
+        font-size: 50px;
+        color: #007aff;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .audio-player-detail{
+        margin-left: 25px;
+        width: calc(100% - 50px - 25px);
+        .audio-player-song-name{
+            position: relative;
+            overflow: hidden;
+    
+            .song-name-preview {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                padding-right: 40px;
+                margin-bottom: 5px;
+
+            }
+            .song-name-preview.is-playing{
+                animation: text-marquee 5s linear infinite;
+            }
+            .song-name-preview-1.is-playing{
+                animation: text-marquee 5s 2.5s linear infinite;
+            }
+        }
+        .duration-bar{
+            width: 100%;
+            input{
+                width: calc(100% - 135px);
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .audio-time{
+                .time-play {
+                    display: inline-block;
+                    width: 22px;
+                }
+            }
+        }
+    }
+}
+
+
