@@ -121,7 +121,7 @@ else{
                             <div class="item-quantity">
                                 <div class="item-number" data-id="${shoppingCart[i].id}" data-group="${shoppingCart[i].group}" data-name="${shoppingCart[i].name}">
                                     <div class="minus-item" onclick="minusItem(this)"><img src="GuitarShow/minus_24px.png" alt="minus-item"></div>
-                                    <input type="text" value="${shoppingCart[i].count}" id="item-quantity" oninput="checkIsOnlyNumber(this)" onchange="checkIsEmpty(this);modifyItemNumber(this)">
+                                    <input type="text" value="${shoppingCart[i].count}" id="item-quantity-${shoppingCart[i].id}" oninput="checkIsOnlyNumber(this)" onchange="checkIsEmpty(this);modifyItemNumber(this)">
                                     <div class="plus-item" onclick="plusItem(this)"><img src="GuitarShow/plus.png" alt="plus-item"></div>
                                 </div>
                             </div>
