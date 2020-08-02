@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.purchase-guidance{
+    width: 90%;
+    max-width: 1200px;
+    margin: 72px auto 72px auto;
+    .content-section{
+        width: 100%;
+        margin-top: 30px;
+        .article-part{
+            width: 100%;
+            h2{
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .item-policy{
+                width: 100%;
+                p{
+                    font-size: 18px;
+                }
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }    
+}

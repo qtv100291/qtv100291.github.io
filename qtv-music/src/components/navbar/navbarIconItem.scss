@@ -26,3 +26,71 @@
         font-family: $font-roboto;
     }
 }
+
+.search-bar-icon{
+    width: 22px;
+    height: 22px;
+}
+.search-bar-icon-part{
+    position: relative;
+
+    .search-bar{
+        background-color: white;
+        position: absolute;
+        right: -10px;
+        top: 48px;
+        border-top: 5px solid $color-active ;
+        transition: 0.3s;
+        transform: scaleY(0);
+        transform-origin: top;
+        border-bottom: 1px solid rgb(109, 109, 109);
+        border-left: 1px solid rgb(109, 109, 109);
+        border-right: 1px solid rgb(109, 109, 109);
+        > input{
+            width: 300px;
+            border: none;
+            outline: none;
+            padding: 10px 10px;
+        } 
+        .icon-search-container{
+            padding: 10px;
+            .icon-search{
+                color: black;
+                font-size: 20px;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: -25px;
+            right: 10px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent $color-active transparent;
+        }
+        &.displaying{
+            transform: scaleY(1);
+        }
+    }
+    .result{
+        position: absolute;
+        top: 98px;
+        right: -9px;
+        width: 340px;
+        background-color: white;
+        box-shadow: 1px 1px 5px rgb(122, 122, 122);
+        max-height: 150px;
+        overflow: auto;
+        .link-search-bar{
+            text-decoration: none;
+            display: block;
+            line-height: 30px;
+            text-indent: 10px;
+            color: black;
+            &:hover{
+                background-color: rgb(207, 207, 207);
+            }
+        }
+        
+    }
+}

@@ -3,9 +3,11 @@ import { Link, NavLink } from 'react-router-dom';
 import ShoppingIcon from './navbar/shoppingIcon';
 import SearchBar from './navbar/searchBar';
 import LoginIcon from './navbar/logIn';
+import AccountIcon from './navbar/account';
 import './NavBar.scss';
 
-const NavBar = () => {
+
+const NavBar = ({ user, shoppingCart }) => {
     return ( 
         <nav className="navbar-desktop d-flex justify-content-between align-items-center">
             <div className="navbar-container d-flex justify-content-between align-items-center">
@@ -45,13 +47,13 @@ const NavBar = () => {
                         style ={{marginLeft:"25px"}}
                         title = "Giỏ Hàng"
                         to="/gio-hang">
-                            <ShoppingIcon/>
+                            <ShoppingIcon shoppingCart = {shoppingCart}/>
                     </NavLink>
                     <NavLink 
                         style ={{marginLeft:"25px"}}
-                        title = "Đăng Nhập"
-                        to="/dang-nhap">
-                            <LoginIcon/>
+                        title = {user ? `Xin chào ${user.name}` : "Đăng Nhập"}
+                        to={user ? "/tai-khoan" : "/dang-nhap"}>
+                            {user ? <AccountIcon /> : <LoginIcon/>}
                     </NavLink>
                 </div>
                 </div>

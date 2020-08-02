@@ -1,6 +1,7 @@
 import React from 'react';
 import './breadCrumb.scss';
 import { Link } from 'react-router-dom';
+import addfunc from '../../ultis/additionalFunction';
 
 const BreadCrumb = ({ title, titleParent }) => {
     return ( 
@@ -11,7 +12,7 @@ const BreadCrumb = ({ title, titleParent }) => {
                 <li><Link to="/">Trang Chủ</Link></li>
                 <span>|</span>
                 <li>{title ?  
-                    <Link to="/san-pham">{titleParent}</Link>
+                    <Link to={`/${addfunc.titlePath(titleParent)}`}>{titleParent}</Link>
                     : titleParent}
                 </li>
                 {title && <span>|</span>}

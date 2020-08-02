@@ -1,3 +1,5 @@
+
+
 function setDimension( source, target){ //set element target dimension is equal to element source dimension 
     const myWidth = source.clientWidth;
     target.style.width = myWidth + "px";
@@ -34,45 +36,65 @@ function checkAreAllInputFilled(){
 
 function checkInput(inputCheck){
     const errors = {}
-    for (let input in inputCheck){
-        errors[input] = eval(inputCheck[input])(input);// execute function to check
+    for (let inputName in inputCheck){
+        errors[inputName] = eval(inputCheck[inputName])(inputName);// execute function to check
     }
     return errors
 }
 
-
+function checkIfThereAreAnyError(errors){
+    for (let error in errors){
+        if (errors[error] !== "") {
+            return true
+        } 
+    }
+    return false
+}
 
 function emailCheck(inputName){
-    const emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    const input = document.querySelector(`#${inputName}`);
+    const testRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const input = document.querySelector(`#${inputName}`).value;
     const error = "Email này không đúng định dạng"
-    if (emailRegex.test(input) === false) return error
+    if (testRegex.test(input) === false) return error
     else return "";
 }
 
 function phoneCheck(inputName){
-    const emailRegex = /^\d{10}$/;
-    const input = document.querySelector(`#${inputName}`);
-    const error = "Số điện thoại chỉ gồm 10 chữ số"
-    if (emailRegex.test(input) === false) return error
+    const testRegex = /^\d{10}$/;
+    const input = document.querySelector(`#${inputName}`).value;
+    const error = "Số điện thoại phải là 10 chữ số"
+    if (testRegex.test(input) === false) return error
     else return "";
 }
 
 function passwordCheck(inputName){
-    const emailRegex = /^\w{6,}$/;
-    const input = document.querySelector(`#${inputName}`);
+    const testRegex = /^\S{6,}$/;
+    const input = document.querySelector(`#${inputName}`).value;
     const error = "Mật khẩu có ít nhất 6 kí tự"
-    if (emailRegex.test(input) === false) return error;
+    if (testRegex.test(input) === false) return error;
     else return "";
 }
 
 function checkRetype(inputName){
-    const input = document.querySelector(`#${inputName}`);
-    const inputCheck = document.querySelector(`#${inputName.replace(/Retype/,"")}`);
+    const input = document.querySelector(`#${inputName}`).value;
+    const inputCheck = document.querySelector(`#${inputName.replace(/Retype/,"")}`).value;
     const error = "Mật khẩu không khớp"
     if (input !== inputCheck) return error
     else return "";
 }
+
+function checkhtmlHeight(){
+    const htmlHieght = document.documentElement.offsetHeight;
+    const windowHeight = window.innerHeight;
+    if (htmlHieght < windowHeight)  document.querySelector('footer').classList.add('fixed');
+    else document.querySelector('footer').classList.remove('fixed');
+}
+
+
+
+
+
+
 
 export default {
     setDimension,
@@ -80,6 +102,7 @@ export default {
     releaseBody,
     checkAreAllInputFilled, 
     checkInput,
-
+    checkIfThereAreAnyError,
+    checkhtmlHeight
 }
 

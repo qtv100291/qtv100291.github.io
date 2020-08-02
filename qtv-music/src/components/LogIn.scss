@@ -15,6 +15,13 @@
         margin: 150px auto;
         border-radius: 10px;
         h2{margin-bottom: 30px;}
+        > .valid-feedback{
+            display: block;
+            text-align: center;  
+            color: red;
+            margin: 0;
+            font-size: 16px;
+        }
         .log-in-form{
             width: 100%;
             button[type = "submit"]{

@@ -85,7 +85,10 @@ class AudioPlayer extends Component {
                         </h4>
                     </div>
                     <div className="duration-bar d-flex justify-content-between"> 
-                        <input type="range" ref={this.mySliderBar} value={this.state.valueRef || 0} onChange={this.handleAudioTime}/>
+                        <div className="progress-bar-audio">
+                            <div className="progress-bar-content" style={{width:`${this.state.valueRef}%`}}></div>
+                            <input type="range" ref={this.mySliderBar} value={this.state.valueRef || 0} onChange={this.handleAudioTime} className="input-slider"/>
+                        </div>
                         <div className="audio-time">
                             <span>{this.state.timePlay >= 60 ? "01" : "00"} </span> : <span className="time-play">{this.state.timePlay >= 10 ? this.state.timePlay >=60 ? `0${this.state.timePlay - 60}` : this.state.timePlay : `0${this.state.timePlay}`}</span> / <span>{addfunc.setTimeInSecond(this.state.timeDuration) ?  addfunc.setTimeInSecond(this.state.timeDuration) : "0"}</span>
                         </div>

@@ -47,6 +47,7 @@ class HomePage extends Component {
                                 previewId = {this.state.previewId}
                                 onClose={this.handleClose}
                                 inPreView = {this.state.inPreView}
+                                updateShoppingCart={this.props.updateShoppingCart}
                 />
                 <CarouselFade/>
                 <AlbumHomePage 

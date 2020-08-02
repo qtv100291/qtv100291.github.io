@@ -10,7 +10,7 @@ import pen from '../assets/blog/pen-1.png';
 import BreadCrumb from './common/breadCrumb';
 
 const Blog = () => {
-    const title_1 = "Nhìn Lại Cuộc Đời Và Sự Nghiệp Của Chester Bennington";
+    const title_1 = "Chester Bennington một cuộc đời để nhớ";
     const title_2 = "Đô Thị Phần Lan Trong Cuộc Đua Giành Ngôi Vị Thủ Đô Metal";
     const title_3 = "Ban Nhạc Hạc San Ra Mắt Album Hồn Trăng Máu";
     const title_4 = "Những Điều Thú Vị Về Tứ Trụ Thrash Metal";
@@ -31,7 +31,7 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="article-description">
-                        <h2 className="article-description-title">Nhìn Lại Cuộc Đời Và Sự Nghiệp Của Chester Bennington</h2>
+                        <h2 className="article-description-title">Chester Bennington - Một Cuộc Đời Để Nhớ</h2>
                         <div className="article-description-info d-flex">
                             <div className="article-item-date d-flex justify-content-between align-items-center">
                                 <img src={calendar} alt="lịch"/>

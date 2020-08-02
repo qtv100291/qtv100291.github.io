@@ -20,8 +20,8 @@
         .audio-player-song-name{
             position: relative;
             overflow: hidden;
-    
-            .song-name-preview {
+            margin-top: 5px;
+            .song-name-preview{
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 20px;
@@ -38,10 +38,55 @@
         }
         .duration-bar{
             width: 100%;
-            input{
+            .progress-bar-audio{
+                position: relative;
                 width: calc(100% - 135px);
-                &:hover{
-                    cursor: pointer;
+                display: flex;
+                align-items: center;
+                .progress-bar-content{
+                    position: absolute;
+                    left: 0;
+                    top: 6.5px;
+                    background-color: #007aff;
+                    z-index: 2;
+                    height: 9.5px;
+                    border-radius: 10px;
+                    pointer-events: none;
+                }
+                .input-slider{
+                    overflow: hidden;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    height: 10px;
+                    border-radius: 10px;
+                    background: #d3d3d3;
+                    outline: none;
+                    box-shadow: none;
+                    width: 100%;
+                    border: none;
+                    &::-webkit-slider-thumb{
+                        -webkit-appearance: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        width: 0;
+                        height: 0;
+                    }
+                    &::-moz-range-thumb{
+                        width: 0px;
+                        height: 0px;
+                        border-radius: 99px;
+                        background: #007aff;
+                        cursor: pointer;
+                        border: 0;
+                    }
+                    
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
                 }
             }
             .audio-time{

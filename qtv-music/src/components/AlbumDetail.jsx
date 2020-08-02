@@ -6,8 +6,7 @@ import PreviewModal from './common/previewModal';
 import { getAlbumDetail, getRelatedAlbum } from '../services/albumServiceHomePage';
 import addfunc from '../ultis/additionalFunction';
 import additionalFunctionDom from '../ultis/additionalFunctionDom';
-import calendar from '../assets/blog/calendar-1.png';
-import pen from '../assets/blog/pen-1.png';
+import shoppingCartFunc from '../ultis/shoppingCartFunc';
 import'./AlbumDetail.scss';
 
 class AlbumDetail extends Component {
@@ -52,6 +51,13 @@ class AlbumDetail extends Component {
         this.setState({ currentTab })
     }
 
+    handleAddToCart = () =>{
+        const { id, albumName, price, albumCover, bandName } = this.state.album;
+        const imagePath = '/' + albumCover + '/cover.jpg';
+        const newItem = new shoppingCartFunc.Item(id, albumName, price, imagePath, bandName);
+        this.props.updateShoppingCart(newItem);
+    }
+
     render() { 
         const { releaseYear,
                 albumName, 
@@ -73,6 +79,7 @@ class AlbumDetail extends Component {
                                 previewId = {this.state.previewId}
                                 onClose={this.handleClose}
                                 inPreView = {this.state.inPreView}
+                                updateShoppingCart={this.props.updateShoppingCart}
                 />
                 <BreadCrumb title={albumName} titleParent="Sản Phẩm"/>
                 <section className="section-album-detail-container d-flex justify-content-between">
@@ -86,7 +93,10 @@ class AlbumDetail extends Component {
                         <h3 className="album-band-name">{bandName} - {releaseYear}</h3>
                         <h3 className="album-price">{price} VND</h3>
                         <AudioPlayer src ={mp3Path} songName = {previewSongName}/>
-                        <div className="button-add-to-cart d-flex justify-content-center align-items-center">Thêm Vào Giỏ Hàng</div>
+                        <div className="button-add-to-cart d-flex justify-content-center align-items-center"
+                            onClick={this.handleAddToCart}
+                            >Thêm Vào Giỏ Hàng
+                        </div>
                         <div className="product-presentation">
                             <div className="product-presentation-header d-flex" >
                                 <div className={this.state.currentTab === "1" ?

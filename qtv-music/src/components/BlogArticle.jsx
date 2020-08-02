@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './BlogArticle.scss';
 import addfunc from '../ultis/additionalFunction';
-import calendar from '../assets/blog/calendar-1.png';
-import pen from '../assets/blog/pen-1.png';
 import BreadCrumb from './common/breadCrumb';
-import additionalFunctionDom from '../ultis/additionalFunctionDom';
 import { getArticle } from '../services/articleService';
 import articlePreprocessor from '../ultis/articlePreprocessor';
 

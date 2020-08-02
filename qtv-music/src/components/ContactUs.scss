@@ -1,0 +1,46 @@
+@import '../variables.scss';
+
+.contact-us {
+    width: 90%;
+    max-width: 1200px;
+    margin: 72px auto 72px auto;
+    p{
+        margin-bottom: 10px;
+    }
+    .about-us{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        h2{
+            font-size: 35px;
+            line-height: 50px;
+        }
+    }
+    .shop-information{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        h2{
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .shop-information-container{
+            width: 100%;
+            > .shop-google-map{
+                width: 90%;
+                max-width: 575px;
+                > iframe{
+                    width: 100%;
+                    height: 350px;
+                    border: none;
+                }
+            }
+            > .shop-information-detail{
+                width: 90%;
+                max-width: 575px;
+            }
+        }
+    }
+}

@@ -28,7 +28,7 @@ const CarouselHomePage = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <Link to='/blog/chester'>
+                <Link to='/blog/Chester-Bennington-một-cuộc-đời-để-nhớ-1'>
                     <div className ="carousel-banner">
                         <div className="carousel-banner-photo">
                             <img

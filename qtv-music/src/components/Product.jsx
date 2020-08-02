@@ -30,10 +30,23 @@ class Product extends Component {
         const album = addfunc.sortAToZ(albumRaw);
         const vietnameseFilter = addfunc.filterMusic("Việt Nam", album);
         const internationalFilter = addfunc.filterMusic("Quốc Tế", album);
-        this.setState({vietnameseFilter, internationalFilter, album});
+        const selectedFilterValue = this.props.location.state ? this.props.location.state.band : null;
+        this.setState({vietnameseFilter, internationalFilter, album, selectedFilterValue});
         document.title = `Sản Phẩm`;
         window.scrollTo(0, 0);
     }
+
+    componentDidUpdate(prevProps, prevState){
+        if (prevProps.location.state !== this.props.location.state){
+            this.setState({selectedFilterValue : null});
+            return
+        }
+        if (prevState.selectedFilterValue !== this.state.selectedFilterValue && this.state.selectedFilterValue === null){
+            this.setState({selectedFilterValue : null});
+        }
+    }
+
+    
 
     handleOpening = id => {
         additionalFunctionDom.fixBody();
@@ -51,6 +64,8 @@ class Product extends Component {
 
     handlePageChange = page => {
         this.setState( { currentPage : page })
+        document.documentElement.classList.add('on-top');
+        setTimeout(() => window.scrollTo(0,0),100);
     }
 
     handlePreviousPage = () => {
@@ -70,7 +85,6 @@ class Product extends Component {
     handleFilter = filterValue => {
         const previousFilterValue = this.state.selectedFilterValue;
         const filterValueEnd =  (filterValue === previousFilterValue) ? null : filterValue
-        console.log(filterValue)
         this.setState({
                         selectedFilterValue : filterValueEnd, 
                         currentPage : 1, 
@@ -92,6 +106,7 @@ class Product extends Component {
                                 previewId = {this.state.previewId}
                                 onClose={this.handleClose}
                                 inPreView = {this.state.inPreView}
+                                updateShoppingCart={this.props.updateShoppingCart}
                 />
                 <BreadCrumb titleParent="Sản Phẩm"/>
                 <div className="product-section-container d-flex justify-content-between">
@@ -141,5 +156,5 @@ class Product extends Component {
          );
     }
 }
- 
+
 export default Product;

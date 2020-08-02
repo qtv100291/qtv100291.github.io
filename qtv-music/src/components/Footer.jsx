@@ -14,18 +14,13 @@ const NavBar = () => {
                     <div className="footer-page" >
                         <Link 
                             className="footer-page-item" 
-                            to="/huong-dan">
-                                Hướng Dẫn
+                            to="/huong-dan-mua-hang">
+                                Hướng Dẫn Mua Hàng
                         </Link>
-                        <NavLink 
-                            className="footer-page-item" 
-                            to="/dieu-khoan">
-                                Điều Khoản
-                        </NavLink>
                         <Link 
                             className="footer-page-item" 
-                            to="/chinh-sach">
-                                Chính Sách
+                            to="/dieu-khoan-dich-vu">
+                                Điều Khoản Dịch Vụ
                         </Link>
                     </div>
                         <div className="footer-icon d-flex">

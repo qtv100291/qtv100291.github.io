@@ -3,6 +3,7 @@ import { getAlbumDetail } from '../../services/albumServiceHomePage';
 import AudioPlayer from '../common/audioPlayer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import shoppingCartFunc from '../../ultis/shoppingCartFunc';
 import './previewModal.scss'
 import { createRef } from 'react';
 
@@ -24,6 +25,14 @@ class PreviewModal extends Component {
 
     handleCloseModal= () => {
         this.props.onClose()
+    }
+
+    handleAddToCart = () =>{
+        const { id, albumName, price, albumCover, bandName } = this.state.album;
+        const imagePath = '/' + albumCover + '/cover.jpg';
+        const newItem = new shoppingCartFunc.Item(id, albumName, price, imagePath, bandName);
+        this.props.updateShoppingCart(newItem);
+        this.handleCloseModal();
     }
 
     render() { 
@@ -57,7 +66,10 @@ class PreviewModal extends Component {
                         <h3 className="album-band-name">{bandName}</h3>
                         <h3 className="album-price">{price} VND</h3>
                         {/* <AudioPlayer src ={mp3Path} songName = {previewSongName} inPreView={this.props.inPreView}/> */}
-                        <div className="button-add-to-cart d-flex justify-content-center align-items-center">Thêm Vào Giỏ Hàng</div>
+                        <div className="button-add-to-cart d-flex justify-content-center align-items-center"
+                            onClick={this.handleAddToCart}
+                            >
+                            Thêm Vào Giỏ Hàng</div>
                         <div className="preview-modal-presentation">
                             <h4 className="preview-modal-presentation-title">Giới Thiệu : </h4>
                             <div className="album-description">

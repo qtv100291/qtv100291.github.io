@@ -27,7 +27,10 @@ export default () => {
         navigation
         >
         <SwiperSlide >
-            <Link to="/">
+            <Link to={{
+                pathname: '/san-pham',
+                state : {band : "Bức Tường"}
+            }}>
                 <div className="slider-artist-item">
                     <img src={bucTuong} alt="Bức Tường"/>
                     <h4 className="overlay-slider-item d-flex align-items-center">Bức Tường</h4>
@@ -35,7 +38,10 @@ export default () => {
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-        <Link to="/">
+        <Link to={{
+                pathname: '/san-pham',
+                state : {band : "Metallica"}
+        }}>
             <div className="slider-artist-item">
                 <img src={metallica} alt="Metallica"/>
                 <h4 className="overlay-slider-item d-flex align-items-center">Metallica</h4>
@@ -43,7 +49,10 @@ export default () => {
         </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/">
+            <Link to={{
+                pathname: '/san-pham',
+                state : {band : "Nightwish"}
+            }}>
                 <div className="slider-artist-item">
                     <img src={nightWish} alt="Nightwish"/>
                     <h4 className="overlay-slider-item d-flex align-items-center">Nightwish</h4>
@@ -51,7 +60,10 @@ export default () => {
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-        <Link to="/">
+        <Link to={{
+                pathname: '/san-pham',
+                state : {band : "UnlimiteD"}
+            }}>
             <div className="slider-artist-item">
                 <img src={unlimited} alt="Unlimited"/>
                 <h4 className="overlay-slider-item d-flex align-items-center">UnlimiteD</h4>
@@ -59,7 +71,10 @@ export default () => {
         </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/">
+            <Link to={{
+                pathname: '/san-pham',
+                state : {band : "Linkin Park"}
+            }}>
                 <div className="slider-artist-item">
                     <img src={linkinPark} alt="Linkin Park"/>
                     <h4 className="overlay-slider-item d-flex align-items-center">Linkin Park</h4>
@@ -67,7 +82,10 @@ export default () => {
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/">
+            <Link to={{
+                pathname: '/san-pham',
+                state : {band : "DragonForce"}
+            }}>
                 <div className="slider-artist-item">
                     <img src={dragonForce} alt="DragonForce"/>
                     <h4 className="overlay-slider-item d-flex align-items-center">DragonForce</h4>

@@ -3,7 +3,6 @@ import ReactHtmlParser from 'react-html-parser'
 export default function articlePreprocessor(article) { 
     let output = `<h2 class="title-article">${article.title}</h2>`
     let outputPart;
-    console.log(article.content)
     for (let element of article.content ){
         const elementArray = element.split(" --- ");
         switch (elementArray[0]){
@@ -56,7 +55,6 @@ export default function articlePreprocessor(article) {
                 break;
             
         }
-        console.log(outputPart)
         output += outputPart;
     }
 

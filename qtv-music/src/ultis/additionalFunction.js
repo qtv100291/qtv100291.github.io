@@ -97,8 +97,9 @@ function getAlbumId(path){
 }
 
 function getRatioSliderBar ( time, timeDuration ){
-    const rationSliderBar = Math.ceil(time/timeDuration*100)
-    return rationSliderBar 
+    const ratioSliderBar = (time/timeDuration*100).toFixed(2);
+    // const widthSlider = document.querySelector('.input-slider::-webkit-slider-thumb').style.width = `${ratioSliderBar}`
+    return ratioSliderBar 
 }
 
 function setTimeInSecond(time){
@@ -119,6 +120,11 @@ function songTimeDuration(time){
     return `${minutes} : ${seconds}`
 }
 
+function titlePath(title){
+    const path = title.toLowerCase().split(" ").join("-");
+    return path
+}
+
 export default {
     filterMusic,
     sortAToZ,
@@ -133,5 +139,12 @@ export default {
     getRatioSliderBar,
     setTimeInSecond,
     getTimePlay,
-    songTimeDuration
+    songTimeDuration,
+    titlePath
+}
+
+function add(a){
+    return function add2(b){
+        return a+b
+    }
 }
