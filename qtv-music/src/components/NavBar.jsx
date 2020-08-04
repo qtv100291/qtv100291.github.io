@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import ShoppingIcon from './navbar/shoppingIcon';
 import SearchBar from './navbar/searchBar';
@@ -8,6 +8,7 @@ import './NavBar.scss';
 
 
 const NavBar = ({ user, shoppingCart }) => {
+
     return ( 
         <nav className="navbar-desktop d-flex justify-content-between align-items-center">
             <div className="navbar-container d-flex justify-content-between align-items-center">

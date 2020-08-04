@@ -1,5 +1,0 @@
-{
-  "databaseFile": "database.json",
-  "jwtSecret": "robin_huy",
-  "jwtTokenexpiresIn": "10m"
-}

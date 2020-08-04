@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { getAlbumDetail } from '../../services/albumServiceHomePage';
-import AudioPlayer from '../common/audioPlayer';
+// import AudioPlayer from '../common/audioPlayer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import shoppingCartFunc from '../../ultis/shoppingCartFunc';

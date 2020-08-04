@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.form-group-select{
+    margin-bottom: 15px;
+    .select-input{
+        label{
+            display: inline-block;
+            width: 150px;
+            margin: 0;
+        }
+        select{
+            width: 350px;
+            height: 36px;
+            border: 1px solid rgb(175, 175, 175);
+            font-size: 16px;
+            line-height: 36px;
+            border-radius: 3px;
+            outline: none;
+            background: none;
+            box-shadow: none;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+.obligation-mark{
+    color: red;
+}
+.valid-feedback{
+    display: block;
+}

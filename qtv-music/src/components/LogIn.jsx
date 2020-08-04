@@ -55,5 +55,5 @@ class LogIn extends Form {
         )
     }
 }
- 
+
 export default LogIn;

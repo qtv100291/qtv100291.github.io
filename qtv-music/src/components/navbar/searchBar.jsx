@@ -3,18 +3,22 @@ import './navbarIconItem.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { searchAlbum } from '../../services/albumServiceHomePage';
 import { Link } from 'react-router-dom';
+import addfunc from '../../ultis/additionalFunction';
+import { createRef } from 'react';
 
 class SearchBar extends Component {
     state = { 
         isDisplaying: false,
         keyword : "",
-        isSearching: false,
         searchResult:null
     }
 
+    myInput = createRef()
+
     handleChangeIcon = () => {
         const isDisplaying = this.state.isDisplaying ? false : true;
-        this.setState({ isDisplaying, keyword: "" });
+        this.setState({ isDisplaying, keyword: "", searchResult:null });
+        isDisplaying && this.myInput.current.focus();
     }
 
     handleSearchInput = async ({currentTarget : input}) => {
@@ -30,24 +34,23 @@ class SearchBar extends Component {
         }
     }
 
+    handleLoseFocus = () => {
+        setTimeout(() => this.setState({ isDisplaying: false, keyword: "", searchResult:null }),300)
+    }
+
     renderSearchResult=( result, searchInputRaw) =>{
-        const searchInput = this.removeAccents(searchInputRaw).toLowerCase();
+        const searchInput = addfunc.removeAccents(searchInputRaw).toLowerCase();
         const resultPath = '/san-pham/' + (result.albumName && result.albumName.replace(/ /g, "-")) + '-' + result.id;
-        const indexOfTextColored = this.removeAccents(result.albumName).toLowerCase()
+        const indexOfTextColored = addfunc.removeAccents(result.albumName).toLowerCase()
                                                                     .indexOf(searchInput)
         const textColored = result.albumName.slice(indexOfTextColored, indexOfTextColored + searchInput.length);
         return <Link to = {resultPath} key={result.id} className="link-search-bar">
                     <div className="link-container">
-                        {result.albumName.slice(0,indexOfTextColored)}<span>{textColored}</span>{result.albumName.slice(indexOfTextColored + searchInput.length)}
+                        {result.albumName.slice(0,indexOfTextColored)}<span className="text-colored">{textColored}</span>{result.albumName.slice(indexOfTextColored + searchInput.length)}
                     </div>
              </Link>;
     }
 
-    removeAccents = str => {
-        return str.normalize('NFD')
-                  .replace(/[\u0300-\u036f]/g, '')
-                  .replace(/đ/g, 'd').replace(/Đ/g, 'D');
-    }
     
     render() { 
         const { searchResult, keyword, isDisplaying, isSearching } = this.state
@@ -59,16 +62,17 @@ class SearchBar extends Component {
                 <div className={!isDisplaying ? "search-bar d-flex align-items-center" : "search-bar displaying d-flex align-items-center"}>
                     <input type="text" 
                         onChange={this.handleSearchInput}
-                        onBlur = {this.handle} 
+                        onBlur = {this.handleLoseFocus} 
                         placeholder="Tìm Kiếm..." 
                         id="search-bar-input" 
                         value={keyword} 
+                        ref={this.myInput}
                         autoComplete="off"
                     />
                     <div className="icon-search-container">
                         <FontAwesomeIcon icon = "search" className="real-font-awesome icon-search"/>
                     </div>
-                    <div className={isSearching ? "result displaying" : "result"}>
+                    <div className="result">
                         {searchResult && 
                         (searchResult.length === 0 ? 
                         <p>Không có sản phẩm phù hợp</p> 

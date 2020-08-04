@@ -14,6 +14,7 @@ import PurchaseGuidance from './components/PurchaseGuidance';
 import ShoppingCart from './components/ShoppingCart';
 import ContactUs from './components/ContactUs';
 import ServicePolicy from './components/ServicePolicy';
+import Payout from './components/Payout';
 import IconLibrary from './ultis/addIcon';
 import authService from './services/loginService';
 import shoppingCartFunc from './ultis/shoppingCartFunc';
@@ -146,6 +147,7 @@ class App extends Component {
               onDeleteItem = {this.handleDeleteItem}
               onCheckEmpty = {this.handleCheckEmpty}
             />}/>
+            <Route path="/thanh-toan" component={Payout}/>
             <Route exact path="/" render={(props) => <HomePage {...props} updateShoppingCart= {this.handleUpdateShoppingCart}/>}/>
         </Switch>
         <ScrollTopIcon/>

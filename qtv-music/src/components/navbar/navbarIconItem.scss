@@ -71,26 +71,37 @@
         &.displaying{
             transform: scaleY(1);
         }
-    }
-    .result{
-        position: absolute;
-        top: 98px;
-        right: -9px;
-        width: 340px;
-        background-color: white;
-        box-shadow: 1px 1px 5px rgb(122, 122, 122);
-        max-height: 150px;
-        overflow: auto;
-        .link-search-bar{
-            text-decoration: none;
-            display: block;
-            line-height: 30px;
-            text-indent: 10px;
-            color: black;
-            &:hover{
-                background-color: rgb(207, 207, 207);
+        .result{
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 340px;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgb(122, 122, 122);
+            max-height: 150px;
+            overflow: auto;
+            border-radius: 0 0 3px 3px;
+            p{
+                margin: 0;
+                line-height: 25px;
+                text-align: center;
+                padding: 5px 0;
             }
+            .link-search-bar{
+                text-decoration: none;
+                display: block;
+                line-height: 30px;
+                text-indent: 10px;
+                color: black;
+                &:hover{
+                    background-color: rgb(207, 207, 207);
+                }
+                .text-colored{
+                    color: $color-active;
+                }
+            }
+            
         }
-        
     }
+    
 }

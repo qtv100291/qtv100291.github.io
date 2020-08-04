@@ -4,6 +4,9 @@
     width: 100%;
     max-width: 1200px;
     margin: 72px auto 0px auto;
+    > .banner-breadcrumb{
+        background-image: url("/san-pham-banner.jpg");
+    }
     >.product-section-container{
         width: 100%;
         margin-top: 30px;

@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.radio-input{
+    height: 32px;
+    label{
+        margin: 0;
+        margin-left: 15px; 
+        margin-top: 1px;
+        cursor: pointer;
+    }
+    input{
+        cursor: pointer;
+    }
+}

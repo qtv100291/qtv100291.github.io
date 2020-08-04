@@ -1,6 +1,7 @@
 import http from './httpService';
 import { apiUrl } from "../config.json";
 import _ from 'lodash';
+import addfunc from '../ultis/additionalFunction';
 
 const apiEndpoint = apiUrl + '/musicdata';
 
@@ -41,21 +42,19 @@ export async function getRelatedAlbum( bandName, country, albumId){ //get 2 othe
 
 
 export async function searchAlbum (searchInputRaw){
-    const searchInput = removeAccents(searchInputRaw).toLowerCase();
+    const searchInput = addfunc.removeAccents(searchInputRaw).toLowerCase();
     const { data : albumList} = await http.get(apiEndpoint + '?q=' + searchInputRaw);
     let albumListFiltered = [];
     for (let album of albumList){
-        if (removeAccents(album.albumName).toLowerCase().includes(searchInput))
+        if (addfunc.removeAccents(album.albumName).toLowerCase().includes(searchInput))
         albumListFiltered.push(album);
     }
     return albumListFiltered;
 }
 
 
-function removeAccents(str) {
-    return str.normalize('NFD')
-              .replace(/[\u0300-\u036f]/g, '')
-              .replace(/đ/g, 'd').replace(/Đ/g, 'D');
-}
+
+
+
 
 

@@ -121,8 +121,14 @@ function songTimeDuration(time){
 }
 
 function titlePath(title){
-    const path = title.toLowerCase().split(" ").join("-");
+    const path = removeAccents(title).toLowerCase().split(" ").join("-");
     return path
+}
+
+function removeAccents(str) {
+    return str.normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/đ/g, 'd').replace(/Đ/g, 'D');
 }
 
 export default {
@@ -140,11 +146,7 @@ export default {
     setTimeInSecond,
     getTimePlay,
     songTimeDuration,
-    titlePath
+    titlePath,
+    removeAccents
 }
 
-function add(a){
-    return function add2(b){
-        return a+b
-    }
-}

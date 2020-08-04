@@ -13,3 +13,19 @@ export default function registerNewUser(user){
     }
     return http.post(apiEndpoint,data)
 }
+
+
+class Conga{
+    constructor(height, width){
+        this.height = height;
+        this.width = width;
+        // this.area = this.area.bind(this)
+    }
+    area(){
+        console.log(this.height*this.width)
+    }
+
+    render(){
+        console.log("diện tích là: " , this.area.bind(this))
+    }
+}

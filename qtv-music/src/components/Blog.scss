@@ -1,6 +1,9 @@
 @import '../variables.scss';
 
 .blog-section{
+    .banner-breadcrumb{
+        background-image: url("/blog-banner.jpg");
+    }
     width: 100%;
     max-width: 1200px;
     margin: 72px auto 80px auto;
@@ -10,6 +13,8 @@
             margin-top: 80px;
             width: 100%;
             background-color: #F1F2F2;
+            border-radius: 10px;
+            overflow: hidden;
             .article-item-photo{
                 width: 100%;
                 max-width: 575px;
