@@ -64,8 +64,9 @@ const App = () => {
   const [promotionalCode, setPromotionalCode] = React.useState({name : "", reduction : 0});
 
   const deleteItem = id => {
-    const newProduct = products.filter(product => product.id !== id);
-    setProducts(newProduct);
+    const newProducts = products.filter(product => product.id !== id);
+    setProducts(newProducts);
+    saveCartToLocal(newProducts);
   }
 
   React.useEffect( () => {
