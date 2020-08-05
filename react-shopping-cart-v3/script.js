@@ -110,6 +110,7 @@ const App = () => {
   const resetShoppingCart = () => {// reset shopping cart
     setProducts(JSON.parse(JSON.stringify(PRODUCTS)));
     localStorage.removeItem('shoppingCart');
+    setPromotionalCode({name : "", reduction : 0})
   }
 
   const changeInputPromotionalCode = ({currentTarget : input}) => {
