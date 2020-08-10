@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/qtv100291/qtv100291.github.io/rock-paper-scissors/precache-manifest.f26c8fc38a1f2b8e3e925fe08ff37b12.js"
+  "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/precache-manifest.13af5fd6045d6d9ade6b66d2cd317df4.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/qtv100291/qtv100291.github.io/rock-paper-scissors/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });

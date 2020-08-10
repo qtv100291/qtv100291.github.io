@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/css/main.a54ff8a1.chunk.css",
-    "main.js": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/main.b76a310d.chunk.js",
-    "main.js.map": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/main.b76a310d.chunk.js.map",
-    "runtime-main.js": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/runtime-main.b8b440ee.js",
-    "runtime-main.js.map": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/runtime-main.b8b440ee.js.map",
-    "static/js/2.17ed1925.chunk.js": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/2.17ed1925.chunk.js",
-    "static/js/2.17ed1925.chunk.js.map": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/2.17ed1925.chunk.js.map",
-    "index.html": "/qtv100291/qtv100291.github.io/rock-paper-scissors/index.html",
-    "precache-manifest.f26c8fc38a1f2b8e3e925fe08ff37b12.js": "/qtv100291/qtv100291.github.io/rock-paper-scissors/precache-manifest.f26c8fc38a1f2b8e3e925fe08ff37b12.js",
-    "service-worker.js": "/qtv100291/qtv100291.github.io/rock-paper-scissors/service-worker.js",
-    "static/css/main.a54ff8a1.chunk.css.map": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/css/main.a54ff8a1.chunk.css.map",
-    "static/js/2.17ed1925.chunk.js.LICENSE.txt": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/js/2.17ed1925.chunk.js.LICENSE.txt",
-    "static/media/rock.png": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/media/rock.9bbddf0c.png",
-    "static/media/scissors.png": "/qtv100291/qtv100291.github.io/rock-paper-scissors/static/media/scissors.f4164fff.png"
+    "main.css": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/css/main.a54ff8a1.chunk.css",
+    "main.js": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/main.7adbdd4e.chunk.js",
+    "main.js.map": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/main.7adbdd4e.chunk.js.map",
+    "runtime-main.js": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/runtime-main.185d341e.js",
+    "runtime-main.js.map": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/runtime-main.185d341e.js.map",
+    "static/js/2.17ed1925.chunk.js": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/2.17ed1925.chunk.js",
+    "static/js/2.17ed1925.chunk.js.map": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/2.17ed1925.chunk.js.map",
+    "index.html": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/index.html",
+    "precache-manifest.13af5fd6045d6d9ade6b66d2cd317df4.js": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/precache-manifest.13af5fd6045d6d9ade6b66d2cd317df4.js",
+    "service-worker.js": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/service-worker.js",
+    "static/css/main.a54ff8a1.chunk.css.map": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/css/main.a54ff8a1.chunk.css.map",
+    "static/js/2.17ed1925.chunk.js.LICENSE.txt": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/js/2.17ed1925.chunk.js.LICENSE.txt",
+    "static/media/rock.png": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/media/rock.9bbddf0c.png",
+    "static/media/scissors.png": "/qtv100291/qtv100291.github.io/tree/master/rock-paper-scissors/static/media/scissors.f4164fff.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8b440ee.js",
+    "static/js/runtime-main.185d341e.js",
     "static/js/2.17ed1925.chunk.js",
     "static/css/main.a54ff8a1.chunk.css",
-    "static/js/main.b76a310d.chunk.js"
+    "static/js/main.7adbdd4e.chunk.js"
   ]
 }
