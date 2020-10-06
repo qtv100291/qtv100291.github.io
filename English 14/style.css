@@ -1,0 +1,16 @@
+.main-container{
+    width: 90%;
+    margin: 20px auto;
+}
+.title{
+    margin-bottom: 20px;
+}
+.audio-element > p{
+    padding: 5px 0;
+}
+.audio-element:hover{
+    cursor: pointer;
+}
+audio {
+    width: 100%;
+}
