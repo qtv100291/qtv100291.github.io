@@ -18,6 +18,7 @@ function onYouTubeIframeAPIReady(){
   });
 }
 
+
 //Part 1 : Function for Rendering productitem.html
 let itemData = {
     group: "",
@@ -234,6 +235,7 @@ function changeTab(){
         player.pauseVideo();
     }
 }
+
 //Part 7: Function for Displaying Modal in mobile and tabllet version
 
 if ($(window).innerWidth() < 1024){
