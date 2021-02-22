@@ -19,3 +19,11 @@
 .audio-player{
     width: 100%;
 }
+#second{
+    margin-top: 10px;
+}
+.access-button{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
