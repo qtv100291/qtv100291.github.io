@@ -5,12 +5,14 @@ for (let i = 1; i < 11; i++){
             Test - ${i}
         </div>`
 }
+
+
 if (!document.querySelector('.audio-player').getAttribute('src')) {
     document.querySelector('.access-button').disabled = true
 }
 document.querySelector('.audio-list').innerHTML = output;
 function startAudio(index){
-    document.querySelector('.audio-player').setAttribute('src', `MP3/Test ${index > 9 ? index : `0${index}`}.mp3`)  
+    document.querySelector('.audio-player').setAttribute('src', `MP3/TEST ${index > 9 ? index : `0${index}`}.mp3`)  
     document.querySelector('.audio-player').play()
     document.querySelector('.title').textContent = `Đang phát : TEST - ${index}`
     if (document.querySelector('.audio-player').getAttribute('src')) {
