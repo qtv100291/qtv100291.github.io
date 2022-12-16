@@ -1,0 +1,30 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+.audio-item{
+    margin: 20px 0;
+    display: block;
+}
+.audio-item:hover{
+    cursor: pointer;
+}
+.title{
+    margin-bottom: 30px;
+}
+.audio-player{
+    width: 100%;
+}
+
+#second{
+    margin-top: 10px;
+}
+.access-button{
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
