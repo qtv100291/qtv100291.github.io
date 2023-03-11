@@ -25,9 +25,25 @@ function startAudio(index) {
 document
   .querySelector(".access-button")
   .addEventListener("click", changeCurrentTime);
+document
+  .querySelector(".control-back")
+  .addEventListener("click", minus10Seconds);
+document
+  .querySelector(".control-forward")
+  .addEventListener("click", add10Seconds);
 function changeCurrentTime() {
   const minutes = parseInt(document.querySelector("#minute").value);
   const seconds = parseInt(document.querySelector("#second").value);
   const currentTime = minutes * 60 + seconds;
   document.querySelector(".audio-player").currentTime = currentTime;
+}
+
+function add10Seconds() {
+  document.querySelector(".audio-player").currentTime =
+    document.querySelector(".audio-player").currentTime + 10;
+}
+
+function minus10Seconds() {
+  document.querySelector(".audio-player").currentTime =
+    document.querySelector(".audio-player").currentTime - 10;
 }
