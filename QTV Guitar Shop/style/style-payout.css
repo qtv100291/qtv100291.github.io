@@ -1,46 +1,601 @@
+/* ===== Global ===== */
 @keyframes scale-up{
     0% {transform: scale(1);}
     40% {transform: scale(1.5);}
     70% {transform: scale(0.7);}
     100%{transform: scale(1);}
 }
+
+/* ===== Base (áp dụng mọi kích thước màn hình) ===== */
+header{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.header-main-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    position: relative;
+}
+.avatar > img{
+    width: 100%;
+}
+.title-process > h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+}
+.container{
+    width: 100%;
+}
+.main-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.exit-button{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.exit-title{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+.pop-up-modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.popup-send-feedback{
+    position: absolute;
+    width: 95%;
+    max-width: 420px;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+}
+.popup-send-feedback > img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: 15px;
+    animation: scale-up 0.4s 0.5s forwards;
+}
+.popup-content{
+    margin: 15px auto 0px auto;
+    width: 95%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+.close-popup-button{
+    background-color: #DE0000;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px auto 15px auto;
+    color: white;
+}
+.close-popup-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.user-address{
+    width: 100%;
+    box-sizing: border-box;
+}
+.user-address-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #32323D;
+}
+.user-input{
+    margin-top: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    position: relative;
+}
+.user-input > input{
+    height: 32px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-indent: 8px;
+    outline: none;
+}
+.user-input > input::placeholder{
+    color: #595959;
+}
+.user-select{
+    margin-top: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    position: relative;
+}
+.user-select > select{
+    height: 32px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    outline: none;
+}
+.user-address-part{
+    align-items: flex-start;
+}
+textarea{
+    resize: none;
+}
+#input-user-address{
+    line-height: 28px;
+}
+#input-user-address::placeholder{
+    align-items: flex-start;
+}
+.user-note-part{
+    align-items: flex-start;
+}
+#input-user-note{
+    line-height: 28px;
+}
+#input-user-note::placeholder{
+    align-items: flex-start;
+}
+.empty-check-input{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    z-index: -1;
+}
+.empty-check-option{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    width: 200px;
+    z-index: -1;
+}
+.empty-check-date{
+    width: 200px;
+}
+.expiry-date-check{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    width: 120px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    left: 0;
+    z-index: -1;
+}
+.city-option{
+    width: 220px;
+}
+.empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -14px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+}
+.feed-back-require{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.mobile-phone-check{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    width: 220px;
+    z-index: -1;
+}
+.mobile-phone-check-date{
+    width: 230px;
+}
+.mobile-phone-check-year{
+    width: 150px;
+}
+.user-payout-infor{
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.user-payout-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #32323D;
+}
+.user-payout-option > label{
+    cursor: pointer;
+    position: relative;
+    padding-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.user-payout-option > label > input{
+    opacity: 0;
+    width: 0px;
+}
+.user-payout-option > label > .checkmark{
+    position: absolute;
+    left: 0px;
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.user-payout-option > label > input:checked + .checkmark{
+    background-color: black;
+}
+.user-card-input{
+    transform-origin: left top 0;
+    display: none;
+    opacity: 0;
+    transition: 0.5s;
+}
+.user-input-sub{
+    margin-top: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    position: relative;
+}
+.user-select-sub{
+    margin-top: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    position: relative;
+}
+.user-select-sub > select{
+    height: 32px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: black;
+    outline: none;
+}
+.user-input-sub > input{
+    height: 32px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-indent: 8px;
+    outline: none;
+}
+.card-month, .card-year{
+    width: 25%;
+    position: relative;
+}
+.input-card-expiry-date{
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+}
+#card-expiry-month, #card-expiry-year{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-indent: 8px;
+    outline: none;
+}
+.item-2{
+    margin-bottom: 0;
+}
+.order-button{
+    max-width: 300px;
+    height: 50px;
+    margin: 35px auto 20px auto;
+    background: #DE0000;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+.order-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.order-note{
+    height: 30px;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #32323D;
+    text-align: center;
+}
+.summary-shopping-cart{
+    width: 100%;
+    box-sizing: border-box;
+}
+.summary-shopping-cart-title{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #DADADA;
+}
+.summary-shopping-cart-title > div{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #32323D;
+}
+.summary-shopping-cart-title > a{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #32323D;
+}
+.summary-shopping-cart-title > a:hover{
+    background-color: rgb(219, 217, 217);
+}
+.shopping-cart-item-container{
+    padding-bottom: 5px;
+}
+.shopping-cart-item{
+    border-bottom: 1px solid #DADADA;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #32323D;
+}
+.item-detail{
+    padding-top: 10px;
+}
+.item-money-value{
+    padding-top: 5px;
+    text-align: right;
+}
+.total-money{
+    margin: 0 auto;
+}
+.total-money-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.total-money-note{
+    margin-top: 5px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #32323D;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.total-money-title > div:nth-child(1){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #32323D;
+}
+.total-money-title > div:nth-child(2){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+    color: #DE0000;
+}
+.shopping-cart-note{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: #DE0000;
+    text-align: center;
+}
+
+/* ===== 1366px - ∞ ===== */
 @media only screen and (min-width: 1366px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
     .header-main-container{
-        width: 95%;
         max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 94px;
     }
     .avatar{
         width: 120px;
         height: 60px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 35px;
-        line-height: 50px;
-    }
-    .container{
-        width: 100%;
     }
     .container.scroll{
         margin-top: 124px;
@@ -48,1646 +603,310 @@
     .main-container{
         width: 95%;
         max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
     }
     .exit-button{
         margin: 20px auto 20px calc(50% - 600px);
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
     }
     .exit-button > i{
         font-size: 22px;
         transition: 0.5s;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000; 
-        transition: 0.5s;
     }
     .exit-button:hover{
-        cursor: pointer;
         color: red;
     }
     .exit-button:hover > .exit-title{
         color: red;
-        padding-left: 10px;
-    }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
     }
     .user-info{
         width: 100%;
         max-width: 875px;
     }
-    .user-address{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .user-address-title{
-        width: 300px;
-        margin: 15px auto 20px 50px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
     .user-input{
-        margin-top: 12px;
-        margin-left: 50px;
-        width: 95%;
-        max-width: 555px;
         height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-        
-    }
-    .user-input > input{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
-    }
-    .user-select{
-        margin-top: 12px;
-        margin-left: 50px;
-        width: 95%;
-        max-width: 555px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > select{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
     }
     .user-input >textarea{
-        width:  100%;
-        max-width: 400px;
         height: 75px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 7px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 7px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
-    .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        right: 200px;
-        top: 37px;
-        z-index: -1;
-    }
     .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: 37px;
-        width: 200px;
         right: 200px;
-        z-index: -1;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: 37px;
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
-    }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
     }
     .feed-back-require{
         margin-left: 50px;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
-    }
-    .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: 37px;
-        width: 220px;
-        right: 180px;
-        z-index: -1;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
-        width: 150px;
-    }
-    .user-payout-infor{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 50px;
-        transition: 0.5s;
-    }
-    .user-payout-title{
-        width: 300px;
-        margin: 15px auto 5px 50px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .user-payout-option{
-        margin-left: 50px;
-        margin-bottom: 15px;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        margin-top: 11px;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 3px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
-    }
-    .user-card-input{
-        margin-left: 20px;
-        margin-top: 15px;
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-   
-    .user-input-sub {
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }
-    .user-select-sub{
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }   
-    .user-select-sub > select{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
-    }
-    .user-input-sub > input{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
-        width:  100%;
-        max-width: 400px;
-        display: flex;
-        align-items: center;
-    }
-    .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
-    }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .item-2{
         margin-left: 0;
-        margin-bottom: 0;
-    }
-    .order-button{
-        width: 90%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
-    }
-    .summary-shopping-cart{
-        width: 100%;
-        max-width: 300px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        max-width: 260px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-    }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
     }
 }
 
-
-@media only screen and (min-width: 1024px) and (max-width: 1365px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
-    .header-main-container{
-        width: 95%;
-        max-width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        height: 84px;
-    }
-    .avatar{
-        width: 110px;
-        height: 55px;
-        position: relative;
-        padding-right: 20px;
-    }
-    .avatar > img{
-        width: 100%;
-    }
-
-    .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .exit-button{
-        margin: 20px auto 20px calc(50% - 500px);
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
-    }
-    .exit-button > i{
-        font-size: 22px;
-    }
+/* ===== 1024px - ∞ ===== */
+@media only screen and (min-width: 1024px){
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        color: #000000; 
         transition: 0.5s;
     }
     .exit-button:hover{
         cursor: pointer;
+    }
+    .exit-button:hover > .exit-title{
+        padding-left: 10px;
+    }
+    .user-address-title{
+        margin: 15px auto 20px 50px;
+    }
+    .user-input{
+        margin-left: 50px;
+        line-height: 18px;
+    }
+    .user-input > input{
+        width: 100%;
+        max-width: 400px;
+    }
+    .user-select{
+        margin-left: 50px;
+        height: 32px;
+    }
+    .user-select > select{
+        width: 100%;
+        max-width: 400px;
+    }
+    .user-input >textarea{
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: black;
+        text-indent: 8px;
+        outline: none;
+    }
+    .empty-check-input{
+        right: 200px;
+        top: 37px;
+    }
+    .empty-check-option{
+        top: 37px;
+    }
+    .mobile-phone-check{
+        top: 37px;
+        right: 180px;
+    }
+    .user-payout-infor{
+        margin-top: 50px;
+    }
+    .user-payout-title{
+        margin: 15px auto 5px 50px;
+    }
+    .user-payout-option{
+        margin-left: 50px;
+    }
+    .user-input-sub{
+        height: 32px;
+        line-height: 18px;
+    }
+    .user-select-sub{
+        height: 32px;
+        line-height: 18px;
+    }
+    .user-select-sub > select{
+        width: 100%;
+        max-width: 400px;
+    }
+    .user-input-sub > input{
+        width: 100%;
+        max-width: 400px;
+    }
+    .summary-shopping-cart{
+        max-width: 300px;
+    }
+}
+
+/* ===== 1024px - 1365px ===== */
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .header-main-container{
+        max-width: 1000px;
+    }
+    .main-container{
+        width: 1000px;
+    }
+    .exit-button{
+        margin: 20px auto 20px calc(50% - 500px);
+    }
+    .exit-button > i{
+        font-size: 22px;
+    }
+    .exit-title{
+        font-size: 18px;
+    }
+    .exit-button:hover{
         color: orangered;
     }
     .exit-button:hover > .exit-title{
         color: orangered;
-        padding-left: 10px;
-    }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
     }
     .user-info{
         width: 675px;
-        
-    }
-    .user-address{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .user-address-title{
-        width: 300px;
-        margin: 15px auto 20px 50px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-input{
-        margin-top: 12px;
-        margin-left: 50px;
-        width: 95%;
-        max-width: 555px;
         height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-        
-    }
-    .user-input > input{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
-    }
-    .user-select{
-        margin-top: 12px;
-        margin-left: 50px;
-        width: 95%;
-        max-width: 555px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > select{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
     }
     .user-input >textarea{
-        width:  100%;
-        max-width: 400px;
         height: 75px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 7px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 7px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
-    .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        right: 200px;
-        top: 37px;
-        z-index: -1;
-    }
     .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: 37px;
-        width: 200px;
         right: 200px;
-        z-index: -1;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: 37px;
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
-    }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
     }
     .feed-back-require{
         margin-left: 50px;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
-    }
-    .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: 37px;
-        width: 220px;
-        right: 180px;
-        z-index: -1;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
-        width: 150px;
-    }
-    .user-payout-infor{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 50px;
-        transition: 0.5s;
-    }
-    .user-payout-title{
-        width: 300px;
-        margin: 15px auto 5px 50px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .user-payout-option{
-        margin-left: 50px;
-        margin-bottom: 15px;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        margin-top: 11px;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 3px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
-    }
-    .user-card-input{
-        margin-left: 20px;
-        margin-top: 15px;
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-   
-    .user-input-sub {
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }
-    .user-select-sub{
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        height: 32px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: #000000;
-        position: relative;
-    }   
-    .user-select-sub > select{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
-    }
-    .user-input-sub > input{
-        width:  100%;
-        max-width: 400px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
-        width:  100%;
-        max-width: 400px;
-        display: flex;
-        align-items: center;
-    }
-    .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
-    }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .item-2{
         margin-left: 0;
-        margin-bottom: 0;
-    }
-    .order-button{
-        width: 90%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
-    }
-    .summary-shopping-cart{
-        width: 100%;
-        max-width: 300px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        max-width: 260px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-    }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
+/* ===== 769px - ∞ ===== */
+@media only screen and (min-width: 769px){
+    .title-process > h2{
+        line-height: 50px;
     }
-    .header-main-container{
+    .exit-button{
+        width: 200px;
+    }
+    .user-address-title{
+        width: 300px;
+    }
+    .user-input{
         width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
+        max-width: 555px;
+    }
+    .user-select{
+        width: 95%;
+        max-width: 555px;
+    }
+    .user-payout-title{
+        width: 300px;
+    }
+    .user-payout-option{
+        margin-bottom: 15px;
+    }
+    .user-input-sub{
+        width: 95%;
+        max-width: 535px;
+    }
+    .user-select-sub{
+        width: 95%;
+        max-width: 535px;
+    }
+    .input-card-expiry-date{
+        width: 100%;
+        max-width: 400px;
+    }
+    .summary-shopping-cart-title{
+        max-width: 260px;
+    }
+    .shopping-cart-item{
+        max-width: 260px;
+    }
+    .total-money{
+        max-width: 260px;
+    }
+}
+
+/* ===== 769px - 1365px ===== */
+@media only screen and (min-width: 769px) and (max-width: 1365px){
+    .header-main-container{
         height: 84px;
     }
     .avatar{
         width: 110px;
         height: 55px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 30px;
-        line-height: 50px;
     }
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 95%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .exit-button{
-        margin: 20px auto 20px 2.5%;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
-    }
+}
+
+/* ===== 769px - 1023px ===== */
+@media only screen and (min-width: 769px) and (max-width: 1023px){
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000;
     }
     .exit-button > i{
         font-size: 22px;
     }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
     .user-info{
-        width:calc(100% - 250px - 25px);
-    }
-    .user-address{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
+        width: calc(100% - 250px - 25px);
     }
     .user-address-title{
-        width: 300px;
         margin: 15px auto 15px 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-input{
-        margin-top: 12px;
         margin-left: 25px;
-        width: 95%;
-        max-width: 555px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-        
-    }
-    .user-input > label{
-        width: 150px;
     }
     .user-input > input{
         width: 95%;
         max-width: 450px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
     }
     .user-select{
-        margin-top: 12px;
         margin-left: 25px;
-        width: 95%;
-        max-width: 555px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > label{
-        width: 150px;
     }
     .user-select > select{
         width: 95%;
         max-width: 450px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
     }
     .user-input > textarea{
-        width:  95%;
+        width: 95%;
         max-width: 450px;
         height: 75px;
         border: 1px solid #DADADA;
@@ -1704,1908 +923,409 @@
         outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 7px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 7px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
     .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
         left: 0;
-        top: calc(100% + 7px);
-        z-index: -1;
     }
     .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: calc(100% + 7px);
-        width: 200px;
-        left:  0px;
-        z-index: -1;
+        left: 0px;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: 37px;
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
-    }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
     }
     .feed-back-require{
         margin-left: 20px;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
     }
     .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: calc(100% + 7px);
-        width: 220px;
         left: 0px;
-        z-index: -1;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
-        width: 150px;
-    }
-    .user-payout-infor{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 30px;
-        transition: 0.5s;
     }
     .user-payout-title{
-        width: 300px;
         margin: 15px auto 5px 25px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-payout-option{
         margin-left: 25px;
-        margin-bottom: 15px;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        margin-top: 11px;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 3px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
-    }
-    .user-card-input{
-        margin-left: 20px;
-        margin-top: 15px;
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-   
-    .user-input-sub {
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select-sub{
-        margin-top: 12px;
-        width: 95%;
-        max-width: 535px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }   
-    .user-select-sub > label{
-        width: 150px;
     }
     .user-select-sub > select{
         width: 95%;
         max-width: 430px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
-    }
-    .user-input-sub > label{
-        width: 150px;
     }
     .user-input-sub > input{
-        width:  95%;
+        width: 95%;
         max-width: 430px;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
-        width:  100%;
-        max-width: 400px;
-        display: flex;
-        align-items: center;
-    }
-    .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
-    }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .item-2{
         margin-left: 0;
-        margin-bottom: 0;
-    }
-    .order-button{
-        width: 90%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
     }
     .summary-shopping-cart{
-        width: 100%;
         max-width: 250px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        max-width: 260px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
-        width: 90%;
-        max-width: 260px;
-        margin: 0 auto;
-    }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
     }
 }
 
-@media only screen and (min-width: 577px) and (max-width: 768px){
-    /*Main*/
+/* ===== 577px - ∞ ===== */
+@media only screen and (min-width: 577px){
     header{
-        width: 100%;
         border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
     }
-    .header-main-container{
+    .title-process > h2{
+        padding-left: 20px;
+        border-left: 3px solid black;
+    }
+    .user-address{
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+    }
+    .user-select{
+        line-height: 18px;
+    }
+    .user-address-part >label{
+        margin-top: 7px;
+    }
+    .user-note-part >label{
+        margin-top: 7px;
+    }
+    .expiry-date-check{
+        top: 37px;
+    }
+    .user-payout-infor{
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+    }
+    .user-payout-option > label{
+        line-height: 16px;
+    }
+    .user-payout-option > label > input{
+        margin-top: 11px;
+    }
+    .user-payout-option > label > .checkmark{
+        top: 3px;
+    }
+    .user-card-input{
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .order-button{
+        width: 90%;
+    }
+    .summary-shopping-cart{
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+    }
+    .shopping-cart-item-container{
+        width: 100%;
+    }
+    .shopping-cart-item{
+        width: 90%;
+    }
+    .total-money{
+        width: 90%;
+    }
+}
+
+/* ===== 577px - 1023px ===== */
+@media only screen and (min-width: 577px) and (max-width: 1023px){
+    .main-container{
         width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
+    }
+    .exit-button{
+        margin: 20px auto 20px 2.5%;
+    }
+    .user-input{
+        line-height: 25px;
+    }
+    .user-input-sub{
+        line-height: 25px;
+    }
+    .user-select-sub{
+        line-height: 25px;
+    }
+}
+
+/* ===== 577px - 768px ===== */
+@media only screen and (min-width: 577px) and (max-width: 768px){
+    .header-main-container{
         height: 80px;
     }
     .avatar{
         width: 100px;
         height: 50px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 28px;
-        line-height: 45px;
-    }
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 95%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column-reverse;
     }
     .exit-button{
-        margin: 20px auto 20px 2.5%;
-        text-decoration: none;
-        color: black;
-        width: 50%;
-        display: flex;
-        align-items: center;
         width: 100%;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000;
     }
     .exit-button > i{
         font-size: 22px;
     }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .user-info{
-        width:100%;
-    }
-    .user-address{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 30px;
-    }
-    .user-address-title{
-        width: 90%;
-        margin: 15px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
     .user-input{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;   
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-        
-    }
-    .user-input > label{
-        width: 150px;
+        margin-bottom: 0;
     }
     .user-input > input{
         width: calc(100% - 150px);
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
-    }
-    .user-select{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > label{
-        width: 150px;
     }
     .user-select > select{
         width: calc(100% - 150px);
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
     }
     .user-input >textarea{
         width: calc(100% - 150px);
         height: 75px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 7px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 7px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
     .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
         left: 150px;
-        top: calc(100% + 7px);
-        z-index: -1;
     }
     .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        width: 200px;
         left: 150px;
-        top: calc(100% + 7px);
-        z-index: -1;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: 37px;
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
     }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
-    }
     .feed-back-require{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
+        margin-left: auto;
     }
     .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        top: calc(100% + 7px);
-        width: 220px;
         left: 150px;
-        z-index: -1;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
-        width: 150px;
-    }
-    .user-payout-infor{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin-top: 30px;
-        transition: 0.5s;
-    }
-    .user-payout-title{
-        width: 90%;
-        margin: 15px auto 5px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-payout-option{
-        width: 90%;
         margin: 0 auto 15px auto;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 16px;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        margin-top: 11px;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 3px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
-    }
-    .user-card-input{
-        margin-left: 20px;
-        margin-top: 15px;
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .user-input-sub {
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select-sub{
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }   
-    .user-select-sub > label{
-        width: 150px;
     }
     .user-select-sub > select{
         width: calc(100% - 150px);
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
-    }
-    .user-input-sub > label{
-        width: 150px;
     }
     .user-input-sub > input{
         width: calc(100% - 150px);
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
-        width: calc(100% - 150px) ;
-        display: flex;
-        align-items: center;
     }
     .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
-    }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
+        width: calc(100% - 150px);
     }
     .item-2{
         margin-left: 0;
-        margin-bottom: 0;
-    }
-    .order-button{
-        width: 90%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
-    }
-    .summary-shopping-cart{
-        width: 100%;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 10px;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        padding-bottom: 5px;
-    }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
-        width: 90%;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
-    }
-    /*footer*/
-    footer{
-        margin-top: 25px;
-    }
-    .subscription-part{
-        display: none;
     }
 }
 
-@media only screen and (min-width: 351px) and (max-width: 576px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-        border-bottom: 5px solid #C4C4C4;
+/* ===== 351px - ∞ ===== */
+@media only screen and (min-width: 351px){
+    .avatar{
+        padding-right: 20px;
     }
+    .exit-title{
+        line-height: 30px;
+    }
+}
+
+/* ===== 351px - 768px ===== */
+@media only screen and (min-width: 351px) and (max-width: 768px){
+    .title-process > h2{
+        line-height: 45px;
+    }
+}
+
+/* ===== 351px - 576px ===== */
+@media only screen and (min-width: 351px) and (max-width: 576px){
     .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 60px;
-        justify-content: center;
     }
     .avatar{
         width: 95px;
         height: 47px;
-        position: relative;
-        padding-right: 20px;
-        display: none;
-    }
-    .avatar > img{
-        width: 100%;
     }
     .title-process > h2{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 25px;
-        line-height: 45px;
     }
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column-reverse;
-    }
-    .exit-button{    
-        text-decoration: none;
-        color: black;
-        width: 95%;
+    .exit-button{
         margin: 15px auto 10px 5%;
         width: 180px;
-        display: flex;
-        align-items: center;
     }
     .exit-button > i{
         font-size: 20px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .user-info{
-        width:100%;
-    }
-    .user-address{
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        margin-top: 30px;
-        padding-bottom: 20px;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .user-address-title{
-        width: 90%;
-        margin: 15px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-input{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;   
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-input > label{
-        width: 150px;
-    }
-    .user-input > input{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
-    }
-    .user-select{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > label{
-        width: 150px;
-    }
-    .user-select > select{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
+        margin-bottom: 0;
     }
     .user-input >textarea{
-        width: 100%;
         height: 75px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 0px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 0px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
     .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
         left: 0px;
-        top: calc(100% + 7px);
-        z-index: -1;
-    }
-    .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        width: 200px;
-        left: 0px;
-        top: calc(100% + 7px);
-        z-index: -1;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: calc(100% + 7px);
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
     }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
-    }
     .feed-back-require{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
+        margin-left: auto;
     }
     .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        width: 220px;
-        left: 0px;       
-        top: calc(100% + 7px);
-        z-index: -1;
+        left: 0px;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
+    }
+    .item-2{
+        margin-left: 0;
+    }
+    .summary-shopping-cart{
+        padding-bottom: 20px;
+    }
+}
+
+/* ===== 0px - 1023px ===== */
+@media only screen and (max-width: 1023px){
+    .header-main-container{
+        max-width: 1200px;
+    }
+    .user-input{
+        flex-wrap: wrap;
+    }
+    .user-input > label{
         width: 150px;
+    }
+    .user-select{
+        flex-wrap: wrap;
+    }
+    .user-select > label{
+        width: 150px;
+    }
+    .empty-check-input{
+        top: calc(100% + 7px);
+    }
+    .empty-check-option{
+        top: calc(100% + 7px);
+    }
+    .mobile-phone-check{
+        top: calc(100% + 7px);
     }
     .user-payout-infor{
-        width: 100%;
-        box-sizing: border-box;
         margin-top: 30px;
-        transition: 0.5s;
-        padding-bottom: 20px;
-        border-bottom: 5px solid #C4C4C4;
     }
-    .user-payout-title{
-        width: 90%;
-        margin: 15px auto 5px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .user-payout-option{
-        width: 90%;
-        margin: 15px auto 15px auto;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: block;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 6.5px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
-    }
-    .user-card-input{
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .user-input-sub {
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .user-input-sub{
         flex-wrap: wrap;
-        color: #000000;
-        position: relative;
     }
     .user-select-sub{
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }   
+    }
     .user-select-sub > label{
         width: 150px;
-    }
-    .user-select-sub > select{
-        width:100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
     }
     .user-input-sub > label{
         width: 150px;
     }
-    .user-input-sub > input{
-        width: 100% ;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
+}
+
+/* ===== 0px - 768px ===== */
+@media only screen and (max-width: 768px){
+    .main-container{
+        flex-direction: column-reverse;
     }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
+    .user-info{
         width: 100%;
-        display: flex;
-        align-items: center;
     }
-    .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
+    .user-address{
+        margin-top: 30px;
     }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
+    .user-address-title{
+        width: 90%;
+        margin: 15px auto;
     }
-    .item-2{
-        margin-left: 0;
+    .user-input{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .user-select{
+        width: 90%;
+        margin-right: auto;
         margin-bottom: 0;
+        margin-left: auto;
     }
-    .order-button{
-        width: 100%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
-    }
-    .summary-shopping-cart{
-        width: 100%;
-        box-sizing: border-box;
-        padding-bottom: 20px;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
+    .user-input >textarea{
         border: 1px solid #DADADA;
         box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
         color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
+        text-indent: 8px;
+        outline: none;
     }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
+    .feed-back-require{
         width: 90%;
-        margin: 0 auto;
-        padding-bottom: 5px;
+        margin-right: auto;
     }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
+    .user-payout-title{
+        width: 90%;
+        margin: 15px auto 5px auto;
+    }
+    .user-payout-option{
+        width: 90%;
+    }
+    .user-input-sub{
         width: 100%;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
     }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
+    .user-select-sub{
         width: 100%;
-        margin: 0 auto;
     }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
-    }
-    /*footer*/
     footer{
         margin-top: 25px;
     }
@@ -3614,726 +1334,178 @@
     }
 }
 
-@media only screen and (max-width: 350px){
-    /*Main*/
+/* ===== 0px - 576px ===== */
+@media only screen and (max-width: 576px){
     header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
+        border-bottom-style: solid;
         border-bottom: 5px solid #C4C4C4;
     }
     .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        height: 50px;
         justify-content: center;
+    }
+    .avatar{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .user-address{
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        padding-bottom: 20px;
+        border-bottom: 5px solid #C4C4C4;
+    }
+    .user-input{
+        line-height: 30px;
+    }
+    .user-input > input{
+        width: 100%;
+    }
+    .user-select{
+        line-height: 30px;
+    }
+    .user-select > select{
+        width: 100%;
+    }
+    .user-input >textarea{
+        width: 100%;
+    }
+    .user-address-part >label{
+        margin-top: 0px;
+    }
+    .user-note-part >label{
+        margin-top: 0px;
+    }
+    .empty-check-option{
+        left: 0px;
+    }
+    .expiry-date-check{
+        top: calc(100% + 7px);
+    }
+    .user-payout-infor{
+        padding-bottom: 20px;
+        border-bottom: 5px solid #C4C4C4;
+    }
+    .user-payout-option{
+        margin: 15px auto 15px auto;
+    }
+    .user-payout-option > label{
+        line-height: 25px;
+        display: block;
+    }
+    .user-payout-option > label > input{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .user-payout-option > label > .checkmark{
+        top: 6.5px;
+    }
+    .user-input-sub{
+        line-height: 30px;
+    }
+    .user-select-sub{
+        line-height: 30px;
+    }
+    .user-select-sub > select{
+        width: 100%;
+    }
+    .user-input-sub > input{
+        width: 100%;
+    }
+    .input-card-expiry-date{
+        width: 100%;
+    }
+    .order-button{
+        width: 100%;
+    }
+    .summary-shopping-cart{
+        border-bottom: 5px solid #C4C4C4;
+    }
+    .shopping-cart-item-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .shopping-cart-item{
+        width: 100%;
+    }
+    .total-money{
+        width: 100%;
+    }
+}
+
+/* ===== 0px - 350px ===== */
+@media only screen and (max-width: 350px){
+    .header-main-container{
+        height: 50px;
     }
     .avatar{
         width: 84px;
         height: 42px;
-        position: relative;
         padding-right: 10px;
-        display: none;
-    }
-    .avatar > img{
-        width: 100%;
     }
     .title-process > h2{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 22px;
         line-height: 40px;
     }
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column-reverse;
-    }
-    .exit-button{    
-        text-decoration: none;
-        color: black;
-        width: 95%;
+    .exit-button{
         margin: 15px auto 10px 2.5%;
         width: 160px;
-        display: flex;
-        align-items: center;
     }
     .exit-button > i{
         font-size: 19px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
         line-height: 25px;
-        color: #000000;
-    }
-    .pop-up-modal{
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        z-index: 7;
-        background-color: rgba(0, 0, 0, 0.9);
-        top: 0;
-        left: 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .popup-send-feedback{
-        position: absolute;
-        width: 95%;
-        max-width: 420px;
-        left: 50%;
-        top: 35%;
-        transform: translate(-50%,-50%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        background-color: white;
-        border-radius: 15px;
-        border: 1px solid #C4C4C4;
-    }
-    .popup-send-feedback > img{
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        margin-top: 15px;
-        animation: scale-up 0.4s 0.5s forwards;
-    }
-    .popup-content{
-        margin: 15px auto 0px auto;
-        width: 95%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        
-    }
-    .close-popup-button{
-        background-color: #DE0000;
-        border-radius: 20px;
-        width: 200px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-        margin: 15px auto 15px auto;
-        color: white;
-    }
-    .close-popup-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .user-info{
-        width:100%;
-    }
-    .user-address{
-        width: 100%;
-        margin: 0 auto;
-        box-sizing: border-box;
-        margin-top: 30px;
-        padding-bottom: 20px;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .user-address-title{
-        width: 90%;
-        margin: 15px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
     }
     .user-input{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;   
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-input > label{
-        width: 150px;
-    }
-    .user-input > input{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .user-input > input::placeholder{
-        color: #595959;
-    }
-    .user-select{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 12px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select > label{
-        width: 150px;
-    }
-    .user-select > select{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        outline: none;
+        margin-bottom: 0;
     }
     .user-input >textarea{
-        width: 100%;
         height: 75px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
     }
     .user-address-part{
-        align-items: flex-start;
         height: auto;
     }
-    .user-address-part >label{
-        margin-top: 0px;
-    }
-    textarea{
-        resize: none;
-    }
-    #input-user-address{
-        line-height: 28px;
-    }
-    #input-user-address::placeholder{
-        align-items: flex-start;
-    }
     .user-note-part{
-        align-items: flex-start;
         height: auto;
         margin-bottom: 15px;
     }
     .user-note-part> textarea{
         height: 125px;
     }
-    .user-note-part >label{
-        margin-top: 0px;
-    }
-    #input-user-note{
-        line-height: 28px;
-    }
-    #input-user-note::placeholder{
-        align-items: flex-start;
-    }
     .empty-check-input{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 100%;
-        max-width: 200px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
         left: 0px;
-        top: calc(100% + 7px);
-        z-index: -1;
-    }
-    .empty-check-option{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        width: 200px;
-        left: 0px;
-        top: calc(100% + 7px);
-        z-index: -1;
     }
     .empty-check-date{
         left: 0;
-        width: 200px;
     }
-    .expiry-date-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        width: 120px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        left: 0;
-        top: calc(100% + 7px);
-        z-index: -1;
-    }
-    
     .city-option{
-        width: 220px;
         right: 180px;
     }
-    .empty-check::before, .empty-check-input::before, .empty-check-option::before, .mobile-phone-check::before, .expiry-date-check::before{
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: -14px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
-    }
     .feed-back-require{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-weight: normal;
-        font-style: italic;
-        font-size: 14px;
-        line-height: 20px;
-        color: #000000;
-        margin-bottom: 15px;
+        margin-left: auto;
     }
     .mobile-phone-check{
-        background-color: rgba(0, 0, 0, 0.9);
-        height: 40px;
-        border-radius: 10px 10px 10px 10px;
-        opacity: 0;
-        transition: 0.5s;
-        position: absolute;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 40px;
-        color: white;
-        text-align: center;
-        width: 220px;
-        left: 0px;       
-        top: calc(100% + 7px);
-        z-index: -1;
+        left: 0px;
     }
     .mobile-phone-check-date{
         left: 0;
-        width: 230px;
     }
     .mobile-phone-check-year{
         left: 0;
-        width: 150px;
-    }
-    .user-payout-infor{
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: 30px;
-        transition: 0.5s;
-        padding-bottom: 20px;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .user-payout-title{
-        width: 90%;
-        margin: 15px auto 5px auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .user-payout-option{
-        width: 90%;
-        margin: 15px auto 15px auto;
-    }
-    .user-payout-option > label{
-        cursor: pointer;
-        position: relative;
-        padding-left: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        display: block;
-    }
-    .user-payout-option > label > input{
-        opacity: 0;
-        width: 0px;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    .user-payout-option > label > .checkmark{
-        position: absolute;
-        top: 6.5px;
-        left: 0px;
-        cursor: pointer;
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border : 1px solid black;
-    }
-    .user-payout-option > label > input:checked + .checkmark{
-        background-color: black; 
     }
     .user-card-input{
-        transform-origin: left top 0;
-        display: none;
-        opacity: 0;
-        transition: 0.5s;
         width: calc(100% + 20px);
         position: relative;
         transform: translateX(-20px);
     }
-    .user-input-sub {
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }
-    .user-select-sub{
-        margin-top: 12px;
-        width: 100%;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        color: #000000;
-        position: relative;
-    }   
-    .user-select-sub > label{
-        width: 150px;
-    }
-    .user-select-sub > select{
-        width:100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        color: black;
-        outline: none;
-    }
-    .user-input-sub > label{
-        width: 150px;
-    }
-    .user-input-sub > input{
-        width: 100% ;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
-    .card-month, .card-year{
-        width: 25%;
-        position: relative
-    }
-    
-    .input-card-expiry-date{
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .input-card-expiry-date{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 40px;
-    }
-    #card-expiry-month, #card-expiry-year{
-        width: 100%;
-        height: 32px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 3px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 18px;
-        display: flex;
-        align-items: center;
-        color: black;
-        text-indent: 8px;
-        outline: none;
-    }
     .item-2{
         margin-left: 0;
-        margin-bottom: 0;
-    }
-    .order-button{
-        width: 100%;
-        max-width: 300px;
-        height: 50px;
-        margin: 35px auto 20px auto;
-        background: #DE0000;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #FFFFFF;
-    }
-    .order-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    .order-note{
-        height: 30px;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: center;
     }
     .summary-shopping-cart{
-        width: 100%;
-        box-sizing: border-box;
         padding-bottom: 15px;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .summary-shopping-cart-title{
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        margin: 0 auto;
-        border-bottom: 1px solid #DADADA;
-    }
-    .summary-shopping-cart-title > div{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a{
-        width: 80px;
-        height: 30px;
-        border: 1px solid #DADADA;
-        box-sizing: border-box;
-        border-radius: 5px;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #32323D;
-    }
-    .summary-shopping-cart-title > a:hover{
-        background-color: rgb(219, 217, 217);
-    }
-    .shopping-cart-item-container{
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 5px;
-    }
-    .shopping-cart-item{
-        border-bottom: 1px solid #DADADA;
-        width: 100%;
-        margin: 0 auto;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .item-detail{
-        padding-top: 10px;
-    }
-    .item-money-value{
-        padding-top: 5px;
-        text-align: right;
-    }
-    .total-money{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .total-money-title{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .total-money-note{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #32323D;
-        text-align: right;
-        margin-bottom: 10px;
-    }
-    .total-money-title > div:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 25px;
-        color: #32323D;
-    }
-    .total-money-title > div:nth-child(2){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: right;
-        color: #DE0000;
-    }
-    .shopping-cart-note{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        text-align: right;
-        color: #DE0000;
-        text-align: center;
-    }
-    /*footer*/
-    footer{
-        margin-top: 25px;
-    }
-    .subscription-part{
-        display: none;
     }
 }
-

@@ -1,1445 +1,566 @@
-.empty{
-    position: fixed;
+/* ===== Global ===== */
+.empty{    position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0;}
+
+/* ===== Base (áp dụng mọi kích thước màn hình) ===== */
+header{
+    width: 100%;
+    position: relative;
+    z-index: 0;
 }
+.header-main-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    position: relative;
+}
+.avatar > img{
+    width: 100%;
+}
+.title-process > h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+}
+.container{
+    width: 100%;
+}
+.main-container{
+    margin: 0 auto;
+    overflow: visible;
+}
+.exit-button{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.exit-title{
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+.shopping-cart-item-container{
+    width: 100%;
+    margin: 0px auto;
+    overflow: auto;
+}
+.shopping-cart-item{
+    width: 100%;
+    max-width: 1000px;
+    overflow: auto;
+}
+.shopping-cart-item-detail{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.item-detail{
+    display: flex;
+}
+.item-photo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.item-photo > img{
+    height: 100%;
+}
+.item-name{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+.item-name:hover{
+    color: orangered;
+}
+.item-price{
+    margin-top: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+.delete-button{
+    margin-top: 5px;
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+}
+.item-quantity{
+    display: flex;
+    justify-content: center;
+}
+.item-number{
+    display: flex;
+    align-items: center;
+}
+.item-number > label{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    color: #000000;
+}
+.minus-item{
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 0px 0px 3px;
+}
+.minus-item > img{
+    padding: 25%;
+    width: 75%;
+    height: 75%;
+}
+.item-number > input{
+    box-sizing: border-box;
+    outline: none;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #C4C4C4;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+}
+.plus-item{
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 3px 3px 0px;
+}
+.plus-item > img{
+    padding: 25%;
+    width: 75%;
+    height: 75%;
+}
+.provisional-value{
+    text-align: center;
+}
+.provisional-value > p:nth-child(1){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+.provisional-value > p:nth-child(2){
+    margin-top: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+.shopping-cart-item-total{
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    display: flex;
+}
+.shopping-cart-item-total-money{
+    margin: 10px 0px 10px auto;
+    width: 25%;
+    text-align: center;
+}
+.shopping-cart-item-total-money >p:nth-child(1){
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+}
+.shopping-cart-item-total-money >p:nth-child(2){
+    margin-top: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.shopping-cart-note{
+    width: 90%;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+.summary-shopping-cart{
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+}
+.summary-shopping-cart-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.summary-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    color: #32323D;
+}
+.summary-money{
+    margin-top: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 25px;
+    color: #DE0000;
+}
+.submit-button{
+    text-decoration: none;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #DE0000;
+}
+.submit-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+/* ===== 1366px - ∞ ===== */
 @media only screen and (min-width: 1366px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
     .header-main-container{
-        width: 95%;
         max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 94px;
     }
     .avatar{
         width: 120px;
         height: 60px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 35px;
-        line-height: 50px;
-    }
-    
-    
-    /*Main Container*/
-    .container{
-        width: 100%;
-    }
-    .container.scroll{
-        margin-top: 124px;
     }
     .main-container{
-        width: 95%;
         max-width: 1200px;
-        margin: 0 auto;
-        overflow:visible;
     }
     .exit-button{
         margin: 20px auto 20px calc(50% - 600px);
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
     }
     .exit-button > i{
         font-size: 22px;
         transition: 0.5s;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000; 
-        transition: 0.5s;
     }
     .exit-button:hover{
-        cursor: pointer;
         color: red;
     }
     .exit-button:hover > .exit-title{
         color: red;
-        padding-left: 10px;
-    }
-    
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
-    }
-    .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 30px auto;
-        overflow: auto;
-    }
-    .shopping-cart-item-detail{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .item-detail{
-        width: 40%;
-        display: flex;
-    }
-    .item-photo {
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
-    }
-    .item-detail-info{
-        margin-left: 15px;
-        width: calc(100% - 15px - 100px);
-    }
-    .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
-    }
-    .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button:hover{
-        cursor: pointer;
-        color: orangered;
-    }
-    .item-quantity{
-        width: calc(35% - 50px);
-        display: flex;
-        justify-content: center;
-    }
-    .item-number{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .minus-item{
-        margin-left:15px ;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
-    }
-    .minus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
-    }
-    .item-number > input{
-        width: 121px;
-        height: 34px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-    }
-    .plus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
-    }
-    .provisional-value{
-        width: 25%;
-        text-align: center;
-    }
-    .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 50px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 40px;
-        color: #000000;
-    }
-    .summary-shopping-cart{
-        display: inline-block;
-        margin-top: 20px;
-        width: 100%;
-        padding-top:50px;
-        border-top: 1px solid #C4C4C4;
-        overflow: auto;
-    }
-    .summary-shopping-cart-container{
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
-        border: 1px solid #C4C4C4;
-        border-radius: 10px;
-    }
-    .summary-title{
-        margin-top: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 25px;
-        color: #DE0000;
-    }
-    .submit-button{
-        text-decoration: none;
-        width: 80%;
-        max-width: 300px;
-        margin: 10px auto 20px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
     }
 }
 
-
-@media only screen and (min-width: 1024px) and (max-width: 1365px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
-    .header-main-container{
-        width: 95%;
-        max-width: 1000px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        height: 84px;
-    }
-    .avatar{
-        width: 110px;
-        height: 55px;
-        position: relative;
-        padding-right: 20px;
-    }
-    .avatar > img{
-        width: 100%;
-    }
-
-    .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 50px;
-    }
-    /*Main Container*/
-    .container{
-        width: 100%;
-    }
+/* ===== 1024px - ∞ ===== */
+@media only screen and (min-width: 1024px){
     .container.scroll{
         margin-top: 124px;
     }
-    .banner{
-        width: 95%;
-        max-width: 1200px;
-        height: 500px;
-        margin: 0 auto;
+    .exit-title{
+        transition: 0.5s;
     }
-    .banner > img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .exit-button:hover{
+        cursor: pointer;
+    }
+    .exit-button:hover > .exit-title{
+        padding-left: 10px;
+    }
+    .shopping-cart-note{
+        margin-top: 50px;
+    }
+}
+
+/* ===== 1024px - 1365px ===== */
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+    .header-main-container{
+        max-width: 1000px;
     }
     .main-container{
-        width: 95%;
         max-width: 1000px;
-        margin: 0 auto;
-        overflow:visible;
     }
     .exit-button{
         margin: 20px auto 20px calc(50% - 500px);
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
     }
     .exit-button > i{
         font-size: 22px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000; 
-        transition: 0.5s;
     }
     .exit-button:hover{
-        cursor: pointer;
         color: orangered;
     }
     .exit-button:hover > .exit-title{
         color: orangered;
-        padding-left: 10px;
     }
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
+}
+
+/* ===== 769px - ∞ ===== */
+@media only screen and (min-width: 769px){
+    .title-process > h2{
+        line-height: 50px;
     }
-    .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 30px auto;
-        overflow: auto;
+    .exit-button{
+        width: 200px;
     }
     .shopping-cart-item-detail{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 25px;
         padding-bottom: 25px;
     }
     .item-detail{
         width: 40%;
-        display: flex;
     }
-    .item-photo {
+    .item-photo{
         width: 100px;
         height: 100px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
-    }
-    .item-detail-info{
-        margin-left: 15px;
-        width: calc(100% - 15px - 100px);
-    }
-    .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
-    }
-    .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button:hover{
-        cursor: pointer;
-        color: orangered;
     }
     .item-quantity{
         width: calc(35% - 50px);
-        display: flex;
-        justify-content: center;
-    }
-    .item-number{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .minus-item{
-        margin-left:15px ;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
-    }
-    .minus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .item-number > input{
         width: 121px;
-        height: 34px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4;  
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-    }
-    .plus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .provisional-value{
         width: 25%;
-        text-align: center;
-    }
-    .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 50px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 40px;
-        color: #000000;
-    }
-    .summary-shopping-cart{
-        display: inline-block;
-        margin-top: 20px;
-        width: 100%;
-        padding-top:50px;
-        border-top: 1px solid #C4C4C4;
-        overflow: auto;
-    }
-    .summary-shopping-cart-container{
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
-        border: 1px solid #C4C4C4;
-        border-radius: 10px;
-    }
-    .summary-title{
-        margin-top: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 25px;
-        color: #DE0000;
-    }
-    .submit-button{
-        text-decoration: none;
-        width: 80%;
-        max-width: 300px;
-        margin: 10px auto 20px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1023px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
+/* ===== 769px - 1365px ===== */
+@media only screen and (min-width: 769px) and (max-width: 1365px){
     .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 84px;
     }
     .avatar{
         width: 110px;
         height: 55px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 30px;
-        line-height: 50px;
     }
+}
 
-    .container{
-        width: 100%;
-    }
-    .banner{
-        width: 95%;
-        max-width: 1200px;
-        height: 500px;
-        margin: 0 auto;
-    }
-    .banner > img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow:visible;
-    }
+/* ===== 769px - 1023px ===== */
+@media only screen and (min-width: 769px) and (max-width: 1023px){
     .exit-button{
         margin: 20px auto 0 0;
-        text-decoration: none;
-        color: black;
-        display: flex;
-        align-items: center;
-        width: 200px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000;
     }
     .exit-button > i{
         font-size: 22px;
     }
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
+    .shopping-cart-note{
+        margin-top: 40px;
+    }
+}
+
+/* ===== 577px - ∞ ===== */
+@media only screen and (min-width: 577px){
+    header{
+        border-bottom: 1px solid rgb(180, 180, 180);
+    }
+    .title-process > h2{
+        padding-left: 20px;
+        border-left: 3px solid black;
+    }
+    .main-container{
+        width: 95%;
     }
     .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
         border: 1px solid #C4C4C4;
         box-sizing: border-box;
         border-radius: 10px;
         margin: 30px auto;
-        overflow: auto;
     }
     .shopping-cart-item-detail{
         width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
         padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .item-detail{
-        width: 40%;
-        display: flex;
-    }
-    .item-photo {
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
     }
     .item-detail-info{
         margin-left: 15px;
         width: calc(100% - 15px - 100px);
     }
     .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
         line-height: 25px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
     }
     .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
-        line-height: 25px;
-        color: #000000;
     }
     .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 16px;
         line-height: 25px;
-        color: #000000;
     }
     .delete-button:hover{
         cursor: pointer;
         color: orangered;
     }
-    .item-quantity{
-        width: calc(35% - 50px);
-        display: flex;
-        justify-content: center;
-    }
     .item-number{
-        display: flex;
-        align-items: center;
         justify-content: center;
     }
     .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 16px;
-        line-height: 30px;
-        color: #000000;
     }
     .minus-item{
-        margin-left:15px ;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
+        margin-left: 15px;
         height: 34px;
         width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
     }
     .minus-item:hover{
         background-color: rgb(219, 218, 218);
         cursor: pointer;
     }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
-    }
     .item-number > input{
-        width: 121px;
         height: 34px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4;  
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 16px;
-        line-height: 25px;
-        text-align: center;
     }
     .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
         height: 34px;
         width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
     }
     .plus-item:hover{
         background-color: rgb(219, 218, 218);
         cursor: pointer;
     }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
-    }
-    .provisional-value{
-        width: 25%;
-        text-align: center;
-    }
     .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
-        line-height: 25px;
-        color: #000000;
     }
     .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
     }
     .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 40px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 25px;
         line-height: 40px;
-        color: #000000;
     }
     .summary-shopping-cart{
-        display: inline-block;
-        margin-top: 20px;
-        width: 100%;
-        padding-top:50px;
+        padding-top: 50px;
         border-top: 1px solid #C4C4C4;
-        overflow: auto;
     }
     .summary-shopping-cart-container{
-        width: 100%;
         max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
         border: 1px solid #C4C4C4;
         border-radius: 10px;
     }
     .summary-title{
         margin-top: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 20px;
-        color: #32323D;
     }
     .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 22px;
-        line-height: 25px;
-        color: #DE0000;
     }
     .submit-button{
-        text-decoration: none;
         width: 80%;
-        max-width: 300px;
-        margin: 10px auto 20px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
     }
 }
 
+/* ===== 577px - 768px ===== */
 @media only screen and (min-width: 577px) and (max-width: 768px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-    }
     .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 80px;
     }
     .avatar{
         width: 100px;
         height: 50px;
-        position: relative;
-        padding-right: 20px;
     }
-    .avatar > img{
-        width: 100%;
-    }
-
     .title-process > h2{
-        padding-left: 20px;
-        border-left: 3px solid black;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 28px;
-        line-height: 45px;
-    }
-    
-    .container{
-        width: 100%;
     }
     .container.scroll{
         margin-top: 124px;
     }
-    .banner{
-        width: 95%;
-        max-width: 1200px;
-        height: 500px;
-        margin: 0 auto;
-    }
-    .banner > img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow:visible;
-    }
     .exit-button{
         margin: 20px auto 0px 0;
-        text-decoration: none;
-        color: black;
-        width: 50%;
-        display: flex;
-        align-items: center;
         width: 100%;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 18px;
-        line-height: 30px;
-        color: #000000;
     }
     .exit-button > i{
         font-size: 22px;
     }
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
-    }
-    .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 30px auto;
-        overflow: auto;
-    }
     .shopping-cart-item-detail{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 25px;
         padding-bottom: 20px;
-        flex-wrap: wrap;
     }
     .item-detail{
         width: 60%;
-        display: flex;
-        padding-bottom: 15px;
-    }
-    .item-photo {
-        width: 80px;
-        height: 80px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
-    }
-    .item-detail-info{
-        margin-left: 15px;
-        width: calc(100% - 15px - 100px);
-    }
-    .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
-    }
-    .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .delete-button:hover{
-        cursor: pointer;
-        color: orangered;
     }
     .item-quantity{
         width: 40%;
-        display: flex;
-        justify-content: center;
-    }
-    .item-number{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .minus-item{
-        margin-left:15px ;
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
-    }
-    .minus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .item-number > input{
         width: 100px;
-        height: 34px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4;  
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 34px;
-        width: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-    }
-    .plus-item:hover{
-        background-color: rgb(219, 218, 218);
-        cursor: pointer;
-    }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .provisional-value{
         width: 40%;
         padding-left: 60%;
-        text-align: center;
-        border-top: 1px solid #C4C4C4;
-        padding-top: 10px;
     }
-    .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 30px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 40px;
-        color: #000000;
-    }
-    .summary-shopping-cart{
-        display: inline-block;
-        margin-top: 20px;
-        width: 100%;
-        padding-top:50px;
-        border-top: 1px solid #C4C4C4;
-        overflow: auto;
-    }
-    .summary-shopping-cart-container{
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        text-align: center;
-        border: 1px solid #C4C4C4;
-        border-radius: 10px;
-    }
-    .summary-title{
-        margin-top: 20px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 25px;
-        color: #DE0000;
-    }
-    .submit-button{
-        text-decoration: none;
-        width: 80%;
-        max-width: 300px;
-        margin: 10px auto 20px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    /*footer*/
     footer{
         margin-top: 30px;
     }
-    .subscription-part{
-        display: none;
+}
+
+/* ===== 351px - ∞ ===== */
+@media only screen and (min-width: 351px){
+    .avatar{
+        padding-right: 20px;
+    }
+    .exit-title{
+        line-height: 30px;
+    }
+    .item-price{
+        line-height: 25px;
+    }
+    .item-number > input{
+        line-height: 25px;
+    }
+    .provisional-value > p:nth-child(1){
+        line-height: 25px;
+    }
+    .provisional-value > p:nth-child(2){
+        line-height: 25px;
+    }
+    .summary-shopping-cart{
+        margin-top: 20px;
+    }
+    .submit-button{
+        margin: 10px auto 20px auto;
     }
 }
 
-@media only screen and (min-width: 351px) and (max-width: 576px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-        border-bottom: 5px solid #C4C4C4;
-    }
-    .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        height: 60px;
-        justify-content: center;
-    }
-    .avatar{
-        width: 95px;
-        height: 47px;
-        position: relative;
-        padding-right: 20px;
-        display: none;
-    }
-    .avatar > img{
-        width: 100%;
-    }
-    .title-process > h2{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 45px;
-    }
-
-    .container{
-        width: 100%;
-    }
+/* ===== 351px - 1365px ===== */
+@media only screen and (min-width: 351px) and (max-width: 1365px){
     .banner{
         width: 95%;
         max-width: 1200px;
@@ -1451,102 +572,153 @@
         height: 100%;
         object-fit: cover;
     }
-    .main-container{
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow:visible;
+}
+
+/* ===== 351px - 768px ===== */
+@media only screen and (min-width: 351px) and (max-width: 768px){
+    .title-process > h2{
+        line-height: 45px;
     }
-    .exit-button{    
-        text-decoration: none;
-        color: black;
-        width: 95%;
+    .item-detail{
+        padding-bottom: 15px;
+    }
+    .item-photo{
+        width: 80px;
+        height: 80px;
+    }
+    .shopping-cart-note{
+        margin-top: 30px;
+    }
+}
+
+/* ===== 351px - 576px ===== */
+@media only screen and (min-width: 351px) and (max-width: 576px){
+    .header-main-container{
+        height: 60px;
+    }
+    .avatar{
+        width: 95px;
+        height: 47px;
+    }
+    .title-process > h2{
+        font-size: 25px;
+    }
+    .exit-button{
         margin: 15px auto 15px 2.5%;
-        width: 180px;
-        display: flex;
-        align-items: center;
     }
     .exit-button > i{
         font-size: 20px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 16px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
-    }
-    .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
-        margin: 10px auto;
-        overflow: auto;
     }
     .shopping-cart-item-detail{
-        width: 95%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
         padding-top: 15px;
         padding-bottom: 10px;
-        flex-wrap: wrap;
-    }
-    .item-detail{
-        width: 62%;
-        display: flex;
-        padding-bottom: 15px;
-        align-items: center;
-    }
-    .item-photo {
-        width: 80px;
-        height: 80px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
     }
     .item-detail-info{
         width: calc(100% - 80px);
     }
     .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 22px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
     }
     .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 16px;
-        line-height: 25px;
-        color: #000000;
     }
     .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 14px;
+    }
+    .minus-item{
+        height: 30px;
+        width: 30px;
+    }
+    .item-number > input{
+        height: 30px;
+        font-size: 15px;
+    }
+    .plus-item{
+        height: 30px;
+        width: 30px;
+    }
+    .provisional-value > p:nth-child(1){
+        font-size: 14px;
+    }
+    .provisional-value > p:nth-child(2){
+        font-size: 16px;
+    }
+    .shopping-cart-note{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .summary-shopping-cart{
+        padding-top: 40px;
+    }
+    .summary-title{
+        font-size: 16px;
+    }
+    .summary-money{
+        font-size: 20px;
+    }
+    .submit-button{
+        width: 70%;
+    }
+}
+
+/* ===== 0px - 1023px ===== */
+@media only screen and (max-width: 1023px){
+    .header-main-container{
+        max-width: 1200px;
+    }
+    .main-container{
+        max-width: 1200px;
+    }
+}
+
+/* ===== 0px - 768px ===== */
+@media only screen and (max-width: 768px){
+    .shopping-cart-item-detail{
+        flex-wrap: wrap;
+    }
+    .provisional-value{
+        border-top: 1px solid #C4C4C4;
+        padding-top: 10px;
+    }
+    .subscription-part{
+        display: none;
+    }
+}
+
+/* ===== 0px - 576px ===== */
+@media only screen and (max-width: 576px){
+    header{
+        border-bottom-style: solid;
+        border-bottom: 5px solid #C4C4C4;
+    }
+    .header-main-container{
+        justify-content: center;
+    }
+    .avatar{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .exit-button{
+        width: 180px;
+    }
+    .shopping-cart-item{
+        margin: 10px auto;
+    }
+    .shopping-cart-item-detail{
+        width: 95%;
+    }
+    .item-detail{
+        width: 62%;
+        align-items: center;
+    }
+    .delete-button{
         line-height: 22px;
-        color: #000000;
     }
     .delete-button > img{
         width: 20px;
@@ -1554,515 +726,115 @@
     }
     .item-quantity{
         width: 35%;
-        display: flex;
-        justify-content: center;
     }
     .item-number{
-        display: flex;
-        align-items: center;
         justify-content: flex-start;
     }
     .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 14px;
-        line-height: 30px;
-        color: #000000;
-    }
-    .minus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 30px;
-        width: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
-    }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .item-number > input{
         width: 40px;
-        height: 30px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4; 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
-    }
-    .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
-        height: 30px;
-        width: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-    }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .provisional-value{
         width: 45%;
         padding-left: 55%;
-        text-align: center;
-        border-top: 1px solid #C4C4C4;
-        padding-top: 10px;
-    }
-    .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 30px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
     }
     .summary-shopping-cart{
-        display: inline-block;
-        margin-top: 20px;
-        width: 100%;
-        padding-top:40px;
         border-top: 5px solid #C4C4C4;
-        overflow: auto;
     }
-    .summary-shopping-cart-container{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .summary-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        color: #32323D;
-    }
-    .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 25px;
-        color: #DE0000;
-    }
-    .submit-button{
-        text-decoration: none;
-        width: 70%;
-        max-width: 300px;
-        margin: 10px auto 20px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    /*footer*/
     footer{
         margin-top: 20px;
     }
-    .subscription-part{
-        display: none;
-    }
 }
 
+/* ===== 0px - 350px ===== */
 @media only screen and (max-width: 350px){
-    /*Main*/
-    header{
-        width: 100%;
-        border-bottom: 1px solid rgb(180, 180, 180);
-        position: relative;
-        z-index: 0;
-        border-bottom: 5px solid #C4C4C4;
-    }
     .header-main-container{
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
         height: 50px;
-        justify-content: center;
     }
     .avatar{
         width: 84px;
         height: 42px;
-        position: relative;
         padding-right: 10px;
-        display: none;
-    }
-    .avatar > img{
-        width: 100%;
     }
     .title-process > h2{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 400;
         font-size: 22px;
         line-height: 40px;
     }
-    /*Main Container*/
-    .container{
-        width: 100%;
-    }
-    .main-container{
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow:visible;
-    }
-    .exit-button{    
-        text-decoration: none;
-        color: black;
-        width: 95%;
+    .exit-button{
         margin: 15px auto 10px 2.5%;
-        width: 180px;
-        display: flex;
-        align-items: center;
     }
     .exit-button > i{
         font-size: 19px;
     }
     .exit-title{
-        margin-left: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
         line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-container{
-        width: 100%;
-        margin: 0px auto;
-        overflow: auto;
-    }
-    .shopping-cart-item{
-        width: 100%;
-        max-width: 1000px;
-        margin: 10px auto;
-        overflow: auto;
     }
     .shopping-cart-item-detail{
-        width: 95%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
         padding-top: 10px;
         padding-bottom: 5px;
-        flex-wrap: wrap;
     }
     .item-detail{
-        width: 62%;
-        display: flex;
         padding-bottom: 10px;
-        align-items: center;
     }
-    .item-photo {
+    .item-photo{
         width: 70px;
         height: 70px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-    }
-    .item-photo > img {
-        height: 100%;
     }
     .item-detail-info{
         width: calc(100% - 70px);
     }
     .item-name{
-        text-decoration: none;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 13px;
         line-height: 18px;
-        color: #000000;
-    }
-    .item-name:hover{
-        color: orangered;
     }
     .item-price{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 14px;
         line-height: 20px;
-        color: #000000;
     }
     .delete-button{
-        margin-top: 5px;
-        display: flex;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 13px;
-        line-height: 22px;
-        color: #000000;
-    }
-    .delete-button > img{
-        width: 20px;
-        height: 20px;
-    }
-    .item-quantity{
-        width: 35%;
-        display: flex;
-        justify-content: center;
-    }
-    .item-number{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .item-number > label{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 30px;
-        color: #000000;
     }
     .minus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
         height: 27px;
         width: 27px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 3px 0px 0px 3px;
-    }
-    .minus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
     }
     .item-number > input{
-        width: 40px;
         height: 27px;
-        box-sizing: border-box;
-        outline: none;
-        border-width: 1px 0 1px 0;
-        border-style: solid;
-        border-color: #C4C4C4;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
         font-size: 14px;
         line-height: 27px;
-        text-align: center;
     }
     .plus-item{
-        border: 1px solid #C4C4C4;
-        box-sizing: border-box;
         height: 27px;
         width: 27px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0px 3px 3px 0px;
-    }
-    .plus-item > img{
-        padding: 25%;
-        width: 75%;
-        height: 75%;
-    }
-    .provisional-value{
-        width: 45%;
-        padding-left: 55%;
-        text-align: center;
-        border-top: 1px solid #C4C4C4;
-        padding-top: 10px;
     }
     .provisional-value > p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 13px;
         line-height: 20px;
-        color: #000000;
     }
     .provisional-value > p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 14px;
         line-height: 20px;
-        color: #000000;
-    }
-    .shopping-cart-item-total{
-        width: calc(100% - 50px);
-        margin: 0 auto;
-        display: flex;
-    }
-    .shopping-cart-item-total-money{
-        margin: 10px 0px 10px auto;
-        width: 25%;
-        text-align: center;
-    }
-    .shopping-cart-item-total-money >p:nth-child(1){
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .shopping-cart-item-total-money >p:nth-child(2){
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000;
     }
     .shopping-cart-note{
-        width: 90%;
-        margin: 0 auto;
         margin-top: 20px;
-        text-align: center;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
         line-height: px;
-        color: #000000;
     }
     .summary-shopping-cart{
-        display: inline-block;
         margin-top: 10px;
-        width: 100%;
-        padding-top:30px;
-        border-top: 5px solid #C4C4C4;
-        overflow: auto;
-    }
-    .summary-shopping-cart-container{
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+        padding-top: 30px;
     }
     .summary-title{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
-        line-height: 20px;
-        color: #32323D;
     }
     .summary-money{
-        margin-top: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
         font-size: 18px;
-        line-height: 25px;
-        color: #DE0000;
     }
     .submit-button{
-        text-decoration: none;
         width: 250px;
-        max-width: 300px;
         margin: 5px auto 15px auto;
-        height: 40px;
-        border-radius: 5px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        background-color: #DE0000;
-    }
-    .submit-button:hover{
-        cursor: pointer;
-        background-color: red;
-    }
-    /*footer*/
-    footer{
-        margin-top: 20px;
-    }
-    .subscription-part{
-        display: none;
     }
 }
-
